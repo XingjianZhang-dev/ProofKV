@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.DS_Store
+
+# local runs and downloads
+/runs/
+/data/
+checkpoints/*/
+/checkpoints/*.tar.gz
+
+# rasterized copies written by analysis/make_figures.py
+paper/figures/*.png

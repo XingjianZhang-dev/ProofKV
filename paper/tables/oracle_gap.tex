@@ -1,0 +1,17 @@
+\begin{tabular}{@{}lr@{}}
+\toprule
+Held-out MuSiQue test, 512 tokens ($n{=}500$) & Questions (\%) \\
+\midrule
+Complete gold chain retained & 46.0 \\
+\addlinespace[2pt]
+Gold link under-scored by the scorer & 16.2 \\
+Start or end span excluded by the search gate & 10.0 \\
+Complete chain found but outranked & 3.4 \\
+Gold link absent from the candidate graph & 2.0 \\
+Pruned by the beam & 1.6 \\
+Link predicted in the wrong direction & 0.2 \\
+Wrong relation label & 0.0 \\
+\addlinespace[2pt]
+Gold chain does not fit the budget & 20.6 \\
+\bottomrule
+\end{tabular}

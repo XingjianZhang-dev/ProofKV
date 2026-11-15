@@ -1,0 +1,19 @@
+\begin{tabular}{@{}p{0.30\columnwidth}p{0.62\columnwidth}@{}}
+\toprule
+Component & Value \\
+\midrule
+Span candidates & 32 query-conditioned candidates \\
+Dense link core & 4 highest-scoring spans \\
+Start spans opened & 16 \\
+Link batch & 256 pairs; kept if not \textsc{none} and $e\ge0.35$ \\
+Chain search & beam 8; at most 8 links; at least 2 spans; end-span floor 0.20 \\
+Proof set & at most 8 proofs \\
+Subset compiler & beam 128 over proof unions \\
+Score priors & $\gamma=\exp(-0.04)$ per link; contradiction links $\times0.55$ unless the question is negated \\
+Boundary halo & optional; $h{=}0$ in all accuracy results, $h{=}8$ on the fidelity probe \\
+Pinned positions & 4 sink tokens and recent tail \\
+Page size & 16 KV tokens \\
+Precision & BF16 selection; optional INT8 auxiliary tier \\
+Decoding & greedy; deterministic seed 17 \\
+\bottomrule
+\end{tabular}

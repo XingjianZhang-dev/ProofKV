@@ -1,0 +1,150 @@
+{
+  "audit_implementation_sha256": "2bb0ab28bc79b24a7c6aa680bd73ff5efc392fc73772adc8c59e037539ab8278",
+  "capacity": 128,
+  "expect_all_physical_zero": true,
+  "physical_methods": [
+    "streamingllm",
+    "snapkv",
+    "pyramidkv",
+    "chunkkv_snapkv"
+  ],
+  "protocol": "official_ruler_extreme_low_budget_audit_v1",
+  "runs": [
+    {
+      "actual_retained_token_ranges": {
+        "chunkkv_snapkv": [
+          128.0,
+          128.0
+        ],
+        "pyramidkv": [
+          128.0,
+          128.0
+        ],
+        "ruler_chain_adapter_v10": [
+          128.0,
+          128.0
+        ],
+        "snapkv": [
+          127.0,
+          128.0
+        ],
+        "streamingllm": [
+          127.0,
+          128.0
+        ]
+      },
+      "all_physical_predictions_zero": true,
+      "candidate_method": "ruler_chain_adapter_v10",
+      "candidate_nonzero_on_every_sample": true,
+      "capacity": 128,
+      "capacity_recovery": {
+        "1024": {
+          "chunkkv_snapkv": 100.0,
+          "pyramidkv": 28.0,
+          "snapkv": 28.0,
+          "streamingllm": 24.0
+        },
+        "128": {
+          "chunkkv_snapkv": 0.0,
+          "pyramidkv": 0.0,
+          "snapkv": 0.0,
+          "streamingllm": 0.0
+        },
+        "256": {
+          "chunkkv_snapkv": 8.0,
+          "pyramidkv": 2.0,
+          "snapkv": 2.0,
+          "streamingllm": 2.0
+        },
+        "512": {
+          "chunkkv_snapkv": 62.0,
+          "pyramidkv": 12.0,
+          "snapkv": 12.0,
+          "streamingllm": 12.0
+        }
+      },
+      "complete_samples": 10,
+      "label": "qwen25_development",
+      "results_sha256": "b2db15808108786d4a8d98e8e7760dbbcc753243932711aaf054cef86685b0fc",
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/development_V2_qwen25",
+      "score_means": {
+        "chunkkv_snapkv": 0.0,
+        "full": 100.0,
+        "pyramidkv": 0.0,
+        "ruler_chain_adapter_v10": 60.0,
+        "snapkv": 0.0,
+        "streamingllm": 0.0
+      },
+      "task": "ruler_variable_tracking"
+    },
+    {
+      "actual_retained_token_ranges": {
+        "chunkkv_snapkv": [
+          128.0,
+          128.0
+        ],
+        "pyramidkv": [
+          128.0,
+          128.0
+        ],
+        "ruler_chain_adapter_v10": [
+          128.0,
+          128.0
+        ],
+        "snapkv": [
+          127.0,
+          128.0
+        ],
+        "streamingllm": [
+          127.0,
+          128.0
+        ]
+      },
+      "all_physical_predictions_zero": true,
+      "candidate_method": "ruler_chain_adapter_v10",
+      "candidate_nonzero_on_every_sample": true,
+      "capacity": 128,
+      "capacity_recovery": {
+        "1024": {
+          "chunkkv_snapkv": 76.0,
+          "pyramidkv": 4.0,
+          "snapkv": 4.0,
+          "streamingllm": 12.0
+        },
+        "128": {
+          "chunkkv_snapkv": 0.0,
+          "pyramidkv": 0.0,
+          "snapkv": 0.0,
+          "streamingllm": 0.0
+        },
+        "256": {
+          "chunkkv_snapkv": 6.0,
+          "pyramidkv": 0.0,
+          "snapkv": 0.0,
+          "streamingllm": 0.0
+        },
+        "512": {
+          "chunkkv_snapkv": 18.0,
+          "pyramidkv": 2.0,
+          "snapkv": 2.0,
+          "streamingllm": 0.0
+        }
+      },
+      "complete_samples": 10,
+      "label": "mistral02_development",
+      "results_sha256": "607bebb23636d18746cfdbe6b1e08e74f516eab8161ac39c018b5a0fb6f98fc7",
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/development_V2_mistral02",
+      "score_means": {
+        "chunkkv_snapkv": 0.0,
+        "full": 96.0,
+        "pyramidkv": 0.0,
+        "ruler_chain_adapter_v10": 52.0,
+        "snapkv": 0.0,
+        "streamingllm": 0.0
+      },
+      "task": "ruler_variable_tracking"
+    }
+  ],
+  "status": "PASS",
+  "task": "ruler_variable_tracking"
+}

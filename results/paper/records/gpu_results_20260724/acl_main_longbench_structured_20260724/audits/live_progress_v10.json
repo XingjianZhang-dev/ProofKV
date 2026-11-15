@@ -1,0 +1,1877 @@
+{
+  "completion": {
+    "expected_rows": 34498,
+    "percent": 96.19688097860745,
+    "rows": 33186
+  },
+  "generated_at_utc": "2026-07-25T20:25:43.422584+00:00",
+  "protocol": "proofkv_v10_live_partial_integrity_and_outcome_monitor_V2",
+  "runs": [
+    {
+      "completion_percent": 100.0,
+      "expected_rows": 14335,
+      "integrity": {
+        "capacity_excess_rows": 0,
+        "duplicate_rows": 0,
+        "exception_rows": 0,
+        "max_capacity_excess_tokens": 0.0,
+        "methods": {
+          "chunkkv_snapkv": 940,
+          "confirmation_stable_proofkv_v10": 940,
+          "full": 235,
+          "learned_and_or_control_anchor25_aux": 940,
+          "learned_and_or_control_anchor50_aux": 940,
+          "learned_and_or_control_anchor75_aux": 940,
+          "learned_and_or_graph_aux": 940,
+          "learned_and_or_lexical_anchor25_aux": 940,
+          "learned_and_or_lexical_anchor50_aux": 940,
+          "learned_and_or_lexical_anchor75_aux": 940,
+          "learned_and_or_mixed_aux": 940,
+          "learned_and_or_recent_aux": 940,
+          "learned_and_or_stratified_aux": 940,
+          "pyramidkv": 940,
+          "snapkv": 940,
+          "streamingllm": 940
+        },
+        "nonfinite_rows": 0,
+        "score_range_rows": 0,
+        "status": "PASS",
+        "tasks": {
+          "2wikimqa": 2867,
+          "hotpotqa": 2867,
+          "multifieldqa_en": 2867,
+          "musique": 2867,
+          "qasper": 2867
+        }
+      },
+      "paired_cells": [
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 23.52376678158906,
+          "capacity": 64,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 23.52376678158906,
+          "task": "2wikimqa",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 21.867334167709636,
+          "capacity": 128,
+          "delta_vs_best_conventional": -0.3546099290780142,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 21.512724238631623,
+          "task": "2wikimqa",
+          "wins_ties_losses_vs_best_conventional": [
+            2,
+            44,
+            1
+          ]
+        },
+        {
+          "best_conventional_method": "snapkv",
+          "best_conventional_score": 25.711305798915312,
+          "capacity": 256,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 25.711305798915312,
+          "task": "2wikimqa",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 28.868625464370147,
+          "capacity": 512,
+          "delta_vs_best_conventional": 11.046006376353521,
+          "delta_vs_frozen_physical_fallback": 14.486466625324406,
+          "fallback_methods": {
+            "snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 39.914631840723665,
+          "task": "2wikimqa",
+          "wins_ties_losses_vs_best_conventional": [
+            13,
+            28,
+            6
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 16.354119906815924,
+          "capacity": 64,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 16.354119906815924,
+          "task": "hotpotqa",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 19.942919277843078,
+          "capacity": 128,
+          "delta_vs_best_conventional": 13.58048750588911,
+          "delta_vs_frozen_physical_fallback": 15.284046293531835,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 33.52340678373219,
+          "task": "hotpotqa",
+          "wins_ties_losses_vs_best_conventional": [
+            13,
+            23,
+            11
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 24.050212912790382,
+          "capacity": 256,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 24.050212912790386,
+          "task": "hotpotqa",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "pyramidkv",
+          "best_conventional_score": 25.30899942555817,
+          "capacity": 512,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "pyramidkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 25.308999425558167,
+          "task": "hotpotqa",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 19.0706690556232,
+          "capacity": 64,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 19.0706690556232,
+          "task": "multifieldqa_en",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 21.021952440783927,
+          "capacity": 128,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 21.02195244078393,
+          "task": "multifieldqa_en",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 22.562075060931235,
+          "capacity": 256,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 22.562075060931235,
+          "task": "multifieldqa_en",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "snapkv",
+          "best_conventional_score": 28.258769036330612,
+          "capacity": 512,
+          "delta_vs_best_conventional": 14.293102388044215,
+          "delta_vs_frozen_physical_fallback": 18.686092239279695,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 42.55187142437482,
+          "task": "multifieldqa_en",
+          "wins_ties_losses_vs_best_conventional": [
+            31,
+            8,
+            8
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 10.30027903428865,
+          "capacity": 64,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 10.300279034288652,
+          "task": "musique",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "pyramidkv",
+          "best_conventional_score": 13.673091870180338,
+          "capacity": 128,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "pyramidkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 13.673091870180336,
+          "task": "musique",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "pyramidkv",
+          "best_conventional_score": 14.514054876316914,
+          "capacity": 256,
+          "delta_vs_best_conventional": -3.953560647347573,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 10.560494228969342,
+          "task": "musique",
+          "wins_ties_losses_vs_best_conventional": [
+            4,
+            36,
+            7
+          ]
+        },
+        {
+          "best_conventional_method": "pyramidkv",
+          "best_conventional_score": 15.302225148249784,
+          "capacity": 512,
+          "delta_vs_best_conventional": -2.1158158129042786,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 13.186409335345507,
+          "task": "musique",
+          "wins_ties_losses_vs_best_conventional": [
+            7,
+            32,
+            8
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 8.08956721836487,
+          "capacity": 64,
+          "delta_vs_best_conventional": -2.443746667118158,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "pyramidkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 5.645820551246713,
+          "task": "qasper",
+          "wins_ties_losses_vs_best_conventional": [
+            11,
+            15,
+            21
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 13.055762028608084,
+          "capacity": 128,
+          "delta_vs_best_conventional": 12.752348417520018,
+          "delta_vs_frozen_physical_fallback": 15.169812573787675,
+          "fallback_methods": {
+            "snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 25.8081104461281,
+          "task": "qasper",
+          "wins_ties_losses_vs_best_conventional": [
+            21,
+            17,
+            9
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 14.6663250091878,
+          "capacity": 256,
+          "delta_vs_best_conventional": 16.74398700503396,
+          "delta_vs_frozen_physical_fallback": 20.772014141881336,
+          "fallback_methods": {
+            "snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 31.41031201422176,
+          "task": "qasper",
+          "wins_ties_losses_vs_best_conventional": [
+            24,
+            16,
+            7
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 13.988675025246424,
+          "capacity": 512,
+          "delta_vs_best_conventional": -1.8835896166895705,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 12.105085408556853,
+          "task": "qasper",
+          "wins_ties_losses_vs_best_conventional": [
+            5,
+            29,
+            13
+          ]
+        }
+      ],
+      "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/formal_full_v10_qwen25_complement_n47/results.jsonl",
+      "rows": 14335,
+      "run": "longbench_qwen25",
+      "trailing_partial_ignored": false
+    },
+    {
+      "completion_percent": 100.0,
+      "expected_rows": 14335,
+      "integrity": {
+        "capacity_excess_rows": 0,
+        "duplicate_rows": 0,
+        "exception_rows": 0,
+        "max_capacity_excess_tokens": 0.0,
+        "methods": {
+          "chunkkv_snapkv": 940,
+          "confirmation_stable_proofkv_v10": 940,
+          "full": 235,
+          "learned_and_or_control_anchor25_aux": 940,
+          "learned_and_or_control_anchor50_aux": 940,
+          "learned_and_or_control_anchor75_aux": 940,
+          "learned_and_or_graph_aux": 940,
+          "learned_and_or_lexical_anchor25_aux": 940,
+          "learned_and_or_lexical_anchor50_aux": 940,
+          "learned_and_or_lexical_anchor75_aux": 940,
+          "learned_and_or_mixed_aux": 940,
+          "learned_and_or_recent_aux": 940,
+          "learned_and_or_stratified_aux": 940,
+          "pyramidkv": 940,
+          "snapkv": 940,
+          "streamingllm": 940
+        },
+        "nonfinite_rows": 0,
+        "score_range_rows": 0,
+        "status": "PASS",
+        "tasks": {
+          "2wikimqa": 2867,
+          "hotpotqa": 2867,
+          "multifieldqa_en": 2867,
+          "musique": 2867,
+          "qasper": 2867
+        }
+      },
+      "paired_cells": [
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 11.05319962466911,
+          "capacity": 64,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 11.05319962466911,
+          "task": "2wikimqa",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "pyramidkv",
+          "best_conventional_score": 10.99217287627142,
+          "capacity": 128,
+          "delta_vs_best_conventional": -0.0019689157427119843,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 10.990203960528708,
+          "task": "2wikimqa",
+          "wins_ties_losses_vs_best_conventional": [
+            1,
+            45,
+            1
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 11.236249617378203,
+          "capacity": 256,
+          "delta_vs_best_conventional": -0.27019242182360825,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 10.966057195554594,
+          "task": "2wikimqa",
+          "wins_ties_losses_vs_best_conventional": [
+            4,
+            34,
+            9
+          ]
+        },
+        {
+          "best_conventional_method": "snapkv",
+          "best_conventional_score": 15.75272294839517,
+          "capacity": 512,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 15.75272294839517,
+          "task": "2wikimqa",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 13.42182422529567,
+          "capacity": 64,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 13.42182422529567,
+          "task": "hotpotqa",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 19.675603810793216,
+          "capacity": 128,
+          "delta_vs_best_conventional": -1.2536583525523874,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 18.421945458240828,
+          "task": "hotpotqa",
+          "wins_ties_losses_vs_best_conventional": [
+            7,
+            36,
+            4
+          ]
+        },
+        {
+          "best_conventional_method": "snapkv",
+          "best_conventional_score": 16.96562536922197,
+          "capacity": 256,
+          "delta_vs_best_conventional": 11.273903414438063,
+          "delta_vs_frozen_physical_fallback": 11.299119819504284,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 28.239528783660035,
+          "task": "hotpotqa",
+          "wins_ties_losses_vs_best_conventional": [
+            17,
+            24,
+            6
+          ]
+        },
+        {
+          "best_conventional_method": "snapkv",
+          "best_conventional_score": 20.327260769589998,
+          "capacity": 512,
+          "delta_vs_best_conventional": 6.491731915778852,
+          "delta_vs_frozen_physical_fallback": 11.404578642342953,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 26.818992685368848,
+          "task": "hotpotqa",
+          "wins_ties_losses_vs_best_conventional": [
+            14,
+            20,
+            13
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 19.441245010339742,
+          "capacity": 64,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 19.441245010339742,
+          "task": "multifieldqa_en",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "snapkv",
+          "best_conventional_score": 21.309893575836607,
+          "capacity": 128,
+          "delta_vs_best_conventional": 8.466190383467326,
+          "delta_vs_frozen_physical_fallback": 11.508366971270704,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 29.77608395930394,
+          "task": "multifieldqa_en",
+          "wins_ties_losses_vs_best_conventional": [
+            29,
+            6,
+            12
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 21.743737334307372,
+          "capacity": 256,
+          "delta_vs_best_conventional": 11.612826978812013,
+          "delta_vs_frozen_physical_fallback": 14.212019662330565,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 33.356564313119385,
+          "task": "multifieldqa_en",
+          "wins_ties_losses_vs_best_conventional": [
+            30,
+            9,
+            8
+          ]
+        },
+        {
+          "best_conventional_method": "pyramidkv",
+          "best_conventional_score": 23.585483295008956,
+          "capacity": 512,
+          "delta_vs_best_conventional": 15.231563132556571,
+          "delta_vs_frozen_physical_fallback": 16.50769672427275,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 38.81704642756553,
+          "task": "multifieldqa_en",
+          "wins_ties_losses_vs_best_conventional": [
+            28,
+            9,
+            10
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 8.933042252158252,
+          "capacity": 64,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 8.933042252158252,
+          "task": "musique",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 8.907247758801331,
+          "capacity": 128,
+          "delta_vs_best_conventional": 5.106827999538716,
+          "delta_vs_frozen_physical_fallback": 5.106827999538716,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 14.014075758340047,
+          "task": "musique",
+          "wins_ties_losses_vs_best_conventional": [
+            13,
+            25,
+            9
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 8.173614402252602,
+          "capacity": 256,
+          "delta_vs_best_conventional": 12.485075480498823,
+          "delta_vs_frozen_physical_fallback": 14.83492797836242,
+          "fallback_methods": {
+            "snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 20.65868988275143,
+          "task": "musique",
+          "wins_ties_losses_vs_best_conventional": [
+            17,
+            24,
+            6
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 8.655849621398664,
+          "capacity": 512,
+          "delta_vs_best_conventional": 7.861308277910267,
+          "delta_vs_frozen_physical_fallback": 8.890551967556117,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 16.51715789930893,
+          "task": "musique",
+          "wins_ties_losses_vs_best_conventional": [
+            19,
+            21,
+            7
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 7.59567219859709,
+          "capacity": 64,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 7.595672198597091,
+          "task": "qasper",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "pyramidkv",
+          "best_conventional_score": 10.901018516625703,
+          "capacity": 128,
+          "delta_vs_best_conventional": -1.388071143532724,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 9.51294737309298,
+          "task": "qasper",
+          "wins_ties_losses_vs_best_conventional": [
+            8,
+            32,
+            7
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 9.274700374251841,
+          "capacity": 256,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 9.274700374251841,
+          "task": "qasper",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 11.684575329017418,
+          "capacity": 512,
+          "delta_vs_best_conventional": 11.562479164802491,
+          "delta_vs_frozen_physical_fallback": 11.562479164802491,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 23.24705449381991,
+          "task": "qasper",
+          "wins_ties_losses_vs_best_conventional": [
+            21,
+            18,
+            8
+          ]
+        }
+      ],
+      "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/formal_full_v10_mistral02_complement_n47/results.jsonl",
+      "rows": 14335,
+      "run": "longbench_mistral02",
+      "trailing_partial_ignored": false
+    },
+    {
+      "completion_percent": 100.0,
+      "expected_rows": 1974,
+      "integrity": {
+        "capacity_excess_rows": 0,
+        "duplicate_rows": 0,
+        "exception_rows": 0,
+        "max_capacity_excess_tokens": 0.0,
+        "methods": {
+          "chunkkv_snapkv": 376,
+          "confirmation_stable_proofkv_v10": 376,
+          "full": 94,
+          "pyramidkv": 376,
+          "snapkv": 376,
+          "streamingllm": 376
+        },
+        "nonfinite_rows": 0,
+        "score_range_rows": 0,
+        "status": "PASS",
+        "tasks": {
+          "ruler_niah": 987,
+          "ruler_variable_tracking": 987
+        }
+      },
+      "paired_cells": [
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 2.127659574468085,
+          "capacity": 128,
+          "delta_vs_best_conventional": 97.87234042553192,
+          "delta_vs_frozen_physical_fallback": 97.87234042553192,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 100.0,
+          "task": "ruler_niah",
+          "wins_ties_losses_vs_best_conventional": [
+            46,
+            1,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 85.1063829787234,
+          "capacity": 256,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 85.1063829787234,
+          "task": "ruler_niah",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 100.0,
+          "capacity": 512,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 100.0,
+          "task": "ruler_niah",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 100.0,
+          "capacity": 1024,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 100.0,
+          "task": "ruler_niah",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 1.702127659574468,
+          "capacity": 128,
+          "delta_vs_best_conventional": 62.97872340425532,
+          "delta_vs_frozen_physical_fallback": 62.97872340425532,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 64.68085106382979,
+          "task": "ruler_variable_tracking",
+          "wins_ties_losses_vs_best_conventional": [
+            47,
+            0,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 10.638297872340425,
+          "capacity": 256,
+          "delta_vs_best_conventional": 79.14893617021278,
+          "delta_vs_frozen_physical_fallback": 79.14893617021278,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 89.7872340425532,
+          "task": "ruler_variable_tracking",
+          "wins_ties_losses_vs_best_conventional": [
+            46,
+            1,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 74.04255319148936,
+          "capacity": 512,
+          "delta_vs_best_conventional": 23.829787234042552,
+          "delta_vs_frozen_physical_fallback": 23.829787234042552,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 97.87234042553192,
+          "task": "ruler_variable_tracking",
+          "wins_ties_losses_vs_best_conventional": [
+            32,
+            15,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 98.72340425531915,
+          "capacity": 1024,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 98.72340425531915,
+          "task": "ruler_variable_tracking",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        }
+      ],
+      "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_qwen25/results.jsonl",
+      "rows": 1974,
+      "run": "ruler_qwen25",
+      "trailing_partial_ignored": false
+    },
+    {
+      "completion_percent": 100.0,
+      "expected_rows": 1974,
+      "integrity": {
+        "capacity_excess_rows": 0,
+        "duplicate_rows": 0,
+        "exception_rows": 0,
+        "max_capacity_excess_tokens": 0.0,
+        "methods": {
+          "chunkkv_snapkv": 376,
+          "confirmation_stable_proofkv_v10": 376,
+          "full": 94,
+          "pyramidkv": 376,
+          "snapkv": 376,
+          "streamingllm": 376
+        },
+        "nonfinite_rows": 0,
+        "score_range_rows": 0,
+        "status": "PASS",
+        "tasks": {
+          "ruler_niah": 987,
+          "ruler_variable_tracking": 987
+        }
+      },
+      "paired_cells": [
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 2.127659574468085,
+          "capacity": 128,
+          "delta_vs_best_conventional": 89.36170212765957,
+          "delta_vs_frozen_physical_fallback": 89.36170212765957,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 91.48936170212765,
+          "task": "ruler_niah",
+          "wins_ties_losses_vs_best_conventional": [
+            42,
+            5,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 48.93617021276596,
+          "capacity": 256,
+          "delta_vs_best_conventional": 51.06382978723404,
+          "delta_vs_frozen_physical_fallback": 51.06382978723404,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 100.0,
+          "task": "ruler_niah",
+          "wins_ties_losses_vs_best_conventional": [
+            24,
+            23,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 100.0,
+          "capacity": 512,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 100.0,
+          "task": "ruler_niah",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 100.0,
+          "capacity": 1024,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 100.0,
+          "task": "ruler_niah",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 0.425531914893617,
+          "capacity": 128,
+          "delta_vs_best_conventional": 46.38297872340426,
+          "delta_vs_frozen_physical_fallback": 46.38297872340426,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 46.808510638297875,
+          "task": "ruler_variable_tracking",
+          "wins_ties_losses_vs_best_conventional": [
+            47,
+            0,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 3.404255319148936,
+          "capacity": 256,
+          "delta_vs_best_conventional": 88.93617021276596,
+          "delta_vs_frozen_physical_fallback": 88.93617021276596,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 92.34042553191489,
+          "task": "ruler_variable_tracking",
+          "wins_ties_losses_vs_best_conventional": [
+            47,
+            0,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 17.02127659574468,
+          "capacity": 512,
+          "delta_vs_best_conventional": 77.44680851063829,
+          "delta_vs_frozen_physical_fallback": 77.44680851063829,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 94.46808510638297,
+          "task": "ruler_variable_tracking",
+          "wins_ties_losses_vs_best_conventional": [
+            46,
+            0,
+            1
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 70.2127659574468,
+          "capacity": 1024,
+          "delta_vs_best_conventional": 20.0,
+          "delta_vs_frozen_physical_fallback": 20.0,
+          "fallback_methods": {
+            "chunkkv_snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 90.2127659574468,
+          "task": "ruler_variable_tracking",
+          "wins_ties_losses_vs_best_conventional": [
+            30,
+            14,
+            3
+          ]
+        }
+      ],
+      "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_mistral02/results.jsonl",
+      "rows": 1974,
+      "run": "ruler_mistral02",
+      "trailing_partial_ignored": false
+    },
+    {
+      "completion_percent": 36.91489361702128,
+      "expected_rows": 940,
+      "integrity": {
+        "capacity_excess_rows": 0,
+        "duplicate_rows": 0,
+        "empty_prediction_rows": 0,
+        "exception_rows": 0,
+        "kv_byte_mismatch_rows": 0,
+        "max_capacity_excess_tokens": 0.0,
+        "method_mismatch_rows": 0,
+        "methods": {
+          "official_compresskv": 347
+        },
+        "nonfinite_rows": 0,
+        "score_range_rows": 0,
+        "score_replay_mismatch_rows": 0,
+        "status": "PASS",
+        "tasks": {
+          "2wikimqa": 47,
+          "hotpotqa": 65,
+          "multifieldqa_en": 94,
+          "musique": 47,
+          "qasper": 94
+        }
+      },
+      "paired_cells": [
+        {
+          "capacity": 64,
+          "delta_v10_minus_official": -3.928504907228312,
+          "matched_samples": 47,
+          "official_score": 27.45227168881737,
+          "target_score": 23.52376678158906,
+          "task": "2wikimqa",
+          "wins_ties_losses": [
+            7,
+            30,
+            10
+          ]
+        },
+        {
+          "capacity": 64,
+          "delta_v10_minus_official": -18.034541891970598,
+          "matched_samples": 47,
+          "official_score": 34.38866179878652,
+          "target_score": 16.354119906815924,
+          "task": "hotpotqa",
+          "wins_ties_losses": [
+            9,
+            19,
+            19
+          ]
+        },
+        {
+          "capacity": 128,
+          "delta_v10_minus_official": -2.6109740308523257,
+          "matched_samples": 18,
+          "official_score": 34.632449287621704,
+          "target_score": 32.02147525676938,
+          "task": "hotpotqa",
+          "wins_ties_losses": [
+            5,
+            8,
+            5
+          ]
+        },
+        {
+          "capacity": 64,
+          "delta_v10_minus_official": -24.064172195268274,
+          "matched_samples": 47,
+          "official_score": 43.134841250891476,
+          "target_score": 19.0706690556232,
+          "task": "multifieldqa_en",
+          "wins_ties_losses": [
+            7,
+            4,
+            36
+          ]
+        },
+        {
+          "capacity": 128,
+          "delta_v10_minus_official": -22.112888810107542,
+          "matched_samples": 47,
+          "official_score": 43.134841250891476,
+          "target_score": 21.02195244078393,
+          "task": "multifieldqa_en",
+          "wins_ties_losses": [
+            9,
+            2,
+            36
+          ]
+        },
+        {
+          "capacity": 64,
+          "delta_v10_minus_official": -14.082757123030575,
+          "matched_samples": 47,
+          "official_score": 24.38303615731923,
+          "target_score": 10.300279034288652,
+          "task": "musique",
+          "wins_ties_losses": [
+            10,
+            21,
+            16
+          ]
+        },
+        {
+          "capacity": 64,
+          "delta_v10_minus_official": -22.30247248166859,
+          "matched_samples": 47,
+          "official_score": 27.948293032915306,
+          "target_score": 5.645820551246713,
+          "task": "qasper",
+          "wins_ties_losses": [
+            9,
+            8,
+            30
+          ]
+        },
+        {
+          "capacity": 128,
+          "delta_v10_minus_official": -2.1401825867872017,
+          "matched_samples": 47,
+          "official_score": 27.948293032915306,
+          "target_score": 25.8081104461281,
+          "task": "qasper",
+          "wins_ties_losses": [
+            16,
+            15,
+            16
+          ]
+        }
+      ],
+      "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/formal_qwen25/results.jsonl",
+      "rows": 347,
+      "run": "official_qwen25",
+      "trailing_partial_ignored": false
+    },
+    {
+      "completion_percent": 23.51063829787234,
+      "expected_rows": 940,
+      "integrity": {
+        "capacity_excess_rows": 0,
+        "duplicate_rows": 0,
+        "empty_prediction_rows": 0,
+        "exception_rows": 0,
+        "kv_byte_mismatch_rows": 0,
+        "max_capacity_excess_tokens": 0.0,
+        "method_mismatch_rows": 0,
+        "methods": {
+          "official_headkv_reasonkv": 221
+        },
+        "nonfinite_rows": 0,
+        "score_range_rows": 0,
+        "score_replay_mismatch_rows": 0,
+        "status": "PASS",
+        "tasks": {
+          "2wikimqa": 47,
+          "hotpotqa": 47,
+          "multifieldqa_en": 47,
+          "musique": 33,
+          "qasper": 47
+        }
+      },
+      "paired_cells": [
+        {
+          "capacity": 64,
+          "delta_v10_minus_official": 3.0461572401225228,
+          "matched_samples": 47,
+          "official_score": 8.007042384546589,
+          "target_score": 11.05319962466911,
+          "task": "2wikimqa",
+          "wins_ties_losses": [
+            17,
+            17,
+            13
+          ]
+        },
+        {
+          "capacity": 64,
+          "delta_v10_minus_official": -1.5030281942497727,
+          "matched_samples": 47,
+          "official_score": 14.924852419545442,
+          "target_score": 13.42182422529567,
+          "task": "hotpotqa",
+          "wins_ties_losses": [
+            11,
+            13,
+            23
+          ]
+        },
+        {
+          "capacity": 64,
+          "delta_v10_minus_official": -8.635361266684125,
+          "matched_samples": 47,
+          "official_score": 28.076606277023867,
+          "target_score": 19.441245010339742,
+          "task": "multifieldqa_en",
+          "wins_ties_losses": [
+            15,
+            3,
+            29
+          ]
+        },
+        {
+          "capacity": 64,
+          "delta_v10_minus_official": -3.119604202491903,
+          "matched_samples": 33,
+          "official_score": 10.745976147045665,
+          "target_score": 7.626371944553763,
+          "task": "musique",
+          "wins_ties_losses": [
+            5,
+            21,
+            7
+          ]
+        },
+        {
+          "capacity": 64,
+          "delta_v10_minus_official": -3.471160047088339,
+          "matched_samples": 47,
+          "official_score": 11.066832245685431,
+          "target_score": 7.595672198597091,
+          "task": "qasper",
+          "wins_ties_losses": [
+            15,
+            8,
+            24
+          ]
+        }
+      ],
+      "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/formal_mistral02/results.jsonl",
+      "rows": 221,
+      "run": "official_mistral02",
+      "trailing_partial_ignored": false
+    },
+    {
+      "completion_percent": 100.0,
+      "expected_rows": 2867,
+      "integrity": {
+        "capacity_excess_rows": 0,
+        "duplicate_rows": 0,
+        "exception_rows": 0,
+        "max_capacity_excess_tokens": 0.0,
+        "methods": {
+          "chunkkv_snapkv": 188,
+          "confirmation_stable_proofkv_v10": 188,
+          "full": 47,
+          "learned_and_or_control_anchor25_aux": 188,
+          "learned_and_or_control_anchor50_aux": 188,
+          "learned_and_or_control_anchor75_aux": 188,
+          "learned_and_or_graph_aux": 188,
+          "learned_and_or_lexical_anchor25_aux": 188,
+          "learned_and_or_lexical_anchor50_aux": 188,
+          "learned_and_or_lexical_anchor75_aux": 188,
+          "learned_and_or_mixed_aux": 188,
+          "learned_and_or_recent_aux": 188,
+          "learned_and_or_stratified_aux": 188,
+          "pyramidkv": 188,
+          "snapkv": 188,
+          "streamingllm": 188
+        },
+        "nonfinite_rows": 0,
+        "score_range_rows": 0,
+        "status": "PASS",
+        "tasks": {
+          "2wikimqa": 2867
+        }
+      },
+      "paired_cells": [
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 11.05319962466911,
+          "capacity": 64,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 11.05319962466911,
+          "task": "2wikimqa",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "pyramidkv",
+          "best_conventional_score": 10.99217287627142,
+          "capacity": 128,
+          "delta_vs_best_conventional": -0.0019689157427119843,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 10.990203960528708,
+          "task": "2wikimqa",
+          "wins_ties_losses_vs_best_conventional": [
+            1,
+            45,
+            1
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 11.236249617378203,
+          "capacity": 256,
+          "delta_vs_best_conventional": -0.27019242182360825,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 10.966057195554594,
+          "task": "2wikimqa",
+          "wins_ties_losses_vs_best_conventional": [
+            4,
+            34,
+            9
+          ]
+        },
+        {
+          "best_conventional_method": "snapkv",
+          "best_conventional_score": 15.75272294839517,
+          "capacity": 512,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 15.75272294839517,
+          "task": "2wikimqa",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        }
+      ],
+      "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/longbench_v10_tail_shards/mistral02_2wikimqa/results.jsonl",
+      "role": "scheduling_only_not_counted_in_completion",
+      "rows": 2867,
+      "run": "shard_mistral02_2wikimqa",
+      "trailing_partial_ignored": false
+    },
+    {
+      "completion_percent": 100.0,
+      "expected_rows": 2867,
+      "integrity": {
+        "capacity_excess_rows": 0,
+        "duplicate_rows": 0,
+        "exception_rows": 0,
+        "max_capacity_excess_tokens": 0.0,
+        "methods": {
+          "chunkkv_snapkv": 188,
+          "confirmation_stable_proofkv_v10": 188,
+          "full": 47,
+          "learned_and_or_control_anchor25_aux": 188,
+          "learned_and_or_control_anchor50_aux": 188,
+          "learned_and_or_control_anchor75_aux": 188,
+          "learned_and_or_graph_aux": 188,
+          "learned_and_or_lexical_anchor25_aux": 188,
+          "learned_and_or_lexical_anchor50_aux": 188,
+          "learned_and_or_lexical_anchor75_aux": 188,
+          "learned_and_or_mixed_aux": 188,
+          "learned_and_or_recent_aux": 188,
+          "learned_and_or_stratified_aux": 188,
+          "pyramidkv": 188,
+          "snapkv": 188,
+          "streamingllm": 188
+        },
+        "nonfinite_rows": 0,
+        "score_range_rows": 0,
+        "status": "PASS",
+        "tasks": {
+          "musique": 2867
+        }
+      },
+      "paired_cells": [
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 8.933042252158252,
+          "capacity": 64,
+          "delta_vs_best_conventional": 0.0,
+          "delta_vs_frozen_physical_fallback": 0.0,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 8.933042252158252,
+          "task": "musique",
+          "wins_ties_losses_vs_best_conventional": [
+            0,
+            47,
+            0
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 8.907247758801331,
+          "capacity": 128,
+          "delta_vs_best_conventional": 5.106827999538716,
+          "delta_vs_frozen_physical_fallback": 5.106827999538716,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 14.014075758340047,
+          "task": "musique",
+          "wins_ties_losses_vs_best_conventional": [
+            13,
+            25,
+            9
+          ]
+        },
+        {
+          "best_conventional_method": "streamingllm",
+          "best_conventional_score": 8.173614402252602,
+          "capacity": 256,
+          "delta_vs_best_conventional": 12.485075480498823,
+          "delta_vs_frozen_physical_fallback": 14.83492797836242,
+          "fallback_methods": {
+            "snapkv": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 20.65868988275143,
+          "task": "musique",
+          "wins_ties_losses_vs_best_conventional": [
+            17,
+            24,
+            6
+          ]
+        },
+        {
+          "best_conventional_method": "chunkkv_snapkv",
+          "best_conventional_score": 8.655849621398664,
+          "capacity": 512,
+          "delta_vs_best_conventional": 7.861308277910267,
+          "delta_vs_frozen_physical_fallback": 8.890551967556117,
+          "fallback_methods": {
+            "streamingllm": 47
+          },
+          "matched_fallback_samples": 47,
+          "matched_samples": 47,
+          "target_score": 16.51715789930893,
+          "task": "musique",
+          "wins_ties_losses_vs_best_conventional": [
+            19,
+            21,
+            7
+          ]
+        }
+      ],
+      "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/longbench_v10_tail_shards/mistral02_musique/results.jsonl",
+      "role": "scheduling_only_not_counted_in_completion",
+      "rows": 2867,
+      "run": "shard_mistral02_musique",
+      "trailing_partial_ignored": false
+    }
+  ],
+  "scientific_alerts": [
+    {
+      "capacity": 64,
+      "delta_v10_minus_official": -3.928504907228312,
+      "matched_samples": 47,
+      "official_score": 27.45227168881737,
+      "run": "official_qwen25",
+      "target_score": 23.52376678158906,
+      "task": "2wikimqa",
+      "type": "negative_vs_official_code",
+      "wins_ties_losses": [
+        7,
+        30,
+        10
+      ]
+    },
+    {
+      "capacity": 64,
+      "delta_v10_minus_official": -18.034541891970598,
+      "matched_samples": 47,
+      "official_score": 34.38866179878652,
+      "run": "official_qwen25",
+      "target_score": 16.354119906815924,
+      "task": "hotpotqa",
+      "type": "negative_vs_official_code",
+      "wins_ties_losses": [
+        9,
+        19,
+        19
+      ]
+    },
+    {
+      "capacity": 128,
+      "delta_v10_minus_official": -2.6109740308523257,
+      "matched_samples": 18,
+      "official_score": 34.632449287621704,
+      "run": "official_qwen25",
+      "target_score": 32.02147525676938,
+      "task": "hotpotqa",
+      "type": "negative_vs_official_code",
+      "wins_ties_losses": [
+        5,
+        8,
+        5
+      ]
+    },
+    {
+      "capacity": 64,
+      "delta_v10_minus_official": -24.064172195268274,
+      "matched_samples": 47,
+      "official_score": 43.134841250891476,
+      "run": "official_qwen25",
+      "target_score": 19.0706690556232,
+      "task": "multifieldqa_en",
+      "type": "negative_vs_official_code",
+      "wins_ties_losses": [
+        7,
+        4,
+        36
+      ]
+    },
+    {
+      "capacity": 128,
+      "delta_v10_minus_official": -22.112888810107542,
+      "matched_samples": 47,
+      "official_score": 43.134841250891476,
+      "run": "official_qwen25",
+      "target_score": 21.02195244078393,
+      "task": "multifieldqa_en",
+      "type": "negative_vs_official_code",
+      "wins_ties_losses": [
+        9,
+        2,
+        36
+      ]
+    },
+    {
+      "capacity": 64,
+      "delta_v10_minus_official": -14.082757123030575,
+      "matched_samples": 47,
+      "official_score": 24.38303615731923,
+      "run": "official_qwen25",
+      "target_score": 10.300279034288652,
+      "task": "musique",
+      "type": "negative_vs_official_code",
+      "wins_ties_losses": [
+        10,
+        21,
+        16
+      ]
+    },
+    {
+      "capacity": 64,
+      "delta_v10_minus_official": -22.30247248166859,
+      "matched_samples": 47,
+      "official_score": 27.948293032915306,
+      "run": "official_qwen25",
+      "target_score": 5.645820551246713,
+      "task": "qasper",
+      "type": "negative_vs_official_code",
+      "wins_ties_losses": [
+        9,
+        8,
+        30
+      ]
+    },
+    {
+      "capacity": 128,
+      "delta_v10_minus_official": -2.1401825867872017,
+      "matched_samples": 47,
+      "official_score": 27.948293032915306,
+      "run": "official_qwen25",
+      "target_score": 25.8081104461281,
+      "task": "qasper",
+      "type": "negative_vs_official_code",
+      "wins_ties_losses": [
+        16,
+        15,
+        16
+      ]
+    },
+    {
+      "capacity": 64,
+      "delta_v10_minus_official": -1.5030281942497727,
+      "matched_samples": 47,
+      "official_score": 14.924852419545442,
+      "run": "official_mistral02",
+      "target_score": 13.42182422529567,
+      "task": "hotpotqa",
+      "type": "negative_vs_official_code",
+      "wins_ties_losses": [
+        11,
+        13,
+        23
+      ]
+    },
+    {
+      "capacity": 64,
+      "delta_v10_minus_official": -8.635361266684125,
+      "matched_samples": 47,
+      "official_score": 28.076606277023867,
+      "run": "official_mistral02",
+      "target_score": 19.441245010339742,
+      "task": "multifieldqa_en",
+      "type": "negative_vs_official_code",
+      "wins_ties_losses": [
+        15,
+        3,
+        29
+      ]
+    },
+    {
+      "capacity": 64,
+      "delta_v10_minus_official": -3.119604202491903,
+      "matched_samples": 33,
+      "official_score": 10.745976147045665,
+      "run": "official_mistral02",
+      "target_score": 7.626371944553763,
+      "task": "musique",
+      "type": "negative_vs_official_code",
+      "wins_ties_losses": [
+        5,
+        21,
+        7
+      ]
+    },
+    {
+      "capacity": 64,
+      "delta_v10_minus_official": -3.471160047088339,
+      "matched_samples": 47,
+      "official_score": 11.066832245685431,
+      "run": "official_mistral02",
+      "target_score": 7.595672198597091,
+      "task": "qasper",
+      "type": "negative_vs_official_code",
+      "wins_ties_losses": [
+        15,
+        8,
+        24
+      ]
+    }
+  ],
+  "status": "PASS"
+}

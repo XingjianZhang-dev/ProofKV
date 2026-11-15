@@ -1,0 +1,22 @@
+{
+  "protocol": "llmlingua2_formal_task_shard_merge_v1",
+  "selection_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/selection_manifest_v10_complement_n47.json",
+  "selection_manifest_sha256": "c7cda95a9b7a42c70428aba9b973e732de56242c1f7b04e6322ff60546fc6b76",
+  "merge_policy": "Predeclared run-dir priority; first occurrence retained; no score or prediction is inspected for duplicate selection.",
+  "duplicate_rows_ignored": 7,
+  "sources": [
+    {
+      "priority": 0,
+      "run_dir": "/workspace/compresskv_experiments/llmlingua2_contract_20260726/formal_qwen25_n46",
+      "results_sha256": "9e9123c972fea59f3e678e54cf3ed58400acac09b0b0bec592823c939de4a0c9",
+      "run_manifest_sha256": "881ba1093c466299de6da293a05875f91ea4b54f2bcf86aeffe788b7f946ad4b"
+    },
+    {
+      "priority": 1,
+      "run_dir": "/workspace/compresskv_experiments/llmlingua2_contract_20260726/formal_qwen25_tail_2wiki_musique_n46",
+      "results_sha256": "b522b42b0197bc9b9154e76b0c1a77830c431a8227f43fb051d80c231cd9d691",
+      "run_manifest_sha256": "4b4aa00e93358bc46561904425fe64cf42a2356790c2b2f0b82b4094827828f1"
+    }
+  ],
+  "implementation_sha256": "b44ea28424f33e6cdca7912f2789917aaa3f2475fd9faec2aa415f13baf11ea7"
+}

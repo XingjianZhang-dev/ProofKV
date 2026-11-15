@@ -1,0 +1,19 @@
+{
+  "results": [
+    "remote_results/accepted_soup_a090_qwen3_hotpot_matrix_n128/fixed512/results.jsonl"
+  ],
+  "method_a": "learned_topk_paths",
+  "method_b": "entity_graph_adaptive",
+  "metric": "answer_f1",
+  "n_paired": 128,
+  "mean_a": 0.7518977983821733,
+  "mean_b": 0.6912393162393162,
+  "mean_difference_a_minus_b": 0.06065848214285715,
+  "bootstrap_samples": 20000,
+  "ci95_percentile": [
+    -0.016103670634920624,
+    0.13730189732142856
+  ],
+  "two_sided_sign_p": 0.12049397530123494,
+  "seed": 12345
+}

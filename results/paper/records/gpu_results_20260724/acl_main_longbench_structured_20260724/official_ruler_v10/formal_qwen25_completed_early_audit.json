@@ -1,0 +1,49 @@
+{
+  "audit_implementation_sha256": "64d916e0618cec8401c60f076340f80aaaffc094e0083a25c6348c40424915a7",
+  "capacities": [
+    128,
+    256,
+    512,
+    1024
+  ],
+  "controller": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/controller_v10.json",
+  "controller_sha256": "93eba6de546d4206fe84f342765a6533963625efda5c04df9e9809b4aa88ec6d",
+  "primary_methods": [
+    "chunkkv_snapkv",
+    "confirmation_stable_proofkv_v10",
+    "full",
+    "pyramidkv",
+    "snapkv",
+    "streamingllm"
+  ],
+  "protocol": "proofkv_v10_official_ruler_formal_audit_v1",
+  "routes": {
+    "physical_fallback": 188,
+    "proof_coverage": 188
+  },
+  "runs": [
+    {
+      "implementation_files": 11,
+      "metrics_sha256": "2690270f18b21af8210143bc6433512bca3612fab6bb4adefe066f5ca371eb27",
+      "model": "qwen25",
+      "raw_empty_predictions": 0,
+      "results_sha256": "9c0bf6f1ab1b3ca59e740b69e3662f922e3adb2a1ff2e89ce012f4d46822aeb8",
+      "routes": {
+        "physical_fallback": 188,
+        "proof_coverage": 188
+      },
+      "rows": 1974,
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_qwen25",
+      "run_manifest_sha256": "ef2a7fe63ac6c6153e495473acec8ab43292d41c630c2997c61747d79ffe017e",
+      "samples": 94,
+      "whitespace_only_predictions": 0
+    }
+  ],
+  "selection_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_manifest.json",
+  "selection_manifest_sha256": "5d71da9bddafbef4e9f90e5b9ef0e28bc8ae027afe0b9ff72a0b7672cfdcd050",
+  "status": "PASS",
+  "tasks": [
+    "ruler_niah",
+    "ruler_variable_tracking"
+  ]
+}

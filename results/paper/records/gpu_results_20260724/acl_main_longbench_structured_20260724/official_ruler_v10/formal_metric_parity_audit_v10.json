@@ -1,0 +1,25 @@
+{
+  "audit_implementation_sha256": "7324698bdf37e1e499bb79cb150cfa344dd528fe1a77ce802a2e216dbc9a33ab",
+  "official_commit": "38da79d79519ef87aa46ae804f838e1eab7f86d7",
+  "official_metric_mismatches": 0,
+  "official_metric_source_sha256": "6740467c17b8dc06b6b30f4f97e54ce8de81db0dd879f1538d0b6b5727f4bd5f",
+  "official_postprocess_source_sha256": "b9a5fcbded7209663d97670496c74dbcd6358ddbe3d9887a0c5f0c4f974bfe1c",
+  "official_repo": "/workspace/proofkv_snapshot_20260714/repo/third_party/NVIDIA_RULER",
+  "protocol": "proofkv_v10_official_ruler_metric_parity_v1",
+  "rows": 3948,
+  "runs": [
+    {
+      "official_metric_mismatches": 0,
+      "results_sha256": "00daef37fb12cde68e514cfd006a1aa5664ebd4c3e18d807e99052349294f590",
+      "rows": 1974,
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_mistral02"
+    },
+    {
+      "official_metric_mismatches": 0,
+      "results_sha256": "9c0bf6f1ab1b3ca59e740b69e3662f922e3adb2a1ff2e89ce012f4d46822aeb8",
+      "rows": 1974,
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_qwen25"
+    }
+  ],
+  "status": "PASS"
+}

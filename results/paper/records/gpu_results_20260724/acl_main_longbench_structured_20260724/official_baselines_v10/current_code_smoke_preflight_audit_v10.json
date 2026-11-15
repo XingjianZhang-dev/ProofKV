@@ -1,0 +1,44 @@
+{
+  "audit_implementation_sha256": "19f019573073c4f6ca19ce3e6474cbb1dc09d72f90ad7f2f3960ac8b50075c9f",
+  "checks": [
+    "current runner hash equals each runtime manifest",
+    "official commits, sources, extensions, and package versions",
+    "exact five-task x four-capacity smoke crossing",
+    "independent QA-F1 replay and nonzero sanity",
+    "physical retained-token, KV-byte, and timing consistency"
+  ],
+  "protocol": "official_longbench_v10_current_code_smoke_preflight_v1",
+  "runner": "/workspace/compresskv_run/compresskv/compresskv/scripts/run_official_longbench_v10_baseline.py",
+  "runner_implementation_sha256": "37df98d1d3495b8ba4ab75e0d80ebf58f07192bd24afabeb85b1c5f34a38bae1",
+  "runs": [
+    {
+      "manifest_sha256": "6efd05a2f7198be4e76dc3206179750a3a1556ef3453e3e4433c890383bd2344",
+      "max_capacity_excess_tokens": 0.0,
+      "method": "official_compresskv",
+      "metrics_sha256": "68c8f026eb1767dbd8b0bf3ea32a6efa958062475db5e5f789e38053fdac50b1",
+      "model": "qwen25",
+      "nonzero_scores": 16,
+      "official_commit": "12f920fbecba67e16806a6d8eac0ad389ddcad6f",
+      "results_sha256": "11b0c25bf99f1c74011bb4c9a31dc778a33e1fe4c5c483ac69592be0ed08b46e",
+      "rows": 20,
+      "score_replays": 20,
+      "status": "PASS"
+    },
+    {
+      "manifest_sha256": "84dc02c4d8cb3b8652f7a8ac46366d77e270798359d9c1308c5c2390256a22c4",
+      "max_capacity_excess_tokens": -4.03125,
+      "method": "official_headkv_reasonkv",
+      "metrics_sha256": "3db0b3191634561c2dd8376d3f48c049cd4440971ae73b3db4ec2557386dd552",
+      "model": "mistral02",
+      "nonzero_scores": 14,
+      "official_commit": "0862a0955fe82e9ff611d59541918e02c5def625",
+      "results_sha256": "f1dc2e3c6b628b84f245e00f3d0a2840809cc501fe03e755301264e86ed75fd7",
+      "rows": 20,
+      "score_replays": 20,
+      "status": "PASS"
+    }
+  ],
+  "selection_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/selection_manifest_v10_complement_n47.json",
+  "selection_manifest_sha256": "c7cda95a9b7a42c70428aba9b973e732de56242c1f7b04e6322ff60546fc6b76",
+  "status": "PASS"
+}

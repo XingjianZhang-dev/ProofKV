@@ -1,0 +1,274 @@
+{
+  "method": "learned_and_or_aux",
+  "budget_spec": "0.0800",
+  "target_risk": 0.02,
+  "min_coverage": 0.8,
+  "n": 2048,
+  "calibration_n": 1031,
+  "test_n": 1017,
+  "threshold": 1.000000001,
+  "gate_passed": false,
+  "calibration_coverage": 0.0,
+  "calibration_risk_upper": 1.0,
+  "test_coverage": 0.0,
+  "test_fallback_rate": 1.0,
+  "test_selective_error": 0.0,
+  "test_selective_risk_upper": 1.0,
+  "mean_effective_kv_ratio": 1.0,
+  "calibration_curve": [
+    {
+      "coverage": 0.0009699321047526673,
+      "threshold": 0.9999913845125391,
+      "empirical_risk": 0.0,
+      "conservative_risk_upper": 0.5
+    },
+    {
+      "coverage": 0.0504364694471387,
+      "threshold": 0.9851602879245188,
+      "empirical_risk": 0.4423076923076923,
+      "conservative_risk_upper": 0.4528301886792453
+    },
+    {
+      "coverage": 0.1008729388942774,
+      "threshold": 0.9494017715527568,
+      "empirical_risk": 0.40384615384615385,
+      "conservative_risk_upper": 0.4095238095238095
+    },
+    {
+      "coverage": 0.15033947623666344,
+      "threshold": 0.9141375647099748,
+      "empirical_risk": 0.3935483870967742,
+      "conservative_risk_upper": 0.3974358974358974
+    },
+    {
+      "coverage": 0.20077594568380214,
+      "threshold": 0.879887283562503,
+      "empirical_risk": 0.391304347826087,
+      "conservative_risk_upper": 0.3942307692307692
+    },
+    {
+      "coverage": 0.2502424830261882,
+      "threshold": 0.8493407413544295,
+      "empirical_risk": 0.40310077519379844,
+      "conservative_risk_upper": 0.40540540540540543
+    },
+    {
+      "coverage": 0.3006789524733269,
+      "threshold": 0.7970466859094082,
+      "empirical_risk": 0.41935483870967744,
+      "conservative_risk_upper": 0.4212218649517685
+    },
+    {
+      "coverage": 0.3501454898157129,
+      "threshold": 0.7509152392181937,
+      "empirical_risk": 0.43213296398891965,
+      "conservative_risk_upper": 0.43370165745856354
+    },
+    {
+      "coverage": 0.4005819592628516,
+      "threshold": 0.6766003533772231,
+      "empirical_risk": 0.4600484261501211,
+      "conservative_risk_upper": 0.4613526570048309
+    },
+    {
+      "coverage": 0.45004849660523766,
+      "threshold": 0.6083775085366802,
+      "empirical_risk": 0.4849137931034483,
+      "conservative_risk_upper": 0.4860215053763441
+    },
+    {
+      "coverage": 0.5004849660523764,
+      "threshold": 0.5332642588794709,
+      "empirical_risk": 0.5116279069767442,
+      "conservative_risk_upper": 0.5125725338491296
+    },
+    {
+      "coverage": 0.550921435499515,
+      "threshold": 0.47168563418102727,
+      "empirical_risk": 0.5404929577464789,
+      "conservative_risk_upper": 0.5413005272407733
+    },
+    {
+      "coverage": 0.600387972841901,
+      "threshold": 0.38240669156297513,
+      "empirical_risk": 0.568659127625202,
+      "conservative_risk_upper": 0.5693548387096774
+    },
+    {
+      "coverage": 0.6508244422890398,
+      "threshold": 0.28710323421941375,
+      "empirical_risk": 0.5916542473919523,
+      "conservative_risk_upper": 0.5922619047619048
+    },
+    {
+      "coverage": 0.7002909796314258,
+      "threshold": 0.15760382081193636,
+      "empirical_risk": 0.6135734072022161,
+      "conservative_risk_upper": 0.6141078838174274
+    },
+    {
+      "coverage": 0.7507274490785645,
+      "threshold": 0.013585405457811284,
+      "empirical_risk": 0.6356589147286822,
+      "conservative_risk_upper": 0.6361290322580645
+    },
+    {
+      "coverage": 0.8001939864209505,
+      "threshold": 0.0,
+      "empirical_risk": 0.6581818181818182,
+      "conservative_risk_upper": 0.6585956416464891
+    },
+    {
+      "coverage": 0.8506304558680893,
+      "threshold": 0.0,
+      "empirical_risk": 0.677309007981756,
+      "conservative_risk_upper": 0.6776765375854215
+    },
+    {
+      "coverage": 0.9000969932104753,
+      "threshold": 0.0,
+      "empirical_risk": 0.6950431034482759,
+      "conservative_risk_upper": 0.6953713670613563
+    },
+    {
+      "coverage": 0.950533462657614,
+      "threshold": 0.0,
+      "empirical_risk": 0.7112244897959183,
+      "conservative_risk_upper": 0.7115188583078491
+    },
+    {
+      "coverage": 1.0,
+      "threshold": 0.0,
+      "empirical_risk": 0.7255092143549952,
+      "conservative_risk_upper": 0.7257751937984496
+    }
+  ],
+  "test_curve": [
+    {
+      "coverage": 0.0009832841691248771,
+      "threshold": 0.9999686702212094,
+      "empirical_risk": 0.0,
+      "conservative_risk_upper": 0.5
+    },
+    {
+      "coverage": 0.05014749262536873,
+      "threshold": 0.9822045190808109,
+      "empirical_risk": 0.3137254901960784,
+      "conservative_risk_upper": 0.3269230769230769
+    },
+    {
+      "coverage": 0.10029498525073746,
+      "threshold": 0.9393689122024762,
+      "empirical_risk": 0.30392156862745096,
+      "conservative_risk_upper": 0.3106796116504854
+    },
+    {
+      "coverage": 0.1504424778761062,
+      "threshold": 0.8909337238612726,
+      "empirical_risk": 0.29411764705882354,
+      "conservative_risk_upper": 0.2987012987012987
+    },
+    {
+      "coverage": 0.20058997050147492,
+      "threshold": 0.8621959079395827,
+      "empirical_risk": 0.3284313725490196,
+      "conservative_risk_upper": 0.33170731707317075
+    },
+    {
+      "coverage": 0.25073746312684364,
+      "threshold": 0.8230203641145254,
+      "empirical_risk": 0.34509803921568627,
+      "conservative_risk_upper": 0.34765625
+    },
+    {
+      "coverage": 0.3008849557522124,
+      "threshold": 0.778372185473212,
+      "empirical_risk": 0.4084967320261438,
+      "conservative_risk_upper": 0.41042345276872966
+    },
+    {
+      "coverage": 0.3500491642084562,
+      "threshold": 0.7264471473111326,
+      "empirical_risk": 0.4297752808988764,
+      "conservative_risk_upper": 0.43137254901960786
+    },
+    {
+      "coverage": 0.400196656833825,
+      "threshold": 0.6668164893394304,
+      "empirical_risk": 0.4643734643734644,
+      "conservative_risk_upper": 0.46568627450980393
+    },
+    {
+      "coverage": 0.4503441494591937,
+      "threshold": 0.6179656780239757,
+      "empirical_risk": 0.4912663755458515,
+      "conservative_risk_upper": 0.4923747276688453
+    },
+    {
+      "coverage": 0.5004916420845624,
+      "threshold": 0.5370424321665925,
+      "empirical_risk": 0.5206286836935167,
+      "conservative_risk_upper": 0.5215686274509804
+    },
+    {
+      "coverage": 0.5506391347099312,
+      "threshold": 0.46313992384867864,
+      "empirical_risk": 0.5482142857142858,
+      "conservative_risk_upper": 0.5490196078431373
+    },
+    {
+      "coverage": 0.6007866273352999,
+      "threshold": 0.38895997868998733,
+      "empirical_risk": 0.5711947626841244,
+      "conservative_risk_upper": 0.5718954248366013
+    },
+    {
+      "coverage": 0.6509341199606686,
+      "threshold": 0.2990292796228192,
+      "empirical_risk": 0.5966767371601208,
+      "conservative_risk_upper": 0.5972850678733032
+    },
+    {
+      "coverage": 0.7000983284169124,
+      "threshold": 0.18481833275062187,
+      "empirical_risk": 0.6221910112359551,
+      "conservative_risk_upper": 0.6227208976157083
+    },
+    {
+      "coverage": 0.7502458210422812,
+      "threshold": 0.05290815595401055,
+      "empirical_risk": 0.6408912188728703,
+      "conservative_risk_upper": 0.6413612565445026
+    },
+    {
+      "coverage": 0.80039331366765,
+      "threshold": 0.0,
+      "empirical_risk": 0.6633906633906634,
+      "conservative_risk_upper": 0.6638036809815951
+    },
+    {
+      "coverage": 0.8505408062930186,
+      "threshold": 0.0,
+      "empirical_risk": 0.6832369942196532,
+      "conservative_risk_upper": 0.6836027713625866
+    },
+    {
+      "coverage": 0.9006882989183874,
+      "threshold": 0.0,
+      "empirical_risk": 0.6986899563318777,
+      "conservative_risk_upper": 0.6990185387131952
+    },
+    {
+      "coverage": 0.9508357915437562,
+      "threshold": 0.0,
+      "empirical_risk": 0.7145811789038262,
+      "conservative_risk_upper": 0.7148760330578512
+    },
+    {
+      "coverage": 1.0,
+      "threshold": 0.0,
+      "empirical_risk": 0.7286135693215339,
+      "conservative_risk_upper": 0.7288801571709234
+    }
+  ]
+}

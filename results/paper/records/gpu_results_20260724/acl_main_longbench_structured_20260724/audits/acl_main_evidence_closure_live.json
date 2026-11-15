@@ -1,0 +1,301 @@
+{
+  "acl_root": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724",
+  "artifact_issues": [],
+  "competitive_model_compatible_claim_passed": false,
+  "components": {
+    "corrected_official_baselines": {
+      "claim_eligible": false,
+      "complete": false,
+      "formal_audit": {
+        "accepted": false,
+        "exists": false,
+        "issue": "missing:/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/formal_audit_statistics_state_reset_r1.json",
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/formal_audit_statistics_state_reset_r1.json",
+        "sha256": null,
+        "status": null
+      },
+      "note": "Completion is required for honest positioning. A negative comparison does not invalidate the precommitted LongBench primary endpoint, but it constrains claims.",
+      "old_artifact_invalidation": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/invalidated_capacity_state_leak_audit.json",
+        "sha256": "d34ceebd92e91427e9c3290e74b6b6c4cd5030af63e31a4ffaa62ff0881c2a98",
+        "status": "INVALIDATED"
+      },
+      "positive": null,
+      "preflight": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/current_code_state_reset_preflight_audit_r1.json",
+        "sha256": "6fe6a6178db0cbce971e25d08a13d48eb9e29fef6ec7920aa362bb0f94bbad11",
+        "status": "PASS"
+      },
+      "primary_inference": null,
+      "protocol": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/formal_protocol_v10_state_reset_r1.json",
+        "sha256": "7841f31cf326b166346973b81a8bc71aa914b60a7dd68e989af96cd4dd2446e3",
+        "status": "FROZEN"
+      },
+      "runs": {
+        "mistral02": {
+          "directory": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/formal_mistral02_state_reset_r1",
+          "expected_rows": 940,
+          "metrics_exists": true,
+          "rows": 940,
+          "rows_complete": true
+        },
+        "qwen25": {
+          "directory": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/formal_qwen25_state_reset_r1",
+          "expected_rows": 940,
+          "metrics_exists": true,
+          "rows": 940,
+          "rows_complete": true
+        }
+      }
+    },
+    "longbench_full_matrix": {
+      "audit": {
+        "accepted": false,
+        "exists": false,
+        "issue": "missing:/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/audits/formal_full_v10_both_complete.json",
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/audits/formal_full_v10_both_complete.json",
+        "sha256": null,
+        "status": null
+      },
+      "claim_eligible": false,
+      "complete": false,
+      "physical_efficiency": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/audits/formal_primary_v10_physical_efficiency.json",
+        "sha256": "0ff934bb80b86b8d71dc310300d93528196e05ac78979f8ad6d357b1e0e9b192",
+        "status": "PASS"
+      },
+      "physical_efficiency_bound_to_full_runs": false,
+      "positive": null,
+      "runs": {
+        "mistral02": {
+          "directory": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/formal_full_v10_mistral02_complement_n47",
+          "expected_rows": 14335,
+          "metrics_exists": false,
+          "rows": 8352,
+          "rows_complete": false
+        },
+        "qwen25": {
+          "directory": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/formal_full_v10_qwen25_complement_n47",
+          "expected_rows": 14335,
+          "metrics_exists": false,
+          "rows": 12140,
+          "rows_complete": false
+        }
+      },
+      "statistics_exists": false
+    },
+    "longbench_primary": {
+      "audit": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/audits/formal_primary_v10_both_complete.json",
+        "sha256": "9945dc94c445dbc67926edab1ededa3334247ab4c6e243aaa11786f0b196b31d",
+        "status": "PASS"
+      },
+      "claim_eligible": true,
+      "complete": true,
+      "physical_efficiency": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/audits/formal_primary_v10_physical_efficiency.json",
+        "sha256": "0ff934bb80b86b8d71dc310300d93528196e05ac78979f8ad6d357b1e0e9b192",
+        "status": "PASS"
+      },
+      "positive": true,
+      "statistics": {
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/audits/formal_primary_v10_statistics.json",
+        "primary_inference": {
+          "bootstrap_95_ci_high": 5.861792327224425,
+          "bootstrap_95_ci_low": 3.6611606515071533,
+          "comparison": "utility_router_vs_frozen_domain_physical_fallback",
+          "equal_weighting": "average models and capacities within each frozen task-sample pair, then task macro",
+          "paired_task_macro_delta": 4.743125020094649,
+          "pairs": 235,
+          "samples_per_task": 47,
+          "task_count": 5,
+          "task_groups": 5,
+          "two_sided_sign_flip_p": 1.999960000799984e-05
+        },
+        "sha256": "0b02a14f8bec0cf9bed1aa252209b5a7190e27bc01ea702dbe0c1b98c3901569"
+      }
+    },
+    "multiquery": {
+      "claim_boundary": "The current synthetic run supports index/union diagnostics only; it cannot support physical speed or accuracy claims.",
+      "claim_eligible": false,
+      "complete": true,
+      "physical": false,
+      "positive": null
+    },
+    "natural_packed": {
+      "claim_eligible": true,
+      "complete": true,
+      "path": "/workspace/compresskv_experiments/post_systems_external_pipeline/pilot8_gate.json",
+      "positive": true,
+      "sha256": "dd1a698d7abf71ca6dbed807bdba7d9eec57ded84b4ee24163164ee407994804"
+    },
+    "official_shortlist_v15": {
+      "claim_boundary": "Calibration and validation can only admit the architecture. A positive model-compatible paper claim requires a disjoint formal audit with a positive 95% CI and corrected p<0.05.",
+      "claim_eligible": false,
+      "complete": false,
+      "decision": {
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencelock_official_shortlist_v15/direction_decision.json",
+        "sha256": null
+      },
+      "development_admitted_for_disjoint_formal": false,
+      "development_rejected": false,
+      "development_status": null,
+      "formal_audit": {
+        "accepted": false,
+        "exists": false,
+        "issue": "missing:/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencelock_official_shortlist_v15/formal_audit.json",
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencelock_official_shortlist_v15/formal_audit.json",
+        "sha256": null,
+        "status": null
+      },
+      "positive": null,
+      "primary_inference": null
+    },
+    "rejected_official_selector_injection": {
+      "claim_boundary": "Do not launch validation/formal runs and do not present this family as a successful architecture.",
+      "claim_eligible": false,
+      "complete": true,
+      "positive": false,
+      "variants": {
+        "v12_hard_lock": {
+          "complete": true,
+          "development_gate_negative": true,
+          "formal_claim_eligible": false,
+          "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencelock_compresskv_hybrid_v12/v12_early_stop_fixed_lock.json",
+          "sha256": "2fd9532d3e335055a7afa75a8897c30bec1b5cb9878bd32fb52b417c6818f36e"
+        },
+        "v13_dense_soft_fusion": {
+          "complete": true,
+          "development_gate_negative": true,
+          "formal_claim_eligible": false,
+          "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencelock_compresskv_soft_fusion_v13/calibration_audit_s0_n12.json",
+          "sha256": "85563cf3a9a9cbf0e2a199725db10d2d499267d495126518f1b0c5d2069a8c48"
+        },
+        "v14_sparse_soft_fusion": {
+          "complete": true,
+          "development_gate_negative": true,
+          "formal_claim_eligible": false,
+          "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencelock_compresskv_sparse_fusion_v14/calibration_audit_s0_n12.json",
+          "sha256": "23f009fd3cb344b5ed901f83e975aad5d21b569b491bacd1b4c7046709e34de4"
+        }
+      }
+    },
+    "ruler_primary": {
+      "audit": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_audit_v10.json",
+        "sha256": "14d53f0bd7f4bf0dc6fe439335d185f7af99e49f7755b03218225d6a7be54b3e",
+        "status": "PASS"
+      },
+      "claim_eligible": true,
+      "complete": true,
+      "physical_efficiency": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_physical_efficiency_v10.json",
+        "sha256": "82b5a3e94ca2c60c10f884aeb7d212df994f1432b96dc7f4a3834e4b2dfb8603",
+        "status": "PASS"
+      },
+      "positive": true,
+      "protocol_binding": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_protocol_binding_audit_v10.json",
+        "sha256": "c029b33f5eea6c8b0935f66566f3f2a902b3c865f94e9eb6177d77acf4a3eb0b",
+        "status": "PASS"
+      },
+      "statistics": {
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_statistics_v10.json",
+        "primary_inference": {
+          "bootstrap_95_ci_high": 41.515957446808514,
+          "bootstrap_95_ci_low": 38.00531914893617,
+          "comparison": "v10_vs_development_frozen_physical_fallback",
+          "equal_weighting": "average models and capacities within each frozen task-sample pair, then task macro",
+          "paired_task_macro_delta": 39.81382978723404,
+          "pairs": 94,
+          "samples_per_task": 47,
+          "task_count": 2,
+          "task_groups": 2,
+          "two_sided_sign_flip_p": 1.999960000799984e-05
+        },
+        "sha256": "dc5c118663524266112cce4f83b738e4f4a0a3fc6c4f8723393d1eea9fb28326"
+      }
+    },
+    "systems": {
+      "claim_eligible": true,
+      "closure": {
+        "experiment_root": "/workspace/compresskv_experiments",
+        "gpu_evidence_complete": true,
+        "issues": [],
+        "note": "A false scientific gate is complete negative evidence; only missing or invalid artifacts make closure incomplete.",
+        "scientific_outcomes": {
+          "inplace_route_claim_gate_passed": true,
+          "layer_development_passed": false,
+          "precision_holdout_passed": true,
+          "precision_pilot": {
+            "int4": false,
+            "int8": true
+          },
+          "vllm_independent_quality_audit_passed": true,
+          "vllm_suite_passed": true
+        }
+      },
+      "complete": true,
+      "inplace_frontier_passed": true,
+      "int8_holdout_passed": true,
+      "positive": true,
+      "vllm_passed": true
+    }
+  },
+  "gpu_evidence_complete": false,
+  "optional_claim_boundaries": {
+    "multiquery_physical_claim_eligible": false,
+    "official_selector_injection_claim_eligible": false
+  },
+  "paper_experiment_loop_closed": false,
+  "positive_core_claims_passed": true,
+  "protocol": "acl_main_evidence_closure_fail_closed_v1",
+  "remaining_positive_closure": [
+    "competitive_model_compatible_win"
+  ],
+  "remaining_required_components": [
+    "longbench_full_matrix",
+    "corrected_official_baselines",
+    "official_shortlist_v15"
+  ],
+  "required_components": [
+    "longbench_primary",
+    "ruler_primary",
+    "longbench_full_matrix",
+    "corrected_official_baselines",
+    "official_shortlist_v15",
+    "natural_packed",
+    "systems"
+  ],
+  "status": "PASS",
+  "systems_root": "/workspace/compresskv_experiments",
+  "verifier_sha256": "23cd702bcf8d979ad4ef5e6640c1f03575faa1defb8eda3f1735a8e4702e2b12"
+}

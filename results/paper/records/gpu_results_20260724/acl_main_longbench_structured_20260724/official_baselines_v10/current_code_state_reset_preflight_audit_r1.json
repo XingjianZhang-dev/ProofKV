@@ -1,0 +1,51 @@
+{
+  "audit_implementation_sha256": "9f7f6159f986fbdecdd987799763bb271e75d0d8631326d3a5349df8037b5b3b",
+  "checks": [
+    "current runner hash equals each runtime manifest",
+    "official commits, sources, extensions, and package versions",
+    "exact five-task x four-capacity smoke crossing",
+    "independent QA-F1 replay and nonzero sanity",
+    "physical retained-token, KV-byte, and timing consistency"
+  ],
+  "protocol": "official_longbench_v10_current_code_smoke_preflight_v1",
+  "runner": "/workspace/compresskv_run/compresskv/compresskv/scripts/run_official_longbench_v10_baseline.py",
+  "runner_implementation_sha256": "90f0f08583c72dc0f96fd1ab90d44bb48a4139a122799f26ac72004e4f09d0d8",
+  "runs": [
+    {
+      "manifest_sha256": "60d5b14caac6031c2a1d4f7a780966d7efccb1c3542239863e597ce406f05421",
+      "max_capacity_excess_tokens": 0.0,
+      "method": "official_compresskv",
+      "metrics_sha256": "f4b227cd9f25c86aa8587a897ab52360f2ef5573c4ea5e9b3926c5e7a82ba9fd",
+      "model": "qwen25",
+      "nonzero_scores": 16,
+      "official_commit": "12f920fbecba67e16806a6d8eac0ad389ddcad6f",
+      "results_sha256": "8331d7c4dba7300a573f8fe5159a7fa3ab9515a56c236fc9c8c6c0897999a479",
+      "rows": 20,
+      "runtime_capacity_hashes": [
+        "0f759b4987419157ba40b3c576420c86c1cf2de5dbe5d1d981ec252ff50f0e74",
+        "5cb6adc437c0e408c9364f69b2daab52042c92d63cfbdf6e3bcdc097e31f75e1",
+        "acc37f26a7007b18624e869ff040e5806daacfa5f0256f352b88cac5c39c7b3e",
+        "e82f4ff95e5a26c846c2795c4c019d59734939e7c501e9d65971a5d176c03bef"
+      ],
+      "score_replays": 20,
+      "status": "PASS"
+    },
+    {
+      "manifest_sha256": "5c0849ea2ceae5db332c29c04c89031d7735d7eee7fe9464104c538533ae7994",
+      "max_capacity_excess_tokens": -4.03125,
+      "method": "official_headkv_reasonkv",
+      "metrics_sha256": "ba87863c3871a4d5e579dae90ce994b4a8970747f4aa3e1df2d149fa8b6201e3",
+      "model": "mistral02",
+      "nonzero_scores": 14,
+      "official_commit": "0862a0955fe82e9ff611d59541918e02c5def625",
+      "results_sha256": "3984f2aa50448b84c8b998db69a881c9c1601664a62af9831656abd7fc1aa4dd",
+      "rows": 20,
+      "runtime_capacity_hashes": [],
+      "score_replays": 20,
+      "status": "PASS"
+    }
+  ],
+  "selection_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/selection_manifest_v10_complement_n47.json",
+  "selection_manifest_sha256": "c7cda95a9b7a42c70428aba9b973e732de56242c1f7b04e6322ff60546fc6b76",
+  "status": "PASS"
+}

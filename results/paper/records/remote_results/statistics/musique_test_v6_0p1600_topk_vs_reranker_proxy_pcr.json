@@ -1,0 +1,17 @@
+{
+  "results": "remote_results/relation_v6_musique_final_test_n500/results.jsonl",
+  "method_a": "learned_topk_paths",
+  "method_b": "reranker_proxy",
+  "metric": "pcr",
+  "n_paired": 500,
+  "mean_a": 0.344,
+  "mean_b": 0.072,
+  "mean_difference_a_minus_b": 0.272,
+  "bootstrap_samples": 10000,
+  "ci95_percentile": [
+    0.23,
+    0.316
+  ],
+  "two_sided_sign_p": 0.00019998000199980003,
+  "seed": 12345
+}

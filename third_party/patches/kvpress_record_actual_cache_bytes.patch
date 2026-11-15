@@ -1,0 +1,19 @@
+diff --git a/kvpress/pipeline.py b/kvpress/pipeline.py
+index d2c0006..2aef757 100644
+--- a/kvpress/pipeline.py
++++ b/kvpress/pipeline.py
+@@ -223,6 +223,14 @@ class KVPressTextGenerationPipeline(Pipeline):
+             logger.debug(f"Context Length: {context_length}")
+             logger.debug(f"Compressed Context Length: {cache.get_seq_length()}")
+             cache._proofcache_compressed_context_length = int(cache.get_seq_length())
++            cache._proofcache_compressed_context_bytes = int(
++                sum(
++                    tensor.numel() * tensor.element_size()
++                    for layer in cache.layers
++                    for tensor in (getattr(layer, "keys", None), getattr(layer, "values", None))
++                    if tensor is not None
++                )
++            )
+ 
+         # We only perform decoding compression if the press is a decoding or prefill decoding press
+         perform_decoding_compression = press is not None and isinstance(press, (DecodingPress, PrefillDecodingPress))

@@ -1,0 +1,8 @@
+{
+ "arguments": {},
+ "cuda_device": "NVIDIA A100 80GB PCIe",
+ "decoder": "Qwen2.5-7B-Instruct-a09a354",
+ "finished_utc": "2026-09-19T06:56:19Z",
+ "started_utc": "2026-09-19T06:42:10Z",
+ "torch": "2.8.0+cu128"
+}

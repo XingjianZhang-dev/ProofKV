@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "protocol": "longbench_exact_hashed_verified_prefix_incremental_audit_v1",
+  "selection_manifest_sha256": "3f8f96a8c5eda517d69f31c15e816f23fcfcf3c6e703e33f728ef237301d30c3",
+  "runs": [
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/verified_physical_prefix_v7_mistral02_s0_n10",
+      "model": "mistral02",
+      "durable_rows": 804,
+      "complete_samples_by_task": {
+        "narrativeqa": 10,
+        "qasper": 10,
+        "multifieldqa_en": 10,
+        "hotpotqa": 10,
+        "2wikimqa": 10,
+        "musique": 0
+      },
+      "incomplete_sample_count": 1,
+      "incomplete_sample_rows": 4,
+      "trailing_partial_line_ignored": false,
+      "raw_empty_predictions": 0,
+      "whitespace_only_predictions": 23,
+      "max_capacity_excess_tokens": 0.0,
+      "implementation_files_hashed": 9,
+      "scorer_checkpoint_files_hashed": 6
+    }
+  ],
+  "checks": [
+    "durable JSON rows and unique result keys",
+    "frozen offsets 0-9, source answers, and token counts",
+    "independent row-level QA-F1 recomputation",
+    "capacity, retained-ratio, and KV-byte accounting",
+    "coverage partition accounting",
+    "at most one in-flight partial sample",
+    "implementation and scorer checkpoint hashes"
+  ],
+  "legacy_parity": {
+    "current_rows": 804,
+    "legacy_rows_on_allowed_methods": 960,
+    "shared_rows": 804,
+    "missing_from_legacy": 0,
+    "legacy_only": 156,
+    "exact_prediction_rows": 804,
+    "changed_prediction_rows": 0,
+    "exact_score_rows": 804,
+    "changed_score_rows": 0,
+    "max_absolute_score_delta": 0.0,
+    "by_task": {
+      "2wikimqa": {
+        "shared_rows": 160,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0
+      },
+      "hotpotqa": {
+        "shared_rows": 160,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0
+      },
+      "multifieldqa_en": {
+        "shared_rows": 160,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0
+      },
+      "musique": {
+        "shared_rows": 4,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0
+      },
+      "narrativeqa": {
+        "shared_rows": 160,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0
+      },
+      "qasper": {
+        "shared_rows": 160,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0
+      }
+    },
+    "by_method": {
+      "chunkkv_snapkv": {
+        "shared_rows": 201,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0,
+        "changed_score_rows": 0
+      },
+      "pyramidkv": {
+        "shared_rows": 201,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0,
+        "changed_score_rows": 0
+      },
+      "snapkv": {
+        "shared_rows": 201,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0,
+        "changed_score_rows": 0
+      },
+      "streamingllm": {
+        "shared_rows": 201,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0,
+        "changed_score_rows": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "results": [
+    "remote_results/accepted_soup_a090_qwen25_hotpot_matrix_n128/fixed128/results.jsonl",
+    "remote_results/official_compresskv_qwen25_hotpot_matrix_n128/fixed128/results.jsonl"
+  ],
+  "method_a": "learned_and_or_aux",
+  "method_b": "compresskv",
+  "metric": "answer_f1",
+  "n_paired": 128,
+  "mean_a": 0.5600079174297925,
+  "mean_b": 0.6146605564574315,
+  "mean_difference_a_minus_b": -0.05465263902763902,
+  "bootstrap_samples": 20000,
+  "ci95_percentile": [
+    -0.15028967126623374,
+    0.04041597616792926
+  ],
+  "two_sided_sign_p": 0.25428728563571823,
+  "seed": 12345
+}

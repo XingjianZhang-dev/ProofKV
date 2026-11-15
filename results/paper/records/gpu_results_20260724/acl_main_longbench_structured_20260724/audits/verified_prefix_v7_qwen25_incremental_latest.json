@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "protocol": "longbench_exact_hashed_verified_prefix_incremental_audit_v1",
+  "selection_manifest_sha256": "3f8f96a8c5eda517d69f31c15e816f23fcfcf3c6e703e33f728ef237301d30c3",
+  "runs": [
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/verified_prefix_v7_qwen25_s0_n10",
+      "model": "qwen25",
+      "durable_rows": 1779,
+      "complete_samples_by_task": {
+        "narrativeqa": 10,
+        "qasper": 10,
+        "multifieldqa_en": 10,
+        "hotpotqa": 10,
+        "2wikimqa": 10,
+        "musique": 5
+      },
+      "incomplete_sample_count": 1,
+      "incomplete_sample_rows": 19,
+      "trailing_partial_line_ignored": false,
+      "raw_empty_predictions": 0,
+      "whitespace_only_predictions": 0,
+      "max_capacity_excess_tokens": 0.0,
+      "implementation_files_hashed": 9,
+      "scorer_checkpoint_files_hashed": 6
+    }
+  ],
+  "checks": [
+    "durable JSON rows and unique result keys",
+    "frozen offsets 0-9, source answers, and token counts",
+    "independent row-level QA-F1 recomputation",
+    "capacity, retained-ratio, and KV-byte accounting",
+    "coverage partition accounting",
+    "at most one in-flight partial sample",
+    "implementation and scorer checkpoint hashes"
+  ],
+  "legacy_parity": {
+    "current_rows": 1779,
+    "legacy_rows_on_allowed_methods": 1920,
+    "shared_rows": 1779,
+    "missing_from_legacy": 0,
+    "legacy_only": 141,
+    "exact_prediction_rows": 1710,
+    "changed_prediction_rows": 69,
+    "exact_score_rows": 1747,
+    "changed_score_rows": 32,
+    "max_absolute_score_delta": 0.3333333333333333,
+    "by_task": {
+      "2wikimqa": {
+        "shared_rows": 320,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0
+      },
+      "hotpotqa": {
+        "shared_rows": 320,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0
+      },
+      "multifieldqa_en": {
+        "shared_rows": 320,
+        "mean_new_minus_legacy_score": 0.0007640136129737588,
+        "max_absolute_score_delta": 0.3333333333333333
+      },
+      "musique": {
+        "shared_rows": 179,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0
+      },
+      "narrativeqa": {
+        "shared_rows": 320,
+        "mean_new_minus_legacy_score": -0.000595317314567691,
+        "max_absolute_score_delta": 0.13333333333333333
+      },
+      "qasper": {
+        "shared_rows": 320,
+        "mean_new_minus_legacy_score": -0.0012552381008611303,
+        "max_absolute_score_delta": 0.18181818181818182
+      }
+    },
+    "by_method": {
+      "chunkkv_snapkv": {
+        "shared_rows": 222,
+        "mean_new_minus_legacy_score": -0.0015661863819172075,
+        "max_absolute_score_delta": 0.3333333333333333,
+        "changed_score_rows": 32
+      },
+      "learned_and_or_graph_aux": {
+        "shared_rows": 222,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0,
+        "changed_score_rows": 0
+      },
+      "learned_and_or_mixed_aux": {
+        "shared_rows": 222,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0,
+        "changed_score_rows": 0
+      },
+      "learned_and_or_recent_aux": {
+        "shared_rows": 222,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0,
+        "changed_score_rows": 0
+      },
+      "learned_and_or_stratified_aux": {
+        "shared_rows": 222,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0,
+        "changed_score_rows": 0
+      },
+      "pyramidkv": {
+        "shared_rows": 223,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0,
+        "changed_score_rows": 0
+      },
+      "snapkv": {
+        "shared_rows": 223,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0,
+        "changed_score_rows": 0
+      },
+      "streamingllm": {
+        "shared_rows": 223,
+        "mean_new_minus_legacy_score": 0.0,
+        "max_absolute_score_delta": 0.0,
+        "changed_score_rows": 0
+      }
+    }
+  }
+}

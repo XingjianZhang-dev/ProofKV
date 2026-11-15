@@ -1,0 +1,76 @@
+{
+  "model": "/workspace/models/Qwen2.5-7B-Instruct-a09a354",
+  "dataset": "hotpotqa",
+  "split": "validation",
+  "data_file": null,
+  "max_samples": 128,
+  "sample_offset": 0,
+  "budget": 0.08,
+  "budget_tokens": 512,
+  "budget_scope": "compressed_context_plus_uncompressed_question_prefill",
+  "attn_implementation": "sdpa",
+  "kv_bytes_per_token_bf16": 57344,
+  "max_new_tokens": 24,
+  "methods": [
+    "streamingllm",
+    "snapkv",
+    "pyramidkv",
+    "chunkkv_snapkv"
+  ],
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+  "kvpress_compatibility_patch": "kvpress_transformers_5_cache_position.patch",
+  "kvpress_instrumentation_patches": [
+    "kvpress_record_actual_cache_length.patch",
+    "kvpress_record_actual_cache_bytes.patch"
+  ],
+  "records": [
+    {
+      "method": "chunkkv_snapkv",
+      "n": 128,
+      "answer_em": 0.375,
+      "answer_f1": 0.4705419146825397,
+      "answer_contains": 0.3984375,
+      "actual_retained_ratio": 0.31146303185363194,
+      "actual_kv_bytes": 28403200.0,
+      "seconds_mean": 0.5175805165963538,
+      "seconds_p95": 2.241075926925987,
+      "peak_cuda_memory_gb_p95": 14.534066677093506
+    },
+    {
+      "method": "pyramidkv",
+      "n": 128,
+      "answer_em": 0.375,
+      "answer_f1": 0.49066445707070705,
+      "answer_contains": 0.390625,
+      "actual_retained_ratio": 0.3216043849398349,
+      "actual_kv_bytes": 29360128.0,
+      "seconds_mean": 0.23918678220070433,
+      "seconds_p95": 0.35083261132240295,
+      "peak_cuda_memory_gb_p95": 14.534976482391357
+    },
+    {
+      "method": "snapkv",
+      "n": 128,
+      "answer_em": 0.375,
+      "answer_f1": 0.4891763618326118,
+      "answer_contains": 0.390625,
+      "actual_retained_ratio": 0.321404569580566,
+      "actual_kv_bytes": 29341312.0,
+      "seconds_mean": 0.3968935111006431,
+      "seconds_p95": 0.6497092107310891,
+      "peak_cuda_memory_gb_p95": 14.53514814376831
+    },
+    {
+      "method": "streamingllm",
+      "n": 128,
+      "answer_em": 0.328125,
+      "answer_f1": 0.43082608865914784,
+      "answer_contains": 0.3515625,
+      "actual_retained_ratio": 0.321404569580566,
+      "actual_kv_bytes": 29341312.0,
+      "seconds_mean": 0.4994537081292947,
+      "seconds_p95": 0.8162424527108669,
+      "peak_cuda_memory_gb_p95": 14.53514814376831
+    }
+  ]
+}

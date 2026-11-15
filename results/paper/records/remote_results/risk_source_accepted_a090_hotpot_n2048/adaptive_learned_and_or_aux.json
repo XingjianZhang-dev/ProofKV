@@ -1,0 +1,48 @@
+{
+  "method": "learned_and_or_aux",
+  "budgets": [
+    "0.0400",
+    "0.0800",
+    "0.1600"
+  ],
+  "target_risk": 0.02,
+  "min_coverage": 0.8,
+  "max_mean_kv_ratio": 0.15,
+  "n": 2048,
+  "calibration_n": 1031,
+  "test_n": 1017,
+  "gate_passed": false,
+  "thresholds": {
+    "0.0400": 0.9999991879873849,
+    "0.0800": 0.9999991879873849,
+    "0.1600": 0.9996639147017975
+  },
+  "calibration": {
+    "coverage": 0.049466537342386034,
+    "fallback_rate": 0.950533462657614,
+    "selective_error": 0.0392156862745098,
+    "selective_risk_upper": 0.057692307692307696,
+    "mean_kv_ratio": 0.958448108632395,
+    "accepted": 51,
+    "errors": 2,
+    "assigned": {
+      "0.0400": 0,
+      "0.0800": 0,
+      "0.1600": 51
+    }
+  },
+  "test": {
+    "coverage": 0.03343166175024582,
+    "fallback_rate": 0.9665683382497542,
+    "selective_error": 0.14705882352941177,
+    "selective_risk_upper": 0.17142857142857143,
+    "mean_kv_ratio": 0.9719174041297935,
+    "accepted": 34,
+    "errors": 5,
+    "assigned": {
+      "0.0400": 0,
+      "0.0800": 0,
+      "0.1600": 34
+    }
+  }
+}

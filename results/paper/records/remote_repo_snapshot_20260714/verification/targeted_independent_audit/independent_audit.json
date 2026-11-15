@@ -1,0 +1,253 @@
+{
+  "group1": [
+    {
+      "path": "remote_repo_snapshot_20260714/reproduction_assets/proofkv_experiments/targeted_gpu_20260714/group1_selector_inclusive_8k_n16_repair1",
+      "metrics_sha256": "542c4d1c272f4ed00d97b663871081539b12d70883c36394f8b9a9af26e2260d",
+      "batch_sha256": "982a5a7934b190ba1e9ef2eddba2b679d293d6dcb373629c2a8e41b4569e0351",
+      "route_sha256": "e579f6877e0b3b1c7ce84f5a3ced947854540ef4775f1ea626532d46a330e7a8",
+      "rows_expected": 40,
+      "rows_observed": 40,
+      "unique_keys": 40,
+      "corrupted_requests": 0,
+      "route_identity_all_passed": true,
+      "selector_timing_boundary_ok": true,
+      "comparisons": [
+        {
+          "output_tokens": 256,
+          "mode": "precompiled",
+          "paired_speedup": {
+            "mean": 3.33815451330564,
+            "ci95_low": 3.280849238332371,
+            "ci95_high": 3.3829313773888687
+          },
+          "median_speedup": 3.3717688865564504,
+          "wins_over_full": 5,
+          "paired_sign_flip_p_one_sided": 0.03166968330316697
+        },
+        {
+          "output_tokens": 256,
+          "mode": "shared_index",
+          "paired_speedup": {
+            "mean": 1.1775896027732213,
+            "ci95_low": 1.1551516343566335,
+            "ci95_high": 1.1953123461084476
+          },
+          "median_speedup": 1.1805258690826683,
+          "wins_over_full": 5,
+          "paired_sign_flip_p_one_sided": 0.03012969870301297
+        },
+        {
+          "output_tokens": 256,
+          "mode": "cold",
+          "paired_speedup": {
+            "mean": 0.8863516104293329,
+            "ci95_low": 0.8740837611586759,
+            "ci95_high": 0.8981257806194549
+          },
+          "median_speedup": 0.8898407014109463,
+          "wins_over_full": 0,
+          "paired_sign_flip_p_one_sided": 1.0
+        },
+        {
+          "output_tokens": 1024,
+          "mode": "precompiled",
+          "paired_speedup": {
+            "mean": 1.715809414065843,
+            "ci95_low": 1.7031219211503132,
+            "ci95_high": 1.7273683235376645
+          },
+          "median_speedup": 1.7230778346118731,
+          "wins_over_full": 5,
+          "paired_sign_flip_p_one_sided": 0.03105968940310597
+        },
+        {
+          "output_tokens": 1024,
+          "mode": "shared_index",
+          "paired_speedup": {
+            "mean": 1.1593536244338654,
+            "ci95_low": 1.1519917726531173,
+            "ci95_high": 1.163800795733026
+          },
+          "median_speedup": 1.163183291929107,
+          "wins_over_full": 5,
+          "paired_sign_flip_p_one_sided": 0.03079969200307997
+        },
+        {
+          "output_tokens": 1024,
+          "mode": "cold",
+          "paired_speedup": {
+            "mean": 0.9946534744431871,
+            "ci95_low": 0.9852668784765723,
+            "ci95_high": 1.001272360702426
+          },
+          "median_speedup": 0.9971627357668779,
+          "wins_over_full": 1,
+          "paired_sign_flip_p_one_sided": 0.8759112408875911
+        }
+      ],
+      "passed": true
+    },
+    {
+      "path": "remote_repo_snapshot_20260714/reproduction_assets/proofkv_experiments/targeted_gpu_20260714/group1_selector_inclusive_32k_n4_out256_repair2",
+      "metrics_sha256": "840de300b72f624668eb692c654a120d4420f7b6cc986ff2da6d9e3cb58f8130",
+      "batch_sha256": "5d255222849798dde14c0df94696b9a86d8c33ddece9e509c3d7dbbdc03bcbe7",
+      "route_sha256": "40410087c4e1733268516671ea9ce8e8ee87e49f05a9aee11ebbfce4ffddfcb1",
+      "rows_expected": 20,
+      "rows_observed": 20,
+      "unique_keys": 20,
+      "corrupted_requests": 0,
+      "route_identity_all_passed": true,
+      "selector_timing_boundary_ok": true,
+      "comparisons": [
+        {
+          "output_tokens": 256,
+          "mode": "precompiled",
+          "paired_speedup": {
+            "mean": 4.2860936108098695,
+            "ci95_low": 4.2472804404246745,
+            "ci95_high": 4.308483630457698
+          },
+          "median_speedup": 4.301525422675468,
+          "wins_over_full": 5,
+          "paired_sign_flip_p_one_sided": 0.03166968330316697
+        },
+        {
+          "output_tokens": 256,
+          "mode": "shared_index",
+          "paired_speedup": {
+            "mean": 1.8417745661946376,
+            "ci95_low": 1.8176559288847254,
+            "ci95_high": 1.8653526701134016
+          },
+          "median_speedup": 1.844156407414704,
+          "wins_over_full": 5,
+          "paired_sign_flip_p_one_sided": 0.03012969870301297
+        },
+        {
+          "output_tokens": 256,
+          "mode": "cold",
+          "paired_speedup": {
+            "mean": 0.7088212044329864,
+            "ci95_low": 0.699186009945652,
+            "ci95_high": 0.7161880062378472
+          },
+          "median_speedup": 0.7096817223417559,
+          "wins_over_full": 0,
+          "paired_sign_flip_p_one_sided": 1.0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "path": "remote_repo_snapshot_20260714/reproduction_assets/proofkv_experiments/targeted_gpu_20260714/group1_selector_inclusive_30k_n4_out1024_repair2",
+      "metrics_sha256": "ba017d3ab156aa62c3a7d8ef1800e3a26c5e56add7ca78028eb32ad6fae0501c",
+      "batch_sha256": "019c72bd807397d3388cbd77bbf4132a72b465c4367a351fb0f4b918c708e377",
+      "route_sha256": "365d1dee36d90cb34754e0380872899d3685b8bbc2f7af631ec2b4ff78af0f53",
+      "rows_expected": 20,
+      "rows_observed": 20,
+      "unique_keys": 20,
+      "corrupted_requests": 0,
+      "route_identity_all_passed": true,
+      "selector_timing_boundary_ok": true,
+      "comparisons": [
+        {
+          "output_tokens": 1024,
+          "mode": "precompiled",
+          "paired_speedup": {
+            "mean": 1.7622004120465533,
+            "ci95_low": 1.755858514274833,
+            "ci95_high": 1.7686754081790486
+          },
+          "median_speedup": 1.759814622544327,
+          "wins_over_full": 5,
+          "paired_sign_flip_p_one_sided": 0.03105968940310597
+        },
+        {
+          "output_tokens": 1024,
+          "mode": "shared_index",
+          "paired_speedup": {
+            "mean": 1.345135653605123,
+            "ci95_low": 1.335835835641332,
+            "ci95_high": 1.3549667327724877
+          },
+          "median_speedup": 1.3440207791964172,
+          "wins_over_full": 5,
+          "paired_sign_flip_p_one_sided": 0.03079969200307997
+        },
+        {
+          "output_tokens": 1024,
+          "mode": "cold",
+          "paired_speedup": {
+            "mean": 0.8328941922994918,
+            "ci95_low": 0.8223308749865694,
+            "ci95_high": 0.8427692560594856
+          },
+          "median_speedup": 0.832964351282511,
+          "wins_over_full": 0,
+          "paired_sign_flip_p_one_sided": 1.0
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "group2": {
+    "path": "remote_repo_snapshot_20260714/reproduction_assets/proofkv_experiments/targeted_gpu_20260714/group2_natural_topology_musique_disjoint_n128_repair1",
+    "metrics_sha256": "35748d9f0223afad690725f07fd4cf8f21926c6ae561901f2d2d57e16edbd02c",
+    "results_sha256": "adbc882f5db58019d8bcde5eaa3730f93ad0a396894afc5ed85cf1edc7dabb81",
+    "manifest_sha256": "52d5155871e03807285d0583bef369112c7cdaac61621adfa90d6918842ce6ee",
+    "rows_expected": 768,
+    "rows_observed": 768,
+    "unique_pairs": 768,
+    "prior_id_overlap": 0,
+    "exact_tokens_within_example": true,
+    "empty_answers": 0,
+    "empty_predictions": 0,
+    "independent_f1_score_mismatches": 0,
+    "zero_f1_rows_by_method": {
+      "proof_core": 70,
+      "relevance_same_bytes": 80,
+      "edge_shuffled": 89,
+      "random_edges": 82,
+      "broken_middle": 84,
+      "oracle_proof": 47
+    },
+    "comparisons": {
+      "proof_core_vs_relevance_same_bytes": {
+        "mean": 0.05716226048257299,
+        "ci95_low": -0.02606336805555555,
+        "ci95_high": 0.14192469856532358,
+        "paired_sign_flip_p_one_sided": 0.09416905830941691,
+        "same_route_count": 1
+      },
+      "proof_core_vs_edge_shuffled": {
+        "mean": 0.1349392361111111,
+        "ci95_low": 0.06580481150793652,
+        "ci95_high": 0.2072234623015873,
+        "paired_sign_flip_p_one_sided": 8.99991000089999e-05,
+        "same_route_count": 21
+      },
+      "proof_core_vs_random_edges": {
+        "mean": 0.10841957521645022,
+        "ci95_low": 0.03301034902597402,
+        "ci95_high": 0.18472729527417028,
+        "paired_sign_flip_p_one_sided": 0.003099969000309997,
+        "same_route_count": 30
+      },
+      "proof_core_vs_broken_middle": {
+        "mean": 0.11365891053391053,
+        "ci95_low": 0.049479166666666664,
+        "ci95_high": 0.17762784090909092,
+        "paired_sign_flip_p_one_sided": 0.00032999670003299966,
+        "same_route_count": 28
+      }
+    },
+    "frozen_primary_gate_reproduced": true,
+    "passed": true,
+    "source_reported_primary_gate": {
+      "delta_at_least_0_03": true,
+      "ci95_low_above_zero": true,
+      "passed": true
+    }
+  },
+  "passed": true
+}

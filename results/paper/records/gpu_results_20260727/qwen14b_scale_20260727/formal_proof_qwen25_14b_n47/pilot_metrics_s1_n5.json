@@ -1,0 +1,486 @@
+{
+  "protocol": "proofkv_qwen25_14b_scale_transfer_20260727",
+  "selection_manifest": "/workspace/compresskv_experiments/qwen14b_scale_20260727/selection_manifest_qwen14b_n47.json",
+  "selection_manifest_sha256": "e7c8f519fbeca42b11b75153b011a4019d08ad8d12db0e508bb5dde918125b01",
+  "model": "qwen25_14b",
+  "model_path": "/workspace/models/Qwen2.5-14B-Instruct-cf98f3b",
+  "model_revision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+  "tasks": [
+    "qasper",
+    "multifieldqa_en",
+    "hotpotqa",
+    "2wikimqa",
+    "musique"
+  ],
+  "n_per_task": 5,
+  "selection_start_per_task": 1,
+  "frozen_n_per_task": 47,
+  "max_input_tokens": 30000,
+  "truncated_inputs": 0,
+  "tokenization_contract": "kvpress_split_context_question_token_ids_v1",
+  "methods": [
+    "full",
+    "learned_root_topk",
+    "learned_and_or_control_anchor75_aux"
+  ],
+  "capacities": [
+    128,
+    256,
+    512
+  ],
+  "capacity_scope": "total prefill KV including the uncompressed question tail",
+  "kv_bytes_per_token_bf16": 196608,
+  "attn_implementation": "sdpa",
+  "task_records": [
+    {
+      "task": "2wikimqa",
+      "method": "full",
+      "capacity": "full",
+      "n": 5,
+      "score": 66.66666666666667,
+      "actual_retained_ratio": 1.0,
+      "actual_kv_bytes": 1333788672.0,
+      "seconds": 2.5044857413507997,
+      "peak_cuda_memory_gb": 31.700547695159912
+    },
+    {
+      "task": "2wikimqa",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "128",
+      "n": 5,
+      "score": 26.666666666666664,
+      "actual_retained_ratio": 0.023394812252428655,
+      "actual_kv_bytes": 25165824.0,
+      "seconds": 0.9411277711391449,
+      "peak_cuda_memory_gb": 27.684911727905273
+    },
+    {
+      "task": "2wikimqa",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "256",
+      "n": 5,
+      "score": 28.571428571428573,
+      "actual_retained_ratio": 0.04678962450485731,
+      "actual_kv_bytes": 50331648.0,
+      "seconds": 1.3538377693854273,
+      "peak_cuda_memory_gb": 27.721193313598633
+    },
+    {
+      "task": "2wikimqa",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "512",
+      "n": 5,
+      "score": 48.57142857142857,
+      "actual_retained_ratio": 0.09357924900971462,
+      "actual_kv_bytes": 100663296.0,
+      "seconds": 1.130157160386443,
+      "peak_cuda_memory_gb": 27.799205780029297
+    },
+    {
+      "task": "2wikimqa",
+      "method": "learned_root_topk",
+      "capacity": "128",
+      "n": 5,
+      "score": 3.3333333333333335,
+      "actual_retained_ratio": 0.02326363664181788,
+      "actual_kv_bytes": 25047859.2,
+      "seconds": 2.6880920182913544,
+      "peak_cuda_memory_gb": 27.684911727905273
+    },
+    {
+      "task": "2wikimqa",
+      "method": "learned_root_topk",
+      "capacity": "256",
+      "n": 5,
+      "score": 9.495798319327731,
+      "actual_retained_ratio": 0.046405988909937884,
+      "actual_kv_bytes": 50056396.8,
+      "seconds": 1.932978916168213,
+      "peak_cuda_memory_gb": 27.721193313598633
+    },
+    {
+      "task": "2wikimqa",
+      "method": "learned_root_topk",
+      "capacity": "512",
+      "n": 5,
+      "score": 27.009523809523806,
+      "actual_retained_ratio": 0.09312817324026564,
+      "actual_kv_bytes": 100309401.6,
+      "seconds": 1.6591812124475838,
+      "peak_cuda_memory_gb": 27.799205780029297
+    },
+    {
+      "task": "hotpotqa",
+      "method": "full",
+      "capacity": "full",
+      "n": 5,
+      "score": 71.42857142857143,
+      "actual_retained_ratio": 1.0,
+      "actual_kv_bytes": 2443955404.8,
+      "seconds": 4.175359514076263,
+      "peak_cuda_memory_gb": 32.68434810638428
+    },
+    {
+      "task": "hotpotqa",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "128",
+      "n": 5,
+      "score": 54.39153439153439,
+      "actual_retained_ratio": 0.014556436682193658,
+      "actual_kv_bytes": 25165824.0,
+      "seconds": 1.3609418399631976,
+      "peak_cuda_memory_gb": 27.684936046600342
+    },
+    {
+      "task": "hotpotqa",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "256",
+      "n": 5,
+      "score": 51.42857142857143,
+      "actual_retained_ratio": 0.029112873364387316,
+      "actual_kv_bytes": 50331648.0,
+      "seconds": 1.3661331406794488,
+      "peak_cuda_memory_gb": 27.7212176322937
+    },
+    {
+      "task": "hotpotqa",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "512",
+      "n": 5,
+      "score": 32.89124668435013,
+      "actual_retained_ratio": 0.05822574672877463,
+      "actual_kv_bytes": 100663296.0,
+      "seconds": 1.9429405983537436,
+      "peak_cuda_memory_gb": 27.799230098724365
+    },
+    {
+      "task": "hotpotqa",
+      "method": "learned_root_topk",
+      "capacity": "128",
+      "n": 5,
+      "score": 17.52592235350856,
+      "actual_retained_ratio": 0.014438893338085517,
+      "actual_kv_bytes": 25087180.8,
+      "seconds": 3.8480945961549877,
+      "peak_cuda_memory_gb": 27.684936046600342
+    },
+    {
+      "task": "hotpotqa",
+      "method": "learned_root_topk",
+      "capacity": "256",
+      "n": 5,
+      "score": 18.57282502443793,
+      "actual_retained_ratio": 0.02908338218623781,
+      "actual_kv_bytes": 50253004.8,
+      "seconds": 2.0530443775467573,
+      "peak_cuda_memory_gb": 27.7212176322937
+    },
+    {
+      "task": "hotpotqa",
+      "method": "learned_root_topk",
+      "capacity": "512",
+      "n": 5,
+      "score": 15.769278996865205,
+      "actual_retained_ratio": 0.05815285076293525,
+      "actual_kv_bytes": 100584652.8,
+      "seconds": 2.1449358421377838,
+      "peak_cuda_memory_gb": 27.799230098724365
+    },
+    {
+      "task": "multifieldqa_en",
+      "method": "full",
+      "capacity": "full",
+      "n": 5,
+      "score": 58.717948717948715,
+      "actual_retained_ratio": 1.0,
+      "actual_kv_bytes": 1287074611.2,
+      "seconds": 1.5431169360876082,
+      "peak_cuda_memory_gb": 32.108354568481445
+    },
+    {
+      "task": "multifieldqa_en",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "128",
+      "n": 5,
+      "score": 41.84162261301111,
+      "actual_retained_ratio": 0.0270327791140554,
+      "actual_kv_bytes": 25165824.0,
+      "seconds": 1.0628379479050636,
+      "peak_cuda_memory_gb": 27.684921741485596
+    },
+    {
+      "task": "multifieldqa_en",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "256",
+      "n": 5,
+      "score": 40.221069253327315,
+      "actual_retained_ratio": 0.0540655582281108,
+      "actual_kv_bytes": 50331648.0,
+      "seconds": 1.1399067692458629,
+      "peak_cuda_memory_gb": 27.721203327178955
+    },
+    {
+      "task": "multifieldqa_en",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "512",
+      "n": 5,
+      "score": 57.718758434547894,
+      "actual_retained_ratio": 0.1081311164562216,
+      "actual_kv_bytes": 100663296.0,
+      "seconds": 1.2781326416879892,
+      "peak_cuda_memory_gb": 27.79921579360962
+    },
+    {
+      "task": "multifieldqa_en",
+      "method": "learned_root_topk",
+      "capacity": "128",
+      "n": 5,
+      "score": 31.084443833160133,
+      "actual_retained_ratio": 0.026992930538641973,
+      "actual_kv_bytes": 25126502.4,
+      "seconds": 3.103292722068727,
+      "peak_cuda_memory_gb": 27.684921741485596
+    },
+    {
+      "task": "multifieldqa_en",
+      "method": "learned_root_topk",
+      "capacity": "256",
+      "n": 5,
+      "score": 28.136051219282553,
+      "actual_retained_ratio": 0.05402570965269737,
+      "actual_kv_bytes": 50292326.4,
+      "seconds": 2.0193528455682097,
+      "peak_cuda_memory_gb": 27.721203327178955
+    },
+    {
+      "task": "multifieldqa_en",
+      "method": "learned_root_topk",
+      "capacity": "512",
+      "n": 5,
+      "score": 29.416914502587332,
+      "actual_retained_ratio": 0.10809126788080818,
+      "actual_kv_bytes": 100623974.4,
+      "seconds": 2.0460993413813413,
+      "peak_cuda_memory_gb": 27.79921579360962
+    },
+    {
+      "task": "musique",
+      "method": "full",
+      "capacity": "full",
+      "n": 5,
+      "score": 65.0,
+      "actual_retained_ratio": 1.0,
+      "actual_kv_bytes": 3298767667.2,
+      "seconds": 6.302724533621221,
+      "peak_cuda_memory_gb": 32.78685140609741
+    },
+    {
+      "task": "musique",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "128",
+      "n": 5,
+      "score": 7.578347578347578,
+      "actual_retained_ratio": 0.0076315383953569306,
+      "actual_kv_bytes": 25165824.0,
+      "seconds": 1.7782233024016023,
+      "peak_cuda_memory_gb": 27.684938430786133
+    },
+    {
+      "task": "musique",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "256",
+      "n": 5,
+      "score": 3.333333333333333,
+      "actual_retained_ratio": 0.015263076790713861,
+      "actual_kv_bytes": 50331648.0,
+      "seconds": 2.036454916931689,
+      "peak_cuda_memory_gb": 27.721220016479492
+    },
+    {
+      "task": "musique",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "512",
+      "n": 5,
+      "score": 29.63210702341137,
+      "actual_retained_ratio": 0.030526153581427722,
+      "actual_kv_bytes": 100663296.0,
+      "seconds": 1.8753413292579353,
+      "peak_cuda_memory_gb": 27.799232482910156
+    },
+    {
+      "task": "musique",
+      "method": "learned_root_topk",
+      "capacity": "128",
+      "n": 5,
+      "score": 11.011764705882353,
+      "actual_retained_ratio": 0.007619288747534305,
+      "actual_kv_bytes": 25126502.4,
+      "seconds": 3.993792954366654,
+      "peak_cuda_memory_gb": 27.684938430786133
+    },
+    {
+      "task": "musique",
+      "method": "learned_root_topk",
+      "capacity": "256",
+      "n": 5,
+      "score": 11.150895140664963,
+      "actual_retained_ratio": 0.015250827142891239,
+      "actual_kv_bytes": 50292326.4,
+      "seconds": 2.0618228475563227,
+      "peak_cuda_memory_gb": 27.721220016479492
+    },
+    {
+      "task": "musique",
+      "method": "learned_root_topk",
+      "capacity": "512",
+      "n": 5,
+      "score": 11.229946524064172,
+      "actual_retained_ratio": 0.0305139039336051,
+      "actual_kv_bytes": 100623974.4,
+      "seconds": 2.1311510586179794,
+      "peak_cuda_memory_gb": 27.799232482910156
+    },
+    {
+      "task": "qasper",
+      "method": "full",
+      "capacity": "full",
+      "n": 5,
+      "score": 42.82051282051282,
+      "actual_retained_ratio": 1.0,
+      "actual_kv_bytes": 1224907161.6,
+      "seconds": 2.0079515184275807,
+      "peak_cuda_memory_gb": 33.01457166671753
+    },
+    {
+      "task": "qasper",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "128",
+      "n": 5,
+      "score": 19.11952902784821,
+      "actual_retained_ratio": 0.03371383581020548,
+      "actual_kv_bytes": 25165824.0,
+      "seconds": 2.3775192896835504,
+      "peak_cuda_memory_gb": 27.692363262176514
+    },
+    {
+      "task": "qasper",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "256",
+      "n": 5,
+      "score": 17.983193277310924,
+      "actual_retained_ratio": 0.06742767162041095,
+      "actual_kv_bytes": 50331648.0,
+      "seconds": 2.4786620142869653,
+      "peak_cuda_memory_gb": 27.72122573852539
+    },
+    {
+      "task": "qasper",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "512",
+      "n": 5,
+      "score": 22.496732026143793,
+      "actual_retained_ratio": 0.1348553432408219,
+      "actual_kv_bytes": 100663296.0,
+      "seconds": 2.564036034978926,
+      "peak_cuda_memory_gb": 27.799238204956055
+    },
+    {
+      "task": "qasper",
+      "method": "learned_root_topk",
+      "capacity": "128",
+      "n": 5,
+      "score": 14.173009828455372,
+      "actual_retained_ratio": 0.03365692061384805,
+      "actual_kv_bytes": 25126502.4,
+      "seconds": 3.925637749861926,
+      "peak_cuda_memory_gb": 27.692365646362305
+    },
+    {
+      "task": "qasper",
+      "method": "learned_root_topk",
+      "capacity": "256",
+      "n": 5,
+      "score": 17.064577777592806,
+      "actual_retained_ratio": 0.0673138412276961,
+      "actual_kv_bytes": 50253004.8,
+      "seconds": 2.9066713199950756,
+      "peak_cuda_memory_gb": 27.72122573852539
+    },
+    {
+      "task": "qasper",
+      "method": "learned_root_topk",
+      "capacity": "512",
+      "n": 5,
+      "score": 17.888964049208536,
+      "actual_retained_ratio": 0.13474151284810704,
+      "actual_kv_bytes": 100584652.8,
+      "seconds": 2.5837893205694855,
+      "peak_cuda_memory_gb": 27.799238204956055
+    }
+  ],
+  "macro_records": [
+    {
+      "method": "full",
+      "capacity": "full",
+      "tasks": 5,
+      "n": 25,
+      "macro_score": 60.92673992673993,
+      "actual_retained_ratio": 1.0,
+      "seconds": 3.3067276487126946
+    },
+    {
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "128",
+      "tasks": 5,
+      "n": 25,
+      "macro_score": 29.919540055481594,
+      "actual_retained_ratio": 0.021265880450848023,
+      "seconds": 1.5041300302185117
+    },
+    {
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "256",
+      "tasks": 5,
+      "n": 25,
+      "macro_score": 28.307519172794315,
+      "actual_retained_ratio": 0.042531760901696046,
+      "seconds": 1.6749989221058788
+    },
+    {
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "512",
+      "tasks": 5,
+      "n": 25,
+      "macro_score": 38.26205454797635,
+      "actual_retained_ratio": 0.08506352180339209,
+      "seconds": 1.7581215529330074
+    },
+    {
+      "method": "learned_root_topk",
+      "capacity": "128",
+      "tasks": 5,
+      "n": 25,
+      "macro_score": 15.425694810867949,
+      "actual_retained_ratio": 0.021194333975985545,
+      "seconds": 3.5117820081487294
+    },
+    {
+      "method": "learned_root_topk",
+      "capacity": "256",
+      "tasks": 5,
+      "n": 25,
+      "macro_score": 16.884029496261196,
+      "actual_retained_ratio": 0.04241594982389208,
+      "seconds": 2.1947740613669158
+    },
+    {
+      "method": "learned_root_topk",
+      "capacity": "512",
+      "tasks": 5,
+      "n": 25,
+      "macro_score": 20.26292557644981,
+      "actual_retained_ratio": 0.08492554173314423,
+      "seconds": 2.113031355030835
+    }
+  ]
+}

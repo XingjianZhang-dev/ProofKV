@@ -1,0 +1,4730 @@
+{
+  "analysis_implementation_sha256": "2f96359bb8ad9bad9d4aa3ec43c2ea6ce338a22d39fc901915cbb82b56ada43f",
+  "analysis_role": "descriptive_postformal_physical_efficiency",
+  "base_analysis_implementation_sha256": "6e5f46b7aca0661ad200ac982b09cdc6ea5486c93608f5c76a40df2b06bdf4b2",
+  "base_analyzer": "/workspace/compresskv_run/compresskv/compresskv/scripts/analyze_longbench_v10_efficiency.py",
+  "base_protocol": "proofkv_v10_physical_efficiency_audit_v1",
+  "input_runs": [
+    {
+      "capacities": [
+        128,
+        256,
+        512,
+        1024
+      ],
+      "configurations_per_sample": 21,
+      "empty_prediction_policy": "Blank decoded outputs are retained as real zero-score model outputs and reported by task, method, and capacity. A blank prediction with nonzero score is invalid.",
+      "empty_predictions": 0,
+      "empty_predictions_by_task_method_capacity": [],
+      "empty_string_predictions": 0,
+      "implementation_sha256": {
+        "/workspace/baselines/kvpress/kvpress/presses/chunkkv_press.py": "75b7e1b027ce2ef971fef9d20e711525799b873a23e9273f7ca2b6874da33ecd",
+        "/workspace/compresskv_run/compresskv/compresskv/compresskv/physical_kv.py": "8ef0e558b29f5a9dd72a04c16576eb28c54c4c565a14c2814419919d00a00983",
+        "/workspace/compresskv_run/compresskv/compresskv/compresskv/prefill_selectors.py": "f5b0098d5689ab3e8b61512922c9ebefe9cb6df07317f5b662b988371f73628f",
+        "/workspace/compresskv_run/compresskv/compresskv/compresskv/proofcache/model.py": "e7443efaac3e326cad483510b15e4b36a77fe5b5a7e55fa0cdcd5619b882a47f",
+        "/workspace/compresskv_run/compresskv/compresskv/compresskv/proofcache/schema.py": "0190bc84d93d1c23033b967e4e2204d8ba3489bd38e0d9e84cbd352a3fd76a05",
+        "/workspace/compresskv_run/compresskv/compresskv/compresskv/proofcache/selector.py": "38311cba139a7120ffcd734102358090aab9b152755d22fce9efa726b19120bf",
+        "/workspace/compresskv_run/compresskv/compresskv/scripts/official_ruler_v10_common.py": "279292dc2dab3ab54381b829d4e4bf38e2cc9adda752afff8c7064c6a1895754",
+        "/workspace/compresskv_run/compresskv/compresskv/scripts/run_hotpot_compact_qa_upgraded_v10.py": "b2121215090341af185a26ffaefd27f2a53c5518b2c640129e58952b4c166bdd",
+        "/workspace/compresskv_run/compresskv/compresskv/scripts/run_kvpress_natural_qa.py": "b79759843aa184058cf7f01f3bd2776fd76cf0130d2648045296935459551cfb",
+        "/workspace/compresskv_run/compresskv/compresskv/scripts/run_longbench_structured_upgraded_v10.py": "af641006f8ac001a8ec0060cf99c7029203aa32dd31ff9a2fae3bd6e3a39c2c6",
+        "/workspace/compresskv_run/compresskv/compresskv/scripts/run_official_ruler_upgraded_v10.py": "aaee0de2104f7bd6d5897bb30aeeed5f77405e6a36c4fe5e8feac6ebd14e221c"
+      },
+      "kv_bytes_per_token_bf16": 57344.0,
+      "max_capacity_excess_tokens": 0.0,
+      "methods": [
+        "full",
+        "streamingllm",
+        "snapkv",
+        "pyramidkv",
+        "chunkkv_snapkv",
+        "confirmation_stable_proofkv_v10"
+      ],
+      "metrics_sha256": "2690270f18b21af8210143bc6433512bca3612fab6bb4adefe066f5ca371eb27",
+      "model": "qwen25",
+      "n_per_task": 47,
+      "results_sha256": "9c0bf6f1ab1b3ca59e740b69e3662f922e3adb2a1ff2e89ce012f4d46822aeb8",
+      "rows": 1974,
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_qwen25",
+      "run_manifest_sha256": "ef2a7fe63ac6c6153e495473acec8ab43292d41c630c2997c61747d79ffe017e",
+      "scorer_checkpoint_sha256": {
+        "encoder/config.json": "351963ff45852d8d60ea3d37f3a8a54f87d31ac4030e455cd26659b73c4bcd3b",
+        "encoder/model.safetensors": "774e7f692bcea6ae945fe4d0eeb90045f9e9d2371d28d76a4287b348c082cd64",
+        "heads.pt": "e95a0075813bf2d87d02327960107f7e6f31b6ff8b546d541a859f8a851e7385",
+        "proofcache_scorer.json": "4e7196a2df2d8cf975efbb2286e4a336ca65f8cd93edc9a09191a0bc57ed1d35",
+        "tokenizer/tokenizer.json": "91f1def9b9391fdabe028cd3f3fcc4efd34e5d1f08c3bf2de513ebb5911a1854",
+        "tokenizer/tokenizer_config.json": "74a0cf609c8a333cba965e542045fb194c5f9c6c315bc6a28aa2f8fb0bc06e96"
+      },
+      "selection_manifest_sha256": "5d71da9bddafbef4e9f90e5b9ef0e28bc8ae027afe0b9ff72a0b7672cfdcd050",
+      "task_example_groups": 94,
+      "tasks": [
+        "ruler_niah",
+        "ruler_variable_tracking"
+      ],
+      "whitespace_only_predictions": 0
+    }
+  ],
+  "measurement_scope": {
+    "peak_cuda_memory": "PyTorch peak allocated memory includes model and prefill; it is not an isolated post-prefill KV-cache measurement",
+    "physical_kv_bytes": "exact retained tokens multiplied by model-specific BF16 KV bytes per token",
+    "row_timings": "matched offline evaluation timings; use the separate H100 serving experiment for deployment-throughput claims"
+  },
+  "method_task_capacity_records": [
+    {
+      "actual_kv_bytes": {
+        "max": 58720256.0,
+        "mean": 58720256.0,
+        "median": 58720256.0,
+        "min": 58720256.0,
+        "n": 47,
+        "p95": 58720256.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.1283851554663992,
+        "mean": 0.12829892607993307,
+        "median": 0.1282886494612879,
+        "min": 0.12819228843264896,
+        "n": 47,
+        "p95": 0.1283851554663992
+      },
+      "actual_retained_tokens": {
+        "max": 1024.0,
+        "mean": 1024.0,
+        "median": 1024.0,
+        "min": 1024.0,
+        "n": 47,
+        "p95": 1024.0
+      },
+      "capacity": "1024",
+      "generation_seconds": {
+        "max": 18.33587741665542,
+        "mean": 13.597759941840504,
+        "median": 14.12814068282023,
+        "min": 7.582222374621779,
+        "n": 47,
+        "p95": 17.508011270081624
+      },
+      "method": "chunkkv_snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.431265830993652,
+        "mean": 15.431122972610149,
+        "median": 15.431106090545654,
+        "min": 15.430946350097656,
+        "n": 47,
+        "p95": 15.431265830993652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 100.0,
+        "median": 100.0,
+        "min": 100.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 18.33587741665542,
+        "mean": 13.597759941840504,
+        "median": 14.12814068282023,
+        "min": 7.582222374621779,
+        "n": 47,
+        "p95": 17.508011270081624
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 7340032.0,
+        "mean": 7340032.0,
+        "median": 7340032.0,
+        "min": 7340032.0,
+        "n": 47,
+        "p95": 7340032.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0160481444332999,
+        "mean": 0.016037365759991633,
+        "median": 0.016036081182660988,
+        "min": 0.01602403605408112,
+        "n": 47,
+        "p95": 0.0160481444332999
+      },
+      "actual_retained_tokens": {
+        "max": 128.0,
+        "mean": 128.0,
+        "median": 128.0,
+        "min": 128.0,
+        "n": 47,
+        "p95": 128.0
+      },
+      "capacity": "128",
+      "generation_seconds": {
+        "max": 6.36441350588575,
+        "mean": 4.877075613664582,
+        "median": 4.640524641145021,
+        "min": 3.1928666280582547,
+        "n": 47,
+        "p95": 6.102825803542509
+      },
+      "method": "chunkkv_snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.383414268493652,
+        "mean": 15.383271410110149,
+        "median": 15.383254528045654,
+        "min": 15.383094787597656,
+        "n": 47,
+        "p95": 15.383414268493652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 2.127659574468085,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 6.36441350588575,
+        "mean": 4.877075613664582,
+        "median": 4.640524641145021,
+        "min": 3.1928666280582547,
+        "n": 47,
+        "p95": 6.102825803542509
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 14680064.0,
+        "mean": 14680064.0,
+        "median": 14680064.0,
+        "min": 14680064.0,
+        "n": 47,
+        "p95": 14680064.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0320962888665998,
+        "mean": 0.03207473151998327,
+        "median": 0.032072162365321975,
+        "min": 0.03204807210816224,
+        "n": 47,
+        "p95": 0.0320962888665998
+      },
+      "actual_retained_tokens": {
+        "max": 256.0,
+        "mean": 256.0,
+        "median": 256.0,
+        "min": 256.0,
+        "n": 47,
+        "p95": 256.0
+      },
+      "capacity": "256",
+      "generation_seconds": {
+        "max": 6.65276525169611,
+        "mean": 5.110570623995142,
+        "median": 5.055485632270575,
+        "min": 2.829620531760156,
+        "n": 47,
+        "p95": 6.526152282673865
+      },
+      "method": "chunkkv_snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.390250205993652,
+        "mean": 15.390107347610149,
+        "median": 15.390090465545654,
+        "min": 15.389930725097656,
+        "n": 47,
+        "p95": 15.390250205993652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 85.1063829787234,
+        "median": 100.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 6.65276525169611,
+        "mean": 5.110570623995142,
+        "median": 5.055485632270575,
+        "min": 2.829620531760156,
+        "n": 47,
+        "p95": 6.526152282673865
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 29360128.0,
+        "mean": 29360128.0,
+        "median": 29360128.0,
+        "min": 29360128.0,
+        "n": 47,
+        "p95": 29360128.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0641925777331996,
+        "mean": 0.06414946303996653,
+        "median": 0.06414432473064395,
+        "min": 0.06409614421632448,
+        "n": 47,
+        "p95": 0.0641925777331996
+      },
+      "actual_retained_tokens": {
+        "max": 512.0,
+        "mean": 512.0,
+        "median": 512.0,
+        "min": 512.0,
+        "n": 47,
+        "p95": 512.0
+      },
+      "capacity": "512",
+      "generation_seconds": {
+        "max": 12.370569856837392,
+        "mean": 8.933538673782444,
+        "median": 9.114347841124982,
+        "min": 5.273168042767793,
+        "n": 47,
+        "p95": 10.653605450922623
+      },
+      "method": "chunkkv_snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.403922080993652,
+        "mean": 15.403779222610149,
+        "median": 15.403762340545654,
+        "min": 15.403602600097656,
+        "n": 47,
+        "p95": 15.403922080993652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 100.0,
+        "median": 100.0,
+        "min": 100.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 12.370569856837392,
+        "mean": 8.933538673782444,
+        "median": 9.114347841124982,
+        "min": 5.273168042767793,
+        "n": 47,
+        "p95": 10.653605450922623
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 58720256.0,
+        "mean": 58720256.0,
+        "median": 58720256.0,
+        "min": 58720256.0,
+        "n": 47,
+        "p95": 58720256.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.1283851554663992,
+        "mean": 0.12829892607993307,
+        "median": 0.1282886494612879,
+        "min": 0.12819228843264896,
+        "n": 47,
+        "p95": 0.1283851554663992
+      },
+      "actual_retained_tokens": {
+        "max": 1024.0,
+        "mean": 1024.0,
+        "median": 1024.0,
+        "min": 1024.0,
+        "n": 47,
+        "p95": 1024.0
+      },
+      "capacity": "1024",
+      "generation_seconds": {
+        "max": 18.33587741665542,
+        "mean": 13.597759941840504,
+        "median": 14.12814068282023,
+        "min": 7.582222374621779,
+        "n": 47,
+        "p95": 17.508011270081624
+      },
+      "method": "confirmation_stable_proofkv_v10",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.431265830993652,
+        "mean": 15.431122972610149,
+        "median": 15.431106090545654,
+        "min": 15.430946350097656,
+        "n": 47,
+        "p95": 15.431265830993652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 100.0,
+        "median": 100.0,
+        "min": 100.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 18.33587741665542,
+        "mean": 13.597759941840504,
+        "median": 14.12814068282023,
+        "min": 7.582222374621779,
+        "n": 47,
+        "p95": 17.508011270081624
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 7340032.0,
+        "mean": 7340032.0,
+        "median": 7340032.0,
+        "min": 7340032.0,
+        "n": 47,
+        "p95": 7340032.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0160481444332999,
+        "mean": 0.016037365759991633,
+        "median": 0.016036081182660988,
+        "min": 0.01602403605408112,
+        "n": 47,
+        "p95": 0.0160481444332999
+      },
+      "actual_retained_tokens": {
+        "max": 128.0,
+        "mean": 128.0,
+        "median": 128.0,
+        "min": 128.0,
+        "n": 47,
+        "p95": 128.0
+      },
+      "capacity": "128",
+      "generation_seconds": {
+        "max": 0.9318626997992396,
+        "mean": 0.6729074494635805,
+        "median": 0.6691410671919584,
+        "min": 0.35407528188079596,
+        "n": 47,
+        "p95": 0.8252776219975202
+      },
+      "method": "confirmation_stable_proofkv_v10",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 14.34233283996582,
+        "mean": 14.34233283996582,
+        "median": 14.34233283996582,
+        "min": 14.34233283996582,
+        "n": 47,
+        "p95": 14.34233283996582
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 100.0,
+        "median": 100.0,
+        "min": 100.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 14.262692077085376,
+        "mean": 13.339405946958651,
+        "median": 13.48069992987439,
+        "min": 11.762383715249598,
+        "n": 47,
+        "p95": 13.95737096387893
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 15.027181581128389,
+        "mean": 14.012313396422233,
+        "median": 14.192692007869482,
+        "min": 12.170958581380546,
+        "n": 47,
+        "p95": 14.636998275900261
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 14680064.0,
+        "mean": 14680064.0,
+        "median": 14680064.0,
+        "min": 14680064.0,
+        "n": 47,
+        "p95": 14680064.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0320962888665998,
+        "mean": 0.03207473151998327,
+        "median": 0.032072162365321975,
+        "min": 0.03204807210816224,
+        "n": 47,
+        "p95": 0.0320962888665998
+      },
+      "actual_retained_tokens": {
+        "max": 256.0,
+        "mean": 256.0,
+        "median": 256.0,
+        "min": 256.0,
+        "n": 47,
+        "p95": 256.0
+      },
+      "capacity": "256",
+      "generation_seconds": {
+        "max": 6.65276525169611,
+        "mean": 5.110570623995142,
+        "median": 5.055485632270575,
+        "min": 2.829620531760156,
+        "n": 47,
+        "p95": 6.526152282673865
+      },
+      "method": "confirmation_stable_proofkv_v10",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.390250205993652,
+        "mean": 15.390107347610149,
+        "median": 15.390090465545654,
+        "min": 15.389930725097656,
+        "n": 47,
+        "p95": 15.390250205993652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 85.1063829787234,
+        "median": 100.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 6.65276525169611,
+        "mean": 5.110570623995142,
+        "median": 5.055485632270575,
+        "min": 2.829620531760156,
+        "n": 47,
+        "p95": 6.526152282673865
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 29360128.0,
+        "mean": 29360128.0,
+        "median": 29360128.0,
+        "min": 29360128.0,
+        "n": 47,
+        "p95": 29360128.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0641925777331996,
+        "mean": 0.06414946303996653,
+        "median": 0.06414432473064395,
+        "min": 0.06409614421632448,
+        "n": 47,
+        "p95": 0.0641925777331996
+      },
+      "actual_retained_tokens": {
+        "max": 512.0,
+        "mean": 512.0,
+        "median": 512.0,
+        "min": 512.0,
+        "n": 47,
+        "p95": 512.0
+      },
+      "capacity": "512",
+      "generation_seconds": {
+        "max": 12.370569856837392,
+        "mean": 8.933538673782444,
+        "median": 9.114347841124982,
+        "min": 5.273168042767793,
+        "n": 47,
+        "p95": 10.653605450922623
+      },
+      "method": "confirmation_stable_proofkv_v10",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.403922080993652,
+        "mean": 15.403779222610149,
+        "median": 15.403762340545654,
+        "min": 15.403602600097656,
+        "n": 47,
+        "p95": 15.403922080993652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 100.0,
+        "median": 100.0,
+        "min": 100.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 12.370569856837392,
+        "mean": 8.933538673782444,
+        "median": 9.114347841124982,
+        "min": 5.273168042767793,
+        "n": 47,
+        "p95": 10.653605450922623
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 458063872.0,
+        "mean": 457683205.4468085,
+        "median": 457719808.0,
+        "min": 457375744.0,
+        "n": 47,
+        "p95": 457891840.0
+      },
+      "actual_retained_ratio": {
+        "max": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "n": 47,
+        "p95": 1.0
+      },
+      "actual_retained_tokens": {
+        "max": 7988.0,
+        "mean": 7981.36170212766,
+        "median": 7982.0,
+        "min": 7976.0,
+        "n": 47,
+        "p95": 7985.0
+      },
+      "capacity": "full",
+      "generation_seconds": {
+        "max": 3.3311762348748744,
+        "mean": 2.6225813345765654,
+        "median": 2.6932927700690925,
+        "min": 1.6106132748536766,
+        "n": 47,
+        "p95": 3.1910371087957174
+      },
+      "method": "full",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.803696632385254,
+        "mean": 15.803596811091646,
+        "median": 15.803606510162354,
+        "min": 15.803516387939453,
+        "n": 47,
+        "p95": 15.803651332855225
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 100.0,
+        "median": 100.0,
+        "min": 100.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 3.3311762348748744,
+        "mean": 2.6225813345765654,
+        "median": 2.6932927700690925,
+        "min": 1.6106132748536766,
+        "n": 47,
+        "p95": 3.1910371087957174
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 58720256.0,
+        "mean": 58720256.0,
+        "median": 58720256.0,
+        "min": 58720256.0,
+        "n": 47,
+        "p95": 58720256.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.1283851554663992,
+        "mean": 0.12829892607993307,
+        "median": 0.1282886494612879,
+        "min": 0.12819228843264896,
+        "n": 47,
+        "p95": 0.1283851554663992
+      },
+      "actual_retained_tokens": {
+        "max": 1024.0,
+        "mean": 1024.0,
+        "median": 1024.0,
+        "min": 1024.0,
+        "n": 47,
+        "p95": 1024.0
+      },
+      "capacity": "1024",
+      "generation_seconds": {
+        "max": 4.291978497989476,
+        "mean": 2.83241956133118,
+        "median": 2.8701673643663526,
+        "min": 1.8820274877361953,
+        "n": 47,
+        "p95": 3.4218273576814675
+      },
+      "method": "pyramidkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.431265830993652,
+        "mean": 15.431122972610149,
+        "median": 15.431106090545654,
+        "min": 15.430946350097656,
+        "n": 47,
+        "p95": 15.431265830993652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 53.191489361702125,
+        "median": 100.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 4.291978497989476,
+        "mean": 2.83241956133118,
+        "median": 2.8701673643663526,
+        "min": 1.8820274877361953,
+        "n": 47,
+        "p95": 3.4218273576814675
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 7340032.0,
+        "mean": 7340032.0,
+        "median": 7340032.0,
+        "min": 7340032.0,
+        "n": 47,
+        "p95": 7340032.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0160481444332999,
+        "mean": 0.016037365759991633,
+        "median": 0.016036081182660988,
+        "min": 0.01602403605408112,
+        "n": 47,
+        "p95": 0.0160481444332999
+      },
+      "actual_retained_tokens": {
+        "max": 128.0,
+        "mean": 128.0,
+        "median": 128.0,
+        "min": 128.0,
+        "n": 47,
+        "p95": 128.0
+      },
+      "capacity": "128",
+      "generation_seconds": {
+        "max": 4.8153985240496695,
+        "mean": 3.9594273420169634,
+        "median": 4.021778893191367,
+        "min": 2.8436209550127387,
+        "n": 47,
+        "p95": 4.691308856103569
+      },
+      "method": "pyramidkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.383414268493652,
+        "mean": 15.383271410110149,
+        "median": 15.383254528045654,
+        "min": 15.383094787597656,
+        "n": 47,
+        "p95": 15.383414268493652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 2.127659574468085,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 4.8153985240496695,
+        "mean": 3.9594273420169634,
+        "median": 4.021778893191367,
+        "min": 2.8436209550127387,
+        "n": 47,
+        "p95": 4.691308856103569
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 14680064.0,
+        "mean": 14680064.0,
+        "median": 14680064.0,
+        "min": 14680064.0,
+        "n": 47,
+        "p95": 14680064.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0320962888665998,
+        "mean": 0.03207473151998327,
+        "median": 0.032072162365321975,
+        "min": 0.03204807210816224,
+        "n": 47,
+        "p95": 0.0320962888665998
+      },
+      "actual_retained_tokens": {
+        "max": 256.0,
+        "mean": 256.0,
+        "median": 256.0,
+        "min": 256.0,
+        "n": 47,
+        "p95": 256.0
+      },
+      "capacity": "256",
+      "generation_seconds": {
+        "max": 4.412090587429702,
+        "mean": 2.8541211846799768,
+        "median": 2.8874217737466097,
+        "min": 1.7664882228709757,
+        "n": 47,
+        "p95": 3.6287489741109313
+      },
+      "method": "pyramidkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.390250205993652,
+        "mean": 15.390107347610149,
+        "median": 15.390090465545654,
+        "min": 15.389930725097656,
+        "n": 47,
+        "p95": 15.390250205993652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 12.76595744680851,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 4.412090587429702,
+        "mean": 2.8541211846799768,
+        "median": 2.8874217737466097,
+        "min": 1.7664882228709757,
+        "n": 47,
+        "p95": 3.6287489741109313
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 29360128.0,
+        "mean": 29360128.0,
+        "median": 29360128.0,
+        "min": 29360128.0,
+        "n": 47,
+        "p95": 29360128.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0641925777331996,
+        "mean": 0.06414946303996653,
+        "median": 0.06414432473064395,
+        "min": 0.06409614421632448,
+        "n": 47,
+        "p95": 0.0641925777331996
+      },
+      "actual_retained_tokens": {
+        "max": 512.0,
+        "mean": 512.0,
+        "median": 512.0,
+        "min": 512.0,
+        "n": 47,
+        "p95": 512.0
+      },
+      "capacity": "512",
+      "generation_seconds": {
+        "max": 3.823829234112054,
+        "mean": 2.8661228959805314,
+        "median": 2.8213528287597,
+        "min": 1.9697108711116016,
+        "n": 47,
+        "p95": 3.3909442766569553
+      },
+      "method": "pyramidkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.403922080993652,
+        "mean": 15.403779222610149,
+        "median": 15.403762340545654,
+        "min": 15.403602600097656,
+        "n": 47,
+        "p95": 15.403922080993652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 29.78723404255319,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 3.823829234112054,
+        "mean": 2.8661228959805314,
+        "median": 2.8213528287597,
+        "min": 1.9697108711116016,
+        "n": 47,
+        "p95": 3.3909442766569553
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 58720256.0,
+        "mean": 58675112.85106383,
+        "median": 58662912.0,
+        "min": 58662912.0,
+        "n": 47,
+        "p95": 58720256.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.12825977933801405,
+        "mean": 0.12820027786388152,
+        "median": 0.12821155533274847,
+        "min": 0.12816336757704835,
+        "n": 47,
+        "p95": 0.12825977933801405
+      },
+      "actual_retained_tokens": {
+        "max": 1024.0,
+        "mean": 1023.2127659574468,
+        "median": 1023.0,
+        "min": 1023.0,
+        "n": 47,
+        "p95": 1024.0
+      },
+      "capacity": "1024",
+      "generation_seconds": {
+        "max": 4.2971805850975215,
+        "mean": 2.8587864779748338,
+        "median": 2.778938126284629,
+        "min": 2.015796646941453,
+        "n": 47,
+        "p95": 3.434506143769249
+      },
+      "method": "snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.431212425231934,
+        "mean": 15.431080929776455,
+        "median": 15.431052684783936,
+        "min": 15.430946350097656,
+        "n": 47,
+        "p95": 15.431212425231934
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 53.191489361702125,
+        "median": 100.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 4.2971805850975215,
+        "mean": 2.8587864779748338,
+        "median": 2.778938126284629,
+        "min": 2.015796646941453,
+        "n": 47,
+        "p95": 3.434506143769249
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 7340032.0,
+        "mean": 7340032.0,
+        "median": 7340032.0,
+        "min": 7340032.0,
+        "n": 47,
+        "p95": 7340032.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0160481444332999,
+        "mean": 0.016037365759991633,
+        "median": 0.016036081182660988,
+        "min": 0.01602403605408112,
+        "n": 47,
+        "p95": 0.0160481444332999
+      },
+      "actual_retained_tokens": {
+        "max": 128.0,
+        "mean": 128.0,
+        "median": 128.0,
+        "min": 128.0,
+        "n": 47,
+        "p95": 128.0
+      },
+      "capacity": "128",
+      "generation_seconds": {
+        "max": 4.99775299616158,
+        "mean": 4.076189721974128,
+        "median": 4.141023219097406,
+        "min": 2.9286003429442644,
+        "n": 47,
+        "p95": 4.847089100442826
+      },
+      "method": "snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.383414268493652,
+        "mean": 15.383271410110149,
+        "median": 15.383254528045654,
+        "min": 15.383094787597656,
+        "n": 47,
+        "p95": 15.383414268493652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 2.127659574468085,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 4.99775299616158,
+        "mean": 4.076189721974128,
+        "median": 4.141023219097406,
+        "min": 2.9286003429442644,
+        "n": 47,
+        "p95": 4.847089100442826
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 14680064.0,
+        "mean": 14677623.829787234,
+        "median": 14680064.0,
+        "min": 14622720.0,
+        "n": 47,
+        "p95": 14680064.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0320962888665998,
+        "mean": 0.03206940438033763,
+        "median": 0.032072162365321975,
+        "min": 0.03192288432648974,
+        "n": 47,
+        "p95": 0.0320962888665998
+      },
+      "actual_retained_tokens": {
+        "max": 256.0,
+        "mean": 255.95744680851064,
+        "median": 256.0,
+        "min": 255.0,
+        "n": 47,
+        "p95": 256.0
+      },
+      "capacity": "256",
+      "generation_seconds": {
+        "max": 4.670535736251622,
+        "mean": 2.9399511562957565,
+        "median": 2.9621088947169483,
+        "min": 1.7641229978762567,
+        "n": 47,
+        "p95": 4.243150360882281
+      },
+      "method": "snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.390250205993652,
+        "mean": 15.390105075024543,
+        "median": 15.390090465545654,
+        "min": 15.389877319335938,
+        "n": 47,
+        "p95": 15.390250205993652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 12.76595744680851,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 4.670535736251622,
+        "mean": 2.9399511562957565,
+        "median": 2.9621088947169483,
+        "min": 1.7641229978762567,
+        "n": 47,
+        "p95": 4.243150360882281
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 29360128.0,
+        "mean": 29327185.702127658,
+        "median": 29302784.0,
+        "min": 29302784.0,
+        "n": 47,
+        "p95": 29360128.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0641925777331996,
+        "mean": 0.06407750060756695,
+        "median": 0.0640190428464044,
+        "min": 0.06399499060738885,
+        "n": 47,
+        "p95": 0.0641925777331996
+      },
+      "actual_retained_tokens": {
+        "max": 512.0,
+        "mean": 511.4255319148936,
+        "median": 511.0,
+        "min": 511.0,
+        "n": 47,
+        "p95": 512.0
+      },
+      "capacity": "512",
+      "generation_seconds": {
+        "max": 3.6153089068830013,
+        "mean": 2.8020136204270765,
+        "median": 2.845393751747906,
+        "min": 1.4892334979958832,
+        "n": 47,
+        "p95": 3.5161531828343864
+      },
+      "method": "snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.403922080993652,
+        "mean": 15.40374854270448,
+        "median": 15.403708934783936,
+        "min": 15.403602600097656,
+        "n": 47,
+        "p95": 15.403922080993652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 29.78723404255319,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 3.6153089068830013,
+        "mean": 2.8020136204270765,
+        "median": 2.845393751747906,
+        "min": 1.4892334979958832,
+        "n": 47,
+        "p95": 3.5161531828343864
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 58720256.0,
+        "mean": 58675112.85106383,
+        "median": 58662912.0,
+        "min": 58662912.0,
+        "n": 47,
+        "p95": 58720256.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.12825977933801405,
+        "mean": 0.12820027786388152,
+        "median": 0.12821155533274847,
+        "min": 0.12816336757704835,
+        "n": 47,
+        "p95": 0.12825977933801405
+      },
+      "actual_retained_tokens": {
+        "max": 1024.0,
+        "mean": 1023.2127659574468,
+        "median": 1023.0,
+        "min": 1023.0,
+        "n": 47,
+        "p95": 1024.0
+      },
+      "capacity": "1024",
+      "generation_seconds": {
+        "max": 4.627463545650244,
+        "mean": 2.823226229327315,
+        "median": 2.6420645327307284,
+        "min": 1.5399100435897708,
+        "n": 47,
+        "p95": 4.099762579333037
+      },
+      "method": "streamingllm",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.431212425231934,
+        "mean": 15.431080929776455,
+        "median": 15.431052684783936,
+        "min": 15.430946350097656,
+        "n": 47,
+        "p95": 15.431212425231934
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 14.893617021276595,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 4.627463545650244,
+        "mean": 2.823226229327315,
+        "median": 2.6420645327307284,
+        "min": 1.5399100435897708,
+        "n": 47,
+        "p95": 4.099762579333037
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 7340032.0,
+        "mean": 7340032.0,
+        "median": 7340032.0,
+        "min": 7340032.0,
+        "n": 47,
+        "p95": 7340032.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0160481444332999,
+        "mean": 0.016037365759991633,
+        "median": 0.016036081182660988,
+        "min": 0.01602403605408112,
+        "n": 47,
+        "p95": 0.0160481444332999
+      },
+      "actual_retained_tokens": {
+        "max": 128.0,
+        "mean": 128.0,
+        "median": 128.0,
+        "min": 128.0,
+        "n": 47,
+        "p95": 128.0
+      },
+      "capacity": "128",
+      "generation_seconds": {
+        "max": 4.686339512001723,
+        "mean": 3.082440149871276,
+        "median": 2.849173333030194,
+        "min": 1.7270396738313138,
+        "n": 47,
+        "p95": 4.604054024675861
+      },
+      "method": "streamingllm",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.383414268493652,
+        "mean": 15.383271410110149,
+        "median": 15.383254528045654,
+        "min": 15.383094787597656,
+        "n": 47,
+        "p95": 15.383414268493652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 2.127659574468085,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 4.686339512001723,
+        "mean": 3.082440149871276,
+        "median": 2.849173333030194,
+        "min": 1.7270396738313138,
+        "n": 47,
+        "p95": 4.604054024675861
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 14680064.0,
+        "mean": 14677623.829787234,
+        "median": 14680064.0,
+        "min": 14622720.0,
+        "n": 47,
+        "p95": 14680064.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0320962888665998,
+        "mean": 0.03206940438033763,
+        "median": 0.032072162365321975,
+        "min": 0.03192288432648974,
+        "n": 47,
+        "p95": 0.0320962888665998
+      },
+      "actual_retained_tokens": {
+        "max": 256.0,
+        "mean": 255.95744680851064,
+        "median": 256.0,
+        "min": 255.0,
+        "n": 47,
+        "p95": 256.0
+      },
+      "capacity": "256",
+      "generation_seconds": {
+        "max": 4.767091624438763,
+        "mean": 3.088402249206333,
+        "median": 2.910607130266726,
+        "min": 1.3562886868603528,
+        "n": 47,
+        "p95": 4.437792637478561
+      },
+      "method": "streamingllm",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.390250205993652,
+        "mean": 15.390105075024543,
+        "median": 15.390090465545654,
+        "min": 15.389877319335938,
+        "n": 47,
+        "p95": 15.390250205993652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 6.382978723404255,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 69.99999999999957
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 4.767091624438763,
+        "mean": 3.088402249206333,
+        "median": 2.910607130266726,
+        "min": 1.3562886868603528,
+        "n": 47,
+        "p95": 4.437792637478561
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 29360128.0,
+        "mean": 29327185.702127658,
+        "median": 29302784.0,
+        "min": 29302784.0,
+        "n": 47,
+        "p95": 29360128.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.0641925777331996,
+        "mean": 0.06407750060756695,
+        "median": 0.0640190428464044,
+        "min": 0.06399499060738885,
+        "n": 47,
+        "p95": 0.0641925777331996
+      },
+      "actual_retained_tokens": {
+        "max": 512.0,
+        "mean": 511.4255319148936,
+        "median": 511.0,
+        "min": 511.0,
+        "n": 47,
+        "p95": 512.0
+      },
+      "capacity": "512",
+      "generation_seconds": {
+        "max": 4.244674974121153,
+        "mean": 2.738406965608134,
+        "median": 2.7737157880328596,
+        "min": 1.4266070388257504,
+        "n": 47,
+        "p95": 3.8328788598533716
+      },
+      "method": "streamingllm",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.403922080993652,
+        "mean": 15.40374854270448,
+        "median": 15.403708934783936,
+        "min": 15.403602600097656,
+        "n": 47,
+        "p95": 15.403922080993652
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 10.638297872340425,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_niah",
+      "total_seconds": {
+        "max": 4.244674974121153,
+        "mean": 2.738406965608134,
+        "median": 2.7737157880328596,
+        "min": 1.4266070388257504,
+        "n": 47,
+        "p95": 3.8328788598533716
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 58720256.0,
+        "mean": 58720256.0,
+        "median": 58720256.0,
+        "min": 58720256.0,
+        "n": 47,
+        "p95": 58720256.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.12832080200501253,
+        "mean": 0.1282104124714299,
+        "median": 0.128208338550144,
+        "min": 0.12804801800675253,
+        "n": 47,
+        "p95": 0.12829990144156894
+      },
+      "actual_retained_tokens": {
+        "max": 1024.0,
+        "mean": 1024.0,
+        "median": 1024.0,
+        "min": 1024.0,
+        "n": 47,
+        "p95": 1024.0
+      },
+      "capacity": "1024",
+      "generation_seconds": {
+        "max": 18.61129843816161,
+        "mean": 13.640816107808433,
+        "median": 14.339007661677897,
+        "min": 5.631490437313914,
+        "n": 47,
+        "p95": 17.58910578615032
+      },
+      "method": "chunkkv_snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.426105976104736,
+        "mean": 15.424759540152042,
+        "median": 15.424776554107666,
+        "min": 15.42384672164917,
+        "n": 47,
+        "p95": 15.425440311431885
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 98.72340425531915,
+        "median": 100.0,
+        "min": 80.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 18.61129843816161,
+        "mean": 13.640816107808433,
+        "median": 14.339007661677897,
+        "min": 5.631490437313914,
+        "n": 47,
+        "p95": 17.58910578615032
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 7340032.0,
+        "mean": 7340032.0,
+        "median": 7340032.0,
+        "min": 7340032.0,
+        "n": 47,
+        "p95": 7340032.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.016040100250626566,
+        "mean": 0.016026301558928736,
+        "median": 0.016026042318768,
+        "min": 0.016006002250844066,
+        "n": 47,
+        "p95": 0.016037487680196118
+      },
+      "actual_retained_tokens": {
+        "max": 128.0,
+        "mean": 128.0,
+        "median": 128.0,
+        "min": 128.0,
+        "n": 47,
+        "p95": 128.0
+      },
+      "capacity": "128",
+      "generation_seconds": {
+        "max": 6.077931894920766,
+        "mean": 4.347231384356843,
+        "median": 4.515753947198391,
+        "min": 2.2270238641649485,
+        "n": 47,
+        "p95": 5.924344519805163
+      },
+      "method": "chunkkv_snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.378254413604736,
+        "mean": 15.376907977652042,
+        "median": 15.376924991607666,
+        "min": 15.37599515914917,
+        "n": 47,
+        "p95": 15.377588748931885
+      },
+      "qa_f1": {
+        "max": 40.0,
+        "mean": 1.702127659574468,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 6.077931894920766,
+        "mean": 4.347231384356843,
+        "median": 4.515753947198391,
+        "min": 2.2270238641649485,
+        "n": 47,
+        "p95": 5.924344519805163
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 14680064.0,
+        "mean": 14680064.0,
+        "median": 14680064.0,
+        "min": 14680064.0,
+        "n": 47,
+        "p95": 14680064.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.03208020050125313,
+        "mean": 0.03205260311785747,
+        "median": 0.032052084637536,
+        "min": 0.03201200450168813,
+        "n": 47,
+        "p95": 0.032074975360392236
+      },
+      "actual_retained_tokens": {
+        "max": 256.0,
+        "mean": 256.0,
+        "median": 256.0,
+        "min": 256.0,
+        "n": 47,
+        "p95": 256.0
+      },
+      "capacity": "256",
+      "generation_seconds": {
+        "max": 8.054357353132218,
+        "mean": 6.327726898100623,
+        "median": 6.352182722184807,
+        "min": 4.11520525906235,
+        "n": 47,
+        "p95": 7.651176632614806
+      },
+      "method": "chunkkv_snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.385090351104736,
+        "mean": 15.383743915152042,
+        "median": 15.383760929107666,
+        "min": 15.38283109664917,
+        "n": 47,
+        "p95": 15.384424686431885
+      },
+      "qa_f1": {
+        "max": 80.0,
+        "mean": 10.638297872340425,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 40.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 8.054357353132218,
+        "mean": 6.327726898100623,
+        "median": 6.352182722184807,
+        "min": 4.11520525906235,
+        "n": 47,
+        "p95": 7.651176632614806
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 29360128.0,
+        "mean": 29360128.0,
+        "median": 29360128.0,
+        "min": 29360128.0,
+        "n": 47,
+        "p95": 29360128.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.06416040100250626,
+        "mean": 0.06410520623571495,
+        "median": 0.064104169275072,
+        "min": 0.06402400900337626,
+        "n": 47,
+        "p95": 0.06414995072078447
+      },
+      "actual_retained_tokens": {
+        "max": 512.0,
+        "mean": 512.0,
+        "median": 512.0,
+        "min": 512.0,
+        "n": 47,
+        "p95": 512.0
+      },
+      "capacity": "512",
+      "generation_seconds": {
+        "max": 12.574635583907366,
+        "mean": 9.0643477537372,
+        "median": 8.871956184972078,
+        "min": 4.068827746901661,
+        "n": 47,
+        "p95": 11.421099186502396
+      },
+      "method": "chunkkv_snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.398762226104736,
+        "mean": 15.397415790152042,
+        "median": 15.397432804107666,
+        "min": 15.39650297164917,
+        "n": 47,
+        "p95": 15.398096561431885
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 74.04255319148936,
+        "median": 80.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 12.574635583907366,
+        "mean": 9.0643477537372,
+        "median": 8.871956184972078,
+        "min": 4.068827746901661,
+        "n": 47,
+        "p95": 11.421099186502396
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 58720256.0,
+        "mean": 58720256.0,
+        "median": 58720256.0,
+        "min": 58720256.0,
+        "n": 47,
+        "p95": 58720256.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.12832080200501253,
+        "mean": 0.1282104124714299,
+        "median": 0.128208338550144,
+        "min": 0.12804801800675253,
+        "n": 47,
+        "p95": 0.12829990144156894
+      },
+      "actual_retained_tokens": {
+        "max": 1024.0,
+        "mean": 1024.0,
+        "median": 1024.0,
+        "min": 1024.0,
+        "n": 47,
+        "p95": 1024.0
+      },
+      "capacity": "1024",
+      "generation_seconds": {
+        "max": 18.61129843816161,
+        "mean": 13.640816107808433,
+        "median": 14.339007661677897,
+        "min": 5.631490437313914,
+        "n": 47,
+        "p95": 17.58910578615032
+      },
+      "method": "confirmation_stable_proofkv_v10",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.426105976104736,
+        "mean": 15.424759540152042,
+        "median": 15.424776554107666,
+        "min": 15.42384672164917,
+        "n": 47,
+        "p95": 15.425440311431885
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 98.72340425531915,
+        "median": 100.0,
+        "min": 80.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 18.61129843816161,
+        "mean": 13.640816107808433,
+        "median": 14.339007661677897,
+        "min": 5.631490437313914,
+        "n": 47,
+        "p95": 17.58910578615032
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 7340032.0,
+        "mean": 7340032.0,
+        "median": 7340032.0,
+        "min": 7340032.0,
+        "n": 47,
+        "p95": 7340032.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.016040100250626566,
+        "mean": 0.016026301558928736,
+        "median": 0.016026042318768,
+        "min": 0.016006002250844066,
+        "n": 47,
+        "p95": 0.016037487680196118
+      },
+      "actual_retained_tokens": {
+        "max": 128.0,
+        "mean": 128.0,
+        "median": 128.0,
+        "min": 128.0,
+        "n": 47,
+        "p95": 128.0
+      },
+      "capacity": "128",
+      "generation_seconds": {
+        "max": 2.3738098577596247,
+        "mean": 1.4052478465588485,
+        "median": 1.370598531793803,
+        "min": 0.6215534061193466,
+        "n": 47,
+        "p95": 2.263068228121847
+      },
+      "method": "confirmation_stable_proofkv_v10",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 14.34233283996582,
+        "mean": 14.34233283996582,
+        "median": 14.34233283996582,
+        "min": 14.34233283996582,
+        "n": 47,
+        "p95": 14.34233283996582
+      },
+      "qa_f1": {
+        "max": 80.0,
+        "mean": 64.68085106382979,
+        "median": 60.0,
+        "min": 60.0,
+        "n": 47,
+        "p95": 80.0
+      },
+      "selection_seconds": {
+        "max": 1.0277603711001575,
+        "mean": 0.9488012976845369,
+        "median": 0.9513265499845147,
+        "min": 0.8863110849633813,
+        "n": 47,
+        "p95": 0.9836230714805424
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 3.327871612738818,
+        "mean": 2.3540491442433855,
+        "median": 2.3181034103035927,
+        "min": 1.581588587258011,
+        "n": 47,
+        "p95": 3.198940069880336
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 14680064.0,
+        "mean": 14680064.0,
+        "median": 14680064.0,
+        "min": 14680064.0,
+        "n": 47,
+        "p95": 14680064.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.03208020050125313,
+        "mean": 0.03205260311785747,
+        "median": 0.032052084637536,
+        "min": 0.03201200450168813,
+        "n": 47,
+        "p95": 0.032074975360392236
+      },
+      "actual_retained_tokens": {
+        "max": 256.0,
+        "mean": 256.0,
+        "median": 256.0,
+        "min": 256.0,
+        "n": 47,
+        "p95": 256.0
+      },
+      "capacity": "256",
+      "generation_seconds": {
+        "max": 2.3481623707339168,
+        "mean": 1.4986830669593938,
+        "median": 1.5295185539871454,
+        "min": 0.6274278061464429,
+        "n": 47,
+        "p95": 2.1786433250177653
+      },
+      "method": "confirmation_stable_proofkv_v10",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 14.366690635681152,
+        "mean": 14.366690635681152,
+        "median": 14.366690635681152,
+        "min": 14.366690635681152,
+        "n": 47,
+        "p95": 14.366690635681152
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 89.7872340425532,
+        "median": 100.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.9803323540836573,
+        "mean": 0.948701615851531,
+        "median": 0.951414898969233,
+        "min": 0.9015427511185408,
+        "n": 47,
+        "p95": 0.9753247848246247
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 3.285243930760771,
+        "mean": 2.4473846828109247,
+        "median": 2.482253617607057,
+        "min": 1.5775700802914798,
+        "n": 47,
+        "p95": 3.1334001129958775
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 29360128.0,
+        "mean": 29360128.0,
+        "median": 29360128.0,
+        "min": 29360128.0,
+        "n": 47,
+        "p95": 29360128.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.06416040100250626,
+        "mean": 0.06410520623571495,
+        "median": 0.064104169275072,
+        "min": 0.06402400900337626,
+        "n": 47,
+        "p95": 0.06414995072078447
+      },
+      "actual_retained_tokens": {
+        "max": 512.0,
+        "mean": 512.0,
+        "median": 512.0,
+        "min": 512.0,
+        "n": 47,
+        "p95": 512.0
+      },
+      "capacity": "512",
+      "generation_seconds": {
+        "max": 2.506101274397224,
+        "mean": 1.5057184691045513,
+        "median": 1.3787603350356221,
+        "min": 0.6750254752114415,
+        "n": 47,
+        "p95": 2.31355500780046
+      },
+      "method": "confirmation_stable_proofkv_v10",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 14.413941383361816,
+        "mean": 14.413941383361816,
+        "median": 14.413941383361816,
+        "min": 14.413941383361816,
+        "n": 47,
+        "p95": 14.413941383361816
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 97.87234042553192,
+        "median": 100.0,
+        "min": 40.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 1.0119721670635045,
+        "mean": 0.9592756398438298,
+        "median": 0.9637255282141268,
+        "min": 0.9023821540176868,
+        "n": 47,
+        "p95": 0.9901515089906752
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 3.5180734414607286,
+        "mean": 2.464994108948381,
+        "median": 2.293038816191256,
+        "min": 1.6387510034255683,
+        "n": 47,
+        "p95": 3.2754273945931343
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 458579968.0,
+        "mean": 457999207.4893617,
+        "median": 458006528.0,
+        "min": 457605120.0,
+        "n": 47,
+        "p95": 458293248.0
+      },
+      "actual_retained_ratio": {
+        "max": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "n": 47,
+        "p95": 1.0
+      },
+      "actual_retained_tokens": {
+        "max": 7997.0,
+        "mean": 7986.872340425532,
+        "median": 7987.0,
+        "min": 7980.0,
+        "n": 47,
+        "p95": 7992.0
+      },
+      "capacity": "full",
+      "generation_seconds": {
+        "max": 4.68973588431254,
+        "mean": 3.243856073852549,
+        "median": 3.2165012140758336,
+        "min": 2.1322621069848537,
+        "n": 47,
+        "p95": 4.283483971189707
+      },
+      "method": "full",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.79850435256958,
+        "mean": 15.796617041242884,
+        "median": 15.796640872955322,
+        "min": 15.795337200164795,
+        "n": 47,
+        "p95": 15.797571659088135
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 100.0,
+        "median": 100.0,
+        "min": 100.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 4.68973588431254,
+        "mean": 3.243856073852549,
+        "median": 3.2165012140758336,
+        "min": 2.1322621069848537,
+        "n": 47,
+        "p95": 4.283483971189707
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 58720256.0,
+        "mean": 58720256.0,
+        "median": 58720256.0,
+        "min": 58720256.0,
+        "n": 47,
+        "p95": 58720256.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.12832080200501253,
+        "mean": 0.1282104124714299,
+        "median": 0.128208338550144,
+        "min": 0.12804801800675253,
+        "n": 47,
+        "p95": 0.12829990144156894
+      },
+      "actual_retained_tokens": {
+        "max": 1024.0,
+        "mean": 1024.0,
+        "median": 1024.0,
+        "min": 1024.0,
+        "n": 47,
+        "p95": 1024.0
+      },
+      "capacity": "1024",
+      "generation_seconds": {
+        "max": 4.812879674136639,
+        "mean": 3.9004161085517324,
+        "median": 3.908798725809902,
+        "min": 2.6956468508578837,
+        "n": 47,
+        "p95": 4.695783865405247
+      },
+      "method": "pyramidkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.426105976104736,
+        "mean": 15.424759540152042,
+        "median": 15.424776554107666,
+        "min": 15.42384672164917,
+        "n": 47,
+        "p95": 15.425440311431885
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 45.1063829787234,
+        "median": 40.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 4.812879674136639,
+        "mean": 3.9004161085517324,
+        "median": 3.908798725809902,
+        "min": 2.6956468508578837,
+        "n": 47,
+        "p95": 4.695783865405247
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 7340032.0,
+        "mean": 7340032.0,
+        "median": 7340032.0,
+        "min": 7340032.0,
+        "n": 47,
+        "p95": 7340032.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.016040100250626566,
+        "mean": 0.016026301558928736,
+        "median": 0.016026042318768,
+        "min": 0.016006002250844066,
+        "n": 47,
+        "p95": 0.016037487680196118
+      },
+      "actual_retained_tokens": {
+        "max": 128.0,
+        "mean": 128.0,
+        "median": 128.0,
+        "min": 128.0,
+        "n": 47,
+        "p95": 128.0
+      },
+      "capacity": "128",
+      "generation_seconds": {
+        "max": 4.854537301231176,
+        "mean": 3.6089866577865597,
+        "median": 3.7796328770928085,
+        "min": 2.079668720718473,
+        "n": 47,
+        "p95": 4.734393001860008
+      },
+      "method": "pyramidkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.378254413604736,
+        "mean": 15.376907977652042,
+        "median": 15.376924991607666,
+        "min": 15.37599515914917,
+        "n": 47,
+        "p95": 15.377588748931885
+      },
+      "qa_f1": {
+        "max": 40.0,
+        "mean": 1.702127659574468,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 4.854537301231176,
+        "mean": 3.6089866577865597,
+        "median": 3.7796328770928085,
+        "min": 2.079668720718473,
+        "n": 47,
+        "p95": 4.734393001860008
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 14680064.0,
+        "mean": 14680064.0,
+        "median": 14680064.0,
+        "min": 14680064.0,
+        "n": 47,
+        "p95": 14680064.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.03208020050125313,
+        "mean": 0.03205260311785747,
+        "median": 0.032052084637536,
+        "min": 0.03201200450168813,
+        "n": 47,
+        "p95": 0.032074975360392236
+      },
+      "actual_retained_tokens": {
+        "max": 256.0,
+        "mean": 256.0,
+        "median": 256.0,
+        "min": 256.0,
+        "n": 47,
+        "p95": 256.0
+      },
+      "capacity": "256",
+      "generation_seconds": {
+        "max": 4.9926777998916805,
+        "mean": 4.10128350460783,
+        "median": 4.188218506984413,
+        "min": 2.4033331819809973,
+        "n": 47,
+        "p95": 4.789373251982033
+      },
+      "method": "pyramidkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.385090351104736,
+        "mean": 15.383743915152042,
+        "median": 15.383760929107666,
+        "min": 15.38283109664917,
+        "n": 47,
+        "p95": 15.384424686431885
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 4.680851063829787,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 13.999999999999915
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 4.9926777998916805,
+        "mean": 4.10128350460783,
+        "median": 4.188218506984413,
+        "min": 2.4033331819809973,
+        "n": 47,
+        "p95": 4.789373251982033
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 29360128.0,
+        "mean": 29360128.0,
+        "median": 29360128.0,
+        "min": 29360128.0,
+        "n": 47,
+        "p95": 29360128.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.06416040100250626,
+        "mean": 0.06410520623571495,
+        "median": 0.064104169275072,
+        "min": 0.06402400900337626,
+        "n": 47,
+        "p95": 0.06414995072078447
+      },
+      "actual_retained_tokens": {
+        "max": 512.0,
+        "mean": 512.0,
+        "median": 512.0,
+        "min": 512.0,
+        "n": 47,
+        "p95": 512.0
+      },
+      "capacity": "512",
+      "generation_seconds": {
+        "max": 5.217324461322278,
+        "mean": 3.920352726025467,
+        "median": 3.935382873751223,
+        "min": 2.487741624005139,
+        "n": 47,
+        "p95": 4.749296108167618
+      },
+      "method": "pyramidkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.398762226104736,
+        "mean": 15.397415790152042,
+        "median": 15.397432804107666,
+        "min": 15.39650297164917,
+        "n": 47,
+        "p95": 15.398096561431885
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 8.085106382978724,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 40.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 5.217324461322278,
+        "mean": 3.920352726025467,
+        "median": 3.935382873751223,
+        "min": 2.487741624005139,
+        "n": 47,
+        "p95": 4.749296108167618
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 58720256.0,
+        "mean": 58690973.957446806,
+        "median": 58662912.0,
+        "min": 58662912.0,
+        "n": 47,
+        "p95": 58720256.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.1282725792308656,
+        "mean": 0.12814647411010047,
+        "median": 0.12816020025031288,
+        "min": 0.128003003003003,
+        "n": 47,
+        "p95": 0.12826775936942156
+      },
+      "actual_retained_tokens": {
+        "max": 1024.0,
+        "mean": 1023.4893617021277,
+        "median": 1023.0,
+        "min": 1023.0,
+        "n": 47,
+        "p95": 1024.0
+      },
+      "capacity": "1024",
+      "generation_seconds": {
+        "max": 4.889289783779532,
+        "mean": 3.8786302877867476,
+        "median": 3.9520634221844375,
+        "min": 2.251042270567268,
+        "n": 47,
+        "p95": 4.626440203562379
+      },
+      "method": "snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.426105976104736,
+        "mean": 15.424732269124782,
+        "median": 15.424776554107666,
+        "min": 15.423793315887451,
+        "n": 47,
+        "p95": 15.425386905670166
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 45.1063829787234,
+        "median": 40.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 100.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 4.889289783779532,
+        "mean": 3.8786302877867476,
+        "median": 3.9520634221844375,
+        "min": 2.251042270567268,
+        "n": 47,
+        "p95": 4.626440203562379
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 7340032.0,
+        "mean": 7287568.340425532,
+        "median": 7282688.0,
+        "min": 7282688.0,
+        "n": 47,
+        "p95": 7340032.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.016040100250626566,
+        "mean": 0.015911754702240162,
+        "median": 0.015900838863152623,
+        "min": 0.0158889027899412,
+        "n": 47,
+        "p95": 0.01602846400065104
+      },
+      "actual_retained_tokens": {
+        "max": 128.0,
+        "mean": 127.08510638297872,
+        "median": 127.0,
+        "min": 127.0,
+        "n": 47,
+        "p95": 128.0
+      },
+      "capacity": "128",
+      "generation_seconds": {
+        "max": 4.788318492937833,
+        "mean": 3.8614440431144645,
+        "median": 3.910803223028779,
+        "min": 2.677592354826629,
+        "n": 47,
+        "p95": 4.651431739516556
+      },
+      "method": "snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.378254413604736,
+        "mean": 15.376859117061533,
+        "median": 15.376871585845947,
+        "min": 15.37599515914917,
+        "n": 47,
+        "p95": 15.377535343170166
+      },
+      "qa_f1": {
+        "max": 40.0,
+        "mean": 1.702127659574468,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 4.788318492937833,
+        "mean": 3.8614440431144645,
+        "median": 3.910803223028779,
+        "min": 2.677592354826629,
+        "n": 47,
+        "p95": 4.651431739516556
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 14680064.0,
+        "mean": 14652002.042553192,
+        "median": 14680064.0,
+        "min": 14622720.0,
+        "n": 47,
+        "p95": 14680064.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.032072162365321975,
+        "mean": 0.03199132165625774,
+        "median": 0.032028024521456276,
+        "min": 0.031886957609103414,
+        "n": 47,
+        "p95": 0.0320681448077164
+      },
+      "actual_retained_tokens": {
+        "max": 256.0,
+        "mean": 255.51063829787233,
+        "median": 256.0,
+        "min": 255.0,
+        "n": 47,
+        "p95": 256.0
+      },
+      "capacity": "256",
+      "generation_seconds": {
+        "max": 4.94526045024395,
+        "mean": 4.065623333618204,
+        "median": 4.151602816767991,
+        "min": 2.3918641777709126,
+        "n": 47,
+        "p95": 4.82369124237448
+      },
+      "method": "snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.385036945343018,
+        "mean": 15.383717780417584,
+        "median": 15.383707523345947,
+        "min": 15.382777690887451,
+        "n": 47,
+        "p95": 15.384424686431885
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 4.680851063829787,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 13.999999999999915
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 4.94526045024395,
+        "mean": 4.065623333618204,
+        "median": 4.151602816767991,
+        "min": 2.3918641777709126,
+        "n": 47,
+        "p95": 4.82369124237448
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 29360128.0,
+        "mean": 29338166.468085106,
+        "median": 29360128.0,
+        "min": 29302784.0,
+        "n": 47,
+        "p95": 29360128.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.06415236185941611,
+        "mean": 0.0640572583077769,
+        "median": 0.06407208109122763,
+        "min": 0.06396294905495056,
+        "n": 47,
+        "p95": 0.06414432473064395
+      },
+      "actual_retained_tokens": {
+        "max": 512.0,
+        "mean": 511.6170212765957,
+        "median": 512.0,
+        "min": 511.0,
+        "n": 47,
+        "p95": 512.0
+      },
+      "capacity": "512",
+      "generation_seconds": {
+        "max": 4.798484151717275,
+        "mean": 3.9439868857747222,
+        "median": 3.878526419401169,
+        "min": 2.9569649160839617,
+        "n": 47,
+        "p95": 4.665901377098635
+      },
+      "method": "snapkv",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.398762226104736,
+        "mean": 15.397395336881598,
+        "median": 15.397379398345947,
+        "min": 15.396449565887451,
+        "n": 47,
+        "p95": 15.398096561431885
+      },
+      "qa_f1": {
+        "max": 100.0,
+        "mean": 7.659574468085107,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 40.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 4.798484151717275,
+        "mean": 3.9439868857747222,
+        "median": 3.878526419401169,
+        "min": 2.9569649160839617,
+        "n": 47,
+        "p95": 4.665901377098635
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 58720256.0,
+        "mean": 58690973.957446806,
+        "median": 58662912.0,
+        "min": 58662912.0,
+        "n": 47,
+        "p95": 58720256.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.1282725792308656,
+        "mean": 0.12814647411010047,
+        "median": 0.12816020025031288,
+        "min": 0.128003003003003,
+        "n": 47,
+        "p95": 0.12826775936942156
+      },
+      "actual_retained_tokens": {
+        "max": 1024.0,
+        "mean": 1023.4893617021277,
+        "median": 1023.0,
+        "min": 1023.0,
+        "n": 47,
+        "p95": 1024.0
+      },
+      "capacity": "1024",
+      "generation_seconds": {
+        "max": 4.6121310531161726,
+        "mean": 3.661047297064215,
+        "median": 3.6209451481699944,
+        "min": 2.2645217678509653,
+        "n": 47,
+        "p95": 4.555510084936395
+      },
+      "method": "streamingllm",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.426105976104736,
+        "mean": 15.424732269124782,
+        "median": 15.424776554107666,
+        "min": 15.423793315887451,
+        "n": 47,
+        "p95": 15.425386905670166
+      },
+      "qa_f1": {
+        "max": 80.0,
+        "mean": 15.74468085106383,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 53.999999999999915
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 4.6121310531161726,
+        "mean": 3.661047297064215,
+        "median": 3.6209451481699944,
+        "min": 2.2645217678509653,
+        "n": 47,
+        "p95": 4.555510084936395
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 7340032.0,
+        "mean": 7287568.340425532,
+        "median": 7282688.0,
+        "min": 7282688.0,
+        "n": 47,
+        "p95": 7340032.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.016040100250626566,
+        "mean": 0.015911754702240162,
+        "median": 0.015900838863152623,
+        "min": 0.0158889027899412,
+        "n": 47,
+        "p95": 0.01602846400065104
+      },
+      "actual_retained_tokens": {
+        "max": 128.0,
+        "mean": 127.08510638297872,
+        "median": 127.0,
+        "min": 127.0,
+        "n": 47,
+        "p95": 128.0
+      },
+      "capacity": "128",
+      "generation_seconds": {
+        "max": 4.712458154652268,
+        "mean": 3.474115729807539,
+        "median": 3.5871388912200928,
+        "min": 2.1526289605535567,
+        "n": 47,
+        "p95": 4.446551517164333
+      },
+      "method": "streamingllm",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.378254413604736,
+        "mean": 15.376859117061533,
+        "median": 15.376871585845947,
+        "min": 15.37599515914917,
+        "n": 47,
+        "p95": 15.377535343170166
+      },
+      "qa_f1": {
+        "max": 40.0,
+        "mean": 1.702127659574468,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 4.712458154652268,
+        "mean": 3.474115729807539,
+        "median": 3.5871388912200928,
+        "min": 2.1526289605535567,
+        "n": 47,
+        "p95": 4.446551517164333
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 14680064.0,
+        "mean": 14652002.042553192,
+        "median": 14680064.0,
+        "min": 14622720.0,
+        "n": 47,
+        "p95": 14680064.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.032072162365321975,
+        "mean": 0.03199132165625774,
+        "median": 0.032028024521456276,
+        "min": 0.031886957609103414,
+        "n": 47,
+        "p95": 0.0320681448077164
+      },
+      "actual_retained_tokens": {
+        "max": 256.0,
+        "mean": 255.51063829787233,
+        "median": 256.0,
+        "min": 255.0,
+        "n": 47,
+        "p95": 256.0
+      },
+      "capacity": "256",
+      "generation_seconds": {
+        "max": 4.68910885322839,
+        "mean": 3.529018763343784,
+        "median": 3.492067988961935,
+        "min": 1.9926806348375976,
+        "n": 47,
+        "p95": 4.321655320934951
+      },
+      "method": "streamingllm",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.385036945343018,
+        "mean": 15.383717780417584,
+        "median": 15.383707523345947,
+        "min": 15.382777690887451,
+        "n": 47,
+        "p95": 15.384424686431885
+      },
+      "qa_f1": {
+        "max": 40.0,
+        "mean": 3.404255319148936,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 40.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 4.68910885322839,
+        "mean": 3.529018763343784,
+        "median": 3.492067988961935,
+        "min": 1.9926806348375976,
+        "n": 47,
+        "p95": 4.321655320934951
+      }
+    },
+    {
+      "actual_kv_bytes": {
+        "max": 29360128.0,
+        "mean": 29338166.468085106,
+        "median": 29360128.0,
+        "min": 29302784.0,
+        "n": 47,
+        "p95": 29360128.0
+      },
+      "actual_retained_ratio": {
+        "max": 0.06415236185941611,
+        "mean": 0.0640572583077769,
+        "median": 0.06407208109122763,
+        "min": 0.06396294905495056,
+        "n": 47,
+        "p95": 0.06414432473064395
+      },
+      "actual_retained_tokens": {
+        "max": 512.0,
+        "mean": 511.6170212765957,
+        "median": 512.0,
+        "min": 511.0,
+        "n": 47,
+        "p95": 512.0
+      },
+      "capacity": "512",
+      "generation_seconds": {
+        "max": 4.585024122148752,
+        "mean": 3.38964765440633,
+        "median": 3.4397629518061876,
+        "min": 2.1545319529250264,
+        "n": 47,
+        "p95": 4.254181009624153
+      },
+      "method": "streamingllm",
+      "model": "qwen25",
+      "peak_cuda_memory_gb": {
+        "max": 15.398762226104736,
+        "mean": 15.397395336881598,
+        "median": 15.397379398345947,
+        "min": 15.396449565887451,
+        "n": 47,
+        "p95": 15.398096561431885
+      },
+      "qa_f1": {
+        "max": 60.0,
+        "mean": 6.808510638297872,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 40.0
+      },
+      "selection_seconds": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "n": 47,
+        "p95": 0.0
+      },
+      "task": "ruler_variable_tracking",
+      "total_seconds": {
+        "max": 4.585024122148752,
+        "mean": 3.38964765440633,
+        "median": 3.4397629518061876,
+        "min": 2.1545319529250264,
+        "n": 47,
+        "p95": 4.254181009624153
+      }
+    }
+  ],
+  "protocol": "proofkv_v10_official_ruler_physical_efficiency_audit_v1",
+  "ruler_capacities": [
+    128,
+    256,
+    512,
+    1024
+  ],
+  "specialization": "The frozen generic analyzer is executed unchanged after setting its capacity contract to the prospectively frozen official-RULER 128/256/512/1024 total-KV capacities.",
+  "status": "PASS",
+  "utility_method": "confirmation_stable_proofkv_v10",
+  "utility_vs_frozen_physical_fallback": {
+    "equal_weighted_task_macro": {
+      "macro": {
+        "actual_kv_bytes_delta": 6557.95744680851,
+        "actual_kv_bytes_percent_change_of_means": 0.023836712972713503,
+        "actual_kv_bytes_ratio_of_means": 1.000238367129727,
+        "actual_retained_tokens_delta": 0.11436170212765957,
+        "generation_seconds_delta": -2.1082592124287833,
+        "peak_cuda_memory_gb_delta": -0.5094990666876448,
+        "peak_cuda_memory_percent_change_of_means": -3.3090108533665785,
+        "peak_cuda_memory_ratio_of_means": 0.9669098914663342,
+        "qa_f1_delta": 32.97872340425532,
+        "selection_seconds_delta": 2.0245230625423187,
+        "total_seconds_delta": -0.0837361498864646,
+        "total_seconds_percent_change_of_means": -0.05492985332952216,
+        "total_seconds_ratio_of_means": 0.9994507014667048
+      },
+      "model_task_groups": 2,
+      "model_task_records": [
+        {
+          "actual_kv_bytes_delta": 0.0,
+          "actual_kv_bytes_percent_change_of_means": 0.0,
+          "actual_kv_bytes_ratio_of_means": 1.0,
+          "actual_retained_tokens_delta": 0.0,
+          "generation_seconds_delta": -0.6023831751019239,
+          "model": "qwen25",
+          "pairs": 188,
+          "peak_cuda_memory_gb_delta": -0.26023464253608214,
+          "peak_cuda_memory_percent_change_of_means": -1.6896082053311057,
+          "peak_cuda_memory_ratio_of_means": 0.9831039179466889,
+          "qa_f1_delta": 24.46808510638298,
+          "selection_seconds_delta": 3.334851486739663,
+          "task": "ruler_niah",
+          "total_seconds_delta": 2.732468311637739,
+          "total_seconds_percent_change_of_means": 35.57402416436417,
+          "total_seconds_ratio_of_means": 1.3557402416436417
+        },
+        {
+          "actual_kv_bytes_delta": 13115.91489361702,
+          "actual_kv_bytes_percent_change_of_means": 0.047673425945427006,
+          "actual_kv_bytes_ratio_of_means": 1.0004767342594543,
+          "actual_retained_tokens_delta": 0.22872340425531915,
+          "generation_seconds_delta": -3.6141352497556425,
+          "model": "qwen25",
+          "pairs": 188,
+          "peak_cuda_memory_gb_delta": -0.7587634908392075,
+          "peak_cuda_memory_percent_change_of_means": -4.928413501402051,
+          "peak_cuda_memory_ratio_of_means": 0.9507158649859795,
+          "qa_f1_delta": 41.48936170212766,
+          "selection_seconds_delta": 0.7141946383449744,
+          "task": "ruler_variable_tracking",
+          "total_seconds_delta": -2.8999406114106683,
+          "total_seconds_percent_change_of_means": -35.68388387102321,
+          "total_seconds_ratio_of_means": 0.6431611612897679
+        }
+      ],
+      "weighting": "mean over samples and capacities within each model-task, then equal mean over model-task groups"
+    },
+    "pair_groups": [
+      {
+        "actual_kv_bytes_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "actual_kv_bytes_percent_change_of_means": 0.0,
+        "actual_kv_bytes_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "actual_kv_bytes_ratio_of_means": 1.0,
+        "actual_retained_tokens_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "baseline_method_counts": {
+          "chunkkv_snapkv": 47
+        },
+        "capacity": "1024",
+        "generation_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "peak_cuda_memory_percent_change_of_means": 0.0,
+        "peak_cuda_memory_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "peak_cuda_memory_ratio_of_means": 1.0,
+        "qa_f1_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "route_counts": {
+          "physical_fallback": 47
+        },
+        "selection_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "task": "ruler_niah",
+        "total_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "total_seconds_percent_change_of_means": 0.0,
+        "total_seconds_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "total_seconds_ratio_of_means": 1.0
+      },
+      {
+        "actual_kv_bytes_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "actual_kv_bytes_percent_change_of_means": 0.0,
+        "actual_kv_bytes_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "actual_kv_bytes_ratio_of_means": 1.0,
+        "actual_retained_tokens_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "baseline_method_counts": {
+          "streamingllm": 47
+        },
+        "capacity": "128",
+        "generation_seconds_delta": {
+          "max": -1.0977026750333607,
+          "mean": -2.4095327004076954,
+          "median": -2.1651034066453576,
+          "min": -4.0540526593104005,
+          "n": 47,
+          "p95": -1.2879232524894189
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": -1.040761947631836,
+          "mean": -1.0409385701443286,
+          "median": -1.040921688079834,
+          "min": -1.041081428527832,
+          "n": 47,
+          "p95": -1.0408415794372559
+        },
+        "peak_cuda_memory_percent_change_of_means": -6.766691832923177,
+        "peak_cuda_memory_ratio": {
+          "max": 0.9323437863445442,
+          "mean": 0.9323330816942246,
+          "median": 0.9323341048422426,
+          "min": 0.9323244235410053,
+          "n": 47,
+          "p95": 0.9323389600182637
+        },
+        "peak_cuda_memory_ratio_of_means": 0.9323330816707682,
+        "qa_f1_delta": {
+          "max": 100.0,
+          "mean": 97.87234042553192,
+          "median": 100.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 100.0
+        },
+        "route_counts": {
+          "proof_coverage": 47
+        },
+        "selection_seconds_delta": {
+          "max": 14.262692077085376,
+          "mean": 13.339405946958651,
+          "median": 13.48069992987439,
+          "min": 11.762383715249598,
+          "n": 47,
+          "p95": 13.95737096387893
+        },
+        "task": "ruler_niah",
+        "total_seconds_delta": {
+          "max": 12.408912925049663,
+          "mean": 10.929873246550956,
+          "median": 11.29749423544854,
+          "min": 8.587827823124826,
+          "n": 47,
+          "p95": 12.203900307649747
+        },
+        "total_seconds_percent_change_of_means": 354.58509217145365,
+        "total_seconds_ratio": {
+          "max": 8.016865232090275,
+          "mean": 4.889750844635001,
+          "median": 4.928603882606447,
+          "min": 2.8917328092829893,
+          "n": 47,
+          "p95": 6.773461221825069
+        },
+        "total_seconds_ratio_of_means": 4.545850921714536
+      },
+      {
+        "actual_kv_bytes_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "actual_kv_bytes_percent_change_of_means": 0.0,
+        "actual_kv_bytes_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "actual_kv_bytes_ratio_of_means": 1.0,
+        "actual_retained_tokens_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "baseline_method_counts": {
+          "chunkkv_snapkv": 47
+        },
+        "capacity": "256",
+        "generation_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "peak_cuda_memory_percent_change_of_means": 0.0,
+        "peak_cuda_memory_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "peak_cuda_memory_ratio_of_means": 1.0,
+        "qa_f1_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "route_counts": {
+          "physical_fallback": 47
+        },
+        "selection_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "task": "ruler_niah",
+        "total_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "total_seconds_percent_change_of_means": 0.0,
+        "total_seconds_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "total_seconds_ratio_of_means": 1.0
+      },
+      {
+        "actual_kv_bytes_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "actual_kv_bytes_percent_change_of_means": 0.0,
+        "actual_kv_bytes_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "actual_kv_bytes_ratio_of_means": 1.0,
+        "actual_retained_tokens_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "baseline_method_counts": {
+          "chunkkv_snapkv": 47
+        },
+        "capacity": "512",
+        "generation_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "peak_cuda_memory_percent_change_of_means": 0.0,
+        "peak_cuda_memory_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "peak_cuda_memory_ratio_of_means": 1.0,
+        "qa_f1_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "route_counts": {
+          "physical_fallback": 47
+        },
+        "selection_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "task": "ruler_niah",
+        "total_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "total_seconds_percent_change_of_means": 0.0,
+        "total_seconds_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "total_seconds_ratio_of_means": 1.0
+      },
+      {
+        "actual_kv_bytes_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "actual_kv_bytes_percent_change_of_means": 0.0,
+        "actual_kv_bytes_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "actual_kv_bytes_ratio_of_means": 1.0,
+        "actual_retained_tokens_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "baseline_method_counts": {
+          "chunkkv_snapkv": 47
+        },
+        "capacity": "1024",
+        "generation_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "peak_cuda_memory_percent_change_of_means": 0.0,
+        "peak_cuda_memory_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "peak_cuda_memory_ratio_of_means": 1.0,
+        "qa_f1_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "route_counts": {
+          "physical_fallback": 47
+        },
+        "selection_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "task": "ruler_variable_tracking",
+        "total_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "total_seconds_percent_change_of_means": 0.0,
+        "total_seconds_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "total_seconds_ratio_of_means": 1.0
+      },
+      {
+        "actual_kv_bytes_delta": {
+          "max": 57344.0,
+          "mean": 52463.65957446808,
+          "median": 57344.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 57344.0
+        },
+        "actual_kv_bytes_percent_change_of_means": 0.7199062447681204,
+        "actual_kv_bytes_ratio": {
+          "max": 1.0078740157480315,
+          "mean": 1.0072038867481992,
+          "median": 1.0078740157480315,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0078740157480315
+        },
+        "actual_kv_bytes_ratio_of_means": 1.0071990624476812,
+        "actual_retained_tokens_delta": {
+          "max": 1.0,
+          "mean": 0.9148936170212766,
+          "median": 1.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "baseline_method_counts": {
+          "streamingllm": 47
+        },
+        "capacity": "128",
+        "generation_seconds_delta": {
+          "max": -0.35140881733968854,
+          "mean": -2.0688678832486906,
+          "median": -2.0927621219307184,
+          "min": -4.060562521684915,
+          "n": 47,
+          "p95": -0.8279937996994704
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": -1.0336623191833496,
+          "mean": -1.0345262770957135,
+          "median": -1.034538745880127,
+          "min": -1.035921573638916,
+          "n": 47,
+          "p95": -1.033819103240967
+        },
+        "peak_cuda_memory_percent_change_of_means": -6.727812677608814,
+        "peak_cuda_memory_ratio": {
+          "max": 0.9327742816979043,
+          "mean": 0.932721874069405,
+          "median": 0.932721116899201,
+          "min": 0.9326372456991956,
+          "n": 47,
+          "p95": 0.932764770601926
+        },
+        "peak_cuda_memory_ratio_of_means": 0.9327218732239119,
+        "qa_f1_delta": {
+          "max": 80.0,
+          "mean": 62.97872340425532,
+          "median": 60.0,
+          "min": 19.999999999999996,
+          "n": 47,
+          "p95": 80.0
+        },
+        "route_counts": {
+          "proof_coverage": 47
+        },
+        "selection_seconds_delta": {
+          "max": 1.0277603711001575,
+          "mean": 0.9488012976845369,
+          "median": 0.9513265499845147,
+          "min": 0.8863110849633813,
+          "n": 47,
+          "p95": 0.9836230714805424
+        },
+        "task": "ruler_variable_tracking",
+        "total_seconds_delta": {
+          "max": 0.6220681280829012,
+          "mean": -1.1200665855641536,
+          "median": -1.1388470949605107,
+          "min": -3.1308695673942566,
+          "n": 47,
+          "p95": 0.10787804205901902
+        },
+        "total_seconds_percent_change_of_means": -32.24033603584655,
+        "total_seconds_ratio": {
+          "max": 1.2610443558424034,
+          "mean": 0.7021925217347746,
+          "median": 0.6528797830389692,
+          "min": 0.33561859550872053,
+          "n": 47,
+          "p95": 1.034880265599436
+        },
+        "total_seconds_ratio_of_means": 0.6775966396415345
+      },
+      {
+        "actual_kv_bytes_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "actual_kv_bytes_percent_change_of_means": 0.0,
+        "actual_kv_bytes_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "actual_kv_bytes_ratio_of_means": 1.0,
+        "actual_retained_tokens_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "baseline_method_counts": {
+          "chunkkv_snapkv": 47
+        },
+        "capacity": "256",
+        "generation_seconds_delta": {
+          "max": -3.0399798788130283,
+          "mean": -4.82904383114123,
+          "median": -4.8317298563197255,
+          "min": -6.851614098530263,
+          "n": 47,
+          "p95": -3.3191457074601223
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": -1.0161404609680176,
+          "mean": -1.0170532794708902,
+          "median": -1.0170702934265137,
+          "min": -1.018399715423584,
+          "n": 47,
+          "p95": -1.0163132667541503
+        },
+        "peak_cuda_memory_percent_change_of_means": -6.611220812569263,
+        "peak_cuda_memory_ratio": {
+          "max": 0.9339432088551396,
+          "mean": 0.9338877927293233,
+          "median": 0.933886759023789,
+          "min": 0.9338060620911168,
+          "n": 47,
+          "p95": 0.9339327173693807
+        },
+        "peak_cuda_memory_ratio_of_means": 0.9338877918743074,
+        "qa_f1_delta": {
+          "max": 100.0,
+          "mean": 79.14893617021276,
+          "median": 80.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 100.0
+        },
+        "route_counts": {
+          "proof_coverage": 47
+        },
+        "selection_seconds_delta": {
+          "max": 0.9803323540836573,
+          "mean": 0.948701615851531,
+          "median": 0.951414898969233,
+          "min": 0.9015427511185408,
+          "n": 47,
+          "p95": 0.9753247848246247
+        },
+        "task": "ruler_variable_tracking",
+        "total_seconds_delta": {
+          "max": -2.087376148905605,
+          "mean": -3.8803422152896987,
+          "median": -3.8677391400560737,
+          "min": -5.883802143391222,
+          "n": 47,
+          "p95": -2.3683422388508935
+        },
+        "total_seconds_percent_change_of_means": -61.3228459093968,
+        "total_seconds_ratio": {
+          "max": 0.5705693025420672,
+          "mean": 0.39383392606776496,
+          "median": 0.397132504948214,
+          "min": 0.24129323760109644,
+          "n": 47,
+          "p95": 0.5185370474822906
+        },
+        "total_seconds_ratio_of_means": 0.38677154090603205
+      },
+      {
+        "actual_kv_bytes_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "actual_kv_bytes_percent_change_of_means": 0.0,
+        "actual_kv_bytes_ratio": {
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 47,
+          "p95": 1.0
+        },
+        "actual_kv_bytes_ratio_of_means": 1.0,
+        "actual_retained_tokens_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "baseline_method_counts": {
+          "chunkkv_snapkv": 47
+        },
+        "capacity": "512",
+        "generation_seconds_delta": {
+          "max": -2.4504509256221354,
+          "mean": -7.55862928463265,
+          "median": -7.510729738511145,
+          "min": -11.765274704899639,
+          "n": 47,
+          "p95": -5.3448350523598505
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": -0.9825615882873535,
+          "mean": -0.983474406790226,
+          "median": -0.9834914207458496,
+          "min": -0.9848208427429199,
+          "n": 47,
+          "p95": -0.9827343940734863
+        },
+        "peak_cuda_memory_percent_change_of_means": -6.387269267738038,
+        "peak_cuda_memory_ratio": {
+          "max": 0.9361828078689931,
+          "mean": 0.9361273081781647,
+          "median": 0.9361262729145681,
+          "min": 0.9360454542850591,
+          "n": 47,
+          "p95": 0.9361723005631278
+        },
+        "peak_cuda_memory_ratio_of_means": 0.9361273073226196,
+        "qa_f1_delta": {
+          "max": 100.0,
+          "mean": 23.829787234042552,
+          "median": 19.999999999999996,
+          "min": 0.0,
+          "n": 47,
+          "p95": 73.99999999999991
+        },
+        "route_counts": {
+          "proof_coverage": 47
+        },
+        "selection_seconds_delta": {
+          "max": 1.0119721670635045,
+          "mean": 0.9592756398438298,
+          "median": 0.9637255282141268,
+          "min": 0.9023821540176868,
+          "n": 47,
+          "p95": 0.9901515089906752
+        },
+        "task": "ruler_variable_tracking",
+        "total_seconds_delta": {
+          "max": -1.5171007928438485,
+          "mean": -6.59935364478882,
+          "median": -6.538842987269163,
+          "min": -10.805934860836715,
+          "n": 47,
+          "p95": -4.380767242237926
+        },
+        "total_seconds_percent_change_of_means": -72.80560967078881,
+        "total_seconds_ratio": {
+          "max": 0.6271405704016118,
+          "mean": 0.28134842142122457,
+          "median": 0.2654739337016449,
+          "min": 0.14065622111023085,
+          "n": 47,
+          "p95": 0.4038453819886602
+        },
+        "total_seconds_ratio_of_means": 0.2719439032921119
+      }
+    ]
+  },
+  "utility_vs_full_cache": {
+    "equal_weighted_task_macro": {
+      "macro": {
+        "actual_kv_bytes_delta": -430316086.4680851,
+        "actual_kv_bytes_percent_change_of_means": -93.98806335270373,
+        "actual_kv_bytes_ratio_of_means": 0.06011936647296267,
+        "actual_retained_tokens_delta": -7504.117021276596,
+        "generation_seconds_delta": 2.862436568224555,
+        "peak_cuda_memory_gb_delta": -0.9107235784226275,
+        "peak_cuda_memory_percent_change_of_means": -5.764382590868589,
+        "peak_cuda_memory_ratio_of_means": 0.9423561740913141,
+        "qa_f1_delta": -7.9787234042553195,
+        "selection_seconds_delta": 2.0245230625423187,
+        "total_seconds_delta": 4.8869596307668735,
+        "total_seconds_percent_change_of_means": 179.10096103938332,
+        "total_seconds_ratio_of_means": 2.791009610393833
+      },
+      "model_task_groups": 2,
+      "model_task_records": [
+        {
+          "actual_kv_bytes_delta": -430158085.4468085,
+          "actual_kv_bytes_percent_change_of_means": -93.98598863309199,
+          "actual_kv_bytes_ratio_of_means": 0.06014011366908009,
+          "actual_retained_tokens_delta": -7501.36170212766,
+          "generation_seconds_delta": 4.456112837693852,
+          "model": "qwen25",
+          "pairs": 188,
+          "peak_cuda_memory_gb_delta": -0.6617612153925794,
+          "peak_cuda_memory_percent_change_of_means": -4.187408874719745,
+          "peak_cuda_memory_ratio_of_means": 0.9581259112528026,
+          "qa_f1_delta": -3.723404255319149,
+          "selection_seconds_delta": 3.334851486739663,
+          "task": "ruler_niah",
+          "total_seconds_delta": 7.790964324433515,
+          "total_seconds_percent_change_of_means": 297.07236232165985,
+          "total_seconds_ratio_of_means": 3.9707236232165983
+        },
+        {
+          "actual_kv_bytes_delta": -430474087.4893617,
+          "actual_kv_bytes_percent_change_of_means": -93.99013807231547,
+          "actual_kv_bytes_ratio_of_means": 0.06009861927684525,
+          "actual_retained_tokens_delta": -7506.872340425532,
+          "generation_seconds_delta": 1.2687602987552578,
+          "model": "qwen25",
+          "pairs": 188,
+          "peak_cuda_memory_gb_delta": -1.1596859414526757,
+          "peak_cuda_memory_percent_change_of_means": -7.341356307017433,
+          "peak_cuda_memory_ratio_of_means": 0.9265864369298257,
+          "qa_f1_delta": -12.23404255319149,
+          "selection_seconds_delta": 0.7141946383449744,
+          "task": "ruler_variable_tracking",
+          "total_seconds_delta": 1.9829549371002322,
+          "total_seconds_percent_change_of_means": 61.12955975710679,
+          "total_seconds_ratio_of_means": 1.6112955975710679
+        }
+      ],
+      "weighting": "mean over samples and capacities within each model-task, then equal mean over model-task groups"
+    },
+    "pair_groups": [
+      {
+        "actual_kv_bytes_delta": {
+          "max": -398655488.0,
+          "mean": -398962949.4468085,
+          "median": -398999552.0,
+          "min": -399343616.0,
+          "n": 47,
+          "p95": -398655488.0
+        },
+        "actual_kv_bytes_percent_change_of_means": -87.17010908392957,
+        "actual_kv_bytes_ratio": {
+          "max": 0.1283851554663992,
+          "mean": 0.12829892607993307,
+          "median": 0.1282886494612879,
+          "min": 0.12819228843264896,
+          "n": 47,
+          "p95": 0.1283851554663992
+        },
+        "actual_kv_bytes_ratio_of_means": 0.1282989091607042,
+        "actual_retained_tokens_delta": {
+          "max": -6952.0,
+          "mean": -6957.36170212766,
+          "median": -6958.0,
+          "min": -6964.0,
+          "n": 47,
+          "p95": -6952.0
+        },
+        "baseline_method_counts": {
+          "full": 47
+        },
+        "capacity": "1024",
+        "generation_seconds_delta": {
+          "max": 16.440631070639938,
+          "mean": 10.975178607263938,
+          "median": 11.39194765361026,
+          "min": 5.5065150409936905,
+          "n": 47,
+          "p95": 14.671342953434213
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": -0.3722505569458008,
+          "mean": -0.37247383848149723,
+          "median": -0.3725004196166992,
+          "min": -0.37275028228759766,
+          "n": 47,
+          "p95": -0.3722505569458008
+        },
+        "peak_cuda_memory_percent_change_of_means": -2.356892819614831,
+        "peak_cuda_memory_ratio": {
+          "max": 0.9764450804613405,
+          "mean": 0.9764310718247164,
+          "median": 0.9764294043022922,
+          "min": 0.9764137283220339,
+          "n": 47,
+          "p95": 0.9764450804613405
+        },
+        "peak_cuda_memory_ratio_of_means": 0.9764310718038517,
+        "qa_f1_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "route_counts": {
+          "physical_fallback": 47
+        },
+        "selection_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "task": "ruler_niah",
+        "total_seconds_delta": {
+          "max": 16.440631070639938,
+          "mean": 10.975178607263938,
+          "median": 11.39194765361026,
+          "min": 5.5065150409936905,
+          "n": 47,
+          "p95": 14.671342953434213
+        },
+        "total_seconds_percent_change_of_means": 418.48763516178843,
+        "total_seconds_ratio": {
+          "max": 9.674667071752596,
+          "mean": 5.321435755021081,
+          "median": 5.343511711543077,
+          "min": 3.0076260580622947,
+          "n": 47,
+          "p95": 7.201856311308786
+        },
+        "total_seconds_ratio_of_means": 5.184876351617884
+      },
+      {
+        "actual_kv_bytes_delta": {
+          "max": -450035712.0,
+          "mean": -450343173.4468085,
+          "median": -450379776.0,
+          "min": -450723840.0,
+          "n": 47,
+          "p95": -450035712.0
+        },
+        "actual_kv_bytes_percent_change_of_means": -98.3962636354912,
+        "actual_kv_bytes_ratio": {
+          "max": 0.0160481444332999,
+          "mean": 0.016037365759991633,
+          "median": 0.016036081182660988,
+          "min": 0.01602403605408112,
+          "n": 47,
+          "p95": 0.0160481444332999
+        },
+        "actual_kv_bytes_ratio_of_means": 0.016037363645088024,
+        "actual_retained_tokens_delta": {
+          "max": -7848.0,
+          "mean": -7853.36170212766,
+          "median": -7854.0,
+          "min": -7860.0,
+          "n": 47,
+          "p95": -7848.0
+        },
+        "baseline_method_counts": {
+          "full": 47
+        },
+        "capacity": "128",
+        "generation_seconds_delta": {
+          "max": -0.8636521720327437,
+          "mean": -1.9496738851129851,
+          "median": -1.996309373062104,
+          "min": -2.5455355336889625,
+          "n": 47,
+          "p95": -1.336216142168269
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": -1.4611835479736328,
+          "mean": -1.461263971125826,
+          "median": -1.4612736701965332,
+          "min": -1.4613637924194336,
+          "n": 47,
+          "p95": -1.4611835479736328
+        },
+        "peak_cuda_memory_percent_change_of_means": -9.246401237598311,
+        "peak_cuda_memory_ratio": {
+          "max": 0.9075406060205219,
+          "mean": 0.9075359876309064,
+          "median": 0.9075354306463607,
+          "min": 0.9075302553312257,
+          "n": 47,
+          "p95": 0.9075406060205218
+        },
+        "peak_cuda_memory_ratio_of_means": 0.9075359876240169,
+        "qa_f1_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "route_counts": {
+          "proof_coverage": 47
+        },
+        "selection_seconds_delta": {
+          "max": 14.262692077085376,
+          "mean": 13.339405946958651,
+          "median": 13.48069992987439,
+          "min": 11.762383715249598,
+          "n": 47,
+          "p95": 13.95737096387893
+        },
+        "task": "ruler_niah",
+        "total_seconds_delta": {
+          "max": 12.636560537852347,
+          "mean": 11.389732061845667,
+          "median": 11.427411975339055,
+          "min": 10.105175490956753,
+          "n": 47,
+          "p95": 12.308632456790656
+        },
+        "total_seconds_percent_change_of_means": 434.2947123004908,
+        "total_seconds_ratio": {
+          "max": 8.845806771337068,
+          "mean": 5.457285507335823,
+          "median": 5.310154932329487,
+          "min": 4.18608922279045,
+          "n": 47,
+          "p95": 6.836593512452878
+        },
+        "total_seconds_ratio_of_means": 5.342947123004908
+      },
+      {
+        "actual_kv_bytes_delta": {
+          "max": -442695680.0,
+          "mean": -443003141.4468085,
+          "median": -443039744.0,
+          "min": -443383808.0,
+          "n": 47,
+          "p95": -442695680.0
+        },
+        "actual_kv_bytes_percent_change_of_means": -96.7925272709824,
+        "actual_kv_bytes_ratio": {
+          "max": 0.0320962888665998,
+          "mean": 0.03207473151998327,
+          "median": 0.032072162365321975,
+          "min": 0.03204807210816224,
+          "n": 47,
+          "p95": 0.0320962888665998
+        },
+        "actual_kv_bytes_ratio_of_means": 0.03207472729017605,
+        "actual_retained_tokens_delta": {
+          "max": -7720.0,
+          "mean": -7725.36170212766,
+          "median": -7726.0,
+          "min": -7732.0,
+          "n": 47,
+          "p95": -7720.0
+        },
+        "baseline_method_counts": {
+          "full": 47
+        },
+        "capacity": "256",
+        "generation_seconds_delta": {
+          "max": 4.4197954861447215,
+          "mean": 2.4879892894185764,
+          "median": 2.42414727807045,
+          "min": 0.8018549936823547,
+          "n": 47,
+          "p95": 4.060364694008603
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": -0.4132661819458008,
+          "mean": -0.41348946348149723,
+          "median": -0.4135160446166992,
+          "min": -0.41376590728759766,
+          "n": 47,
+          "p95": -0.4132661819458008
+        },
+        "peak_cuda_memory_percent_change_of_means": -2.6164263010765465,
+        "peak_cuda_memory_ratio": {
+          "max": 0.9738497324392192,
+          "mean": 0.9738357370100796,
+          "median": 0.9738340710804972,
+          "min": 0.9738184099003964,
+          "n": 47,
+          "p95": 0.9738497324392192
+        },
+        "peak_cuda_memory_ratio_of_means": 0.9738357369892345,
+        "qa_f1_delta": {
+          "max": 0.0,
+          "mean": -14.893617021276595,
+          "median": 0.0,
+          "min": -100.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "route_counts": {
+          "physical_fallback": 47
+        },
+        "selection_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "task": "ruler_niah",
+        "total_seconds_delta": {
+          "max": 4.4197954861447215,
+          "mean": 2.4879892894185764,
+          "median": 2.42414727807045,
+          "min": 0.8018549936823547,
+          "n": 47,
+          "p95": 4.060364694008603
+        },
+        "total_seconds_percent_change_of_means": 94.8679553467607,
+        "total_seconds_ratio": {
+          "max": 3.5502325685017473,
+          "mean": 1.989408989282272,
+          "median": 1.963271343515754,
+          "min": 1.320640374328653,
+          "n": 47,
+          "p95": 2.653501972811351
+        },
+        "total_seconds_ratio_of_means": 1.948679553467607
+      },
+      {
+        "actual_kv_bytes_delta": {
+          "max": -428015616.0,
+          "mean": -428323077.4468085,
+          "median": -428359680.0,
+          "min": -428703744.0,
+          "n": 47,
+          "p95": -428015616.0
+        },
+        "actual_kv_bytes_percent_change_of_means": -93.5850545419648,
+        "actual_kv_bytes_ratio": {
+          "max": 0.0641925777331996,
+          "mean": 0.06414946303996653,
+          "median": 0.06414432473064395,
+          "min": 0.06409614421632448,
+          "n": 47,
+          "p95": 0.0641925777331996
+        },
+        "actual_kv_bytes_ratio_of_means": 0.0641494545803521,
+        "actual_retained_tokens_delta": {
+          "max": -7464.0,
+          "mean": -7469.36170212766,
+          "median": -7470.0,
+          "min": -7476.0,
+          "n": 47,
+          "p95": -7464.0
+        },
+        "baseline_method_counts": {
+          "full": 47
+        },
+        "capacity": "512",
+        "generation_seconds_delta": {
+          "max": 9.347747575026006,
+          "mean": 6.310957339205879,
+          "median": 6.553513147868216,
+          "min": 2.825529961846769,
+          "n": 47,
+          "p95": 7.9203144245781
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": -0.3995943069458008,
+          "mean": -0.39981758848149723,
+          "median": -0.3998441696166992,
+          "min": -0.40009403228759766,
+          "n": 47,
+          "p95": -0.3995943069458008
+        },
+        "peak_cuda_memory_percent_change_of_means": -2.5299151405893117,
+        "peak_cuda_memory_ratio": {
+          "max": 0.974714848446593,
+          "mean": 0.9747008486149585,
+          "median": 0.9746991821544289,
+          "min": 0.9746835160409422,
+          "n": 47,
+          "p95": 0.9747148484465928
+        },
+        "peak_cuda_memory_ratio_of_means": 0.9747008485941069,
+        "qa_f1_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "route_counts": {
+          "physical_fallback": 47
+        },
+        "selection_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "task": "ruler_niah",
+        "total_seconds_delta": {
+          "max": 9.347747575026006,
+          "mean": 6.310957339205879,
+          "median": 6.553513147868216,
+          "min": 2.825529961846769,
+          "n": 47,
+          "p95": 7.9203144245781
+        },
+        "total_seconds_percent_change_of_means": 240.63914647759924,
+        "total_seconds_ratio": {
+          "max": 5.696749029055574,
+          "mean": 3.468600751630226,
+          "median": 3.3728870477692143,
+          "min": 2.0906289816263826,
+          "n": 47,
+          "p95": 4.523869396044711
+        },
+        "total_seconds_ratio_of_means": 3.4063914647759925
+      },
+      {
+        "actual_kv_bytes_delta": {
+          "max": -398884864.0,
+          "mean": -399278951.4893617,
+          "median": -399286272.0,
+          "min": -399859712.0,
+          "n": 47,
+          "p95": -398959411.2
+        },
+        "actual_kv_bytes_percent_change_of_means": -87.17896122093968,
+        "actual_kv_bytes_ratio": {
+          "max": 0.12832080200501253,
+          "mean": 0.1282104124714299,
+          "median": 0.128208338550144,
+          "min": 0.12804801800675253,
+          "n": 47,
+          "p95": 0.12829990144156894
+        },
+        "actual_kv_bytes_ratio_of_means": 0.1282103877906032,
+        "actual_retained_tokens_delta": {
+          "max": -6956.0,
+          "mean": -6962.872340425532,
+          "median": -6963.0,
+          "min": -6973.0,
+          "n": 47,
+          "p95": -6957.3
+        },
+        "baseline_method_counts": {
+          "full": 47
+        },
+        "capacity": "1024",
+        "generation_seconds_delta": {
+          "max": 15.528363446239382,
+          "mean": 10.396960033955885,
+          "median": 11.016298782546073,
+          "min": 3.1036339071579278,
+          "n": 47,
+          "p95": 14.457613877486436
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": -0.371490478515625,
+          "mean": -0.3718575010908411,
+          "median": -0.37186431884765625,
+          "min": -0.37239837646484375,
+          "n": 47,
+          "p95": -0.37155990600585936
+        },
+        "peak_cuda_memory_percent_change_of_means": -2.354032512910653,
+        "peak_cuda_memory_ratio": {
+          "max": 0.9764810036146776,
+          "mean": 0.9764596753202167,
+          "median": 0.9764592787898149,
+          "min": 0.976428251171493,
+          "n": 47,
+          "p95": 0.97647696892347
+        },
+        "peak_cuda_memory_ratio_of_means": 0.9764596748708935,
+        "qa_f1_delta": {
+          "max": 0.0,
+          "mean": -1.2765957446808507,
+          "median": 0.0,
+          "min": -19.999999999999996,
+          "n": 47,
+          "p95": 0.0
+        },
+        "route_counts": {
+          "physical_fallback": 47
+        },
+        "selection_seconds_delta": {
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "task": "ruler_variable_tracking",
+        "total_seconds_delta": {
+          "max": 15.528363446239382,
+          "mean": 10.396960033955885,
+          "median": 11.016298782546073,
+          "min": 3.1036339071579278,
+          "n": 47,
+          "p95": 14.457613877486436
+        },
+        "total_seconds_percent_change_of_means": 320.51237161111123,
+        "total_seconds_ratio": {
+          "max": 7.254758026966147,
+          "mean": 4.318492638887371,
+          "median": 4.362773414771309,
+          "min": 1.9412932988110572,
+          "n": 47,
+          "p95": 5.978888707586093
+        },
+        "total_seconds_ratio_of_means": 4.205123716111112
+      },
+      {
+        "actual_kv_bytes_delta": {
+          "max": -450265088.0,
+          "mean": -450659175.4893617,
+          "median": -450666496.0,
+          "min": -451239936.0,
+          "n": 47,
+          "p95": -450339635.2
+        },
+        "actual_kv_bytes_percent_change_of_means": -98.39737015261746,
+        "actual_kv_bytes_ratio": {
+          "max": 0.016040100250626566,
+          "mean": 0.016026301558928736,
+          "median": 0.016026042318768,
+          "min": 0.016006002250844066,
+          "n": 47,
+          "p95": 0.016037487680196118
+        },
+        "actual_kv_bytes_ratio_of_means": 0.0160262984738254,
+        "actual_retained_tokens_delta": {
+          "max": -7852.0,
+          "mean": -7858.872340425532,
+          "median": -7859.0,
+          "min": -7869.0,
+          "n": 47,
+          "p95": -7853.3
+        },
+        "baseline_method_counts": {
+          "full": 47
+        },
+        "capacity": "128",
+        "generation_seconds_delta": {
+          "max": -0.3195819309912622,
+          "mean": -1.8386082272937005,
+          "median": -1.8900012918747962,
+          "min": -3.7910479712300003,
+          "n": 47,
+          "p95": -0.5458480336703365
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": -1.4530043601989746,
+          "mean": -1.4542842012770631,
+          "median": -1.454308032989502,
+          "min": -1.4561715126037598,
+          "n": 47,
+          "p95": -1.4532465934753418
+        },
+        "peak_cuda_memory_percent_change_of_means": -9.206301561151475,
+        "peak_cuda_memory_ratio": {
+          "max": 0.9080105513553826,
+          "mean": 0.9079369859382805,
+          "median": 0.9079356146230206,
+          "min": 0.9078285209721819,
+          "n": 47,
+          "p95": 0.9079966265763468
+        },
+        "peak_cuda_memory_ratio_of_means": 0.9079369843884852,
+        "qa_f1_delta": {
+          "max": -19.999999999999996,
+          "mean": -35.319148936170215,
+          "median": -40.0,
+          "min": -40.0,
+          "n": 47,
+          "p95": -19.999999999999996
+        },
+        "route_counts": {
+          "proof_coverage": 47
+        },
+        "selection_seconds_delta": {
+          "max": 1.0277603711001575,
+          "mean": 0.9488012976845369,
+          "median": 0.9513265499845147,
+          "min": 0.8863110849633813,
+          "n": 47,
+          "p95": 0.9836230714805424
+        },
+        "task": "ruler_variable_tracking",
+        "total_seconds_delta": {
+          "max": 0.6538950144313276,
+          "mean": -0.8898069296091636,
+          "median": -0.9837590018287301,
+          "min": -2.860647911205888,
+          "n": 47,
+          "p95": 0.38410061774775356
+        },
+        "total_seconds_percent_change_of_means": -27.430530496761186,
+        "total_seconds_ratio": {
+          "max": 1.246235108957609,
+          "mean": 0.7530777434607935,
+          "median": 0.6946185644923002,
+          "min": 0.37176344316007925,
+          "n": 47,
+          "p95": 1.1408015994839906
+        },
+        "total_seconds_ratio_of_means": 0.7256946950323881
+      },
+      {
+        "actual_kv_bytes_delta": {
+          "max": -442925056.0,
+          "mean": -443319143.4893617,
+          "median": -443326464.0,
+          "min": -443899904.0,
+          "n": 47,
+          "p95": -442999603.2
+        },
+        "actual_kv_bytes_percent_change_of_means": -96.79474030523491,
+        "actual_kv_bytes_ratio": {
+          "max": 0.03208020050125313,
+          "mean": 0.03205260311785747,
+          "median": 0.032052084637536,
+          "min": 0.03201200450168813,
+          "n": 47,
+          "p95": 0.032074975360392236
+        },
+        "actual_kv_bytes_ratio_of_means": 0.0320525969476508,
+        "actual_retained_tokens_delta": {
+          "max": -7724.0,
+          "mean": -7730.872340425532,
+          "median": -7731.0,
+          "min": -7741.0,
+          "n": 47,
+          "p95": -7725.3
+        },
+        "baseline_method_counts": {
+          "full": 47
+        },
+        "capacity": "256",
+        "generation_seconds_delta": {
+          "max": -0.13275848468765616,
+          "mean": -1.7451730068931555,
+          "median": -1.6870458954945207,
+          "min": -3.263462590519339,
+          "n": 47,
+          "p95": -0.7677060586865991
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": -1.4286465644836426,
+          "mean": -1.4299264055617311,
+          "median": -1.42995023727417,
+          "min": -1.4318137168884277,
+          "n": 47,
+          "p95": -1.4288887977600098
+        },
+        "peak_cuda_memory_percent_change_of_means": -9.052105281962476,
+        "peak_cuda_memory_ratio": {
+          "max": 0.9095526390871391,
+          "mean": 0.9094789487328027,
+          "median": 0.9094775750886177,
+          "min": 0.9093702995590499,
+          "n": 47,
+          "p95": 0.9095386906594456
+        },
+        "peak_cuda_memory_ratio_of_means": 0.9094789471803753,
+        "qa_f1_delta": {
+          "max": 0.0,
+          "mean": -10.212765957446809,
+          "median": 0.0,
+          "min": -100.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "route_counts": {
+          "proof_coverage": 47
+        },
+        "selection_seconds_delta": {
+          "max": 0.9803323540836573,
+          "mean": 0.948701615851531,
+          "median": 0.951414898969233,
+          "min": 0.9015427511185408,
+          "n": 47,
+          "p95": 0.9753247848246247
+        },
+        "task": "ruler_variable_tracking",
+        "total_seconds_delta": {
+          "max": 0.826423351187259,
+          "mean": -0.7964713910416245,
+          "median": -0.7436174936592579,
+          "min": -2.335353657603264,
+          "n": 47,
+          "p95": 0.19401831165887395
+        },
+        "total_seconds_percent_change_of_means": -24.553228408056317,
+        "total_seconds_ratio": {
+          "max": 1.3808903262024197,
+          "mean": 0.7763647414202486,
+          "median": 0.759833634317316,
+          "min": 0.4086847339960572,
+          "n": 47,
+          "p95": 1.0758404856970853
+        },
+        "total_seconds_ratio_of_means": 0.7544677159194368
+      },
+      {
+        "actual_kv_bytes_delta": {
+          "max": -428244992.0,
+          "mean": -428639079.4893617,
+          "median": -428646400.0,
+          "min": -429219840.0,
+          "n": 47,
+          "p95": -428319539.20000005
+        },
+        "actual_kv_bytes_percent_change_of_means": -93.58948061046985,
+        "actual_kv_bytes_ratio": {
+          "max": 0.06416040100250626,
+          "mean": 0.06410520623571495,
+          "median": 0.064104169275072,
+          "min": 0.06402400900337626,
+          "n": 47,
+          "p95": 0.06414995072078447
+        },
+        "actual_kv_bytes_ratio_of_means": 0.0641051938953016,
+        "actual_retained_tokens_delta": {
+          "max": -7468.0,
+          "mean": -7474.872340425532,
+          "median": -7475.0,
+          "min": -7485.0,
+          "n": 47,
+          "p95": -7469.3
+        },
+        "baseline_method_counts": {
+          "full": 47
+        },
+        "capacity": "512",
+        "generation_seconds_delta": {
+          "max": -0.1494705374352634,
+          "mean": -1.738137604747998,
+          "median": -1.8666330319829285,
+          "min": -2.9350798027589917,
+          "n": 47,
+          "p95": -0.517184652900324
+        },
+        "model": "qwen25",
+        "n": 47,
+        "peak_cuda_memory_gb_delta": {
+          "max": -1.3813958168029785,
+          "mean": -1.382675657881067,
+          "median": -1.3826994895935059,
+          "min": -1.3845629692077637,
+          "n": 47,
+          "p95": -1.3816380500793457
+        },
+        "peak_cuda_memory_percent_change_of_means": -8.75298587204516,
+        "peak_cuda_memory_ratio": {
+          "max": 0.9125440755523366,
+          "mean": 0.9124701428370816,
+          "median": 0.9124687646751051,
+          "min": 0.9123611363260112,
+          "n": 47,
+          "p95": 0.9125300812495243
+        },
+        "peak_cuda_memory_ratio_of_means": 0.9124701412795484,
+        "qa_f1_delta": {
+          "max": 0.0,
+          "mean": -2.127659574468085,
+          "median": 0.0,
+          "min": -60.0,
+          "n": 47,
+          "p95": 0.0
+        },
+        "route_counts": {
+          "proof_coverage": 47
+        },
+        "selection_seconds_delta": {
+          "max": 1.0119721670635045,
+          "mean": 0.9592756398438298,
+          "median": 0.9637255282141268,
+          "min": 0.9023821540176868,
+          "n": 47,
+          "p95": 0.9901515089906752
+        },
+        "task": "ruler_variable_tracking",
+        "total_seconds_delta": {
+          "max": 0.8625016296282411,
+          "mean": -0.7788619649041681,
+          "median": -0.9014845862984657,
+          "min": -2.001729669980705,
+          "n": 47,
+          "p95": 0.4474776587449007
+        },
+        "total_seconds_percent_change_of_means": -24.01037367786656,
+        "total_seconds_ratio": {
+          "max": 1.324789420412272,
+          "mean": 0.7793706675053639,
+          "median": 0.7332424677454008,
+          "min": 0.47215111263413895,
+          "n": 47,
+          "p95": 1.1645629263547526
+        },
+        "total_seconds_ratio_of_means": 0.7598962632213344
+      }
+    ]
+  },
+  "validation": {
+    "checks": [
+      "completed metrics and run manifest present",
+      "exact method/capacity/example crossing with no duplicates",
+      "finite row metrics; blank decoded outputs retained as zero-score outputs and explicitly reported",
+      "selection plus generation timing decomposition",
+      "retained-token ratio and exact physical KV-byte accounting",
+      "capacity compliance and full-cache token equality",
+      "physical-fallback prediction, score, and byte replay equality"
+    ],
+    "completed_runs": 1,
+    "implementation_sha256": "{'/workspace/compresskv_run/compresskv/compresskv/scripts/run_longbench_structured_upgraded_v10.py': 'af641006f8ac001a8ec0060cf99c7029203aa32dd31ff9a2fae3bd6e3a39c2c6', '/workspace/compresskv_run/compresskv/compresskv/scripts/run_hotpot_compact_qa_upgraded_v10.py': 'b2121215090341af185a26ffaefd27f2a53c5518b2c640129e58952b4c166bdd', '/workspace/compresskv_run/compresskv/compresskv/scripts/run_kvpress_natural_qa.py': 'b79759843aa184058cf7f01f3bd2776fd76cf0130d2648045296935459551cfb', '/workspace/compresskv_run/compresskv/compresskv/compresskv/prefill_selectors.py': 'f5b0098d5689ab3e8b61512922c9ebefe9cb6df07317f5b662b988371f73628f', '/workspace/compresskv_run/compresskv/compresskv/compresskv/physical_kv.py': '8ef0e558b29f5a9dd72a04c16576eb28c54c4c565a14c2814419919d00a00983', '/workspace/compresskv_run/compresskv/compresskv/compresskv/proofcache/model.py': 'e7443efaac3e326cad483510b15e4b36a77fe5b5a7e55fa0cdcd5619b882a47f', '/workspace/compresskv_run/compresskv/compresskv/compresskv/proofcache/selector.py': '38311cba139a7120ffcd734102358090aab9b152755d22fce9efa726b19120bf', '/workspace/compresskv_run/compresskv/compresskv/compresskv/proofcache/schema.py': '0190bc84d93d1c23033b967e4e2204d8ba3489bd38e0d9e84cbd352a3fd76a05', '/workspace/baselines/kvpress/kvpress/presses/chunkkv_press.py': '75b7e1b027ce2ef971fef9d20e711525799b873a23e9273f7ca2b6874da33ecd', '/workspace/compresskv_run/compresskv/compresskv/scripts/run_official_ruler_upgraded_v10.py': 'aaee0de2104f7bd6d5897bb30aeeed5f77405e6a36c4fe5e8feac6ebd14e221c', '/workspace/compresskv_run/compresskv/compresskv/scripts/official_ruler_v10_common.py': '279292dc2dab3ab54381b829d4e4bf38e2cc9adda752afff8c7064c6a1895754'}",
+    "rows": 1974,
+    "scorer_checkpoint_sha256": "{'encoder/config.json': '351963ff45852d8d60ea3d37f3a8a54f87d31ac4030e455cd26659b73c4bcd3b', 'encoder/model.safetensors': '774e7f692bcea6ae945fe4d0eeb90045f9e9d2371d28d76a4287b348c082cd64', 'heads.pt': 'e95a0075813bf2d87d02327960107f7e6f31b6ff8b546d541a859f8a851e7385', 'proofcache_scorer.json': '4e7196a2df2d8cf975efbb2286e4a336ca65f8cd93edc9a09191a0bc57ed1d35', 'tokenizer/tokenizer.json': '91f1def9b9391fdabe028cd3f3fcc4efd34e5d1f08c3bf2de513ebb5911a1854', 'tokenizer/tokenizer_config.json': '74a0cf609c8a333cba965e542045fb194c5f9c6c315bc6a28aa2f8fb0bc06e96'}",
+    "selection_manifest_sha256": "5d71da9bddafbef4e9f90e5b9ef0e28bc8ae027afe0b9ff72a0b7672cfdcd050"
+  }
+}

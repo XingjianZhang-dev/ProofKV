@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "protocol": "incremental_confirmation_utility_audit_v1",
+  "evaluation_slice": "confirmation",
+  "selection_manifest_sha256": "3f8f96a8c5eda517d69f31c15e816f23fcfcf3c6e703e33f728ef237301d30c3",
+  "utility_controller_sha256": "784c1cac71d4d3a1ec88c18f8e6acf407e141930e30c5b7430c1857780ffa942",
+  "runs": [
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/confirmation_v7_utility_qwen25_s28_n10",
+      "model": "qwen25",
+      "durable_rows": 2083,
+      "complete_samples_by_task": {
+        "narrativeqa": 10,
+        "qasper": 10,
+        "multifieldqa_en": 10,
+        "hotpotqa": 10,
+        "2wikimqa": 10,
+        "musique": 6
+      },
+      "incomplete_sample_count": 1,
+      "incomplete_sample_rows": 11,
+      "trailing_partial_line_ignored": false,
+      "proof_routes": 48,
+      "physical_fallback_routes": 176,
+      "proof_route_coverage": 0.21428571428571427,
+      "selected_candidate_counts": {
+        "learned_and_or_mixed_aux": 52,
+        "learned_and_or_recent_aux": 4
+      },
+      "proof_routes_without_source_replay": 0,
+      "task_capacity_records": [
+        {
+          "task": "2wikimqa",
+          "capacity": 64,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "2wikimqa",
+          "capacity": 128,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "2wikimqa",
+          "capacity": 256,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "2wikimqa",
+          "capacity": 512,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.49999999999999967
+        },
+        {
+          "task": "hotpotqa",
+          "capacity": 64,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "hotpotqa",
+          "capacity": 128,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "hotpotqa",
+          "capacity": 256,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "hotpotqa",
+          "capacity": 512,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": -23.181818181818183
+        },
+        {
+          "task": "multifieldqa_en",
+          "capacity": 64,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "multifieldqa_en",
+          "capacity": 128,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": -0.8302241819483187
+        },
+        {
+          "task": "multifieldqa_en",
+          "capacity": 256,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "multifieldqa_en",
+          "capacity": 512,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 12.559431587627076
+        },
+        {
+          "task": "musique",
+          "capacity": 64,
+          "complete_samples": 6,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "musique",
+          "capacity": 128,
+          "complete_samples": 6,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "musique",
+          "capacity": 256,
+          "complete_samples": 6,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "musique",
+          "capacity": 512,
+          "complete_samples": 6,
+          "utility_delta_vs_frozen_fallback": 23.52847471127041
+        },
+        {
+          "task": "narrativeqa",
+          "capacity": 64,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "narrativeqa",
+          "capacity": 128,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "narrativeqa",
+          "capacity": 256,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "narrativeqa",
+          "capacity": 512,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "qasper",
+          "capacity": 64,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "qasper",
+          "capacity": 128,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "qasper",
+          "capacity": 256,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "qasper",
+          "capacity": 512,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": -3.361062675578805
+        }
+      ],
+      "completed_task_macro_deltas": {
+        "narrativeqa": 0.0,
+        "qasper": -0.8402656688947012,
+        "multifieldqa_en": 2.9323018514196892,
+        "hotpotqa": -5.795454545454546,
+        "2wikimqa": 0.12499999999999992,
+        "musique": 5.882118677817602
+      },
+      "completed_task_macro_delta": 0.38395005248134073,
+      "raw_empty_predictions": 0,
+      "whitespace_only_predictions": 0,
+      "max_capacity_excess_tokens": 0.0,
+      "implementation_files_hashed": 9,
+      "scorer_checkpoint_files_hashed": 6
+    }
+  ],
+  "checks": [
+    "durable JSON rows, unique keys, and prefix-complete samples",
+    "frozen source IDs, answers, token counts, and slice",
+    "independent QA-F1, capacity, and KV-byte recomputation",
+    "serialized utility prediction and decision replay",
+    "physical fallback and available proof-source equality",
+    "implementation, controller, selection, and scorer hashes"
+  ]
+}

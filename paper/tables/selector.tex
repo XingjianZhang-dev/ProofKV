@@ -1,0 +1,15 @@
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Selector & PCR@256 & PCR@512 \\
+\midrule
+BM25 & 3.8 & 11.6 \\
+Hybrid reranker & 3.8 & 10.4 \\
+Similarity graph & 2.0 & 6.2 \\
+Same scorer, independent & 9.2 & 27.0 \\
+Iterative retrieval (same encoder) & 15.8 & 45.0 \\
+Single chain & 15.2 & 31.6 \\
+\proofkv{} chain union & 16.8 & 46.0 \\
+\proofkv{} AND/OR & 16.8 & 46.2 \\
+Oracle (gold chain if it fits) & 24.8 & 79.4 \\
+\bottomrule
+\end{tabular}

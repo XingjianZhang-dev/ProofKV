@@ -1,0 +1,690 @@
+{
+  "protocol": "proofkv_v10_official_ruler_outcome_blind_split_v1",
+  "selection_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_manifest.json",
+  "selection_manifest_sha256": "5d71da9bddafbef4e9f90e5b9ef0e28bc8ae027afe0b9ff72a0b7672cfdcd050",
+  "model": "qwen25",
+  "model_path": "/workspace/models/Qwen2.5-7B-Instruct-a09a354",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "tasks": [
+    "ruler_niah",
+    "ruler_variable_tracking"
+  ],
+  "n_per_task": 47,
+  "selection_start_per_task": 0,
+  "frozen_n_per_task": 47,
+  "max_input_tokens": 12000,
+  "truncated_inputs": 0,
+  "tokenization_contract": "kvpress_split_context_question_token_ids_v1",
+  "methods": [
+    "full",
+    "streamingllm",
+    "snapkv",
+    "pyramidkv",
+    "chunkkv_snapkv",
+    "confirmation_stable_proofkv_v10"
+  ],
+  "capacities": [
+    128,
+    256,
+    512,
+    1024
+  ],
+  "capacity_scope": "total prefill KV including the uncompressed question tail",
+  "kv_bytes_per_token_bf16": 57344,
+  "attn_implementation": "sdpa",
+  "task_records": [
+    {
+      "task": "ruler_niah",
+      "method": "chunkkv_snapkv",
+      "capacity": "1024",
+      "n": 47,
+      "score": 100.0,
+      "actual_retained_ratio": 0.12829892607993307,
+      "actual_kv_bytes": 58720256.0,
+      "seconds": 13.597759941840504,
+      "peak_cuda_memory_gb": 15.431265830993652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "chunkkv_snapkv",
+      "capacity": "128",
+      "n": 47,
+      "score": 2.127659574468085,
+      "actual_retained_ratio": 0.016037365759991633,
+      "actual_kv_bytes": 7340032.0,
+      "seconds": 4.877075613664582,
+      "peak_cuda_memory_gb": 15.383414268493652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "chunkkv_snapkv",
+      "capacity": "256",
+      "n": 47,
+      "score": 85.1063829787234,
+      "actual_retained_ratio": 0.03207473151998327,
+      "actual_kv_bytes": 14680064.0,
+      "seconds": 5.110570623995142,
+      "peak_cuda_memory_gb": 15.390250205993652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "chunkkv_snapkv",
+      "capacity": "512",
+      "n": 47,
+      "score": 100.0,
+      "actual_retained_ratio": 0.06414946303996653,
+      "actual_kv_bytes": 29360128.0,
+      "seconds": 8.933538673782444,
+      "peak_cuda_memory_gb": 15.403922080993652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "confirmation_stable_proofkv_v10",
+      "capacity": "1024",
+      "n": 47,
+      "score": 100.0,
+      "actual_retained_ratio": 0.12829892607993307,
+      "actual_kv_bytes": 58720256.0,
+      "seconds": 13.597759941840504,
+      "peak_cuda_memory_gb": 15.431265830993652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "confirmation_stable_proofkv_v10",
+      "capacity": "128",
+      "n": 47,
+      "score": 100.0,
+      "actual_retained_ratio": 0.016037365759991633,
+      "actual_kv_bytes": 7340032.0,
+      "seconds": 14.012313396422233,
+      "peak_cuda_memory_gb": 14.34233283996582
+    },
+    {
+      "task": "ruler_niah",
+      "method": "confirmation_stable_proofkv_v10",
+      "capacity": "256",
+      "n": 47,
+      "score": 85.1063829787234,
+      "actual_retained_ratio": 0.03207473151998327,
+      "actual_kv_bytes": 14680064.0,
+      "seconds": 5.110570623995142,
+      "peak_cuda_memory_gb": 15.390250205993652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "confirmation_stable_proofkv_v10",
+      "capacity": "512",
+      "n": 47,
+      "score": 100.0,
+      "actual_retained_ratio": 0.06414946303996653,
+      "actual_kv_bytes": 29360128.0,
+      "seconds": 8.933538673782444,
+      "peak_cuda_memory_gb": 15.403922080993652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "full",
+      "capacity": "full",
+      "n": 47,
+      "score": 100.0,
+      "actual_retained_ratio": 1.0,
+      "actual_kv_bytes": 457683205.4468085,
+      "seconds": 2.6225813345765654,
+      "peak_cuda_memory_gb": 15.803696632385254
+    },
+    {
+      "task": "ruler_niah",
+      "method": "pyramidkv",
+      "capacity": "1024",
+      "n": 47,
+      "score": 53.191489361702125,
+      "actual_retained_ratio": 0.12829892607993307,
+      "actual_kv_bytes": 58720256.0,
+      "seconds": 2.83241956133118,
+      "peak_cuda_memory_gb": 15.431265830993652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "pyramidkv",
+      "capacity": "128",
+      "n": 47,
+      "score": 2.127659574468085,
+      "actual_retained_ratio": 0.016037365759991633,
+      "actual_kv_bytes": 7340032.0,
+      "seconds": 3.9594273420169634,
+      "peak_cuda_memory_gb": 15.383414268493652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "pyramidkv",
+      "capacity": "256",
+      "n": 47,
+      "score": 12.76595744680851,
+      "actual_retained_ratio": 0.03207473151998327,
+      "actual_kv_bytes": 14680064.0,
+      "seconds": 2.8541211846799768,
+      "peak_cuda_memory_gb": 15.390250205993652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "pyramidkv",
+      "capacity": "512",
+      "n": 47,
+      "score": 29.78723404255319,
+      "actual_retained_ratio": 0.06414946303996653,
+      "actual_kv_bytes": 29360128.0,
+      "seconds": 2.8661228959805314,
+      "peak_cuda_memory_gb": 15.403922080993652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "snapkv",
+      "capacity": "1024",
+      "n": 47,
+      "score": 53.191489361702125,
+      "actual_retained_ratio": 0.12820027786388152,
+      "actual_kv_bytes": 58675112.85106383,
+      "seconds": 2.8587864779748338,
+      "peak_cuda_memory_gb": 15.431212425231934
+    },
+    {
+      "task": "ruler_niah",
+      "method": "snapkv",
+      "capacity": "128",
+      "n": 47,
+      "score": 2.127659574468085,
+      "actual_retained_ratio": 0.016037365759991633,
+      "actual_kv_bytes": 7340032.0,
+      "seconds": 4.076189721974128,
+      "peak_cuda_memory_gb": 15.383414268493652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "snapkv",
+      "capacity": "256",
+      "n": 47,
+      "score": 12.76595744680851,
+      "actual_retained_ratio": 0.03206940438033763,
+      "actual_kv_bytes": 14677623.829787234,
+      "seconds": 2.9399511562957565,
+      "peak_cuda_memory_gb": 15.390250205993652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "snapkv",
+      "capacity": "512",
+      "n": 47,
+      "score": 29.78723404255319,
+      "actual_retained_ratio": 0.06407750060756695,
+      "actual_kv_bytes": 29327185.702127658,
+      "seconds": 2.8020136204270765,
+      "peak_cuda_memory_gb": 15.403922080993652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "streamingllm",
+      "capacity": "1024",
+      "n": 47,
+      "score": 14.893617021276595,
+      "actual_retained_ratio": 0.12820027786388152,
+      "actual_kv_bytes": 58675112.85106383,
+      "seconds": 2.823226229327315,
+      "peak_cuda_memory_gb": 15.431212425231934
+    },
+    {
+      "task": "ruler_niah",
+      "method": "streamingllm",
+      "capacity": "128",
+      "n": 47,
+      "score": 2.127659574468085,
+      "actual_retained_ratio": 0.016037365759991633,
+      "actual_kv_bytes": 7340032.0,
+      "seconds": 3.082440149871276,
+      "peak_cuda_memory_gb": 15.383414268493652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "streamingllm",
+      "capacity": "256",
+      "n": 47,
+      "score": 6.382978723404255,
+      "actual_retained_ratio": 0.03206940438033763,
+      "actual_kv_bytes": 14677623.829787234,
+      "seconds": 3.088402249206333,
+      "peak_cuda_memory_gb": 15.390250205993652
+    },
+    {
+      "task": "ruler_niah",
+      "method": "streamingllm",
+      "capacity": "512",
+      "n": 47,
+      "score": 10.638297872340425,
+      "actual_retained_ratio": 0.06407750060756695,
+      "actual_kv_bytes": 29327185.702127658,
+      "seconds": 2.738406965608134,
+      "peak_cuda_memory_gb": 15.403922080993652
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "chunkkv_snapkv",
+      "capacity": "1024",
+      "n": 47,
+      "score": 98.72340425531915,
+      "actual_retained_ratio": 0.1282104124714299,
+      "actual_kv_bytes": 58720256.0,
+      "seconds": 13.640816107808433,
+      "peak_cuda_memory_gb": 15.426105976104736
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "chunkkv_snapkv",
+      "capacity": "128",
+      "n": 47,
+      "score": 1.702127659574468,
+      "actual_retained_ratio": 0.016026301558928736,
+      "actual_kv_bytes": 7340032.0,
+      "seconds": 4.347231384356843,
+      "peak_cuda_memory_gb": 15.378254413604736
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "chunkkv_snapkv",
+      "capacity": "256",
+      "n": 47,
+      "score": 10.638297872340425,
+      "actual_retained_ratio": 0.03205260311785747,
+      "actual_kv_bytes": 14680064.0,
+      "seconds": 6.327726898100623,
+      "peak_cuda_memory_gb": 15.385090351104736
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "chunkkv_snapkv",
+      "capacity": "512",
+      "n": 47,
+      "score": 74.04255319148935,
+      "actual_retained_ratio": 0.06410520623571495,
+      "actual_kv_bytes": 29360128.0,
+      "seconds": 9.0643477537372,
+      "peak_cuda_memory_gb": 15.398762226104736
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "confirmation_stable_proofkv_v10",
+      "capacity": "1024",
+      "n": 47,
+      "score": 98.72340425531915,
+      "actual_retained_ratio": 0.1282104124714299,
+      "actual_kv_bytes": 58720256.0,
+      "seconds": 13.640816107808433,
+      "peak_cuda_memory_gb": 15.426105976104736
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "confirmation_stable_proofkv_v10",
+      "capacity": "128",
+      "n": 47,
+      "score": 64.68085106382979,
+      "actual_retained_ratio": 0.016026301558928736,
+      "actual_kv_bytes": 7340032.0,
+      "seconds": 2.3540491442433855,
+      "peak_cuda_memory_gb": 14.34233283996582
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "confirmation_stable_proofkv_v10",
+      "capacity": "256",
+      "n": 47,
+      "score": 89.7872340425532,
+      "actual_retained_ratio": 0.03205260311785747,
+      "actual_kv_bytes": 14680064.0,
+      "seconds": 2.4473846828109247,
+      "peak_cuda_memory_gb": 14.366690635681152
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "confirmation_stable_proofkv_v10",
+      "capacity": "512",
+      "n": 47,
+      "score": 97.87234042553192,
+      "actual_retained_ratio": 0.06410520623571495,
+      "actual_kv_bytes": 29360128.0,
+      "seconds": 2.464994108948381,
+      "peak_cuda_memory_gb": 14.413941383361816
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "full",
+      "capacity": "full",
+      "n": 47,
+      "score": 100.0,
+      "actual_retained_ratio": 1.0,
+      "actual_kv_bytes": 457999207.4893617,
+      "seconds": 3.243856073852549,
+      "peak_cuda_memory_gb": 15.79850435256958
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "pyramidkv",
+      "capacity": "1024",
+      "n": 47,
+      "score": 45.1063829787234,
+      "actual_retained_ratio": 0.1282104124714299,
+      "actual_kv_bytes": 58720256.0,
+      "seconds": 3.9004161085517324,
+      "peak_cuda_memory_gb": 15.426105976104736
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "pyramidkv",
+      "capacity": "128",
+      "n": 47,
+      "score": 1.702127659574468,
+      "actual_retained_ratio": 0.016026301558928736,
+      "actual_kv_bytes": 7340032.0,
+      "seconds": 3.6089866577865597,
+      "peak_cuda_memory_gb": 15.378254413604736
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "pyramidkv",
+      "capacity": "256",
+      "n": 47,
+      "score": 4.680851063829788,
+      "actual_retained_ratio": 0.03205260311785747,
+      "actual_kv_bytes": 14680064.0,
+      "seconds": 4.10128350460783,
+      "peak_cuda_memory_gb": 15.385090351104736
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "pyramidkv",
+      "capacity": "512",
+      "n": 47,
+      "score": 8.085106382978724,
+      "actual_retained_ratio": 0.06410520623571495,
+      "actual_kv_bytes": 29360128.0,
+      "seconds": 3.920352726025467,
+      "peak_cuda_memory_gb": 15.398762226104736
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "snapkv",
+      "capacity": "1024",
+      "n": 47,
+      "score": 45.1063829787234,
+      "actual_retained_ratio": 0.12814647411010047,
+      "actual_kv_bytes": 58690973.957446806,
+      "seconds": 3.8786302877867476,
+      "peak_cuda_memory_gb": 15.426105976104736
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "snapkv",
+      "capacity": "128",
+      "n": 47,
+      "score": 1.702127659574468,
+      "actual_retained_ratio": 0.015911754702240162,
+      "actual_kv_bytes": 7287568.340425532,
+      "seconds": 3.8614440431144645,
+      "peak_cuda_memory_gb": 15.378254413604736
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "snapkv",
+      "capacity": "256",
+      "n": 47,
+      "score": 4.680851063829788,
+      "actual_retained_ratio": 0.03199132165625774,
+      "actual_kv_bytes": 14652002.042553192,
+      "seconds": 4.065623333618204,
+      "peak_cuda_memory_gb": 15.385036945343018
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "snapkv",
+      "capacity": "512",
+      "n": 47,
+      "score": 7.659574468085107,
+      "actual_retained_ratio": 0.0640572583077769,
+      "actual_kv_bytes": 29338166.468085106,
+      "seconds": 3.9439868857747222,
+      "peak_cuda_memory_gb": 15.398762226104736
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "streamingllm",
+      "capacity": "1024",
+      "n": 47,
+      "score": 15.74468085106383,
+      "actual_retained_ratio": 0.12814647411010047,
+      "actual_kv_bytes": 58690973.957446806,
+      "seconds": 3.661047297064215,
+      "peak_cuda_memory_gb": 15.426105976104736
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "streamingllm",
+      "capacity": "128",
+      "n": 47,
+      "score": 1.702127659574468,
+      "actual_retained_ratio": 0.015911754702240162,
+      "actual_kv_bytes": 7287568.340425532,
+      "seconds": 3.474115729807539,
+      "peak_cuda_memory_gb": 15.378254413604736
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "streamingllm",
+      "capacity": "256",
+      "n": 47,
+      "score": 3.404255319148936,
+      "actual_retained_ratio": 0.03199132165625774,
+      "actual_kv_bytes": 14652002.042553192,
+      "seconds": 3.529018763343784,
+      "peak_cuda_memory_gb": 15.385036945343018
+    },
+    {
+      "task": "ruler_variable_tracking",
+      "method": "streamingllm",
+      "capacity": "512",
+      "n": 47,
+      "score": 6.808510638297872,
+      "actual_retained_ratio": 0.0640572583077769,
+      "actual_kv_bytes": 29338166.468085106,
+      "seconds": 3.38964765440633,
+      "peak_cuda_memory_gb": 15.398762226104736
+    }
+  ],
+  "macro_records": [
+    {
+      "method": "chunkkv_snapkv",
+      "capacity": "1024",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 99.36170212765958,
+      "actual_retained_ratio": 0.12825466927568147,
+      "seconds": 13.619288024824469
+    },
+    {
+      "method": "chunkkv_snapkv",
+      "capacity": "128",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 1.9148936170212765,
+      "actual_retained_ratio": 0.016031833659460183,
+      "seconds": 4.612153499010713
+    },
+    {
+      "method": "chunkkv_snapkv",
+      "capacity": "256",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 47.87234042553192,
+      "actual_retained_ratio": 0.032063667318920366,
+      "seconds": 5.719148761047883
+    },
+    {
+      "method": "chunkkv_snapkv",
+      "capacity": "512",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 87.02127659574467,
+      "actual_retained_ratio": 0.06412733463784073,
+      "seconds": 8.998943213759823
+    },
+    {
+      "method": "confirmation_stable_proofkv_v10",
+      "capacity": "1024",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 99.36170212765958,
+      "actual_retained_ratio": 0.12825466927568147,
+      "seconds": 13.619288024824469
+    },
+    {
+      "method": "confirmation_stable_proofkv_v10",
+      "capacity": "128",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 82.34042553191489,
+      "actual_retained_ratio": 0.016031833659460183,
+      "seconds": 8.18318127033281
+    },
+    {
+      "method": "confirmation_stable_proofkv_v10",
+      "capacity": "256",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 87.4468085106383,
+      "actual_retained_ratio": 0.032063667318920366,
+      "seconds": 3.7789776534030333
+    },
+    {
+      "method": "confirmation_stable_proofkv_v10",
+      "capacity": "512",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 98.93617021276596,
+      "actual_retained_ratio": 0.06412733463784073,
+      "seconds": 5.699266391365413
+    },
+    {
+      "method": "full",
+      "capacity": "full",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 100.0,
+      "actual_retained_ratio": 1.0,
+      "seconds": 2.933218704214557
+    },
+    {
+      "method": "pyramidkv",
+      "capacity": "1024",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 49.148936170212764,
+      "actual_retained_ratio": 0.12825466927568147,
+      "seconds": 3.366417834941456
+    },
+    {
+      "method": "pyramidkv",
+      "capacity": "128",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 1.9148936170212765,
+      "actual_retained_ratio": 0.016031833659460183,
+      "seconds": 3.7842069999017616
+    },
+    {
+      "method": "pyramidkv",
+      "capacity": "256",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 8.72340425531915,
+      "actual_retained_ratio": 0.032063667318920366,
+      "seconds": 3.4777023446439035
+    },
+    {
+      "method": "pyramidkv",
+      "capacity": "512",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 18.93617021276596,
+      "actual_retained_ratio": 0.06412733463784073,
+      "seconds": 3.393237811002999
+    },
+    {
+      "method": "snapkv",
+      "capacity": "1024",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 49.148936170212764,
+      "actual_retained_ratio": 0.128173375986991,
+      "seconds": 3.368708382880791
+    },
+    {
+      "method": "snapkv",
+      "capacity": "128",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 1.9148936170212765,
+      "actual_retained_ratio": 0.015974560231115896,
+      "seconds": 3.968816882544296
+    },
+    {
+      "method": "snapkv",
+      "capacity": "256",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 8.72340425531915,
+      "actual_retained_ratio": 0.03203036301829769,
+      "seconds": 3.50278724495698
+    },
+    {
+      "method": "snapkv",
+      "capacity": "512",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 18.72340425531915,
+      "actual_retained_ratio": 0.06406737945767192,
+      "seconds": 3.3730002531008996
+    },
+    {
+      "method": "streamingllm",
+      "capacity": "1024",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 15.319148936170212,
+      "actual_retained_ratio": 0.128173375986991,
+      "seconds": 3.2421367631957647
+    },
+    {
+      "method": "streamingllm",
+      "capacity": "128",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 1.9148936170212765,
+      "actual_retained_ratio": 0.015974560231115896,
+      "seconds": 3.2782779398394073
+    },
+    {
+      "method": "streamingllm",
+      "capacity": "256",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 4.8936170212765955,
+      "actual_retained_ratio": 0.03203036301829769,
+      "seconds": 3.308710506275059
+    },
+    {
+      "method": "streamingllm",
+      "capacity": "512",
+      "tasks": 2,
+      "n": 94,
+      "macro_score": 8.72340425531915,
+      "actual_retained_ratio": 0.06406737945767192,
+      "seconds": 3.0640273100072317
+    }
+  ]
+}

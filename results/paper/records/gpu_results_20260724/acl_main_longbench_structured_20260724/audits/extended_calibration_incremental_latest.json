@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "protocol": "longbench_extended_incremental_audit_v1",
+  "selection_manifest_sha256": "3f8f96a8c5eda517d69f31c15e816f23fcfcf3c6e703e33f728ef237301d30c3",
+  "runs": [
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/extended_calibration_V2_qwen25_s10_n18",
+      "model": "qwen25",
+      "durable_rows": 3333,
+      "complete_samples_by_task": {
+        "narrativeqa": 18,
+        "qasper": 18,
+        "multifieldqa_en": 18,
+        "hotpotqa": 18,
+        "2wikimqa": 18,
+        "musique": 14
+      },
+      "incomplete_sample_count": 1,
+      "incomplete_sample_rows": 5,
+      "trailing_partial_line_ignored": false,
+      "raw_empty_predictions": 0,
+      "whitespace_only_predictions": 0,
+      "max_capacity_excess_tokens": 0.0,
+      "implementation_files_hashed": 9,
+      "scorer_checkpoint_files_hashed": 6
+    },
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/extended_calibration_V2_mistral02_s10_n18",
+      "model": "mistral02",
+      "durable_rows": 2885,
+      "complete_samples_by_task": {
+        "narrativeqa": 18,
+        "qasper": 18,
+        "multifieldqa_en": 18,
+        "hotpotqa": 18,
+        "2wikimqa": 18,
+        "musique": 0
+      },
+      "incomplete_sample_count": 1,
+      "incomplete_sample_rows": 5,
+      "trailing_partial_line_ignored": false,
+      "raw_empty_predictions": 0,
+      "whitespace_only_predictions": 36,
+      "max_capacity_excess_tokens": 0.0,
+      "implementation_files_hashed": 9,
+      "scorer_checkpoint_files_hashed": 6
+    }
+  ],
+  "checks": [
+    "durable JSON rows and unique result keys",
+    "frozen offsets 10-27, source answers, and token counts",
+    "independent row-level QA-F1 recomputation",
+    "capacity, retained-ratio, and KV-byte accounting",
+    "coverage partition accounting",
+    "at most one in-flight partial sample",
+    "implementation and scorer checkpoint hashes"
+  ]
+}

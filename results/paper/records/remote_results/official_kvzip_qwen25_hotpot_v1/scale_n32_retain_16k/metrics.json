@@ -1,0 +1,148 @@
+{
+  "official_repository": "https://github.com/snu-mllab/KVzip",
+  "official_commit": "5d8472975d286e3da6b52178af39d18904330c0d",
+  "runtime": {
+    "torch": "2.8.0+cu128",
+    "torch_cuda": "12.8",
+    "transformers": "4.51.3",
+    "datasets": "5.0.0"
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "kv_type": "retain",
+  "max_samples": 32,
+  "target_prompt_tokens": 16000,
+  "budgets": [
+    {
+      "kind": "ratio",
+      "value": 0.08,
+      "label": "kvzip_ratio008"
+    },
+    {
+      "kind": "ratio",
+      "value": 0.16,
+      "label": "kvzip_ratio016"
+    }
+  ],
+  "records": [
+    {
+      "method": "full",
+      "n": 32,
+      "answer_em": 0.25,
+      "answer_f1": 0.42604166666666665,
+      "answer_contains": 0.34375,
+      "logical_retained_ratio": 1.0,
+      "official_reported_ratio": 1.0,
+      "mean_total_prompt_tokens": 15958.15625,
+      "mean_logical_retained_bytes": 912631552.0,
+      "mean_logical_full_bytes": 912631552.0,
+      "mean_physical_tensor_bytes": 912631552.0,
+      "mean_physical_tensor_ratio_to_full": 1.0,
+      "prefill_seconds": 0.8769525869211066,
+      "offline_index_seconds": 0.0,
+      "shared_offline_index_seconds_measured": 1.7533520533252158,
+      "prune_seconds": 0.0,
+      "generation_seconds": 0.07196862465207232,
+      "mean_index_peak_cuda_bytes": 0.0,
+      "mean_prefill_peak_cuda_bytes": 16407055504.0,
+      "mean_prune_peak_cuda_bytes": 0.0,
+      "mean_generation_peak_cuda_bytes": 16329172560.0,
+      "physical_eviction": false
+    },
+    {
+      "method": "kvzip_ratio008",
+      "n": 32,
+      "answer_em": 0.25,
+      "answer_f1": 0.4324404761904762,
+      "answer_contains": 0.34375,
+      "logical_retained_ratio": 0.08143312079901986,
+      "official_reported_ratio": 0.07981419190764427,
+      "mean_total_prompt_tokens": 15958.15625,
+      "mean_logical_retained_bytes": 74318432.0,
+      "mean_logical_full_bytes": 912631552.0,
+      "mean_physical_tensor_bytes": 912631552.0,
+      "mean_physical_tensor_ratio_to_full": 1.0,
+      "prefill_seconds": 0.8769525869211066,
+      "offline_index_seconds": 1.7533520533252158,
+      "shared_offline_index_seconds_measured": 1.7533520533252158,
+      "prune_seconds": 0.0005270836118143052,
+      "generation_seconds": 0.09065789219312137,
+      "mean_index_peak_cuda_bytes": 17298296848.0,
+      "mean_prefill_peak_cuda_bytes": 16407055504.0,
+      "mean_prune_peak_cuda_bytes": 16254461536.0,
+      "mean_generation_peak_cuda_bytes": 16219812928.0,
+      "physical_eviction": false
+    },
+    {
+      "method": "kvzip_ratio016",
+      "n": 32,
+      "answer_em": 0.1875,
+      "answer_f1": 0.3935515873015873,
+      "answer_contains": 0.28125,
+      "logical_retained_ratio": 0.1611992662733938,
+      "official_reported_ratio": 0.15972092002630234,
+      "mean_total_prompt_tokens": 15958.15625,
+      "mean_logical_retained_bytes": 147115520.0,
+      "mean_logical_full_bytes": 912631552.0,
+      "mean_physical_tensor_bytes": 912631552.0,
+      "mean_physical_tensor_ratio_to_full": 1.0,
+      "prefill_seconds": 0.8769525869211066,
+      "offline_index_seconds": 1.7533520533252158,
+      "shared_offline_index_seconds_measured": 1.7533520533252158,
+      "prune_seconds": 0.00033950930810533464,
+      "generation_seconds": 0.09612457790353801,
+      "mean_index_peak_cuda_bytes": 17298296848.0,
+      "mean_prefill_peak_cuda_bytes": 16407055504.0,
+      "mean_prune_peak_cuda_bytes": 16256331936.0,
+      "mean_generation_peak_cuda_bytes": 16221323344.0,
+      "physical_eviction": false
+    }
+  ],
+  "paired_full_retention": [
+    {
+      "method": "kvzip_ratio008",
+      "paired_n": 32,
+      "relative_f1_to_full": 1.0150192106182327,
+      "full_em_correct_n": 8,
+      "em_retention_on_full_correct": 0.625
+    },
+    {
+      "method": "kvzip_ratio016",
+      "paired_n": 32,
+      "relative_f1_to_full": 0.9237396670159507,
+      "full_em_correct_n": 8,
+      "em_retention_on_full_correct": 0.5
+    }
+  ],
+  "paired_bootstrap_10000": [
+    {
+      "method": "kvzip_ratio008",
+      "paired_n": 32,
+      "bootstrap_samples": 10000,
+      "observed_f1_difference": 0.006398809523809531,
+      "f1_difference_ci95": [
+        -0.14895833333333336,
+        0.15520833333333334
+      ],
+      "two_sided_sign_p": 0.9228,
+      "relative_f1_ci95": [
+        0.6997578692493948,
+        1.469387755102041
+      ]
+    },
+    {
+      "method": "kvzip_ratio016",
+      "paired_n": 32,
+      "bootstrap_samples": 10000,
+      "observed_f1_difference": -0.032490079365079354,
+      "f1_difference_ci95": [
+        -0.18005952380952384,
+        0.10813492063492064
+      ],
+      "two_sided_sign_p": 0.6462,
+      "relative_f1_ci95": [
+        0.6337421279416638,
+        1.3107344632768363
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "complete": false,
+  "counts": {
+    "full": 21,
+    "learned_and_or_control_anchor75_aux": 63,
+    "learned_root_topk": 63,
+    "llmlingua2_official": 28
+  },
+  "endpoints": [
+    {
+      "ci95": [
+        8.032639325695753,
+        22.35338454290541
+      ],
+      "cluster_sizes": {
+        "2wikimqa:128": 5,
+        "2wikimqa:256": 5,
+        "2wikimqa:512": 5,
+        "hotpotqa:128": 5,
+        "hotpotqa:256": 5,
+        "hotpotqa:512": 5,
+        "multifieldqa_en:128": 5,
+        "multifieldqa_en:256": 5,
+        "multifieldqa_en:512": 5,
+        "musique:128": 1,
+        "musique:256": 1,
+        "musique:512": 1,
+        "qasper:128": 5,
+        "qasper:256": 5,
+        "qasper:512": 5
+      },
+      "clusters": 15,
+      "delta_f1": 15.321496149780787,
+      "holm_p": 0.0005492996429552321,
+      "left": "learned_and_or_control_anchor75_aux",
+      "p_value": 0.00027464982147761604,
+      "pairs": 63,
+      "right": "learned_root_topk"
+    },
+    {
+      "ci95": [
+        -2.4220432374752012,
+        8.032205309175612
+      ],
+      "cluster_sizes": {
+        "qasper:128": 5,
+        "qasper:256": 5,
+        "qasper:512": 5
+      },
+      "clusters": 3,
+      "delta_f1": 2.6812391736357086,
+      "holm_p": 0.3333333333333333,
+      "left": "learned_and_or_control_anchor75_aux",
+      "p_value": 0.3333333333333333,
+      "pairs": 15,
+      "right": "llmlingua2_official"
+    }
+  ],
+  "exact_token_difference": {
+    "max_abs": 0,
+    "mean": 0,
+    "pairs": 15
+  },
+  "expected_compact_rows_per_method": 690,
+  "expected_full_rows": 230,
+  "f1_by_method_capacity": {
+    "full": {
+      "full": 61.81754753183325
+    },
+    "learned_and_or_control_anchor75_aux": {
+      "128": 33.81413159501437,
+      "256": 32.9057767930091,
+      "512": 39.32295871096086
+    },
+    "learned_root_topk": {
+      "128": 15.74207365439462,
+      "256": 17.445060081105005,
+      "512": 21.448733656710683
+    },
+    "llmlingua2_official": {
+      "128": 11.153786616392065,
+      "256": 11.703785562583041,
+      "512": 15.436609289586098
+    }
+  },
+  "proof_512_vs_full": {
+    "absolute_delta": -22.49458882087239,
+    "full_f1": 61.81754753183325,
+    "pairs": 21,
+    "proof_f1": 39.32295871096086,
+    "retention_percent": 63.61132118790593
+  },
+  "status": "FAIL"
+}

@@ -1,0 +1,35 @@
+{
+  "dataset": "musique",
+  "split": "validation",
+  "max_samples": 100,
+  "seed": 17,
+  "methods": [
+    "learned_topk_paths"
+  ],
+  "budgets": [
+    "512"
+  ],
+  "kv_bytes_per_token_bf16": 57344,
+  "records": [
+    {
+      "method": "learned_topk_paths",
+      "budget_spec": "512",
+      "n": 100,
+      "pcr": 0.47,
+      "core_pcr": 0.47,
+      "complete_proofs": 0.47,
+      "proof_efficiency_per_mib": 0.023158347417373343,
+      "route_precision": 0.5711174988826947,
+      "gold_token_recall": 0.6708933479405171,
+      "retained_ratio": 0.17239689700116576,
+      "actual_kv_bytes": 24080465.92,
+      "selector_ms": 1624.4699822599068,
+      "index_build_ms": 0.0,
+      "selector_p95_ms": 2323.87090777047
+    }
+  ],
+  "notes": {
+    "proxy_boundary": "dense_hash, reranker, and graph_similarity are development proxies, not formal official baselines",
+    "locked_test": true
+  }
+}

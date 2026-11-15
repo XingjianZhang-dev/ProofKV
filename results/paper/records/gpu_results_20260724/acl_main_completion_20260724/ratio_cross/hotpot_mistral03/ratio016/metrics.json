@@ -1,0 +1,54 @@
+{
+  "model": "/workspace/models/Mistral-7B-Instruct-v0.3-c170c70",
+  "dataset": "hotpotqa",
+  "split": "validation",
+  "data_file": null,
+  "max_samples": 128,
+  "sample_offset": 0,
+  "budget": 0.16,
+  "budget_tokens": null,
+  "target_prompt_tokens": null,
+  "packing_seed": null,
+  "attn_implementation": "sdpa",
+  "full_prefill_chunk_size": 2048,
+  "compact_prefill_chunk_size": 512,
+  "methods": [
+    "compass_fixed",
+    "entity_graph_adaptive"
+  ],
+  "scorer_kind": null,
+  "learned_dense_core_count": 4,
+  "learned_edge_batch_size": 256,
+  "repair_halo": 0,
+  "records": [
+    {
+      "method": "compass_fixed",
+      "n": 128,
+      "answer_em": 0.1484375,
+      "answer_f1": 0.34216931481830865,
+      "answer_contains": 0.390625,
+      "gold_token_recall": 0.2702146416099475,
+      "retained_ratio": 0.1600040524956096,
+      "seconds": 0.5511933950838284,
+      "selection_seconds": 0.02200528365574428,
+      "generation_seconds": 0.5291881114280841,
+      "proof_core_tokens": 0.0,
+      "auxiliary_tokens": 0.0
+    },
+    {
+      "method": "entity_graph_adaptive",
+      "n": 128,
+      "answer_em": 0.3203125,
+      "answer_f1": 0.5408706374813912,
+      "answer_contains": 0.5546875,
+      "gold_token_recall": 0.6250599483497764,
+      "retained_ratio": 0.1600040524956096,
+      "seconds": 0.47625554187834496,
+      "selection_seconds": 0.00564435861815582,
+      "generation_seconds": 0.47061118326018914,
+      "proof_core_tokens": 0.0,
+      "auxiliary_tokens": 0.0
+    }
+  ],
+  "paired_full_retention": []
+}

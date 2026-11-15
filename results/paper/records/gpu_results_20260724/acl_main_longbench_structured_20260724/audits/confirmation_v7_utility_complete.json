@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "protocol": "untouched_confirmation_utility_routing_audit_v1",
+  "evaluation_slice": "confirmation",
+  "selection_manifest_sha256": "3f8f96a8c5eda517d69f31c15e816f23fcfcf3c6e703e33f728ef237301d30c3",
+  "utility_controller_sha256": "784c1cac71d4d3a1ec88c18f8e6acf407e141930e30c5b7430c1857780ffa942",
+  "runs": [
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/confirmation_v7_utility_qwen25_s28_n10",
+      "model": "qwen25",
+      "rows": 2220,
+      "selection_start_per_task": 28,
+      "samples_per_task": 10,
+      "configurations_per_sample": 37,
+      "proof_routes": 52,
+      "physical_fallback_routes": 188,
+      "proof_route_coverage": 0.21666666666666667,
+      "selected_candidate_counts": {
+        "learned_and_or_mixed_aux": 56,
+        "learned_and_or_recent_aux": 4
+      },
+      "proof_routes_without_source_replay": 0,
+      "max_capacity_excess_tokens": 0.0,
+      "raw_empty_predictions": 0,
+      "whitespace_only_predictions": 0,
+      "implementation_files_hashed": 9,
+      "scorer_checkpoint_files_hashed": 6
+    },
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/confirmation_v7_utility_mistral02_s28_n10",
+      "model": "mistral02",
+      "rows": 2220,
+      "selection_start_per_task": 28,
+      "samples_per_task": 10,
+      "configurations_per_sample": 37,
+      "proof_routes": 48,
+      "physical_fallback_routes": 192,
+      "proof_route_coverage": 0.2,
+      "selected_candidate_counts": {
+        "learned_and_or_recent_aux": 25,
+        "learned_and_or_graph_aux": 1,
+        "learned_and_or_mixed_aux": 24
+      },
+      "proof_routes_without_source_replay": 0,
+      "max_capacity_excess_tokens": 0.0,
+      "raw_empty_predictions": 0,
+      "whitespace_only_predictions": 35,
+      "implementation_files_hashed": 9,
+      "scorer_checkpoint_files_hashed": 6
+    }
+  ],
+  "checks": [
+    "untouched frozen confirmation slice and exact source answers",
+    "complete model/method/capacity crossing",
+    "independent QA-F1 and aggregate recomputation",
+    "exact capacity, KV-byte, implementation, and checkpoint hashes",
+    "all candidate utilities recomputed from serialized coefficients",
+    "candidate choice, safety margin, route, and reused output equality"
+  ]
+}

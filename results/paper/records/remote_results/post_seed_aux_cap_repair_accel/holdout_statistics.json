@@ -1,0 +1,81 @@
+{
+  "holdout_population": "HotpotQA validation, shuffled offset 128, n128 at 8k and 16k",
+  "repaired_method": "learned_and_or_aux_cap128",
+  "question_clusters": 128,
+  "contexts_per_question": 2,
+  "summaries": [
+    {
+      "results": "/workspace/compresskv_experiments/aux_cap_repair_qwen25_v1/holdout_validation_offset128_n128_target8000/results.jsonl",
+      "methods": {
+        "entity_graph_adaptive": {
+          "n": 128,
+          "answer_f1": 0.5957083714896214,
+          "answer_em": 0.4921875,
+          "retained_ratio": 0.07999584299342802
+        },
+        "full": {
+          "n": 128,
+          "answer_f1": 0.5760407127594628,
+          "answer_em": 0.4609375,
+          "retained_ratio": 1.0
+        },
+        "learned_and_or": {
+          "n": 128,
+          "answer_f1": 0.6969777109213251,
+          "answer_em": 0.5625,
+          "retained_ratio": 0.04168144157530193
+        },
+        "learned_and_or_aux_cap128": {
+          "n": 128,
+          "answer_f1": 0.6847691295721188,
+          "answer_em": 0.5625,
+          "retained_ratio": 0.05627243674694394
+        }
+      },
+      "repair_minus_core_f1": -0.012208581349206327
+    },
+    {
+      "results": "/workspace/compresskv_experiments/aux_cap_repair_qwen25_v1/holdout_validation_offset128_n128_target16000/results.jsonl",
+      "methods": {
+        "entity_graph_adaptive": {
+          "n": 128,
+          "answer_f1": 0.5849025387398549,
+          "answer_em": 0.4609375,
+          "retained_ratio": 0.07999898167164693
+        },
+        "full": {
+          "n": 128,
+          "answer_f1": 0.5369186216153128,
+          "answer_em": 0.3984375,
+          "retained_ratio": 1.0
+        },
+        "learned_and_or": {
+          "n": 128,
+          "answer_f1": 0.634959082619802,
+          "answer_em": 0.4921875,
+          "retained_ratio": 0.020822375190011608
+        },
+        "learned_and_or_aux_cap128": {
+          "n": 128,
+          "answer_f1": 0.633121719504266,
+          "answer_em": 0.515625,
+          "retained_ratio": 0.028502999389275585
+        }
+      },
+      "repair_minus_core_f1": -0.0018373631155360615
+    }
+  ],
+  "repair_minus_core_f1": -0.007022972232371208,
+  "cluster_bootstrap_ci95": [
+    -0.05409643686505399,
+    0.0402281746031746
+  ],
+  "cluster_sign_flip_p_two_sided": 0.7734311328443357,
+  "samples": 200000,
+  "seed": 20260714,
+  "issues": [
+    "repair does not beat core at every holdout context length",
+    "question-clustered 95% CI crosses zero"
+  ],
+  "passed": false
+}

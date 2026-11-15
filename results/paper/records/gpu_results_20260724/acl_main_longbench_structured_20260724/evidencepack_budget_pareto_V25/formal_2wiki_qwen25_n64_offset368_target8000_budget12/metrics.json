@@ -1,0 +1,69 @@
+{
+  "model": "/workspace/models/Qwen2.5-7B-Instruct-a09a354",
+  "dataset": "2wiki",
+  "split": "validation",
+  "data_file": "/workspace/ircot/processed_data/2wikimultihopqa/test_subsampled.jsonl",
+  "max_samples": 64,
+  "sample_offset": 368,
+  "budget": 0.12,
+  "budget_tokens": null,
+  "target_prompt_tokens": 8000,
+  "packing_seed": 1907,
+  "attn_implementation": "sdpa",
+  "full_prefill_chunk_size": 2048,
+  "compact_prefill_chunk_size": 512,
+  "methods": [
+    "entity_graph_adaptive",
+    "learned_root_topk",
+    "learned_and_or"
+  ],
+  "scorer_kind": "cross",
+  "learned_dense_core_count": 4,
+  "learned_edge_batch_size": 256,
+  "repair_halo": 0,
+  "records": [
+    {
+      "method": "entity_graph_adaptive",
+      "n": 64,
+      "answer_em": 0.328125,
+      "answer_f1": 0.4055059523809524,
+      "answer_contains": 0.390625,
+      "gold_token_recall": 0.8070502024497686,
+      "retained_ratio": 0.11999938419714515,
+      "seconds": 0.6706728153076256,
+      "selection_seconds": 0.0330096671677893,
+      "generation_seconds": 0.6376631481398363,
+      "proof_core_tokens": 0.0,
+      "auxiliary_tokens": 0.0
+    },
+    {
+      "method": "learned_and_or",
+      "n": 64,
+      "answer_em": 0.328125,
+      "answer_f1": 0.4096211080586081,
+      "answer_contains": 0.40625,
+      "gold_token_recall": 0.4921875,
+      "retained_ratio": 0.08561803760015438,
+      "seconds": 0.2548497080351808,
+      "selection_seconds": 0.027078337225248106,
+      "generation_seconds": 0.2277713708099327,
+      "proof_core_tokens": 643.234375,
+      "auxiliary_tokens": 0.0
+    },
+    {
+      "method": "learned_root_topk",
+      "n": 64,
+      "answer_em": 0.34375,
+      "answer_f1": 0.4154017857142857,
+      "answer_contains": 0.40625,
+      "gold_token_recall": 0.76171875,
+      "retained_ratio": 0.11917251935507683,
+      "seconds": 4.180577004481165,
+      "selection_seconds": 3.6037144743677345,
+      "generation_seconds": 0.5768625301134307,
+      "proof_core_tokens": 910.203125,
+      "auxiliary_tokens": 0.0
+    }
+  ],
+  "paired_full_retention": []
+}

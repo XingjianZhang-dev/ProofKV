@@ -1,0 +1,7238 @@
+{
+  "protocol": "longbench_structured_qa_nontruncated_v3_paths_aux_physical",
+  "selection_is_outcome_blind": true,
+  "selection_fields": [
+    "joint prompt length",
+    "question-tail feasibility at the 64-token capacity",
+    "task",
+    "seeded order"
+  ],
+  "tasks": [
+    "narrativeqa",
+    "qasper",
+    "multifieldqa_en",
+    "hotpotqa",
+    "2wikimqa",
+    "musique"
+  ],
+  "max_samples_per_task": 85,
+  "max_input_tokens": 30000,
+  "seed": 1701,
+  "tokenizers": {
+    "qwen25": "/workspace/models/Qwen2.5-7B-Instruct-a09a354",
+    "mistral02": "/workspace/models/Mistral-7B-Instruct-v0.2-63a8b08"
+  },
+  "capacities": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "methods": [
+    "full",
+    "streamingllm",
+    "snapkv",
+    "pyramidkv",
+    "chunkkv_snapkv",
+    "entity_graph_adaptive",
+    "learned_topk_paths",
+    "learned_and_or_aux"
+  ],
+  "compatibility_exclusions": [
+    {
+      "method": "adakv_snapkv",
+      "reason": "prospective smoke retained the full physical DynamicCache because AdaKV uses a head-specific attention mask rather than compacting cache tensors",
+      "observed_contract": "requested 64 total-prefill tokens; measured 16589 KV-token equivalents"
+    }
+  ],
+  "selections": {
+    "narrativeqa": {
+      "data_file": "/workspace/baselines/PyramidKV/data/LongBench/narrativeqa.jsonl",
+      "data_sha256": "0fb8d08ba5cdad4b74244224b0dc2e8b41ee6b850d954a13eb2d282621ce2f71",
+      "total_rows": 200,
+      "eligible_rows": 85,
+      "selected": [
+        {
+          "index": 178,
+          "id": "narrativeqa:178:252451fa4655f524",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16589,
+              "question": 32
+            },
+            "mistral02": {
+              "prompt": 18249,
+              "question": 39
+            }
+          }
+        },
+        {
+          "index": 11,
+          "id": "narrativeqa:11:e7da23066204430b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16580,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 18235,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 192,
+          "id": "narrativeqa:192:dfc41a70d2ff8557",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13539,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 14750,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 85,
+          "id": "narrativeqa:85:24c6fb077ccefa62",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9086,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 9890,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 16,
+          "id": "narrativeqa:16:1e34bc374b7a0a2f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 23221,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 26890,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 141,
+          "id": "narrativeqa:141:23ee0dd290f0f37d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 19160,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 20621,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 157,
+          "id": "narrativeqa:157:2c2532c75f539f2a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13537,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 14749,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 84,
+          "id": "narrativeqa:84:3eb8895778c81823",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13539,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 14750,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 164,
+          "id": "narrativeqa:164:a168e2d66aac7ba0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11340,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 12483,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 175,
+          "id": "narrativeqa:175:685e65210d18220a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16579,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 18235,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 188,
+          "id": "narrativeqa:188:348f4626a7c18d55",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8403,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 9679,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 133,
+          "id": "narrativeqa:133:d4246d64f7a64f06",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16582,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 18237,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 3,
+          "id": "narrativeqa:3:44bfb20308f5f0cf",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9081,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 9885,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 9,
+          "id": "narrativeqa:9:e22042d4e3aa222b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8405,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 9679,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 104,
+          "id": "narrativeqa:104:889ce231949d140b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12078,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 13648,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 137,
+          "id": "narrativeqa:137:0c23a352f7f8c133",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11345,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 12489,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 5,
+          "id": "narrativeqa:5:5ecfe0b3dcb0c852",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13545,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 14755,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 171,
+          "id": "narrativeqa:171:a6b5e690307a1bdc",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11433,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 12892,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 70,
+          "id": "narrativeqa:70:78baf3ace6d1cbdc",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11430,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 12892,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 12,
+          "id": "narrativeqa:12:6ea82f554c3c6c8d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11348,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 12492,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 13,
+          "id": "narrativeqa:13:469ab6ffff9454f7",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11437,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 12898,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 96,
+          "id": "narrativeqa:96:dae574eb127639af",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11439,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 12902,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 147,
+          "id": "narrativeqa:147:6a145792f5455ea8",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9083,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 9888,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 73,
+          "id": "narrativeqa:73:4da2073712670924",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9085,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 9890,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 134,
+          "id": "narrativeqa:134:24e9c9608d4129b1",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13540,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 14751,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 196,
+          "id": "narrativeqa:196:be2b58003ae423b6",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13533,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 14744,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 63,
+          "id": "narrativeqa:63:807955d57dec2b81",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 23221,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 26889,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 44,
+          "id": "narrativeqa:44:681ec8854b25fcd0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12083,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 13654,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 19,
+          "id": "narrativeqa:19:af9c7cdeb7975b5e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9080,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 9884,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 139,
+          "id": "narrativeqa:139:ba3272a62f4ba840",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11340,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 12483,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 119,
+          "id": "narrativeqa:119:dcceac950353a8bd",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11338,
+              "question": 15
+            },
+            "mistral02": {
+              "prompt": 12481,
+              "question": 17
+            }
+          }
+        },
+        {
+          "index": 162,
+          "id": "narrativeqa:162:7a940e020146106b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11438,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 12898,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 174,
+          "id": "narrativeqa:174:b28542443ab0c732",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 23221,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 26889,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 94,
+          "id": "narrativeqa:94:515c2cd3759bb4cd",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11346,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 12490,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 93,
+          "id": "narrativeqa:93:37c0c0870ad38a28",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9090,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 9895,
+              "question": 32
+            }
+          }
+        },
+        {
+          "index": 156,
+          "id": "narrativeqa:156:24c17ed69c5c1e54",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8399,
+              "question": 15
+            },
+            "mistral02": {
+              "prompt": 9672,
+              "question": 17
+            }
+          }
+        },
+        {
+          "index": 136,
+          "id": "narrativeqa:136:4bcd4ad4a42c648e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11435,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 12894,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 2,
+          "id": "narrativeqa:2:6a7a7a45dfc1fc79",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8399,
+              "question": 15
+            },
+            "mistral02": {
+              "prompt": 9672,
+              "question": 17
+            }
+          }
+        },
+        {
+          "index": 20,
+          "id": "narrativeqa:20:c68c98f2661d2bd4",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13540,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 14751,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 166,
+          "id": "narrativeqa:166:56899378d2cf6b57",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11340,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 12483,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 126,
+          "id": "narrativeqa:126:61881113dcefb37f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11439,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 12902,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 194,
+          "id": "narrativeqa:194:f253ab6e6c4c1440",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 23222,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 26892,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 108,
+          "id": "narrativeqa:108:ecedf871cc647ba3",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13537,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 14747,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 45,
+          "id": "narrativeqa:45:ec6dc73ee551ef41",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16582,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 18238,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 37,
+          "id": "narrativeqa:37:a74cb801dc20e6fa",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13535,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 14746,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 152,
+          "id": "narrativeqa:152:5524fc3dd64c9919",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 23222,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 26892,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 26,
+          "id": "narrativeqa:26:f01b15d112379043",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9083,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 9888,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 145,
+          "id": "narrativeqa:145:92554943fdc5ed22",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11436,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 12897,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 125,
+          "id": "narrativeqa:125:9a99aee543a173d2",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9081,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 9884,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 64,
+          "id": "narrativeqa:64:9a143d81ea947d48",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13538,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 14748,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 42,
+          "id": "narrativeqa:42:8ed4ebb907cb3693",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9078,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 9881,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 83,
+          "id": "narrativeqa:83:73e8af0104beabb4",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16577,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 18232,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 23,
+          "id": "narrativeqa:23:9f18dc46bf6a0eed",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9082,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 9886,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 190,
+          "id": "narrativeqa:190:e77819117ab4e693",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 19161,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 20623,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 97,
+          "id": "narrativeqa:97:c2a84c61f38e79a1",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11428,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 12888,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 167,
+          "id": "narrativeqa:167:152541d6aafd93be",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 23221,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 26889,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 128,
+          "id": "narrativeqa:128:343d07b2e17122de",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 23224,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 26893,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 120,
+          "id": "narrativeqa:120:1ecdcafd925df923",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11435,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 12896,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 34,
+          "id": "narrativeqa:34:e2ecf13514ef9201",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12077,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 13645,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 135,
+          "id": "narrativeqa:135:34f644afed402801",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12080,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 13649,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 114,
+          "id": "narrativeqa:114:4fd8ba9c11775456",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 23228,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 26898,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 95,
+          "id": "narrativeqa:95:ee5fc2dcfbedbc13",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12078,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 13647,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 48,
+          "id": "narrativeqa:48:dd8d3a5e95e77278",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 23223,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 26892,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 76,
+          "id": "narrativeqa:76:cf61af080a043226",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13539,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 14749,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 170,
+          "id": "narrativeqa:170:8ea6c45cfd1968e3",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8403,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 9677,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 68,
+          "id": "narrativeqa:68:d0328fab4dcf04ed",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 19155,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 20617,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 61,
+          "id": "narrativeqa:61:516f1ea372ba28d2",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11338,
+              "question": 15
+            },
+            "mistral02": {
+              "prompt": 12481,
+              "question": 17
+            }
+          }
+        },
+        {
+          "index": 66,
+          "id": "narrativeqa:66:b1c0f7761f164082",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12077,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 13647,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 58,
+          "id": "narrativeqa:58:79d6e156653766cd",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12076,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 13644,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 184,
+          "id": "narrativeqa:184:bcec81e5d9055bf6",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8399,
+              "question": 15
+            },
+            "mistral02": {
+              "prompt": 9673,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 60,
+          "id": "narrativeqa:60:59df78c6fe45b35d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8399,
+              "question": 15
+            },
+            "mistral02": {
+              "prompt": 9673,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 195,
+          "id": "narrativeqa:195:0e17af86fbd13f4d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13531,
+              "question": 15
+            },
+            "mistral02": {
+              "prompt": 14741,
+              "question": 17
+            }
+          }
+        },
+        {
+          "index": 88,
+          "id": "narrativeqa:88:63103c8bc9ef654c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16573,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 18228,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 186,
+          "id": "narrativeqa:186:73b9765000acc0af",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9086,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 9890,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 160,
+          "id": "narrativeqa:160:b28bca5c880ce66a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11431,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 12892,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 187,
+          "id": "narrativeqa:187:2b29ee8be9339fb9",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 19157,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 20618,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 14,
+          "id": "narrativeqa:14:da8a3af2426eb9f6",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11432,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 12891,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 49,
+          "id": "narrativeqa:49:0f96c8d3ac44d066",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 19157,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 20618,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 77,
+          "id": "narrativeqa:77:a480621fd7dafaf9",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11350,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 12493,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 30,
+          "id": "narrativeqa:30:ec8c4c352167cf92",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16577,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 18234,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 183,
+          "id": "narrativeqa:183:9527b2252f8910eb",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11353,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 12498,
+              "question": 34
+            }
+          }
+        },
+        {
+          "index": 153,
+          "id": "narrativeqa:153:747964b603b54ec7",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11344,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 12487,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 148,
+          "id": "narrativeqa:148:5c2245f50c6a7322",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8402,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 9677,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 127,
+          "id": "narrativeqa:127:b0b7fc8b74954791",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 23221,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 26890,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 155,
+          "id": "narrativeqa:155:e2daf31a74fe1dae",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16592,
+              "question": 35
+            },
+            "mistral02": {
+              "prompt": 18248,
+              "question": 38
+            }
+          }
+        }
+      ]
+    },
+    "qasper": {
+      "data_file": "/workspace/baselines/PyramidKV/data/LongBench/qasper.jsonl",
+      "data_sha256": "29aa07d2a63f36f4fb8e8cd200a3428ee3126d750bde6af1c8f9bc41c2366854",
+      "total_rows": 200,
+      "eligible_rows": 200,
+      "selected": [
+        {
+          "index": 123,
+          "id": "qasper:123:5d5be2a6f2e8c2ec",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5171,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 5507,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 191,
+          "id": "qasper:191:d7b056babaa922a8",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4795,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 5144,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 110,
+          "id": "qasper:110:b4491b595667d03f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5584,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 6379,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 85,
+          "id": "qasper:85:dc15a22529b4ada1",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5546,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 5914,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 45,
+          "id": "qasper:45:8522bee7c5a555f0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4787,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 5260,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 46,
+          "id": "qasper:46:20b153e2e825c437",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2527,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 2779,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 10,
+          "id": "qasper:10:4ec09ce39a394127",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4682,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 5002,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 193,
+          "id": "qasper:193:712227ccf6d551ce",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4315,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 4751,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 93,
+          "id": "qasper:93:74fef3484eb38b35",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3879,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 4202,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 114,
+          "id": "qasper:114:608dc8fb379c42ea",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3178,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 3517,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 195,
+          "id": "qasper:195:d39e064d25a70aac",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6013,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 6648,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 7,
+          "id": "qasper:7:4a9bb100b6198db9",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6686,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 7266,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 161,
+          "id": "qasper:161:38de6fd93452325b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5858,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 6428,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 90,
+          "id": "qasper:90:68117b2ab2b8e769",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5774,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 6201,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 198,
+          "id": "qasper:198:e364a1f6721bd8a9",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2542,
+              "question": 35
+            },
+            "mistral02": {
+              "prompt": 2794,
+              "question": 38
+            }
+          }
+        },
+        {
+          "index": 62,
+          "id": "qasper:62:0968146f65094d06",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3356,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 3646,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 192,
+          "id": "qasper:192:fd9658ac8ff77450",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4457,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 4864,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 151,
+          "id": "qasper:151:f80aa49b033453e3",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5805,
+              "question": 15
+            },
+            "mistral02": {
+              "prompt": 6334,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 150,
+          "id": "qasper:150:4ea7dae3cca9782f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2837,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 3103,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 99,
+          "id": "qasper:99:99af6a9d7a63d504",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3356,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 3646,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 152,
+          "id": "qasper:152:b5b1a9a64ee50751",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3355,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 3671,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 154,
+          "id": "qasper:154:1ff0ecc12c0c2bfd",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4346,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 4767,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 55,
+          "id": "qasper:55:410135e5a0062d5a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5255,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 5792,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 28,
+          "id": "qasper:28:a19e96ab403de958",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2924,
+              "question": 15
+            },
+            "mistral02": {
+              "prompt": 3271,
+              "question": 17
+            }
+          }
+        },
+        {
+          "index": 140,
+          "id": "qasper:140:c56fa8383126c5f1",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7413,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 8029,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 79,
+          "id": "qasper:79:cbfbaa944038a481",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3888,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 4212,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 96,
+          "id": "qasper:96:b5ff813a40097b1d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2305,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 2510,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 183,
+          "id": "qasper:183:964db6ad4ee258eb",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5371,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 5967,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 95,
+          "id": "qasper:95:1078ed1cd7b0691a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2160,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 2368,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 143,
+          "id": "qasper:143:d03043730480026d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5453,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 5874,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 167,
+          "id": "qasper:167:4af6c92da312c3cd",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5470,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 5940,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 127,
+          "id": "qasper:127:f228b9701301de85",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8303,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 8590,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 107,
+          "id": "qasper:107:a4bf09a56e5005b5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2312,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 2487,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 29,
+          "id": "qasper:29:98ca32332f98310b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5469,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 5939,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 194,
+          "id": "qasper:194:7087cf17adda7eb5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5616,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 6299,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 3,
+          "id": "qasper:3:b087a53c5c6c6dc5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3089,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 3433,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 136,
+          "id": "qasper:136:58c4fcbda4cd8587",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6444,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 6868,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 80,
+          "id": "qasper:80:8e60165cbad8f25c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5868,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 6553,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 34,
+          "id": "qasper:34:54021683b8a541b5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4791,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 5142,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 0,
+          "id": "qasper:0:a36f7df614101033",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4101,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 4501,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 11,
+          "id": "qasper:11:7ad0739eca8e8308",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3356,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 3646,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 184,
+          "id": "qasper:184:fa9b3e642683201f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6770,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 7415,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 181,
+          "id": "qasper:181:3f89614061717242",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6247,
+              "question": 14
+            },
+            "mistral02": {
+              "prompt": 6885,
+              "question": 16
+            }
+          }
+        },
+        {
+          "index": 30,
+          "id": "qasper:30:64e7d52fd0879a94",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4119,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 4476,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 102,
+          "id": "qasper:102:eeeda3af3e6dc439",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3255,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 3564,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 43,
+          "id": "qasper:43:fe1184c952b43883",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4367,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 4826,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 103,
+          "id": "qasper:103:c8961b6b68e0025e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2181,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 2329,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 21,
+          "id": "qasper:21:f4bea95d20a565b5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7993,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 8568,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 6,
+          "id": "qasper:6:51c01519ecb094f1",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5846,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 6334,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 159,
+          "id": "qasper:159:4087ef48859bae28",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2880,
+              "question": 15
+            },
+            "mistral02": {
+              "prompt": 3089,
+              "question": 17
+            }
+          }
+        },
+        {
+          "index": 17,
+          "id": "qasper:17:1e41cf176f77af03",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5284,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 5794,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 49,
+          "id": "qasper:49:39571ba50f383d23",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5686,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 6218,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 4,
+          "id": "qasper:4:662166a235078d8a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4543,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 4895,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 31,
+          "id": "qasper:31:beb12ea23bbf2fd9",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4798,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 5365,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 115,
+          "id": "qasper:115:3f6fb7d7303402c8",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3770,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 4172,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 147,
+          "id": "qasper:147:8acbfc8332d663a3",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3457,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 3833,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 69,
+          "id": "qasper:69:e94d09298b64caaf",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3217,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 3455,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 131,
+          "id": "qasper:131:0f126b95d53cd46f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3509,
+              "question": 15
+            },
+            "mistral02": {
+              "prompt": 3786,
+              "question": 17
+            }
+          }
+        },
+        {
+          "index": 170,
+          "id": "qasper:170:86eeb53f0291e1ac",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6803,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 7395,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 98,
+          "id": "qasper:98:afd05c1603548fb5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6731,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 7462,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 82,
+          "id": "qasper:82:17054cc4a21aa737",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3490,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 3774,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 165,
+          "id": "qasper:165:12c68a80199b41e2",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5234,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 5658,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 20,
+          "id": "qasper:20:5d9165d9f95bad04",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3757,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 4139,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 23,
+          "id": "qasper:23:eec1cf38abb36f50",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5470,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 5981,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 24,
+          "id": "qasper:24:d2118cdaff622839",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7663,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 8207,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 149,
+          "id": "qasper:149:c188d1210a426d65",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3090,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 3434,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 59,
+          "id": "qasper:59:d1dcc0337d969838",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3180,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 3460,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 171,
+          "id": "qasper:171:9157c5878ae74421",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5284,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 5794,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 189,
+          "id": "qasper:189:751c27018c1e237d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5169,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 5505,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 58,
+          "id": "qasper:58:44093822715f1d4c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6754,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 7365,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 178,
+          "id": "qasper:178:bd0b47faf3355fac",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8761,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 9797,
+              "question": 34
+            }
+          }
+        },
+        {
+          "index": 71,
+          "id": "qasper:71:33d1b54692337028",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2613,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 2870,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 120,
+          "id": "qasper:120:156a07f737ad9a72",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4543,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 4895,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 33,
+          "id": "qasper:33:d1909b77c12485fb",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7988,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 8561,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 145,
+          "id": "qasper:145:e8fc0115d29f2a30",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5811,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 6341,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 88,
+          "id": "qasper:88:ac59c111d6e72ea0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6843,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 7314,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 135,
+          "id": "qasper:135:1466b80de3531b77",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4950,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 5414,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 77,
+          "id": "qasper:77:849170613bc45c56",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5449,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 5871,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 13,
+          "id": "qasper:13:e6d0be9fe0989810",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8808,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 9124,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 52,
+          "id": "qasper:52:6eab9d32b4cf4ecc",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4016,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 4391,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 173,
+          "id": "qasper:173:08af9f27b497df83",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3779,
+              "question": 15
+            },
+            "mistral02": {
+              "prompt": 4238,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 53,
+          "id": "qasper:53:d189cd375147fa78",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2104,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 2274,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 78,
+          "id": "qasper:78:75f9e28cd7009fb1",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2314,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 2489,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 9,
+          "id": "qasper:9:839d48aef2974898",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5440,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 5834,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 14,
+          "id": "qasper:14:26731c2ebb9426d5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4881,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 5438,
+              "question": 19
+            }
+          }
+        }
+      ]
+    },
+    "multifieldqa_en": {
+      "data_file": "/workspace/baselines/PyramidKV/data/LongBench/multifieldqa_en.jsonl",
+      "data_sha256": "0aac182fd317dcf6d74f8e1e0f3e61029407435346c2e0b3ff9fb45ae49c5c3f",
+      "total_rows": 150,
+      "eligible_rows": 150,
+      "selected": [
+        {
+          "index": 49,
+          "id": "multifieldqa_en:49:4a9d5aaa879201e0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4176,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 5041,
+              "question": 43
+            }
+          }
+        },
+        {
+          "index": 29,
+          "id": "multifieldqa_en:29:c3da9cfc7e115a68",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8621,
+              "question": 16
+            },
+            "mistral02": {
+              "prompt": 9344,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 76,
+          "id": "multifieldqa_en:76:529a7f9b60b5cdb0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3198,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 3467,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 36,
+          "id": "multifieldqa_en:36:e6c3b24abe99845d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 1998,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 2091,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 52,
+          "id": "multifieldqa_en:52:99a3f0e68049d12c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8610,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 9840,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 54,
+          "id": "multifieldqa_en:54:37b8403d47bec88b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3368,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 3662,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 82,
+          "id": "multifieldqa_en:82:50fa26ebcf5d4906",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5241,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 5755,
+              "question": 32
+            }
+          }
+        },
+        {
+          "index": 78,
+          "id": "multifieldqa_en:78:a5cc1fdc09fc3a08",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4845,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 5336,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 107,
+          "id": "multifieldqa_en:107:7fd761f0c84c088d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3926,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 4395,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 37,
+          "id": "multifieldqa_en:37:67bc696cd220e3d3",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9243,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 9372,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 21,
+          "id": "multifieldqa_en:21:130444af0d3aa11e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7522,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 8196,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 15,
+          "id": "multifieldqa_en:15:ce80eb44918cc200",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2912,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 3268,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 123,
+          "id": "multifieldqa_en:123:dbd968d560e78e4a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6025,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 6250,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 139,
+          "id": "multifieldqa_en:139:404cab8491e3ffbd",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7448,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 8267,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 132,
+          "id": "multifieldqa_en:132:fc64a51817d89db8",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4589,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 6599,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 142,
+          "id": "multifieldqa_en:142:7a2fc6905c8149c5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11321,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 12458,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 100,
+          "id": "multifieldqa_en:100:e7707c3fcd38504e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6962,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 7718,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 48,
+          "id": "multifieldqa_en:48:5ad6f7ad6a7b553b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3189,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 3458,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 57,
+          "id": "multifieldqa_en:57:c39d56961b553953",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2917,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 3271,
+              "question": 32
+            }
+          }
+        },
+        {
+          "index": 18,
+          "id": "multifieldqa_en:18:631a00ccfc9eb38b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 10207,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 11204,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 65,
+          "id": "multifieldqa_en:65:bad3644d880ba4ec",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8491,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 9170,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 72,
+          "id": "multifieldqa_en:72:caa817d55ea0097f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9489,
+              "question": 35
+            },
+            "mistral02": {
+              "prompt": 10295,
+              "question": 38
+            }
+          }
+        },
+        {
+          "index": 24,
+          "id": "multifieldqa_en:24:52be54424756bf06",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11098,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 12064,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 80,
+          "id": "multifieldqa_en:80:f27f997655c121e0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8419,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 9310,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 9,
+          "id": "multifieldqa_en:9:707ee0ba6381db3a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 14927,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 16709,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 137,
+          "id": "multifieldqa_en:137:2061c474137007de",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 10429,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 11365,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 85,
+          "id": "multifieldqa_en:85:d6740306ffd64737",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12775,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 13563,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 143,
+          "id": "multifieldqa_en:143:e8b239c4051a2f39",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3346,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 3641,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 77,
+          "id": "multifieldqa_en:77:75dfb784ab03f5ad",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6272,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 6887,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 14,
+          "id": "multifieldqa_en:14:e9fdc5c562b2a5ec",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9657,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 10715,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 56,
+          "id": "multifieldqa_en:56:62518ce077654be8",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4731,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 5237,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 87,
+          "id": "multifieldqa_en:87:a84ff45e8064912a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2568,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 3019,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 84,
+          "id": "multifieldqa_en:84:1d3d428ab869af17",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5177,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 5811,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 51,
+          "id": "multifieldqa_en:51:bf870080dacd7d75",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 14141,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 15789,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 59,
+          "id": "multifieldqa_en:59:26afbb5a4b3338b4",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5014,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 6683,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 6,
+          "id": "multifieldqa_en:6:92b1a204093d3642",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8262,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 9047,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 10,
+          "id": "multifieldqa_en:10:6dce22f5184f90d8",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9578,
+              "question": 33
+            },
+            "mistral02": {
+              "prompt": 10484,
+              "question": 38
+            }
+          }
+        },
+        {
+          "index": 147,
+          "id": "multifieldqa_en:147:d8edf97e2300dfbb",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8473,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 9265,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 19,
+          "id": "multifieldqa_en:19:54c22ecf31f228d8",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3887,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 4203,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 31,
+          "id": "multifieldqa_en:31:62214d02dd77803a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6547,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 6689,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 50,
+          "id": "multifieldqa_en:50:dbef33db3e05b81f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2916,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 3269,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 43,
+          "id": "multifieldqa_en:43:ec5fd9de1c5dace8",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 10025,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 11863,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 141,
+          "id": "multifieldqa_en:141:d6d399190d233513",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3229,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 3505,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 12,
+          "id": "multifieldqa_en:12:f94ffd264af6677d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 14932,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 16715,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 3,
+          "id": "multifieldqa_en:3:9fdd28ba2894a704",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12079,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 13803,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 73,
+          "id": "multifieldqa_en:73:4660be333c4d8433",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8859,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 9820,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 98,
+          "id": "multifieldqa_en:98:ff3b26a9d3178dd2",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3782,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 5595,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 20,
+          "id": "multifieldqa_en:20:83844a143a0fa363",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2571,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 3022,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 110,
+          "id": "multifieldqa_en:110:b74b3352d951ec1e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8493,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 9749,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 148,
+          "id": "multifieldqa_en:148:8e124219dc2e894f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7987,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 8389,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 79,
+          "id": "multifieldqa_en:79:d8c25f0efeb25c26",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7529,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 8203,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 145,
+          "id": "multifieldqa_en:145:19c1d10ea1b4cc77",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9114,
+              "question": 34
+            },
+            "mistral02": {
+              "prompt": 9987,
+              "question": 35
+            }
+          }
+        },
+        {
+          "index": 2,
+          "id": "multifieldqa_en:2:afc5e3a5e1446bf6",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8358,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 9124,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 71,
+          "id": "multifieldqa_en:71:396f1961d1dbc24b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 1711,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 1844,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 124,
+          "id": "multifieldqa_en:124:36adf05d674d3ca5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7047,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 7639,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 28,
+          "id": "multifieldqa_en:28:861d2b8d74849ae9",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7757,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 8652,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 144,
+          "id": "multifieldqa_en:144:597f54b6755c6f5b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 1379,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 1428,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 92,
+          "id": "multifieldqa_en:92:a164dc5cde66cd2e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9367,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 10286,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 5,
+          "id": "multifieldqa_en:5:cb1a8d336753918e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 10873,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 11761,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 33,
+          "id": "multifieldqa_en:33:5bb9c96b448fc9b4",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5807,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 6465,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 128,
+          "id": "multifieldqa_en:128:6c48217bc8724bf2",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7524,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 8098,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 86,
+          "id": "multifieldqa_en:86:d745446af670b189",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 1751,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 1896,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 134,
+          "id": "multifieldqa_en:134:ddffe53992bc5e12",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12674,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 12749,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 122,
+          "id": "multifieldqa_en:122:74ced5e077c45a5a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3353,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 3648,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 39,
+          "id": "multifieldqa_en:39:1a1c4228222b0ca7",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3895,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 4211,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 130,
+          "id": "multifieldqa_en:130:10c28ae9dea2fa47",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3360,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 3654,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 44,
+          "id": "multifieldqa_en:44:cea1599222ab6725",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8369,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 9412,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 138,
+          "id": "multifieldqa_en:138:855fdb185fe60faf",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5815,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 6475,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 101,
+          "id": "multifieldqa_en:101:9d245890c416b53d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5732,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 6499,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 106,
+          "id": "multifieldqa_en:106:e61046d2eed4a5fd",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8740,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 9633,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 136,
+          "id": "multifieldqa_en:136:fe65d84ffc7dc7af",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8601,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 9520,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 22,
+          "id": "multifieldqa_en:22:e190b1fd37f9360c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5714,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 6170,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 68,
+          "id": "multifieldqa_en:68:5a683d1b7b9cd05f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3922,
+              "question": 15
+            },
+            "mistral02": {
+              "prompt": 4390,
+              "question": 16
+            }
+          }
+        },
+        {
+          "index": 62,
+          "id": "multifieldqa_en:62:27caf15ac93cd344",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2956,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 3276,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 64,
+          "id": "multifieldqa_en:64:af91be27e7b2b18c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 1869,
+              "question": 33
+            },
+            "mistral02": {
+              "prompt": 2053,
+              "question": 35
+            }
+          }
+        },
+        {
+          "index": 32,
+          "id": "multifieldqa_en:32:68a419d4ff69b776",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7790,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 8511,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 53,
+          "id": "multifieldqa_en:53:978a72db2c133ba1",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4986,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 5581,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 13,
+          "id": "multifieldqa_en:13:a68a7bff20f2f9b7",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8262,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 9047,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 34,
+          "id": "multifieldqa_en:34:30656d3a80682be7",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7046,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 7637,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 125,
+          "id": "multifieldqa_en:125:c66931a15fe3f5c8",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9578,
+              "question": 33
+            },
+            "mistral02": {
+              "prompt": 10481,
+              "question": 35
+            }
+          }
+        },
+        {
+          "index": 102,
+          "id": "multifieldqa_en:102:331b1851f6bc3de2",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9315,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 10472,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 91,
+          "id": "multifieldqa_en:91:07ad49a883708aa5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16527,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 17725,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 93,
+          "id": "multifieldqa_en:93:2827e18902f32c4a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3224,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 3500,
+              "question": 18
+            }
+          }
+        },
+        {
+          "index": 105,
+          "id": "multifieldqa_en:105:4097626ef8dd619c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9554,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 10666,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 61,
+          "id": "multifieldqa_en:61:69be2bf9cbe8c2bb",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11618,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 12759,
+              "question": 24
+            }
+          }
+        }
+      ]
+    },
+    "hotpotqa": {
+      "data_file": "/workspace/baselines/PyramidKV/data/LongBench/hotpotqa.jsonl",
+      "data_sha256": "a0005ab2a1bc2ac3a70352dccbf96cccc4e0aac6bb677f6a55180fa51b92ef6f",
+      "total_rows": 200,
+      "eligible_rows": 197,
+      "selected": [
+        {
+          "index": 48,
+          "id": "hotpotqa:48:57d21273107db371",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 10486,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 11464,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 59,
+          "id": "hotpotqa:59:abee136e6186c230",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12118,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 13595,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 97,
+          "id": "hotpotqa:97:91feac74b69f8744",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13381,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 14815,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 57,
+          "id": "hotpotqa:57:4fa083a5a5f59121",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17212,
+              "question": 45
+            },
+            "mistral02": {
+              "prompt": 19057,
+              "question": 47
+            }
+          }
+        },
+        {
+          "index": 131,
+          "id": "hotpotqa:131:b5b02aadd95e96e5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12220,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 13495,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 69,
+          "id": "hotpotqa:69:00e92c9e97beed05",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17149,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 19030,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 116,
+          "id": "hotpotqa:116:721a312793b8c7fd",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 14563,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 15687,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 153,
+          "id": "hotpotqa:153:ddaea363dad465bc",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12741,
+              "question": 44
+            },
+            "mistral02": {
+              "prompt": 14281,
+              "question": 50
+            }
+          }
+        },
+        {
+          "index": 58,
+          "id": "hotpotqa:58:2f8faefa54f5c504",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15908,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 17706,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 172,
+          "id": "hotpotqa:172:563d934a3f952d71",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 14608,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 16292,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 156,
+          "id": "hotpotqa:156:9c66c766c80bf198",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16535,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 18435,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 75,
+          "id": "hotpotqa:75:134d95e3cab83492",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6185,
+              "question": 40
+            },
+            "mistral02": {
+              "prompt": 6817,
+              "question": 43
+            }
+          }
+        },
+        {
+          "index": 73,
+          "id": "hotpotqa:73:97284ef038bb6b9a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12733,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 14472,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 169,
+          "id": "hotpotqa:169:e75a64b2b5c86375",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15089,
+              "question": 32
+            },
+            "mistral02": {
+              "prompt": 16751,
+              "question": 36
+            }
+          }
+        },
+        {
+          "index": 155,
+          "id": "hotpotqa:155:dbd2c924e11b1426",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6299,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 7060,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 108,
+          "id": "hotpotqa:108:05bf3b1682dca238",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17520,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 19447,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 4,
+          "id": "hotpotqa:4:ee800ac72c000212",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15170,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 16902,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 133,
+          "id": "hotpotqa:133:d7694e523bf15b10",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9225,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 10317,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 128,
+          "id": "hotpotqa:128:71f9a6dacabaee34",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16696,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 18562,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 77,
+          "id": "hotpotqa:77:3305750addc69cc4",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15981,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 17844,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 132,
+          "id": "hotpotqa:132:69284222d0724187",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 14232,
+              "question": 32
+            },
+            "mistral02": {
+              "prompt": 16858,
+              "question": 34
+            }
+          }
+        },
+        {
+          "index": 16,
+          "id": "hotpotqa:16:02acc6fbce2b7c7a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6674,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 7375,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 79,
+          "id": "hotpotqa:79:c624cc7aeceba22d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9179,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 10300,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 6,
+          "id": "hotpotqa:6:2dfad419980196d4",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16128,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 17724,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 9,
+          "id": "hotpotqa:9:a692310e406019aa",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9275,
+              "question": 32
+            },
+            "mistral02": {
+              "prompt": 10282,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 139,
+          "id": "hotpotqa:139:31a2f465937e9a7f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17119,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 19250,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 87,
+          "id": "hotpotqa:87:7ccf593c2c83b998",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16808,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 18893,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 149,
+          "id": "hotpotqa:149:8e3e4169e4ca15c2",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16912,
+              "question": 32
+            },
+            "mistral02": {
+              "prompt": 18513,
+              "question": 34
+            }
+          }
+        },
+        {
+          "index": 185,
+          "id": "hotpotqa:185:a18eef39d801377d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16446,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 18045,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 127,
+          "id": "hotpotqa:127:3abb2d0324870141",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8353,
+              "question": 35
+            },
+            "mistral02": {
+              "prompt": 9287,
+              "question": 38
+            }
+          }
+        },
+        {
+          "index": 163,
+          "id": "hotpotqa:163:538a32c40fb2569d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16920,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 18458,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 162,
+          "id": "hotpotqa:162:e7e8cfc5fc39b0a5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11586,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 12688,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 32,
+          "id": "hotpotqa:32:4774f459b5e6ed36",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15106,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 16692,
+              "question": 32
+            }
+          }
+        },
+        {
+          "index": 166,
+          "id": "hotpotqa:166:d2cc9311ab9742f4",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16648,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 18499,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 92,
+          "id": "hotpotqa:92:efb089ba47cda343",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16544,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 18217,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 152,
+          "id": "hotpotqa:152:622ae48d892228bb",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17178,
+              "question": 41
+            },
+            "mistral02": {
+              "prompt": 19070,
+              "question": 45
+            }
+          }
+        },
+        {
+          "index": 12,
+          "id": "hotpotqa:12:a01e4c855f885df7",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16039,
+              "question": 38
+            },
+            "mistral02": {
+              "prompt": 17939,
+              "question": 42
+            }
+          }
+        },
+        {
+          "index": 72,
+          "id": "hotpotqa:72:a629f8aedb14f5a1",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9147,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 10318,
+              "question": 35
+            }
+          }
+        },
+        {
+          "index": 142,
+          "id": "hotpotqa:142:42c9ad30f57aee4f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17214,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 19540,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 70,
+          "id": "hotpotqa:70:da167ef9f7c1262f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 14158,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 15799,
+              "question": 19
+            }
+          }
+        },
+        {
+          "index": 101,
+          "id": "hotpotqa:101:528c71761302376d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15258,
+              "question": 32
+            },
+            "mistral02": {
+              "prompt": 16699,
+              "question": 36
+            }
+          }
+        },
+        {
+          "index": 165,
+          "id": "hotpotqa:165:056bf76ec6565d4c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3574,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 4029,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 67,
+          "id": "hotpotqa:67:0c88ad1b806dd98d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12840,
+              "question": 31
+            },
+            "mistral02": {
+              "prompt": 14001,
+              "question": 32
+            }
+          }
+        },
+        {
+          "index": 82,
+          "id": "hotpotqa:82:eb9fd3a920bdeba9",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15010,
+              "question": 34
+            },
+            "mistral02": {
+              "prompt": 16637,
+              "question": 35
+            }
+          }
+        },
+        {
+          "index": 186,
+          "id": "hotpotqa:186:e887603731360e2e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15982,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 17799,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 106,
+          "id": "hotpotqa:106:861177b49f06c761",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16840,
+              "question": 43
+            },
+            "mistral02": {
+              "prompt": 18741,
+              "question": 47
+            }
+          }
+        },
+        {
+          "index": 121,
+          "id": "hotpotqa:121:ccc2c47dba0cda50",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7314,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 8112,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 76,
+          "id": "hotpotqa:76:1d05c4a92601cc68",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15501,
+              "question": 37
+            },
+            "mistral02": {
+              "prompt": 16919,
+              "question": 39
+            }
+          }
+        },
+        {
+          "index": 86,
+          "id": "hotpotqa:86:344724febff34c31",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16343,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 18164,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 84,
+          "id": "hotpotqa:84:37a96f2deb6360bc",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17597,
+              "question": 31
+            },
+            "mistral02": {
+              "prompt": 19843,
+              "question": 32
+            }
+          }
+        },
+        {
+          "index": 51,
+          "id": "hotpotqa:51:b8e6b75e0060b429",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16781,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 18228,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 187,
+          "id": "hotpotqa:187:4212809836b67e62",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8073,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 8853,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 43,
+          "id": "hotpotqa:43:b1562d01a9dc7869",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16576,
+              "question": 31
+            },
+            "mistral02": {
+              "prompt": 18295,
+              "question": 37
+            }
+          }
+        },
+        {
+          "index": 146,
+          "id": "hotpotqa:146:d84ec0dccd9cc9b1",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16158,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 17508,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 124,
+          "id": "hotpotqa:124:9e39fa3fc2fb6d6e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15868,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 17728,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 93,
+          "id": "hotpotqa:93:6894c3a60dfd9571",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17145,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 18989,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 10,
+          "id": "hotpotqa:10:22dbfc641ad75e7f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16901,
+              "question": 33
+            },
+            "mistral02": {
+              "prompt": 18710,
+              "question": 37
+            }
+          }
+        },
+        {
+          "index": 173,
+          "id": "hotpotqa:173:8c17b5af89ad6218",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16960,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 18534,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 95,
+          "id": "hotpotqa:95:8499f25e794d2773",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16926,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 18608,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 99,
+          "id": "hotpotqa:99:35a269c1c94094bd",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16994,
+              "question": 40
+            },
+            "mistral02": {
+              "prompt": 18495,
+              "question": 43
+            }
+          }
+        },
+        {
+          "index": 148,
+          "id": "hotpotqa:148:f47cb14794daca34",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12032,
+              "question": 32
+            },
+            "mistral02": {
+              "prompt": 12967,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 111,
+          "id": "hotpotqa:111:03269c77e0940aba",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16836,
+              "question": 40
+            },
+            "mistral02": {
+              "prompt": 18789,
+              "question": 45
+            }
+          }
+        },
+        {
+          "index": 42,
+          "id": "hotpotqa:42:7117649a4ad5bd13",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12831,
+              "question": 34
+            },
+            "mistral02": {
+              "prompt": 14305,
+              "question": 40
+            }
+          }
+        },
+        {
+          "index": 52,
+          "id": "hotpotqa:52:2aedc85ac689e628",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15263,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 16917,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 8,
+          "id": "hotpotqa:8:c679dd058a0f6be1",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13269,
+              "question": 42
+            },
+            "mistral02": {
+              "prompt": 15008,
+              "question": 46
+            }
+          }
+        },
+        {
+          "index": 136,
+          "id": "hotpotqa:136:aff7a021cbb2536e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6792,
+              "question": 32
+            },
+            "mistral02": {
+              "prompt": 7427,
+              "question": 35
+            }
+          }
+        },
+        {
+          "index": 188,
+          "id": "hotpotqa:188:45aebc70a6406745",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9885,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 10872,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 182,
+          "id": "hotpotqa:182:a67d8ed74d98716c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12530,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 13912,
+              "question": 32
+            }
+          }
+        },
+        {
+          "index": 30,
+          "id": "hotpotqa:30:cf9066d2c5fc4349",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17102,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 19075,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 55,
+          "id": "hotpotqa:55:8f404e99ecfd3e00",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13851,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 15471,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 184,
+          "id": "hotpotqa:184:02c5fd8496295392",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12770,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 14139,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 90,
+          "id": "hotpotqa:90:f1d983153c283f7e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12201,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 13553,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 34,
+          "id": "hotpotqa:34:0cc0660cb23af829",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 14969,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 16254,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 2,
+          "id": "hotpotqa:2:f38e8de691eeb46c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17388,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 19306,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 175,
+          "id": "hotpotqa:175:b2c751f3cbddf1ae",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6822,
+              "question": 38
+            },
+            "mistral02": {
+              "prompt": 7510,
+              "question": 41
+            }
+          }
+        },
+        {
+          "index": 17,
+          "id": "hotpotqa:17:81fb80de3c233e5e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16986,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 18893,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 107,
+          "id": "hotpotqa:107:450368a78326b182",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16538,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 18279,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 190,
+          "id": "hotpotqa:190:241ba3aecf5349d5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15276,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 16841,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 141,
+          "id": "hotpotqa:141:0fbc3fcbb952a113",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16878,
+              "question": 34
+            },
+            "mistral02": {
+              "prompt": 18720,
+              "question": 37
+            }
+          }
+        },
+        {
+          "index": 89,
+          "id": "hotpotqa:89:63007bf7c96263d9",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 10888,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 12150,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 109,
+          "id": "hotpotqa:109:45b14df0e124d497",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12086,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 13272,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 196,
+          "id": "hotpotqa:196:15244f993970c71a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 14807,
+              "question": 33
+            },
+            "mistral02": {
+              "prompt": 16663,
+              "question": 35
+            }
+          }
+        },
+        {
+          "index": 100,
+          "id": "hotpotqa:100:ae84fd28a8820c74",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16454,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 18303,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 74,
+          "id": "hotpotqa:74:7dd78973c5f7e4f7",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12053,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 13195,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 5,
+          "id": "hotpotqa:5:882c4d6a53a5d12d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15750,
+              "question": 31
+            },
+            "mistral02": {
+              "prompt": 17382,
+              "question": 34
+            }
+          }
+        }
+      ]
+    },
+    "2wikimqa": {
+      "data_file": "/workspace/baselines/PyramidKV/data/LongBench/2wikimqa.jsonl",
+      "data_sha256": "dda279cf93a99e1e5bfa3291fb199fd55978d10a1feb31822953cf77a1742e37",
+      "total_rows": 200,
+      "eligible_rows": 200,
+      "selected": [
+        {
+          "index": 8,
+          "id": "2wikimqa:8:180b514d0848e20f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6214,
+              "question": 17
+            },
+            "mistral02": {
+              "prompt": 6928,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 113,
+          "id": "2wikimqa:113:32579b2c91764f7d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9750,
+              "question": 31
+            },
+            "mistral02": {
+              "prompt": 10667,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 124,
+          "id": "2wikimqa:124:fa449e22cc1e0cbe",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8308,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 9281,
+              "question": 34
+            }
+          }
+        },
+        {
+          "index": 94,
+          "id": "2wikimqa:94:7a0d1d83edaa155f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6260,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 6978,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 161,
+          "id": "2wikimqa:161:3d3c193065a7be57",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4745,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 5111,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 145,
+          "id": "2wikimqa:145:fb64e189fa7e94c7",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9782,
+              "question": 36
+            },
+            "mistral02": {
+              "prompt": 11062,
+              "question": 39
+            }
+          }
+        },
+        {
+          "index": 70,
+          "id": "2wikimqa:70:2fa35f9171468b94",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6518,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 7195,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 28,
+          "id": "2wikimqa:28:cfdf8647b5fbd224",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7075,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 7637,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 25,
+          "id": "2wikimqa:25:43236887b1c6f620",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 1769,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 1933,
+              "question": 32
+            }
+          }
+        },
+        {
+          "index": 105,
+          "id": "2wikimqa:105:5e07486ec46b34b0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5454,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 6121,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 19,
+          "id": "2wikimqa:19:5acda9345fa9139d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5658,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 6170,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 185,
+          "id": "2wikimqa:185:740e526308987838",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5394,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 5981,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 81,
+          "id": "2wikimqa:81:8b05d4ad8b379aa5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6790,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 7517,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 108,
+          "id": "2wikimqa:108:71607abc94c84b39",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5844,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 6504,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 99,
+          "id": "2wikimqa:99:043e27f1f2d96d8b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5199,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 5674,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 68,
+          "id": "2wikimqa:68:30018b913ff5e2d7",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6153,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 6841,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 118,
+          "id": "2wikimqa:118:43de8c81b6582f79",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2191,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 2396,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 104,
+          "id": "2wikimqa:104:57c5030b83cbc219",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 14754,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 16338,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 138,
+          "id": "2wikimqa:138:ef8dc692fe29e3ff",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6845,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 7665,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 47,
+          "id": "2wikimqa:47:489a67f90a86a496",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5819,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 6359,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 197,
+          "id": "2wikimqa:197:ec76517a37b6ad25",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5376,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 5861,
+              "question": 32
+            }
+          }
+        },
+        {
+          "index": 106,
+          "id": "2wikimqa:106:de4ef3c79c8f47b9",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2812,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 3089,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 78,
+          "id": "2wikimqa:78:6b4b3ed3afbf6063",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16378,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 17861,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 31,
+          "id": "2wikimqa:31:2c56fb9de3adeffe",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8779,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 9533,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 136,
+          "id": "2wikimqa:136:d1e67ca1fe36312b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7309,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 8198,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 82,
+          "id": "2wikimqa:82:a70069a81e255683",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7038,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 7849,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 89,
+          "id": "2wikimqa:89:9743964f26604c73",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3936,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 4428,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 80,
+          "id": "2wikimqa:80:aa8625f3bacc33f9",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5922,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 6595,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 196,
+          "id": "2wikimqa:196:27f3d108c67d7ed8",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13219,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 14389,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 179,
+          "id": "2wikimqa:179:ff399a8ae79f3e8c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5682,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 6189,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 1,
+          "id": "2wikimqa:1:44fecd9d048a7ca3",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7153,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 7904,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 35,
+          "id": "2wikimqa:35:350c5396154a8151",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4709,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 5265,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 63,
+          "id": "2wikimqa:63:bef916f248b417bf",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7996,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 8871,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 121,
+          "id": "2wikimqa:121:164f33700269a001",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5978,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 6637,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 87,
+          "id": "2wikimqa:87:ce7fbf5a2887fb75",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8747,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 9754,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 67,
+          "id": "2wikimqa:67:72674d6e1e4baf2a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4949,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 5497,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 115,
+          "id": "2wikimqa:115:46de0592113e1cdb",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11011,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 12336,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 6,
+          "id": "2wikimqa:6:485f6fe3efe5c094",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7792,
+              "question": 32
+            },
+            "mistral02": {
+              "prompt": 8570,
+              "question": 35
+            }
+          }
+        },
+        {
+          "index": 72,
+          "id": "2wikimqa:72:3c2c7f136f9425f0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7054,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 7618,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 103,
+          "id": "2wikimqa:103:ec0fcd862b2e5f72",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6967,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 7813,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 12,
+          "id": "2wikimqa:12:b9e6139dbf901e97",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 2447,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 2626,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 141,
+          "id": "2wikimqa:141:b53162169132347b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7543,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 8422,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 10,
+          "id": "2wikimqa:10:2f52501da02f1ba7",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15621,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 17498,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 59,
+          "id": "2wikimqa:59:b55bec141e99f9a9",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4598,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 5130,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 49,
+          "id": "2wikimqa:49:ea8c93b93fd30e98",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4964,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 5540,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 167,
+          "id": "2wikimqa:167:87994dfa470d8e7a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4685,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 5172,
+              "question": 34
+            }
+          }
+        },
+        {
+          "index": 38,
+          "id": "2wikimqa:38:4931d3ed2d12700a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 10029,
+              "question": 31
+            },
+            "mistral02": {
+              "prompt": 10908,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 23,
+          "id": "2wikimqa:23:9523022ad7836450",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9076,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 10070,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 56,
+          "id": "2wikimqa:56:94742ce1c8b12b31",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6287,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 7003,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 178,
+          "id": "2wikimqa:178:3cfb57bd29998cdc",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6236,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 7009,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 96,
+          "id": "2wikimqa:96:e6dd84d9be5fca78",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12291,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 13361,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 97,
+          "id": "2wikimqa:97:e123eaebed7c7eaf",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 3133,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 3428,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 13,
+          "id": "2wikimqa:13:2e7d01646addac4e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5510,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 5999,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 120,
+          "id": "2wikimqa:120:e859a3ec567068ed",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4351,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 4942,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 188,
+          "id": "2wikimqa:188:07bf0082ecb16dc0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 1500,
+              "question": 31
+            },
+            "mistral02": {
+              "prompt": 1614,
+              "question": 35
+            }
+          }
+        },
+        {
+          "index": 117,
+          "id": "2wikimqa:117:560891dd93430db5",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7893,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 8894,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 192,
+          "id": "2wikimqa:192:a158ba8d7e3cef81",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17013,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 18606,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 14,
+          "id": "2wikimqa:14:0eb8479c5481ef05",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6955,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 7756,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 0,
+          "id": "2wikimqa:0:ec34fc6bac9d90be",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7408,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 8108,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 42,
+          "id": "2wikimqa:42:2d0c05c02eae2eed",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12383,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 13659,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 48,
+          "id": "2wikimqa:48:f7fc0991dd9ffdeb",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 1871,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 2105,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 22,
+          "id": "2wikimqa:22:2b8da73facb7fd86",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13147,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 14633,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 143,
+          "id": "2wikimqa:143:ac6fc51ffb74837d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4801,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 5201,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 55,
+          "id": "2wikimqa:55:aa55463541507589",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 4425,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 4962,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 100,
+          "id": "2wikimqa:100:c1742cc553869888",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6669,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 7484,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 24,
+          "id": "2wikimqa:24:9c6ce8968b819994",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9662,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 10759,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 174,
+          "id": "2wikimqa:174:8e318453ea09159e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13171,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 14429,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 15,
+          "id": "2wikimqa:15:47fcaecfd625629f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15233,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 16617,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 39,
+          "id": "2wikimqa:39:d7d8532130aec1d0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7262,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 8105,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 148,
+          "id": "2wikimqa:148:62a9f01473cebb15",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16472,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 18463,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 71,
+          "id": "2wikimqa:71:c0689efcfe9c52ff",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8002,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 8906,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 98,
+          "id": "2wikimqa:98:1819c669ffd31b9c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15016,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 16565,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 60,
+          "id": "2wikimqa:60:163772909166cd70",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11431,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 12797,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 190,
+          "id": "2wikimqa:190:01057a6779a470ad",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9746,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 10711,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 144,
+          "id": "2wikimqa:144:cabe926d7c25a65e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7267,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 7738,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 45,
+          "id": "2wikimqa:45:1a63c74fab83c064",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 10121,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 11045,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 163,
+          "id": "2wikimqa:163:fcd09d4ee87e304c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6726,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 7399,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 21,
+          "id": "2wikimqa:21:5a8417a04dc9de00",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11139,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 12562,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 17,
+          "id": "2wikimqa:17:9f2f69bc176227a2",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 8635,
+              "question": 36
+            },
+            "mistral02": {
+              "prompt": 9689,
+              "question": 41
+            }
+          }
+        },
+        {
+          "index": 151,
+          "id": "2wikimqa:151:5f4ca8cb3812081c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13815,
+              "question": 33
+            },
+            "mistral02": {
+              "prompt": 15051,
+              "question": 35
+            }
+          }
+        },
+        {
+          "index": 139,
+          "id": "2wikimqa:139:2caa7d82983417cb",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 5590,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 6285,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 152,
+          "id": "2wikimqa:152:ee3fa27eff22e02b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6701,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 7460,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 76,
+          "id": "2wikimqa:76:08d539205e30b2a6",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 12671,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 14222,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 149,
+          "id": "2wikimqa:149:e7e34fbe2241541c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 6806,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 7357,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 157,
+          "id": "2wikimqa:157:65e20e677efe753b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17055,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 18802,
+              "question": 26
+            }
+          }
+        }
+      ]
+    },
+    "musique": {
+      "data_file": "/workspace/baselines/PyramidKV/data/LongBench/musique.jsonl",
+      "data_sha256": "4ac69b91281c4ec6b21316cb7282e83fb6b4dda04fc68480bb8d8ed1e19ff7bd",
+      "total_rows": 200,
+      "eligible_rows": 200,
+      "selected": [
+        {
+          "index": 17,
+          "id": "musique:17:882d58bdc241bcd3",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16746,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 18655,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 0,
+          "id": "musique:0:87d645b43fb6f863",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16503,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 18402,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 125,
+          "id": "musique:125:2c8f54c14fb6ad05",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17006,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 18548,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 78,
+          "id": "musique:78:5905a6bd1f6f5b73",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17281,
+              "question": 41
+            },
+            "mistral02": {
+              "prompt": 19184,
+              "question": 43
+            }
+          }
+        },
+        {
+          "index": 167,
+          "id": "musique:167:dd3261a374708f06",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15991,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 17565,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 165,
+          "id": "musique:165:7e6024778d315aeb",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16406,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 18728,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 187,
+          "id": "musique:187:ed96160f80fdc78c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16871,
+              "question": 32
+            },
+            "mistral02": {
+              "prompt": 18651,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 98,
+          "id": "musique:98:8e0a29e1308b0818",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16985,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 18911,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 15,
+          "id": "musique:15:b711291ffccaf8c0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16951,
+              "question": 35
+            },
+            "mistral02": {
+              "prompt": 18569,
+              "question": 36
+            }
+          }
+        },
+        {
+          "index": 174,
+          "id": "musique:174:f3c95e43d3954271",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15853,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 17575,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 79,
+          "id": "musique:79:188443b0a95e2c1f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16613,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 18578,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 87,
+          "id": "musique:87:660ba207809d00c4",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16470,
+              "question": 36
+            },
+            "mistral02": {
+              "prompt": 18359,
+              "question": 37
+            }
+          }
+        },
+        {
+          "index": 74,
+          "id": "musique:74:519f39682db44da2",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17166,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 18643,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 105,
+          "id": "musique:105:9c5aa02ce853858c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16752,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 18509,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 59,
+          "id": "musique:59:afff3668c6e936de",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17045,
+              "question": 33
+            },
+            "mistral02": {
+              "prompt": 18710,
+              "question": 36
+            }
+          }
+        },
+        {
+          "index": 54,
+          "id": "musique:54:887958e3183f8d31",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16647,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 18535,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 192,
+          "id": "musique:192:1ee2feeec67f8448",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16717,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 18363,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 82,
+          "id": "musique:82:21afcc1fc750603e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17098,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 18967,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 179,
+          "id": "musique:179:0719f48be085fb42",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16926,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 19040,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 14,
+          "id": "musique:14:14497cb3baa6aaf9",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13350,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 14793,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 16,
+          "id": "musique:16:9734a4ba83c5c0de",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17318,
+              "question": 43
+            },
+            "mistral02": {
+              "prompt": 19719,
+              "question": 45
+            }
+          }
+        },
+        {
+          "index": 13,
+          "id": "musique:13:312765a3a8a5b536",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16548,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 18532,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 32,
+          "id": "musique:32:360e14e0b3c3b1af",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16510,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 18497,
+              "question": 32
+            }
+          }
+        },
+        {
+          "index": 41,
+          "id": "musique:41:327b637c22ecbb37",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17471,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 19568,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 101,
+          "id": "musique:101:cf3373cfba5e1196",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16938,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 18649,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 185,
+          "id": "musique:185:1ca3154b3fc3080d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16885,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 18837,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 108,
+          "id": "musique:108:f7e3cd8a63d89625",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 9475,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 10518,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 160,
+          "id": "musique:160:84bfd8ce2153630a",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17221,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 19161,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 154,
+          "id": "musique:154:e7f4f0b9ed8c23c0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17318,
+              "question": 39
+            },
+            "mistral02": {
+              "prompt": 18887,
+              "question": 40
+            }
+          }
+        },
+        {
+          "index": 124,
+          "id": "musique:124:acde2b4bba6ca326",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16760,
+              "question": 36
+            },
+            "mistral02": {
+              "prompt": 18784,
+              "question": 43
+            }
+          }
+        },
+        {
+          "index": 2,
+          "id": "musique:2:5f3c19ae7513e5f6",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16752,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 18494,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 138,
+          "id": "musique:138:1f88ef04209c56ff",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15848,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 17521,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 31,
+          "id": "musique:31:4e0abfab3248abd1",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17339,
+              "question": 34
+            },
+            "mistral02": {
+              "prompt": 19115,
+              "question": 36
+            }
+          }
+        },
+        {
+          "index": 84,
+          "id": "musique:84:620f477980d068d2",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16926,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 18827,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 27,
+          "id": "musique:27:3dcd6c349bc9e502",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16223,
+              "question": 43
+            },
+            "mistral02": {
+              "prompt": 17886,
+              "question": 44
+            }
+          }
+        },
+        {
+          "index": 184,
+          "id": "musique:184:a15ff1a7b50584ff",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16675,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 18875,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 50,
+          "id": "musique:50:df7005661654208e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16991,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 18800,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 121,
+          "id": "musique:121:136495f01382e055",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16118,
+              "question": 38
+            },
+            "mistral02": {
+              "prompt": 18060,
+              "question": 41
+            }
+          }
+        },
+        {
+          "index": 70,
+          "id": "musique:70:c6995e1e4dc7f442",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15897,
+              "question": 34
+            },
+            "mistral02": {
+              "prompt": 17688,
+              "question": 37
+            }
+          }
+        },
+        {
+          "index": 130,
+          "id": "musique:130:b2d93c73ee2d1525",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17350,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 18948,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 89,
+          "id": "musique:89:a9edb7c7e311f051",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17693,
+              "question": 41
+            },
+            "mistral02": {
+              "prompt": 19144,
+              "question": 43
+            }
+          }
+        },
+        {
+          "index": 65,
+          "id": "musique:65:c45160f5b9129af2",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16582,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 18391,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 91,
+          "id": "musique:91:e9c611b42dde0e5b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15151,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 16736,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 1,
+          "id": "musique:1:7fa6163be892fd07",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16715,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 18354,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 6,
+          "id": "musique:6:90ad5a6192c82646",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16704,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 18731,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 177,
+          "id": "musique:177:1b07d7d864d27f7c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16831,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 18952,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 62,
+          "id": "musique:62:c51862b31fcbb363",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16962,
+              "question": 22
+            },
+            "mistral02": {
+              "prompt": 18879,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 21,
+          "id": "musique:21:f10eda3d06d86a54",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17345,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 19463,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 64,
+          "id": "musique:64:c0e6be7430865790",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16762,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 18591,
+              "question": 22
+            }
+          }
+        },
+        {
+          "index": 194,
+          "id": "musique:194:1dfbd6d7a397a606",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16596,
+              "question": 20
+            },
+            "mistral02": {
+              "prompt": 19080,
+              "question": 23
+            }
+          }
+        },
+        {
+          "index": 182,
+          "id": "musique:182:3c14e211668024c0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17333,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 18983,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 93,
+          "id": "musique:93:981e387dd3141d60",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16428,
+              "question": 30
+            },
+            "mistral02": {
+              "prompt": 18214,
+              "question": 32
+            }
+          }
+        },
+        {
+          "index": 168,
+          "id": "musique:168:089a1dc2d4012c2c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16889,
+              "question": 18
+            },
+            "mistral02": {
+              "prompt": 18678,
+              "question": 21
+            }
+          }
+        },
+        {
+          "index": 110,
+          "id": "musique:110:484f7e60a437a0cf",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16757,
+              "question": 32
+            },
+            "mistral02": {
+              "prompt": 18426,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 151,
+          "id": "musique:151:51fcd9a2841797af",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16470,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 18126,
+              "question": 24
+            }
+          }
+        },
+        {
+          "index": 96,
+          "id": "musique:96:340bdca3127b8d40",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17632,
+              "question": 31
+            },
+            "mistral02": {
+              "prompt": 19593,
+              "question": 33
+            }
+          }
+        },
+        {
+          "index": 166,
+          "id": "musique:166:58295109cb025ce6",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13218,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 14322,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 188,
+          "id": "musique:188:2f791e43fa0be34e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17231,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 19348,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 128,
+          "id": "musique:128:41304fb24f790814",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17143,
+              "question": 38
+            },
+            "mistral02": {
+              "prompt": 18082,
+              "question": 40
+            }
+          }
+        },
+        {
+          "index": 56,
+          "id": "musique:56:b29b7aa446fbf8ac",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 14642,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 16424,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 133,
+          "id": "musique:133:64de38e279a2ab5d",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16980,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 18744,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 122,
+          "id": "musique:122:a3fe963441c7da1e",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 11806,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 12950,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 23,
+          "id": "musique:23:379229f0c92a5330",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17060,
+              "question": 37
+            },
+            "mistral02": {
+              "prompt": 18034,
+              "question": 39
+            }
+          }
+        },
+        {
+          "index": 139,
+          "id": "musique:139:4f7502774246de6b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17139,
+              "question": 23
+            },
+            "mistral02": {
+              "prompt": 19290,
+              "question": 28
+            }
+          }
+        },
+        {
+          "index": 90,
+          "id": "musique:90:af4a7a7cae434a6c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15878,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 18403,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 20,
+          "id": "musique:20:f5c3a90f46eaccbc",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16968,
+              "question": 19
+            },
+            "mistral02": {
+              "prompt": 18862,
+              "question": 20
+            }
+          }
+        },
+        {
+          "index": 113,
+          "id": "musique:113:d8ee5c067d52482c",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16861,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 18847,
+              "question": 30
+            }
+          }
+        },
+        {
+          "index": 61,
+          "id": "musique:61:cbc54899530faa13",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15454,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 17586,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 109,
+          "id": "musique:109:9c9c2e5484c15828",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17240,
+              "question": 50
+            },
+            "mistral02": {
+              "prompt": 19128,
+              "question": 52
+            }
+          }
+        },
+        {
+          "index": 120,
+          "id": "musique:120:cd29d5b4314e1b61",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 13036,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 14710,
+              "question": 34
+            }
+          }
+        },
+        {
+          "index": 158,
+          "id": "musique:158:f2d83c3101967259",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16972,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 18598,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 34,
+          "id": "musique:34:5a511e0d473b1bee",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16968,
+              "question": 29
+            },
+            "mistral02": {
+              "prompt": 18594,
+              "question": 31
+            }
+          }
+        },
+        {
+          "index": 193,
+          "id": "musique:193:c5f1a74964eed346",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 15672,
+              "question": 33
+            },
+            "mistral02": {
+              "prompt": 17680,
+              "question": 34
+            }
+          }
+        },
+        {
+          "index": 186,
+          "id": "musique:186:99ef72ae01c6c817",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16867,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 18867,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 24,
+          "id": "musique:24:fcb7220760a3ecfa",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16955,
+              "question": 32
+            },
+            "mistral02": {
+              "prompt": 18518,
+              "question": 35
+            }
+          }
+        },
+        {
+          "index": 88,
+          "id": "musique:88:39d65162485a5b6b",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17056,
+              "question": 40
+            },
+            "mistral02": {
+              "prompt": 19207,
+              "question": 48
+            }
+          }
+        },
+        {
+          "index": 67,
+          "id": "musique:67:1f8b7e87075b7af0",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16545,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 18429,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 118,
+          "id": "musique:118:4b5cdab8ab093d43",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16161,
+              "question": 28
+            },
+            "mistral02": {
+              "prompt": 18147,
+              "question": 32
+            }
+          }
+        },
+        {
+          "index": 83,
+          "id": "musique:83:f8233fa0afcec718",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16999,
+              "question": 27
+            },
+            "mistral02": {
+              "prompt": 18949,
+              "question": 27
+            }
+          }
+        },
+        {
+          "index": 142,
+          "id": "musique:142:b38b507da65e06f2",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17095,
+              "question": 24
+            },
+            "mistral02": {
+              "prompt": 18730,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 81,
+          "id": "musique:81:bdd73f203cf35104",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16456,
+              "question": 25
+            },
+            "mistral02": {
+              "prompt": 18149,
+              "question": 26
+            }
+          }
+        },
+        {
+          "index": 115,
+          "id": "musique:115:3db1fc3f3a5f64c9",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17030,
+              "question": 33
+            },
+            "mistral02": {
+              "prompt": 18644,
+              "question": 35
+            }
+          }
+        },
+        {
+          "index": 106,
+          "id": "musique:106:58a52afcc28cdb5f",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 17349,
+              "question": 26
+            },
+            "mistral02": {
+              "prompt": 19073,
+              "question": 29
+            }
+          }
+        },
+        {
+          "index": 135,
+          "id": "musique:135:f9b586dc009d36e4",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 7825,
+              "question": 21
+            },
+            "mistral02": {
+              "prompt": 8770,
+              "question": 25
+            }
+          }
+        },
+        {
+          "index": 176,
+          "id": "musique:176:48b98692250f0017",
+          "token_counts": {
+            "qwen25": {
+              "prompt": 16900,
+              "question": 32
+            },
+            "mistral02": {
+              "prompt": 18644,
+              "question": 35
+            }
+          }
+        }
+      ]
+    }
+  }
+}

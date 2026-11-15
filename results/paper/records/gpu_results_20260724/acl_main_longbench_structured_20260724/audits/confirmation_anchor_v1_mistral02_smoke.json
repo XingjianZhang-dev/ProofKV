@@ -1,0 +1,32 @@
+{
+  "budget_and_partition_checks": true,
+  "capacities": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "expected_rows": 72,
+  "implementation_and_scorer_hashes_verified": true,
+  "independent_f1_recomputed": true,
+  "methods": [
+    "learned_and_or_lexical_anchor25_aux",
+    "learned_and_or_lexical_anchor50_aux",
+    "learned_and_or_lexical_anchor75_aux"
+  ],
+  "rows": 72,
+  "status": "PASS",
+  "tasks": [
+    "narrativeqa",
+    "qasper",
+    "multifieldqa_en",
+    "hotpotqa",
+    "2wikimqa",
+    "musique"
+  ],
+  "unique_keys": 72,
+  "warning_counts": {
+    "production compact prefill chunk size: 512": 72
+  },
+  "whitespace_predictions": 0
+}

@@ -1,0 +1,99 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "scorer_checkpoint": "/workspace/compresskv_experiments/relation_scorer_soup_v3b_v8_a090/checkpoint",
+  "methods": [
+    "full",
+    "entity_graph_adaptive",
+    "learned_topk_paths",
+    "learned_and_or"
+  ],
+  "max_samples": 128,
+  "max_input_tokens": 32768,
+  "budget": 0.08,
+  "seed": 29,
+  "selection_strata": [
+    "domain",
+    "length",
+    "difficulty"
+  ],
+  "attn_implementation": "flash_attention_2",
+  "full_prefill_chunk_size": 2048,
+  "compact_prefill_chunk_size": 512,
+  "learned_dense_core_count": 4,
+  "learned_edge_batch_size": 256,
+  "dataset_fingerprint": "087551b003b9273e",
+  "truncated_samples": 97,
+  "records": [
+    {
+      "method": "entity_graph_adaptive",
+      "n": 128,
+      "accuracy": 0.3046875,
+      "mean_prompt_tokens": 29764.015625,
+      "mean_retained_ratio": 0.08000187534034954,
+      "mean_seconds": 2.362865852779578,
+      "mean_selection_seconds": 1.9525812260835664,
+      "mean_generation_seconds": 0.4102846266960114,
+      "mean_proof_core_tokens": 0.0,
+      "mean_auxiliary_tokens": 0.0
+    },
+    {
+      "method": "full",
+      "n": 128,
+      "accuracy": 0.3671875,
+      "mean_prompt_tokens": 29764.015625,
+      "mean_retained_ratio": 1.0,
+      "mean_seconds": 2.3277067537692346,
+      "mean_selection_seconds": 0.0,
+      "mean_generation_seconds": 2.3277067537692346,
+      "mean_proof_core_tokens": 0.0,
+      "mean_auxiliary_tokens": 0.0
+    },
+    {
+      "method": "learned_and_or",
+      "n": 128,
+      "accuracy": 0.3125,
+      "mean_prompt_tokens": 29764.015625,
+      "mean_retained_ratio": 0.011478820939512429,
+      "mean_seconds": 1.3677755248390895,
+      "mean_selection_seconds": 1.1879207231468172,
+      "mean_generation_seconds": 0.1798548016922723,
+      "mean_proof_core_tokens": 141.828125,
+      "mean_auxiliary_tokens": 0.0
+    },
+    {
+      "method": "learned_topk_paths",
+      "n": 128,
+      "accuracy": 0.3125,
+      "mean_prompt_tokens": 29764.015625,
+      "mean_retained_ratio": 0.011478820939512429,
+      "mean_seconds": 7.0507511475898355,
+      "mean_selection_seconds": 6.937990623457154,
+      "mean_generation_seconds": 0.1127605241326819,
+      "mean_proof_core_tokens": 141.828125,
+      "mean_auxiliary_tokens": 0.0
+    }
+  ],
+  "paired_full_retention": [
+    {
+      "method": "entity_graph_adaptive",
+      "n_paired": 128,
+      "relative_accuracy_to_full": 0.8297872340425532,
+      "n_full_correct": 47,
+      "accuracy_retention_on_full_correct": 0.6595744680851063
+    },
+    {
+      "method": "learned_and_or",
+      "n_paired": 128,
+      "relative_accuracy_to_full": 0.851063829787234,
+      "n_full_correct": 47,
+      "accuracy_retention_on_full_correct": 0.574468085106383
+    },
+    {
+      "method": "learned_topk_paths",
+      "n_paired": 128,
+      "relative_accuracy_to_full": 0.851063829787234,
+      "n_full_correct": 47,
+      "accuracy_retention_on_full_correct": 0.574468085106383
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "protocol": "untouched_formal_upgraded_proofkv_v9_audit",
+  "evaluation_slice": "formal",
+  "selection_manifest_sha256": "3f8f96a8c5eda517d69f31c15e816f23fcfcf3c6e703e33f728ef237301d30c3",
+  "utility_controller_sha256": "53908e556b6806dbdd10e0b566389be3a1a432afd4741200350a5fd4a3fa23d4",
+  "runs": [
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/formal_v9_qwen25_s38_n47",
+      "model": "qwen25",
+      "rows": 366,
+      "selection_start_per_task": 38,
+      "samples_per_task": 1,
+      "configurations_per_sample": 61,
+      "proof_routes": 7,
+      "physical_fallback_routes": 17,
+      "proof_route_coverage": 0.2916666666666667,
+      "selected_candidate_counts": {
+        "learned_and_or_control_anchor25_aux": 3,
+        "learned_and_or_control_anchor50_aux": 1,
+        "learned_and_or_control_anchor75_aux": 1,
+        "learned_and_or_lexical_anchor75_aux": 2
+      },
+      "proof_routes_without_source_replay": 0,
+      "max_capacity_excess_tokens": 0.0,
+      "raw_empty_predictions": 0,
+      "whitespace_only_predictions": 0,
+      "implementation_files_hashed": 9,
+      "scorer_checkpoint_files_hashed": 6
+    }
+  ],
+  "checks": [
+    "untouched frozen formal slice and exact source answers",
+    "complete model/method/capacity crossing",
+    "independent QA-F1 and aggregate recomputation",
+    "exact capacity, KV-byte, implementation, and checkpoint hashes",
+    "all candidate utilities recomputed from serialized coefficients",
+    "candidate choice, safety margin, route, and reused output equality"
+  ]
+}

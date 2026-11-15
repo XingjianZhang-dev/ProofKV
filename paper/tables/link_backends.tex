@@ -1,0 +1,9 @@
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Attention backend & Shuffled & Random & Removed \\
+\midrule
+SDPA, flash kernel & 12.7 & 10.3 & 10.6 \\
+SDPA, math kernel & 13.4 & 10.8 & 11.0 \\
+Eager attention & 13.6 & 11.6 & 9.8 \\
+\bottomrule
+\end{tabular}

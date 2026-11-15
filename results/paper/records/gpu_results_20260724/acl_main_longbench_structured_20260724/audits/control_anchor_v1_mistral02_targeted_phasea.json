@@ -1,0 +1,576 @@
+{
+  "groups": {
+    "mistral02:hotpotqa:128": {
+      "methods": {
+        "learned_and_or_control_anchor25_aux": {
+          "bootstrap_10pct_lower": -4.497607655502392,
+          "deltas": [
+            -1.435406698564594,
+            0.0,
+            -10.526315789473683,
+            0.0,
+            0.0
+          ],
+          "mean": -2.392344497607655,
+          "stable": false
+        },
+        "learned_and_or_control_anchor50_aux": {
+          "bootstrap_10pct_lower": -4.497607655502392,
+          "deltas": [
+            -1.435406698564594,
+            0.0,
+            -10.526315789473683,
+            0.0,
+            0.0
+          ],
+          "mean": -2.392344497607655,
+          "stable": false
+        },
+        "learned_and_or_control_anchor75_aux": {
+          "bootstrap_10pct_lower": -4.497607655502392,
+          "deltas": [
+            -1.435406698564594,
+            0.0,
+            -10.526315789473683,
+            0.0,
+            0.0
+          ],
+          "mean": -2.392344497607655,
+          "stable": false
+        }
+      },
+      "selected": null
+    },
+    "mistral02:hotpotqa:256": {
+      "methods": {
+        "learned_and_or_control_anchor25_aux": {
+          "bootstrap_10pct_lower": -0.23809523809523808,
+          "deltas": [
+            -1.1904761904761905,
+            -22.22222222222222,
+            50.0,
+            66.66666666666666,
+            0.0
+          ],
+          "mean": 18.65079365079365,
+          "stable": false
+        },
+        "learned_and_or_control_anchor50_aux": {
+          "bootstrap_10pct_lower": -8.88888888888889,
+          "deltas": [
+            -0.4329004329004335,
+            -22.22222222222222,
+            100.0,
+            0.0,
+            0.0
+          ],
+          "mean": 15.468975468975469,
+          "stable": false
+        },
+        "learned_and_or_control_anchor75_aux": {
+          "bootstrap_10pct_lower": 6.666666666666667,
+          "deltas": [
+            -0.4329004329004335,
+            -22.22222222222222,
+            100.0,
+            100.0,
+            0.0
+          ],
+          "mean": 35.46897546897547,
+          "stable": true
+        }
+      },
+      "selected": "learned_and_or_control_anchor75_aux"
+    },
+    "mistral02:hotpotqa:512": {
+      "methods": {
+        "learned_and_or_control_anchor25_aux": {
+          "bootstrap_10pct_lower": 0.28708133971291877,
+          "deltas": [
+            1.435406698564594,
+            0.0,
+            50.0,
+            0.0,
+            0.0
+          ],
+          "mean": 10.287081339712918,
+          "stable": true
+        },
+        "learned_and_or_control_anchor50_aux": {
+          "bootstrap_10pct_lower": -0.4363636363636364,
+          "deltas": [
+            -1.090909090909091,
+            0.0,
+            50.0,
+            0.0,
+            0.0
+          ],
+          "mean": 9.781818181818181,
+          "stable": false
+        },
+        "learned_and_or_control_anchor75_aux": {
+          "bootstrap_10pct_lower": -32.72727272727273,
+          "deltas": [
+            1.435406698564594,
+            0.0,
+            0.0,
+            -81.81818181818181,
+            0.0
+          ],
+          "mean": -16.076555023923444,
+          "stable": false
+        }
+      },
+      "selected": "learned_and_or_control_anchor25_aux"
+    },
+    "mistral02:hotpotqa:64": {
+      "methods": {
+        "learned_and_or_control_anchor25_aux": {
+          "bootstrap_10pct_lower": 0.0,
+          "deltas": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "stable": true
+        },
+        "learned_and_or_control_anchor50_aux": {
+          "bootstrap_10pct_lower": 0.0,
+          "deltas": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "stable": true
+        },
+        "learned_and_or_control_anchor75_aux": {
+          "bootstrap_10pct_lower": 0.0,
+          "deltas": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "stable": true
+        }
+      },
+      "selected": "learned_and_or_control_anchor75_aux"
+    },
+    "mistral02:narrativeqa:128": {
+      "methods": {
+        "learned_and_or_control_anchor25_aux": {
+          "bootstrap_10pct_lower": -10.909090909090908,
+          "deltas": [
+            0.0,
+            0.0,
+            -18.18181818181818,
+            -15.384615384615385,
+            0.0
+          ],
+          "mean": -6.713286713286713,
+          "stable": false
+        },
+        "learned_and_or_control_anchor50_aux": {
+          "bootstrap_10pct_lower": -10.909090909090908,
+          "deltas": [
+            0.0,
+            0.0,
+            -18.18181818181818,
+            -15.384615384615385,
+            0.0
+          ],
+          "mean": -6.713286713286713,
+          "stable": false
+        },
+        "learned_and_or_control_anchor75_aux": {
+          "bootstrap_10pct_lower": -10.909090909090908,
+          "deltas": [
+            0.0,
+            0.0,
+            -18.18181818181818,
+            -15.384615384615385,
+            0.0
+          ],
+          "mean": -6.713286713286713,
+          "stable": false
+        }
+      },
+      "selected": null
+    },
+    "mistral02:narrativeqa:256": {
+      "methods": {
+        "learned_and_or_control_anchor25_aux": {
+          "bootstrap_10pct_lower": -5.333333333333334,
+          "deltas": [
+            0.0,
+            0.0,
+            9.615384615384615,
+            -13.333333333333334,
+            0.0
+          ],
+          "mean": -0.7435897435897438,
+          "stable": false
+        },
+        "learned_and_or_control_anchor50_aux": {
+          "bootstrap_10pct_lower": -5.333333333333334,
+          "deltas": [
+            0.0,
+            0.0,
+            24.615384615384617,
+            -13.333333333333334,
+            0.0
+          ],
+          "mean": 2.2564102564102564,
+          "stable": false
+        },
+        "learned_and_or_control_anchor75_aux": {
+          "bootstrap_10pct_lower": -5.333333333333334,
+          "deltas": [
+            0.0,
+            0.0,
+            34.61538461538461,
+            -13.333333333333334,
+            0.0
+          ],
+          "mean": 4.2564102564102555,
+          "stable": false
+        }
+      },
+      "selected": null
+    },
+    "mistral02:narrativeqa:512": {
+      "methods": {
+        "learned_and_or_control_anchor25_aux": {
+          "bootstrap_10pct_lower": -23.076923076923077,
+          "deltas": [
+            0.0,
+            0.0,
+            -50.0,
+            -15.384615384615385,
+            0.0
+          ],
+          "mean": -13.076923076923077,
+          "stable": false
+        },
+        "learned_and_or_control_anchor50_aux": {
+          "bootstrap_10pct_lower": -23.076923076923077,
+          "deltas": [
+            0.0,
+            0.0,
+            -50.0,
+            -15.384615384615385,
+            0.0
+          ],
+          "mean": -13.076923076923077,
+          "stable": false
+        },
+        "learned_and_or_control_anchor75_aux": {
+          "bootstrap_10pct_lower": -23.076923076923077,
+          "deltas": [
+            0.0,
+            0.0,
+            -50.0,
+            -15.384615384615385,
+            0.0
+          ],
+          "mean": -13.076923076923077,
+          "stable": false
+        }
+      },
+      "selected": null
+    },
+    "mistral02:narrativeqa:64": {
+      "methods": {
+        "learned_and_or_control_anchor25_aux": {
+          "bootstrap_10pct_lower": -7.487179487179487,
+          "deltas": [
+            0.0,
+            0.0,
+            -6.666666666666667,
+            -15.384615384615385,
+            0.0
+          ],
+          "mean": -4.410256410256411,
+          "stable": false
+        },
+        "learned_and_or_control_anchor50_aux": {
+          "bootstrap_10pct_lower": -7.487179487179487,
+          "deltas": [
+            0.0,
+            0.0,
+            -6.666666666666667,
+            -15.384615384615385,
+            0.0
+          ],
+          "mean": -4.410256410256411,
+          "stable": false
+        },
+        "learned_and_or_control_anchor75_aux": {
+          "bootstrap_10pct_lower": -7.487179487179487,
+          "deltas": [
+            0.0,
+            0.0,
+            -6.666666666666667,
+            -15.384615384615385,
+            0.0
+          ],
+          "mean": -4.410256410256411,
+          "stable": false
+        }
+      },
+      "selected": null
+    },
+    "mistral02:qasper:128": {
+      "methods": {
+        "learned_and_or_control_anchor25_aux": {
+          "bootstrap_10pct_lower": -0.35225377938724334,
+          "deltas": [
+            0.0,
+            1.390374331550802,
+            3.418803418803419,
+            -0.029389074611513473,
+            -1.6731016731016761
+          ],
+          "mean": 0.6213374005282063,
+          "stable": false
+        },
+        "learned_and_or_control_anchor50_aux": {
+          "bootstrap_10pct_lower": -1.4766334712695102,
+          "deltas": [
+            0.0,
+            1.7125837676842892,
+            4.0723981900452495,
+            -0.03651767455448429,
+            -4.529616724738678
+          ],
+          "mean": 0.2437695116872753,
+          "stable": false
+        },
+        "learned_and_or_control_anchor75_aux": {
+          "bootstrap_10pct_lower": -2.145490551146694,
+          "deltas": [
+            0.0,
+            1.7125837676842892,
+            -1.6317016317016313,
+            -0.03651767455448429,
+            -4.529616724738678
+          ],
+          "mean": -0.8970504526621008,
+          "stable": false
+        }
+      },
+      "selected": null
+    },
+    "mistral02:qasper:256": {
+      "methods": {
+        "learned_and_or_control_anchor25_aux": {
+          "bootstrap_10pct_lower": -3.1140856416930056,
+          "deltas": [
+            -6.926406926406925,
+            13.92931392931393,
+            -2.8142589118198864,
+            9.884117246080436,
+            -6.363636363636366
+          ],
+          "mean": 1.5418257947062375,
+          "stable": false
+        },
+        "learned_and_or_control_anchor50_aux": {
+          "bootstrap_10pct_lower": -6.038738248920528,
+          "deltas": [
+            -3.6414565826330523,
+            20.879120879120883,
+            -7.692307692307692,
+            -1.2269938650306749,
+            -8.816466552315612
+          ],
+          "mean": -0.09962076263322954,
+          "stable": false
+        },
+        "learned_and_or_control_anchor75_aux": {
+          "bootstrap_10pct_lower": -3.370430912318505,
+          "deltas": [
+            -3.4632034632034623,
+            5.351170568561874,
+            -7.692307692307692,
+            15.166448757920145,
+            -3.355506282335552
+          ],
+          "mean": 1.2013203777270625,
+          "stable": false
+        }
+      },
+      "selected": null
+    },
+    "mistral02:qasper:512": {
+      "methods": {
+        "learned_and_or_control_anchor25_aux": {
+          "bootstrap_10pct_lower": -1.979515602421224,
+          "deltas": [
+            -3.0595813204508846,
+            42.42424242424242,
+            -1.090909090909091,
+            11.873015873015868,
+            -8.810051736881006
+          ],
+          "mean": 8.267343229803462,
+          "stable": false
+        },
+        "learned_and_or_control_anchor50_aux": {
+          "bootstrap_10pct_lower": -2.0151061695070185,
+          "deltas": [
+            -4.9683830171635055,
+            42.42424242424242,
+            5.401844532279313,
+            7.1111111111111125,
+            -8.810051736881006
+          ],
+          "mean": 8.231752662717668,
+          "stable": false
+        },
+        "learned_and_or_control_anchor75_aux": {
+          "bootstrap_10pct_lower": 4.106561493795537,
+          "deltas": [
+            -2.4074074074074066,
+            40.0,
+            24.242424242424246,
+            17.276595744680854,
+            -9.205569205569208
+          ],
+          "mean": 13.981208674825698,
+          "stable": true
+        }
+      },
+      "selected": "learned_and_or_control_anchor75_aux"
+    },
+    "mistral02:qasper:64": {
+      "methods": {
+        "learned_and_or_control_anchor25_aux": {
+          "bootstrap_10pct_lower": -2.680556556021579,
+          "deltas": [
+            0.0,
+            -5.88235294117647,
+            -1.7500000000000002,
+            0.111923102245046,
+            3.085714285714289
+          ],
+          "mean": -0.886943110643427,
+          "stable": false
+        },
+        "learned_and_or_control_anchor50_aux": {
+          "bootstrap_10pct_lower": -2.680556556021579,
+          "deltas": [
+            0.0,
+            -5.88235294117647,
+            -1.7500000000000002,
+            0.111923102245046,
+            3.085714285714289
+          ],
+          "mean": -0.886943110643427,
+          "stable": false
+        },
+        "learned_and_or_control_anchor75_aux": {
+          "bootstrap_10pct_lower": -2.686226293796207,
+          "deltas": [
+            0.0,
+            -5.88235294117647,
+            -1.7500000000000002,
+            0.0835744133719063,
+            3.085714285714289
+          ],
+          "mean": -0.892612848418055,
+          "stable": false
+        }
+      },
+      "selected": null
+    }
+  },
+  "rows": 180,
+  "selected_summary": {
+    "overall_delta": 4.978105456959507,
+    "route_coverage": 0.3333333333333333,
+    "selected": [
+      [
+        "narrativeqa",
+        64,
+        null,
+        0
+      ],
+      [
+        "narrativeqa",
+        128,
+        null,
+        0
+      ],
+      [
+        "narrativeqa",
+        256,
+        null,
+        0
+      ],
+      [
+        "narrativeqa",
+        512,
+        null,
+        0
+      ],
+      [
+        "qasper",
+        64,
+        null,
+        0
+      ],
+      [
+        "qasper",
+        128,
+        null,
+        0
+      ],
+      [
+        "qasper",
+        256,
+        null,
+        0
+      ],
+      [
+        "qasper",
+        512,
+        "learned_and_or_control_anchor75_aux",
+        13.981208674825698
+      ],
+      [
+        "hotpotqa",
+        64,
+        "learned_and_or_control_anchor75_aux",
+        0.0
+      ],
+      [
+        "hotpotqa",
+        128,
+        null,
+        0
+      ],
+      [
+        "hotpotqa",
+        256,
+        "learned_and_or_control_anchor75_aux",
+        35.46897546897547
+      ],
+      [
+        "hotpotqa",
+        512,
+        "learned_and_or_control_anchor25_aux",
+        10.287081339712918
+      ]
+    ]
+  },
+  "status": "PASS"
+}

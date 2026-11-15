@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "protocol": "longbench_exact_hashed_verified_prefix_audit_v1",
+  "selection_manifest_sha256": "3f8f96a8c5eda517d69f31c15e816f23fcfcf3c6e703e33f728ef237301d30c3",
+  "runs": [
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/verified_prefix_v7_qwen25_s0_n10",
+      "model": "qwen25",
+      "rows": 1920,
+      "samples_per_task": 10,
+      "configurations_per_sample": 32,
+      "raw_empty_predictions": 0,
+      "whitespace_only_predictions": 0,
+      "max_capacity_excess_tokens": 0.0,
+      "capacity_utilization_min": 0.984375,
+      "capacity_utilization_mean": 0.9990824381510417,
+      "implementation_files_hashed": 9,
+      "scorer_checkpoint_files_hashed": 6
+    }
+  ],
+  "legacy_parity": {
+    "qwen25": {
+      "current_rows": 1920,
+      "legacy_rows_on_allowed_methods": 1920,
+      "shared_rows": 1920,
+      "missing_from_legacy": 0,
+      "legacy_only": 0,
+      "exact_prediction_rows": 1851,
+      "changed_prediction_rows": 69,
+      "exact_score_rows": 1888,
+      "changed_score_rows": 32,
+      "max_absolute_score_delta": 0.3333333333333333,
+      "by_task": {
+        "2wikimqa": {
+          "shared_rows": 320,
+          "mean_new_minus_legacy_score": 0.0,
+          "max_absolute_score_delta": 0.0
+        },
+        "hotpotqa": {
+          "shared_rows": 320,
+          "mean_new_minus_legacy_score": 0.0,
+          "max_absolute_score_delta": 0.0
+        },
+        "multifieldqa_en": {
+          "shared_rows": 320,
+          "mean_new_minus_legacy_score": 0.0007640136129737588,
+          "max_absolute_score_delta": 0.3333333333333333
+        },
+        "musique": {
+          "shared_rows": 320,
+          "mean_new_minus_legacy_score": 0.0,
+          "max_absolute_score_delta": 0.0
+        },
+        "narrativeqa": {
+          "shared_rows": 320,
+          "mean_new_minus_legacy_score": -0.000595317314567691,
+          "max_absolute_score_delta": 0.13333333333333333
+        },
+        "qasper": {
+          "shared_rows": 320,
+          "mean_new_minus_legacy_score": -0.0012552381008611303,
+          "max_absolute_score_delta": 0.18181818181818182
+        }
+      },
+      "by_method": {
+        "chunkkv_snapkv": {
+          "shared_rows": 240,
+          "mean_new_minus_legacy_score": -0.001448722403273417,
+          "max_absolute_score_delta": 0.3333333333333333,
+          "changed_score_rows": 32
+        },
+        "learned_and_or_graph_aux": {
+          "shared_rows": 240,
+          "mean_new_minus_legacy_score": 0.0,
+          "max_absolute_score_delta": 0.0,
+          "changed_score_rows": 0
+        },
+        "learned_and_or_mixed_aux": {
+          "shared_rows": 240,
+          "mean_new_minus_legacy_score": 0.0,
+          "max_absolute_score_delta": 0.0,
+          "changed_score_rows": 0
+        },
+        "learned_and_or_recent_aux": {
+          "shared_rows": 240,
+          "mean_new_minus_legacy_score": 0.0,
+          "max_absolute_score_delta": 0.0,
+          "changed_score_rows": 0
+        },
+        "learned_and_or_stratified_aux": {
+          "shared_rows": 240,
+          "mean_new_minus_legacy_score": 0.0,
+          "max_absolute_score_delta": 0.0,
+          "changed_score_rows": 0
+        },
+        "pyramidkv": {
+          "shared_rows": 240,
+          "mean_new_minus_legacy_score": 0.0,
+          "max_absolute_score_delta": 0.0,
+          "changed_score_rows": 0
+        },
+        "snapkv": {
+          "shared_rows": 240,
+          "mean_new_minus_legacy_score": 0.0,
+          "max_absolute_score_delta": 0.0,
+          "changed_score_rows": 0
+        },
+        "streamingllm": {
+          "shared_rows": 240,
+          "mean_new_minus_legacy_score": 0.0,
+          "max_absolute_score_delta": 0.0,
+          "changed_score_rows": 0
+        }
+      }
+    }
+  },
+  "checks": [
+    "exact frozen offsets 0-9 and split-tokenization contract",
+    "complete model-specific method/capacity crossings",
+    "independent row-level QA-F1 and aggregate recomputation",
+    "capacity, retained-ratio, and KV-byte accounting",
+    "coverage partition accounting",
+    "implementation and scorer checkpoint hashes",
+    "row-keyed legacy prediction and score parity quantification"
+  ]
+}

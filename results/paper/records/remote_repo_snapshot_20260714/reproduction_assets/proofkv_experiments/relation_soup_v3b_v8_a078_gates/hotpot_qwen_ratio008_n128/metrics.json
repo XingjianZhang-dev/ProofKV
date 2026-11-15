@@ -1,0 +1,26 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "dataset": "hotpotqa",
+  "split": "validation",
+  "data_file": null,
+  "max_samples": 128,
+  "budget": 0.08,
+  "budget_tokens": null,
+  "methods": [
+    "learned_topk_paths"
+  ],
+  "scorer_kind": "cross",
+  "repair_halo": 0,
+  "records": [
+    {
+      "method": "learned_topk_paths",
+      "n": 128,
+      "answer_em": 0.4375,
+      "answer_f1": 0.563610347985348,
+      "answer_contains": 0.4765625,
+      "gold_token_recall": 0.5759348713574928,
+      "retained_ratio": 0.07980801262046756,
+      "seconds": 0.5021299158688635
+    }
+  ]
+}

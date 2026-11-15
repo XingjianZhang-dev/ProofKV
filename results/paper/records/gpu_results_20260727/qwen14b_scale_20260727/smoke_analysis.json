@@ -1,0 +1,58 @@
+{
+  "complete": false,
+  "counts": {
+    "full": 1,
+    "learned_and_or_control_anchor75_aux": 3,
+    "learned_root_topk": 3
+  },
+  "endpoints": [
+    {
+      "ci95": [
+        19.2973692973693,
+        19.2973692973693
+      ],
+      "cluster_sizes": {
+        "hotpotqa:128": 1,
+        "hotpotqa:256": 1,
+        "hotpotqa:512": 1
+      },
+      "clusters": 3,
+      "delta_f1": 19.2973692973693,
+      "holm_p": 1.0,
+      "left": "learned_and_or_control_anchor75_aux",
+      "p_value": 1.0,
+      "pairs": 3,
+      "right": "learned_root_topk"
+    }
+  ],
+  "exact_token_difference": {
+    "max_abs": null,
+    "mean": null,
+    "pairs": 0
+  },
+  "expected_compact_rows_per_method": 15,
+  "expected_full_rows": 5,
+  "f1_by_method_capacity": {
+    "full": {
+      "full": 0.0
+    },
+    "learned_and_or_control_anchor75_aux": {
+      "128": 0.0,
+      "256": 100.0,
+      "512": 0.0
+    },
+    "learned_root_topk": {
+      "128": 27.27272727272727,
+      "256": 7.142857142857142,
+      "512": 7.692307692307692
+    }
+  },
+  "proof_512_vs_full": {
+    "absolute_delta": 0.0,
+    "full_f1": 0.0,
+    "pairs": 1,
+    "proof_f1": 0.0,
+    "retention_percent": null
+  },
+  "status": "FAIL"
+}

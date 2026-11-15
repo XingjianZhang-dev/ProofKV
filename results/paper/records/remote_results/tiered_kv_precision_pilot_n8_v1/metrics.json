@@ -1,0 +1,52 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "scorer_checkpoint": "/workspace/compresskv_experiments/relation_scorer_soup_v3b_v8_a090/checkpoint",
+  "dataset_fingerprint": "6d38dc5e932fe842",
+  "max_samples": 8,
+  "target_prompt_tokens": 8000,
+  "budget": 0.08,
+  "max_new_tokens": 24,
+  "precisions": [
+    "int8",
+    "int4"
+  ],
+  "seed": 17,
+  "packing_seed": 911,
+  "compact_prefill_chunk_size": 512,
+  "summaries": [
+    {
+      "precision": "int8",
+      "n": 8,
+      "mean_storage_reduction_factor": 1.4255266097955785,
+      "exact_generation_match_rate": 1.0,
+      "baseline_answer_f1": 0.6125,
+      "tiered_answer_f1": 0.6125,
+      "answer_f1_delta": 0.0,
+      "mean_materialize_seconds": 0.008372217533178627,
+      "mean_decode_seconds": 0.056811356131220236,
+      "gates": {
+        "mean_storage_reduction_at_least_1_2": true,
+        "answer_f1_drop_at_most_0_02": true,
+        "exact_generation_rate_at_least_0_875": true
+      },
+      "passed": true
+    },
+    {
+      "precision": "int4",
+      "n": 8,
+      "mean_storage_reduction_factor": 1.8374170233868787,
+      "exact_generation_match_rate": 0.375,
+      "baseline_answer_f1": 0.6125,
+      "tiered_answer_f1": 0.33125,
+      "answer_f1_delta": -0.28125000000000006,
+      "mean_materialize_seconds": 0.0378503120446112,
+      "mean_decode_seconds": 0.1191367614956107,
+      "gates": {
+        "mean_storage_reduction_at_least_1_2": true,
+        "answer_f1_drop_at_most_0_02": false,
+        "exact_generation_rate_at_least_0_875": false
+      },
+      "passed": false
+    }
+  ]
+}

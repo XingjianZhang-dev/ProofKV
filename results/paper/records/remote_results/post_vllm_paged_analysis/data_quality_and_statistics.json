@@ -1,0 +1,66 @@
+{
+  "protocol": {
+    "expected_request_rows": 736,
+    "expected_batch_rows": 43,
+    "bootstrap_draws": 200000,
+    "seed": 719
+  },
+  "issues": [],
+  "integrity_passed": true,
+  "runner_scientific_gate_passed": true,
+  "accuracy_statistics": {
+    "route_minus_full_f1": {
+      "n": 32,
+      "mean": 0.2456845238095238,
+      "median": 0.0,
+      "ci95": [
+        0.10520833333333333,
+        0.3956845238095238
+      ],
+      "bootstrap_draws": 200000,
+      "seed": 719
+    },
+    "route_minus_topk_f1": {
+      "n": 32,
+      "mean": 0.0,
+      "median": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_draws": 200000,
+      "seed": 720
+    },
+    "route_topk_exact_generation_match_rate": 1.0
+  },
+  "throughput_statistics": {
+    "throughput_out256": {
+      "paired_full_wall_over_route_wall": {
+        "n": 10,
+        "mean": 3.3859574090529536,
+        "median": 3.4040071893382056,
+        "ci95": [
+          3.3502716879403573,
+          3.417603615546002
+        ],
+        "bootstrap_draws": 200000,
+        "seed": 729
+      },
+      "full_over_route_mean_active_paged_bytes": 15.29182156133829
+    },
+    "throughput_out1024": {
+      "paired_full_wall_over_route_wall": {
+        "n": 10,
+        "mean": 1.7281360070860372,
+        "median": 1.7292803347021088,
+        "ci95": [
+          1.725840211616613,
+          1.7302426205592685
+        ],
+        "bootstrap_draws": 200000,
+        "seed": 739
+      },
+      "full_over_route_mean_active_paged_bytes": 6.887442572741194
+    }
+  }
+}

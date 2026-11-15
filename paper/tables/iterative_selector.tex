@@ -1,0 +1,12 @@
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+ & \multicolumn{2}{c}{All} & \multicolumn{3}{c}{PCR@512 by depth} \\
+\cmidrule(lr){2-3}\cmidrule(l){4-6}
+Selector & @256 & @512 & 2 hops & 3 hops & 4 hops \\
+\midrule
+Same scorer, independent & 9.2 & 27.0 & 40.9 & 14.3 & 9.8 \\
+Iterative retrieval & 15.8 & 45.0 & 62.2 & 32.5 & 18.5 \\
+\proofkv{} chains & 16.8 & 46.0 & 61.0 & 35.1 & 22.8 \\
+Oracle & 24.8 & 79.4 & 95.7 & 70.8 & 48.9 \\
+\bottomrule
+\end{tabular}

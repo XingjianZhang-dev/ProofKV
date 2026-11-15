@@ -1,0 +1,93 @@
+{
+  "context_tokens": 11058,
+  "queries": 16,
+  "budget_ratio": 0.08,
+  "index_build_ms": 675.8354790508747,
+  "offline_embedding_ms": 0.0,
+  "learned_scorer": true,
+  "cached_scorer": false,
+  "correlation_aware": false,
+  "selector": "and_or",
+  "candidate_strategy": "frontier",
+  "physical": false,
+  "records": [
+    {
+      "queries": 1,
+      "index_build_ms": 675.8354790508747,
+      "offline_embedding_ms": 0.0,
+      "amortized_offline_index_ms": 675.8354790508747,
+      "pcr": 1.0,
+      "mean_overlay_ms": 3825.060971081257,
+      "mean_pairwise_overlay_jaccard": 0.0,
+      "union_context_ratio": 0.03237475131126786,
+      "mean_incremental_context_tokens": 358.0,
+      "amortized_full_seconds": null,
+      "amortized_route_seconds": null,
+      "full_accuracy": null,
+      "route_accuracy": null
+    },
+    {
+      "queries": 2,
+      "index_build_ms": 675.8354790508747,
+      "offline_embedding_ms": 0.0,
+      "amortized_offline_index_ms": 337.91773952543736,
+      "pcr": 0.5,
+      "mean_overlay_ms": 4031.502285040915,
+      "mean_pairwise_overlay_jaccard": 0.31542461005199307,
+      "union_context_ratio": 0.05217941761620546,
+      "mean_incremental_context_tokens": 288.5,
+      "amortized_full_seconds": null,
+      "amortized_route_seconds": null,
+      "full_accuracy": null,
+      "route_accuracy": null
+    },
+    {
+      "queries": 4,
+      "index_build_ms": 675.8354790508747,
+      "offline_embedding_ms": 0.0,
+      "amortized_offline_index_ms": 168.95886976271868,
+      "pcr": 0.5,
+      "mean_overlay_ms": 4106.065919739194,
+      "mean_pairwise_overlay_jaccard": 0.3163079269548656,
+      "union_context_ratio": 0.0847350334599385,
+      "mean_incremental_context_tokens": 234.25,
+      "amortized_full_seconds": null,
+      "amortized_route_seconds": null,
+      "full_accuracy": null,
+      "route_accuracy": null
+    },
+    {
+      "queries": 8,
+      "index_build_ms": 675.8354790508747,
+      "offline_embedding_ms": 0.0,
+      "amortized_offline_index_ms": 84.47943488135934,
+      "pcr": 0.5,
+      "mean_overlay_ms": 4113.492047879845,
+      "mean_pairwise_overlay_jaccard": 0.2860578588489516,
+      "union_context_ratio": 0.12090793995297522,
+      "mean_incremental_context_tokens": 167.125,
+      "amortized_full_seconds": null,
+      "amortized_route_seconds": null,
+      "full_accuracy": null,
+      "route_accuracy": null
+    },
+    {
+      "queries": 16,
+      "index_build_ms": 675.8354790508747,
+      "offline_embedding_ms": 0.0,
+      "amortized_offline_index_ms": 42.23971744067967,
+      "pcr": 0.3125,
+      "mean_overlay_ms": 4274.594930306193,
+      "mean_pairwise_overlay_jaccard": 0.3509056592153827,
+      "union_context_ratio": 0.14215952251763428,
+      "mean_incremental_context_tokens": 98.25,
+      "amortized_full_seconds": null,
+      "amortized_route_seconds": null,
+      "full_accuracy": null,
+      "route_accuracy": null
+    }
+  ],
+  "notes": {
+    "kvzip": "formal KVzip comparison requires its official implementation and is not claimed by this run"
+  }
+}

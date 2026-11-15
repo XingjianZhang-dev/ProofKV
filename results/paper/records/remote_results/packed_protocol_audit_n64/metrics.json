@@ -1,0 +1,1960 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "dataset_fingerprint": "6d38dc5e932fe842",
+  "max_samples": 64,
+  "seed": 17,
+  "packing_seed": 911,
+  "minimum_utilization": 0.9,
+  "issues": [],
+  "summaries": [
+    {
+      "target_prompt_tokens": 8000,
+      "n": 64,
+      "utilization_min": 0.992,
+      "utilization_median": 0.9955625,
+      "utilization_max": 0.998,
+      "added_pages_median": 40.0,
+      "samples_with_issues": 0
+    },
+    {
+      "target_prompt_tokens": 16000,
+      "n": 64,
+      "utilization_min": 0.996,
+      "utilization_median": 0.9980625,
+      "utilization_max": 0.999,
+      "added_pages_median": 90.0,
+      "samples_with_issues": 0
+    },
+    {
+      "target_prompt_tokens": 32000,
+      "n": 64,
+      "utilization_min": 0.99803125,
+      "utilization_median": 0.99890625,
+      "utilization_max": 0.9995,
+      "added_pages_median": 190.0,
+      "samples_with_issues": 0
+    }
+  ],
+  "records": [
+    {
+      "id": "5abd0b685542996583600501",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7965,
+      "utilization": 0.995625,
+      "base_prompt_tokens": 1531,
+      "added_pages": 45,
+      "answer_leak_candidates_skipped": 3,
+      "issues": []
+    },
+    {
+      "id": "5ac3c1585542995ef918c21d",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7975,
+      "utilization": 0.996875,
+      "base_prompt_tokens": 1564,
+      "added_pages": 37,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5add7ce55542992ae4cec585",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7981,
+      "utilization": 0.997625,
+      "base_prompt_tokens": 1627,
+      "added_pages": 43,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a88981c554299206df2b307",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7956,
+      "utilization": 0.9945,
+      "base_prompt_tokens": 1610,
+      "added_pages": 36,
+      "answer_leak_candidates_skipped": 2,
+      "issues": []
+    },
+    {
+      "id": "5ae65e6a5542996d980e7b1d",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7964,
+      "utilization": 0.9955,
+      "base_prompt_tokens": 1276,
+      "added_pages": 47,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab83bd055429919ba4e2279",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7951,
+      "utilization": 0.993875,
+      "base_prompt_tokens": 1716,
+      "added_pages": 35,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8f7a135542992414482adc",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7948,
+      "utilization": 0.9935,
+      "base_prompt_tokens": 1556,
+      "added_pages": 44,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abface75542990832d3a196",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7971,
+      "utilization": 0.996375,
+      "base_prompt_tokens": 2094,
+      "added_pages": 29,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab41f6b5542991751b4d671",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7978,
+      "utilization": 0.99725,
+      "base_prompt_tokens": 2118,
+      "added_pages": 36,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a713ea95542994082a3e6e4",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7962,
+      "utilization": 0.99525,
+      "base_prompt_tokens": 1828,
+      "added_pages": 42,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a73977d554299623ed4ac08",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7937,
+      "utilization": 0.992125,
+      "base_prompt_tokens": 1994,
+      "added_pages": 39,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a7b1c6b55429931da12c9ca",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7942,
+      "utilization": 0.99275,
+      "base_prompt_tokens": 1529,
+      "added_pages": 35,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8f9dca55429918e830d295",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7965,
+      "utilization": 0.995625,
+      "base_prompt_tokens": 1545,
+      "added_pages": 40,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae679ec5542996d980e7b75",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7975,
+      "utilization": 0.996875,
+      "base_prompt_tokens": 1694,
+      "added_pages": 36,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a848a685542997b5ce3feae",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7983,
+      "utilization": 0.997875,
+      "base_prompt_tokens": 1948,
+      "added_pages": 45,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a9042825542990a984935d6",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7970,
+      "utilization": 0.99625,
+      "base_prompt_tokens": 3268,
+      "added_pages": 31,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab3e577554299233954ffe3",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7972,
+      "utilization": 0.9965,
+      "base_prompt_tokens": 1114,
+      "added_pages": 39,
+      "answer_leak_candidates_skipped": 1,
+      "issues": []
+    },
+    {
+      "id": "5abe3e545542993f32c2a0c7",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7951,
+      "utilization": 0.993875,
+      "base_prompt_tokens": 1393,
+      "added_pages": 41,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae212c9554299495565d9de",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7961,
+      "utilization": 0.995125,
+      "base_prompt_tokens": 1931,
+      "added_pages": 37,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab480715542991751b4d798",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7965,
+      "utilization": 0.995625,
+      "base_prompt_tokens": 1714,
+      "added_pages": 38,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5adc0e395542996e685252c1",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7955,
+      "utilization": 0.994375,
+      "base_prompt_tokens": 1555,
+      "added_pages": 43,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab3f8c25542992ade7c6f02",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7966,
+      "utilization": 0.99575,
+      "base_prompt_tokens": 2054,
+      "added_pages": 38,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a7ca55b55429907fabeefe0",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7969,
+      "utilization": 0.996125,
+      "base_prompt_tokens": 2341,
+      "added_pages": 39,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a7265a95542992359bc307a",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7981,
+      "utilization": 0.997625,
+      "base_prompt_tokens": 1742,
+      "added_pages": 34,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a905f2a55429933b8a204fb",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7974,
+      "utilization": 0.99675,
+      "base_prompt_tokens": 624,
+      "added_pages": 47,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab4eecb55429942dd415faa",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7966,
+      "utilization": 0.99575,
+      "base_prompt_tokens": 966,
+      "added_pages": 43,
+      "answer_leak_candidates_skipped": 3,
+      "issues": []
+    },
+    {
+      "id": "5a71231a5542994082a3e5c4",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7950,
+      "utilization": 0.99375,
+      "base_prompt_tokens": 1464,
+      "added_pages": 38,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a72a9ab5542992359bc315a",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7957,
+      "utilization": 0.994625,
+      "base_prompt_tokens": 1589,
+      "added_pages": 43,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8baf635542996e8ac889c6",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7950,
+      "utilization": 0.99375,
+      "base_prompt_tokens": 1517,
+      "added_pages": 40,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8af11a55429950cd6afc21",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7965,
+      "utilization": 0.995625,
+      "base_prompt_tokens": 2401,
+      "added_pages": 35,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8c42d7554299240d9c20f5",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7982,
+      "utilization": 0.99775,
+      "base_prompt_tokens": 1635,
+      "added_pages": 44,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae1367055429901ffe4adf3",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7980,
+      "utilization": 0.9975,
+      "base_prompt_tokens": 1908,
+      "added_pages": 37,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a739d8755429978a71e9048",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7962,
+      "utilization": 0.99525,
+      "base_prompt_tokens": 1821,
+      "added_pages": 40,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8ad59355429950cd6afba4",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7983,
+      "utilization": 0.997875,
+      "base_prompt_tokens": 1495,
+      "added_pages": 39,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab6bb575542995eadef0088",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7942,
+      "utilization": 0.99275,
+      "base_prompt_tokens": 1275,
+      "added_pages": 39,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae765185542995703ce8c0f",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7940,
+      "utilization": 0.9925,
+      "base_prompt_tokens": 1009,
+      "added_pages": 44,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ac34ed0554299741d48a248",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7952,
+      "utilization": 0.994,
+      "base_prompt_tokens": 2245,
+      "added_pages": 39,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5adf4da15542995534e8c780",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7983,
+      "utilization": 0.997875,
+      "base_prompt_tokens": 1328,
+      "added_pages": 40,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae3599b5542992e3233c39d",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7984,
+      "utilization": 0.998,
+      "base_prompt_tokens": 1676,
+      "added_pages": 37,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abc23c45542993a06baf896",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7981,
+      "utilization": 0.997625,
+      "base_prompt_tokens": 2258,
+      "added_pages": 45,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abd0077554299700f9d7954",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7964,
+      "utilization": 0.9955,
+      "base_prompt_tokens": 1615,
+      "added_pages": 38,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a77519c55429972597f14fa",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7957,
+      "utilization": 0.994625,
+      "base_prompt_tokens": 2165,
+      "added_pages": 35,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8809d755429938390d3ed6",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7979,
+      "utilization": 0.997375,
+      "base_prompt_tokens": 1349,
+      "added_pages": 46,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae1894f5542997b2ef7d1f4",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7962,
+      "utilization": 0.99525,
+      "base_prompt_tokens": 1136,
+      "added_pages": 42,
+      "answer_leak_candidates_skipped": 1,
+      "issues": []
+    },
+    {
+      "id": "5a8e69565542990e94052afb",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7955,
+      "utilization": 0.994375,
+      "base_prompt_tokens": 2021,
+      "added_pages": 45,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a7fa97d5542994857a767a9",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7969,
+      "utilization": 0.996125,
+      "base_prompt_tokens": 1778,
+      "added_pages": 43,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a72a0be5542992359bc3143",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7949,
+      "utilization": 0.993625,
+      "base_prompt_tokens": 1731,
+      "added_pages": 37,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8ba67755429971feec4748",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7955,
+      "utilization": 0.994375,
+      "base_prompt_tokens": 1492,
+      "added_pages": 44,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abc1ca15542993a06baf88d",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7961,
+      "utilization": 0.995125,
+      "base_prompt_tokens": 1897,
+      "added_pages": 33,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a77a7695542997042120ac4",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7939,
+      "utilization": 0.992375,
+      "base_prompt_tokens": 1604,
+      "added_pages": 45,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abb2a5f5542996cc5e49fca",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7979,
+      "utilization": 0.997375,
+      "base_prompt_tokens": 1671,
+      "added_pages": 44,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abd9c2355429924427fd06c",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7951,
+      "utilization": 0.993875,
+      "base_prompt_tokens": 1756,
+      "added_pages": 42,
+      "answer_leak_candidates_skipped": 2,
+      "issues": []
+    },
+    {
+      "id": "5ab3b7c555429969a97a8190",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7984,
+      "utilization": 0.998,
+      "base_prompt_tokens": 1655,
+      "added_pages": 40,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8078e95542992bc0c4a72c",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7939,
+      "utilization": 0.992375,
+      "base_prompt_tokens": 1653,
+      "added_pages": 49,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a71095e5542994082a3e4f3",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7970,
+      "utilization": 0.99625,
+      "base_prompt_tokens": 1596,
+      "added_pages": 44,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5aded04755429975fa854fa7",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7965,
+      "utilization": 0.995625,
+      "base_prompt_tokens": 2068,
+      "added_pages": 37,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a88d7fc5542993b751ca879",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7942,
+      "utilization": 0.99275,
+      "base_prompt_tokens": 932,
+      "added_pages": 47,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a80e4b255429938b6142239",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7951,
+      "utilization": 0.993875,
+      "base_prompt_tokens": 1888,
+      "added_pages": 42,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8d50fb55429941ae14dfa2",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7952,
+      "utilization": 0.994,
+      "base_prompt_tokens": 1174,
+      "added_pages": 45,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae114f155429901ffe4ad5c",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7965,
+      "utilization": 0.995625,
+      "base_prompt_tokens": 1243,
+      "added_pages": 48,
+      "answer_leak_candidates_skipped": 2,
+      "issues": []
+    },
+    {
+      "id": "5a73672b5542991f29ee2de7",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7980,
+      "utilization": 0.9975,
+      "base_prompt_tokens": 1947,
+      "added_pages": 33,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ac18baa5542991316484b33",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7936,
+      "utilization": 0.992,
+      "base_prompt_tokens": 1213,
+      "added_pages": 40,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a88d745554299206df2b378",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7956,
+      "utilization": 0.9945,
+      "base_prompt_tokens": 1082,
+      "added_pages": 34,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab7fa7b5542992aa3b8c897",
+      "target_prompt_tokens": 8000,
+      "actual_prompt_tokens": 7969,
+      "utilization": 0.996125,
+      "base_prompt_tokens": 1528,
+      "added_pages": 36,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abd0b685542996583600501",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15941,
+      "utilization": 0.9963125,
+      "base_prompt_tokens": 1531,
+      "added_pages": 90,
+      "answer_leak_candidates_skipped": 3,
+      "issues": []
+    },
+    {
+      "id": "5ac3c1585542995ef918c21d",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15975,
+      "utilization": 0.9984375,
+      "base_prompt_tokens": 1564,
+      "added_pages": 88,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5add7ce55542992ae4cec585",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15939,
+      "utilization": 0.9961875,
+      "base_prompt_tokens": 1627,
+      "added_pages": 98,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a88981c554299206df2b307",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15981,
+      "utilization": 0.9988125,
+      "base_prompt_tokens": 1610,
+      "added_pages": 89,
+      "answer_leak_candidates_skipped": 4,
+      "issues": []
+    },
+    {
+      "id": "5ae65e6a5542996d980e7b1d",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15983,
+      "utilization": 0.9989375,
+      "base_prompt_tokens": 1276,
+      "added_pages": 100,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab83bd055429919ba4e2279",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15945,
+      "utilization": 0.9965625,
+      "base_prompt_tokens": 1716,
+      "added_pages": 90,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8f7a135542992414482adc",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15973,
+      "utilization": 0.9983125,
+      "base_prompt_tokens": 1556,
+      "added_pages": 100,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abface75542990832d3a196",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15970,
+      "utilization": 0.998125,
+      "base_prompt_tokens": 2094,
+      "added_pages": 77,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab41f6b5542991751b4d671",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15955,
+      "utilization": 0.9971875,
+      "base_prompt_tokens": 2118,
+      "added_pages": 87,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a713ea95542994082a3e6e4",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15960,
+      "utilization": 0.9975,
+      "base_prompt_tokens": 1828,
+      "added_pages": 90,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a73977d554299623ed4ac08",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15974,
+      "utilization": 0.998375,
+      "base_prompt_tokens": 1994,
+      "added_pages": 90,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a7b1c6b55429931da12c9ca",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15972,
+      "utilization": 0.99825,
+      "base_prompt_tokens": 1529,
+      "added_pages": 86,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8f9dca55429918e830d295",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15978,
+      "utilization": 0.998625,
+      "base_prompt_tokens": 1545,
+      "added_pages": 89,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae679ec5542996d980e7b75",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15961,
+      "utilization": 0.9975625,
+      "base_prompt_tokens": 1694,
+      "added_pages": 85,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a848a685542997b5ce3feae",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15979,
+      "utilization": 0.9986875,
+      "base_prompt_tokens": 1948,
+      "added_pages": 96,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a9042825542990a984935d6",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15979,
+      "utilization": 0.9986875,
+      "base_prompt_tokens": 3268,
+      "added_pages": 76,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab3e577554299233954ffe3",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15952,
+      "utilization": 0.997,
+      "base_prompt_tokens": 1114,
+      "added_pages": 92,
+      "answer_leak_candidates_skipped": 8,
+      "issues": []
+    },
+    {
+      "id": "5abe3e545542993f32c2a0c7",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15982,
+      "utilization": 0.998875,
+      "base_prompt_tokens": 1393,
+      "added_pages": 95,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae212c9554299495565d9de",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15955,
+      "utilization": 0.9971875,
+      "base_prompt_tokens": 1931,
+      "added_pages": 89,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab480715542991751b4d798",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15937,
+      "utilization": 0.9960625,
+      "base_prompt_tokens": 1714,
+      "added_pages": 90,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5adc0e395542996e685252c1",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15977,
+      "utilization": 0.9985625,
+      "base_prompt_tokens": 1555,
+      "added_pages": 92,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab3f8c25542992ade7c6f02",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15984,
+      "utilization": 0.999,
+      "base_prompt_tokens": 2054,
+      "added_pages": 83,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a7ca55b55429907fabeefe0",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15951,
+      "utilization": 0.9969375,
+      "base_prompt_tokens": 2341,
+      "added_pages": 86,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a7265a95542992359bc307a",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15952,
+      "utilization": 0.997,
+      "base_prompt_tokens": 1742,
+      "added_pages": 89,
+      "answer_leak_candidates_skipped": 1,
+      "issues": []
+    },
+    {
+      "id": "5a905f2a55429933b8a204fb",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15936,
+      "utilization": 0.996,
+      "base_prompt_tokens": 624,
+      "added_pages": 99,
+      "answer_leak_candidates_skipped": 1,
+      "issues": []
+    },
+    {
+      "id": "5ab4eecb55429942dd415faa",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15958,
+      "utilization": 0.997375,
+      "base_prompt_tokens": 966,
+      "added_pages": 94,
+      "answer_leak_candidates_skipped": 5,
+      "issues": []
+    },
+    {
+      "id": "5a71231a5542994082a3e5c4",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15978,
+      "utilization": 0.998625,
+      "base_prompt_tokens": 1464,
+      "added_pages": 83,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a72a9ab5542992359bc315a",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15952,
+      "utilization": 0.997,
+      "base_prompt_tokens": 1589,
+      "added_pages": 88,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8baf635542996e8ac889c6",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15969,
+      "utilization": 0.9980625,
+      "base_prompt_tokens": 1517,
+      "added_pages": 100,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8af11a55429950cd6afc21",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15980,
+      "utilization": 0.99875,
+      "base_prompt_tokens": 2401,
+      "added_pages": 88,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8c42d7554299240d9c20f5",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15953,
+      "utilization": 0.9970625,
+      "base_prompt_tokens": 1635,
+      "added_pages": 84,
+      "answer_leak_candidates_skipped": 1,
+      "issues": []
+    },
+    {
+      "id": "5ae1367055429901ffe4adf3",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15980,
+      "utilization": 0.99875,
+      "base_prompt_tokens": 1908,
+      "added_pages": 86,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a739d8755429978a71e9048",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15970,
+      "utilization": 0.998125,
+      "base_prompt_tokens": 1821,
+      "added_pages": 91,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8ad59355429950cd6afba4",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15973,
+      "utilization": 0.9983125,
+      "base_prompt_tokens": 1495,
+      "added_pages": 87,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab6bb575542995eadef0088",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15957,
+      "utilization": 0.9973125,
+      "base_prompt_tokens": 1275,
+      "added_pages": 91,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae765185542995703ce8c0f",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15941,
+      "utilization": 0.9963125,
+      "base_prompt_tokens": 1009,
+      "added_pages": 95,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ac34ed0554299741d48a248",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15960,
+      "utilization": 0.9975,
+      "base_prompt_tokens": 2245,
+      "added_pages": 85,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5adf4da15542995534e8c780",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15960,
+      "utilization": 0.9975,
+      "base_prompt_tokens": 1328,
+      "added_pages": 88,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae3599b5542992e3233c39d",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15956,
+      "utilization": 0.99725,
+      "base_prompt_tokens": 1676,
+      "added_pages": 89,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abc23c45542993a06baf896",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15976,
+      "utilization": 0.9985,
+      "base_prompt_tokens": 2258,
+      "added_pages": 94,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abd0077554299700f9d7954",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15982,
+      "utilization": 0.998875,
+      "base_prompt_tokens": 1615,
+      "added_pages": 91,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a77519c55429972597f14fa",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15964,
+      "utilization": 0.99775,
+      "base_prompt_tokens": 2165,
+      "added_pages": 91,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8809d755429938390d3ed6",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15963,
+      "utilization": 0.9976875,
+      "base_prompt_tokens": 1349,
+      "added_pages": 91,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae1894f5542997b2ef7d1f4",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15979,
+      "utilization": 0.9986875,
+      "base_prompt_tokens": 1136,
+      "added_pages": 90,
+      "answer_leak_candidates_skipped": 1,
+      "issues": []
+    },
+    {
+      "id": "5a8e69565542990e94052afb",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15984,
+      "utilization": 0.999,
+      "base_prompt_tokens": 2021,
+      "added_pages": 94,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a7fa97d5542994857a767a9",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15942,
+      "utilization": 0.996375,
+      "base_prompt_tokens": 1778,
+      "added_pages": 97,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a72a0be5542992359bc3143",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15981,
+      "utilization": 0.9988125,
+      "base_prompt_tokens": 1731,
+      "added_pages": 87,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8ba67755429971feec4748",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15981,
+      "utilization": 0.9988125,
+      "base_prompt_tokens": 1492,
+      "added_pages": 89,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abc1ca15542993a06baf88d",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15982,
+      "utilization": 0.998875,
+      "base_prompt_tokens": 1897,
+      "added_pages": 83,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a77a7695542997042120ac4",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15969,
+      "utilization": 0.9980625,
+      "base_prompt_tokens": 1604,
+      "added_pages": 94,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abb2a5f5542996cc5e49fca",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15966,
+      "utilization": 0.997875,
+      "base_prompt_tokens": 1671,
+      "added_pages": 91,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abd9c2355429924427fd06c",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15963,
+      "utilization": 0.9976875,
+      "base_prompt_tokens": 1756,
+      "added_pages": 89,
+      "answer_leak_candidates_skipped": 2,
+      "issues": []
+    },
+    {
+      "id": "5ab3b7c555429969a97a8190",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15945,
+      "utilization": 0.9965625,
+      "base_prompt_tokens": 1655,
+      "added_pages": 90,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8078e95542992bc0c4a72c",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15975,
+      "utilization": 0.9984375,
+      "base_prompt_tokens": 1653,
+      "added_pages": 99,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a71095e5542994082a3e4f3",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15964,
+      "utilization": 0.99775,
+      "base_prompt_tokens": 1596,
+      "added_pages": 93,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5aded04755429975fa854fa7",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15973,
+      "utilization": 0.9983125,
+      "base_prompt_tokens": 2068,
+      "added_pages": 75,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a88d7fc5542993b751ca879",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15981,
+      "utilization": 0.9988125,
+      "base_prompt_tokens": 932,
+      "added_pages": 99,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a80e4b255429938b6142239",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15966,
+      "utilization": 0.997875,
+      "base_prompt_tokens": 1888,
+      "added_pages": 97,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8d50fb55429941ae14dfa2",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15980,
+      "utilization": 0.99875,
+      "base_prompt_tokens": 1174,
+      "added_pages": 97,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae114f155429901ffe4ad5c",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15968,
+      "utilization": 0.998,
+      "base_prompt_tokens": 1243,
+      "added_pages": 96,
+      "answer_leak_candidates_skipped": 3,
+      "issues": []
+    },
+    {
+      "id": "5a73672b5542991f29ee2de7",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15982,
+      "utilization": 0.998875,
+      "base_prompt_tokens": 1947,
+      "added_pages": 86,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ac18baa5542991316484b33",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15940,
+      "utilization": 0.99625,
+      "base_prompt_tokens": 1213,
+      "added_pages": 90,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a88d745554299206df2b378",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15980,
+      "utilization": 0.99875,
+      "base_prompt_tokens": 1082,
+      "added_pages": 81,
+      "answer_leak_candidates_skipped": 2,
+      "issues": []
+    },
+    {
+      "id": "5ab7fa7b5542992aa3b8c897",
+      "target_prompt_tokens": 16000,
+      "actual_prompt_tokens": 15939,
+      "utilization": 0.9961875,
+      "base_prompt_tokens": 1528,
+      "added_pages": 85,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abd0b685542996583600501",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31977,
+      "utilization": 0.99928125,
+      "base_prompt_tokens": 1531,
+      "added_pages": 190,
+      "answer_leak_candidates_skipped": 4,
+      "issues": []
+    },
+    {
+      "id": "5ac3c1585542995ef918c21d",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31970,
+      "utilization": 0.9990625,
+      "base_prompt_tokens": 1564,
+      "added_pages": 190,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5add7ce55542992ae4cec585",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31970,
+      "utilization": 0.9990625,
+      "base_prompt_tokens": 1627,
+      "added_pages": 198,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a88981c554299206df2b307",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31956,
+      "utilization": 0.998625,
+      "base_prompt_tokens": 1610,
+      "added_pages": 200,
+      "answer_leak_candidates_skipped": 8,
+      "issues": []
+    },
+    {
+      "id": "5ae65e6a5542996d980e7b1d",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31965,
+      "utilization": 0.99890625,
+      "base_prompt_tokens": 1276,
+      "added_pages": 203,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab83bd055429919ba4e2279",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31960,
+      "utilization": 0.99875,
+      "base_prompt_tokens": 1716,
+      "added_pages": 193,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8f7a135542992414482adc",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31981,
+      "utilization": 0.99940625,
+      "base_prompt_tokens": 1556,
+      "added_pages": 199,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abface75542990832d3a196",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31970,
+      "utilization": 0.9990625,
+      "base_prompt_tokens": 2094,
+      "added_pages": 183,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab41f6b5542991751b4d671",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31941,
+      "utilization": 0.99815625,
+      "base_prompt_tokens": 2118,
+      "added_pages": 186,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a713ea95542994082a3e6e4",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31959,
+      "utilization": 0.99871875,
+      "base_prompt_tokens": 1828,
+      "added_pages": 193,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a73977d554299623ed4ac08",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31965,
+      "utilization": 0.99890625,
+      "base_prompt_tokens": 1994,
+      "added_pages": 176,
+      "answer_leak_candidates_skipped": 1,
+      "issues": []
+    },
+    {
+      "id": "5a7b1c6b55429931da12c9ca",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31948,
+      "utilization": 0.998375,
+      "base_prompt_tokens": 1529,
+      "added_pages": 181,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8f9dca55429918e830d295",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31945,
+      "utilization": 0.99828125,
+      "base_prompt_tokens": 1545,
+      "added_pages": 187,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae679ec5542996d980e7b75",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31977,
+      "utilization": 0.99928125,
+      "base_prompt_tokens": 1694,
+      "added_pages": 188,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a848a685542997b5ce3feae",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31977,
+      "utilization": 0.99928125,
+      "base_prompt_tokens": 1948,
+      "added_pages": 198,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a9042825542990a984935d6",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31972,
+      "utilization": 0.999125,
+      "base_prompt_tokens": 3268,
+      "added_pages": 177,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab3e577554299233954ffe3",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31982,
+      "utilization": 0.9994375,
+      "base_prompt_tokens": 1114,
+      "added_pages": 190,
+      "answer_leak_candidates_skipped": 10,
+      "issues": []
+    },
+    {
+      "id": "5abe3e545542993f32c2a0c7",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31970,
+      "utilization": 0.9990625,
+      "base_prompt_tokens": 1393,
+      "added_pages": 205,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae212c9554299495565d9de",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31968,
+      "utilization": 0.999,
+      "base_prompt_tokens": 1931,
+      "added_pages": 190,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab480715542991751b4d798",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31957,
+      "utilization": 0.99865625,
+      "base_prompt_tokens": 1714,
+      "added_pages": 185,
+      "answer_leak_candidates_skipped": 1,
+      "issues": []
+    },
+    {
+      "id": "5adc0e395542996e685252c1",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31959,
+      "utilization": 0.99871875,
+      "base_prompt_tokens": 1555,
+      "added_pages": 199,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab3f8c25542992ade7c6f02",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31979,
+      "utilization": 0.99934375,
+      "base_prompt_tokens": 2054,
+      "added_pages": 181,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a7ca55b55429907fabeefe0",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31974,
+      "utilization": 0.9991875,
+      "base_prompt_tokens": 2341,
+      "added_pages": 178,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a7265a95542992359bc307a",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31962,
+      "utilization": 0.9988125,
+      "base_prompt_tokens": 1742,
+      "added_pages": 189,
+      "answer_leak_candidates_skipped": 2,
+      "issues": []
+    },
+    {
+      "id": "5a905f2a55429933b8a204fb",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31971,
+      "utilization": 0.99909375,
+      "base_prompt_tokens": 624,
+      "added_pages": 199,
+      "answer_leak_candidates_skipped": 5,
+      "issues": []
+    },
+    {
+      "id": "5ab4eecb55429942dd415faa",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31965,
+      "utilization": 0.99890625,
+      "base_prompt_tokens": 966,
+      "added_pages": 206,
+      "answer_leak_candidates_skipped": 8,
+      "issues": []
+    },
+    {
+      "id": "5a71231a5542994082a3e5c4",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31982,
+      "utilization": 0.9994375,
+      "base_prompt_tokens": 1464,
+      "added_pages": 177,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a72a9ab5542992359bc315a",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31967,
+      "utilization": 0.99896875,
+      "base_prompt_tokens": 1589,
+      "added_pages": 192,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8baf635542996e8ac889c6",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31973,
+      "utilization": 0.99915625,
+      "base_prompt_tokens": 1517,
+      "added_pages": 192,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8af11a55429950cd6afc21",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31956,
+      "utilization": 0.998625,
+      "base_prompt_tokens": 2401,
+      "added_pages": 189,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8c42d7554299240d9c20f5",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31952,
+      "utilization": 0.9985,
+      "base_prompt_tokens": 1635,
+      "added_pages": 183,
+      "answer_leak_candidates_skipped": 3,
+      "issues": []
+    },
+    {
+      "id": "5ae1367055429901ffe4adf3",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31984,
+      "utilization": 0.9995,
+      "base_prompt_tokens": 1908,
+      "added_pages": 195,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a739d8755429978a71e9048",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31946,
+      "utilization": 0.9983125,
+      "base_prompt_tokens": 1821,
+      "added_pages": 192,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8ad59355429950cd6afba4",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31955,
+      "utilization": 0.99859375,
+      "base_prompt_tokens": 1495,
+      "added_pages": 180,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ab6bb575542995eadef0088",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31953,
+      "utilization": 0.99853125,
+      "base_prompt_tokens": 1275,
+      "added_pages": 194,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae765185542995703ce8c0f",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31937,
+      "utilization": 0.99803125,
+      "base_prompt_tokens": 1009,
+      "added_pages": 196,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ac34ed0554299741d48a248",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31970,
+      "utilization": 0.9990625,
+      "base_prompt_tokens": 2245,
+      "added_pages": 185,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5adf4da15542995534e8c780",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31954,
+      "utilization": 0.9985625,
+      "base_prompt_tokens": 1328,
+      "added_pages": 196,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae3599b5542992e3233c39d",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31968,
+      "utilization": 0.999,
+      "base_prompt_tokens": 1676,
+      "added_pages": 183,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abc23c45542993a06baf896",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31951,
+      "utilization": 0.99846875,
+      "base_prompt_tokens": 2258,
+      "added_pages": 186,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abd0077554299700f9d7954",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31975,
+      "utilization": 0.99921875,
+      "base_prompt_tokens": 1615,
+      "added_pages": 193,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a77519c55429972597f14fa",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31944,
+      "utilization": 0.99825,
+      "base_prompt_tokens": 2165,
+      "added_pages": 190,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8809d755429938390d3ed6",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31944,
+      "utilization": 0.99825,
+      "base_prompt_tokens": 1349,
+      "added_pages": 183,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae1894f5542997b2ef7d1f4",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31969,
+      "utilization": 0.99903125,
+      "base_prompt_tokens": 1136,
+      "added_pages": 192,
+      "answer_leak_candidates_skipped": 1,
+      "issues": []
+    },
+    {
+      "id": "5a8e69565542990e94052afb",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31979,
+      "utilization": 0.99934375,
+      "base_prompt_tokens": 2021,
+      "added_pages": 201,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a7fa97d5542994857a767a9",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31966,
+      "utilization": 0.9989375,
+      "base_prompt_tokens": 1778,
+      "added_pages": 190,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a72a0be5542992359bc3143",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31947,
+      "utilization": 0.99834375,
+      "base_prompt_tokens": 1731,
+      "added_pages": 194,
+      "answer_leak_candidates_skipped": 1,
+      "issues": []
+    },
+    {
+      "id": "5a8ba67755429971feec4748",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31949,
+      "utilization": 0.99840625,
+      "base_prompt_tokens": 1492,
+      "added_pages": 190,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abc1ca15542993a06baf88d",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31958,
+      "utilization": 0.9986875,
+      "base_prompt_tokens": 1897,
+      "added_pages": 193,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a77a7695542997042120ac4",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31956,
+      "utilization": 0.998625,
+      "base_prompt_tokens": 1604,
+      "added_pages": 180,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abb2a5f5542996cc5e49fca",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31954,
+      "utilization": 0.9985625,
+      "base_prompt_tokens": 1671,
+      "added_pages": 179,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5abd9c2355429924427fd06c",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31948,
+      "utilization": 0.998375,
+      "base_prompt_tokens": 1756,
+      "added_pages": 196,
+      "answer_leak_candidates_skipped": 5,
+      "issues": []
+    },
+    {
+      "id": "5ab3b7c555429969a97a8190",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31977,
+      "utilization": 0.99928125,
+      "base_prompt_tokens": 1655,
+      "added_pages": 195,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8078e95542992bc0c4a72c",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31981,
+      "utilization": 0.99940625,
+      "base_prompt_tokens": 1653,
+      "added_pages": 194,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a71095e5542994082a3e4f3",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31983,
+      "utilization": 0.99946875,
+      "base_prompt_tokens": 1596,
+      "added_pages": 189,
+      "answer_leak_candidates_skipped": 1,
+      "issues": []
+    },
+    {
+      "id": "5aded04755429975fa854fa7",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31956,
+      "utilization": 0.998625,
+      "base_prompt_tokens": 2068,
+      "added_pages": 179,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a88d7fc5542993b751ca879",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31938,
+      "utilization": 0.9980625,
+      "base_prompt_tokens": 932,
+      "added_pages": 182,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a80e4b255429938b6142239",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31949,
+      "utilization": 0.99840625,
+      "base_prompt_tokens": 1888,
+      "added_pages": 191,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a8d50fb55429941ae14dfa2",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31965,
+      "utilization": 0.99890625,
+      "base_prompt_tokens": 1174,
+      "added_pages": 203,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ae114f155429901ffe4ad5c",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31983,
+      "utilization": 0.99946875,
+      "base_prompt_tokens": 1243,
+      "added_pages": 204,
+      "answer_leak_candidates_skipped": 10,
+      "issues": []
+    },
+    {
+      "id": "5a73672b5542991f29ee2de7",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31982,
+      "utilization": 0.9994375,
+      "base_prompt_tokens": 1947,
+      "added_pages": 179,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5ac18baa5542991316484b33",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31953,
+      "utilization": 0.99853125,
+      "base_prompt_tokens": 1213,
+      "added_pages": 198,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    },
+    {
+      "id": "5a88d745554299206df2b378",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31979,
+      "utilization": 0.99934375,
+      "base_prompt_tokens": 1082,
+      "added_pages": 174,
+      "answer_leak_candidates_skipped": 6,
+      "issues": []
+    },
+    {
+      "id": "5ab7fa7b5542992aa3b8c897",
+      "target_prompt_tokens": 32000,
+      "actual_prompt_tokens": 31975,
+      "utilization": 0.99921875,
+      "base_prompt_tokens": 1528,
+      "added_pages": 189,
+      "answer_leak_candidates_skipped": 0,
+      "issues": []
+    }
+  ]
+}

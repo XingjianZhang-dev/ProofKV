@@ -1,0 +1,211 @@
+{
+  "analysis_implementation_sha256": "274898480e084b28d9a400dda946c4cbdd2c58d99a79478cdfd2c8d0d5d7be35",
+  "bootstrap_replicates": 50000,
+  "capacity_family_correction": "Holm",
+  "capacity_inference": [
+    {
+      "bootstrap_95_ci_high": 82.76595744680851,
+      "bootstrap_95_ci_low": 77.4468085106383,
+      "capacity": 128,
+      "comparison": "v10_vs_development_frozen_physical_fallback",
+      "holm_adjusted_p": 7.999840003199936e-05,
+      "model": "qwen25",
+      "paired_task_macro_delta": 80.42553191489361,
+      "pairs": 94,
+      "task_count": 2,
+      "two_sided_sign_flip_p": 1.999960000799984e-05
+    },
+    {
+      "bootstrap_95_ci_high": 42.97872340425532,
+      "bootstrap_95_ci_low": 35.95744680851064,
+      "capacity": 256,
+      "comparison": "v10_vs_development_frozen_physical_fallback",
+      "holm_adjusted_p": 7.999840003199936e-05,
+      "model": "qwen25",
+      "paired_task_macro_delta": 39.57446808510638,
+      "pairs": 94,
+      "task_count": 2,
+      "two_sided_sign_flip_p": 1.999960000799984e-05
+    },
+    {
+      "bootstrap_95_ci_high": 15.53191489361702,
+      "bootstrap_95_ci_low": 8.72340425531915,
+      "capacity": 512,
+      "comparison": "v10_vs_development_frozen_physical_fallback",
+      "holm_adjusted_p": 7.999840003199936e-05,
+      "model": "qwen25",
+      "paired_task_macro_delta": 11.914893617021276,
+      "pairs": 94,
+      "task_count": 2,
+      "two_sided_sign_flip_p": 1.999960000799984e-05
+    },
+    {
+      "bootstrap_95_ci_high": 0.0,
+      "bootstrap_95_ci_low": 0.0,
+      "capacity": 1024,
+      "comparison": "v10_vs_development_frozen_physical_fallback",
+      "holm_adjusted_p": 1.0,
+      "model": "qwen25",
+      "paired_task_macro_delta": 0.0,
+      "pairs": 94,
+      "task_count": 2,
+      "two_sided_sign_flip_p": 1.0
+    }
+  ],
+  "controller": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/controller_v10.json",
+  "controller_sha256": "93eba6de546d4206fe84f342765a6533963625efda5c04df9e9809b4aa88ec6d",
+  "input_artifact_sha256": {
+    "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_qwen25": {
+      "metrics.json": "2690270f18b21af8210143bc6433512bca3612fab6bb4adefe066f5ca371eb27",
+      "results.jsonl": "9c0bf6f1ab1b3ca59e740b69e3662f922e3adb2a1ff2e89ce012f4d46822aeb8",
+      "run_manifest.json": "ef2a7fe63ac6c6153e495473acec8ab43292d41c630c2997c61747d79ffe017e"
+    }
+  },
+  "permutation_replicates": 50000,
+  "precommitted_primary_endpoint": "equal-weighted task macro of v10 versus each model-task-capacity development-frozen physical fallback",
+  "primary_inference": {
+    "bootstrap_95_ci_high": 34.41489361702128,
+    "bootstrap_95_ci_low": 31.43617021276596,
+    "comparison": "v10_vs_development_frozen_physical_fallback",
+    "equal_weighting": "average models and capacities within each frozen task-sample pair, then task macro",
+    "paired_task_macro_delta": 32.97872340425532,
+    "pairs": 94,
+    "samples_per_task": 47,
+    "task_count": 2,
+    "task_groups": 2,
+    "two_sided_sign_flip_p": 1.999960000799984e-05
+  },
+  "protocol": "proofkv_v10_official_ruler_paired_inference_v1",
+  "runs": [
+    {
+      "capacities": [
+        {
+          "capacity": 128,
+          "frozen_fallback_by_task": {
+            "ruler_niah": "streamingllm",
+            "ruler_variable_tracking": "streamingllm"
+          },
+          "frozen_fallback_score": 1.9148936170212765,
+          "full_score": 100.0,
+          "physical_scores": {
+            "chunkkv_snapkv": 1.9148936170212765,
+            "pyramidkv": 1.9148936170212765,
+            "snapkv": 1.9148936170212765,
+            "streamingllm": 1.9148936170212765
+          },
+          "task_breakdown": [
+            {
+              "fallback_score": 2.127659574468085,
+              "task": "ruler_niah",
+              "v10_score": 100.0
+            },
+            {
+              "fallback_score": 1.702127659574468,
+              "task": "ruler_variable_tracking",
+              "v10_score": 64.68085106382979
+            }
+          ],
+          "v10_delta_vs_fallback": 80.42553191489361,
+          "v10_score": 82.34042553191489
+        },
+        {
+          "capacity": 256,
+          "frozen_fallback_by_task": {
+            "ruler_niah": "chunkkv_snapkv",
+            "ruler_variable_tracking": "chunkkv_snapkv"
+          },
+          "frozen_fallback_score": 47.87234042553192,
+          "full_score": 100.0,
+          "physical_scores": {
+            "chunkkv_snapkv": 47.87234042553192,
+            "pyramidkv": 8.72340425531915,
+            "snapkv": 8.72340425531915,
+            "streamingllm": 4.8936170212765955
+          },
+          "task_breakdown": [
+            {
+              "fallback_score": 85.1063829787234,
+              "task": "ruler_niah",
+              "v10_score": 85.1063829787234
+            },
+            {
+              "fallback_score": 10.638297872340425,
+              "task": "ruler_variable_tracking",
+              "v10_score": 89.7872340425532
+            }
+          ],
+          "v10_delta_vs_fallback": 39.57446808510639,
+          "v10_score": 87.4468085106383
+        },
+        {
+          "capacity": 512,
+          "frozen_fallback_by_task": {
+            "ruler_niah": "chunkkv_snapkv",
+            "ruler_variable_tracking": "chunkkv_snapkv"
+          },
+          "frozen_fallback_score": 87.02127659574468,
+          "full_score": 100.0,
+          "physical_scores": {
+            "chunkkv_snapkv": 87.02127659574468,
+            "pyramidkv": 18.93617021276596,
+            "snapkv": 18.72340425531915,
+            "streamingllm": 8.72340425531915
+          },
+          "task_breakdown": [
+            {
+              "fallback_score": 100.0,
+              "task": "ruler_niah",
+              "v10_score": 100.0
+            },
+            {
+              "fallback_score": 74.04255319148936,
+              "task": "ruler_variable_tracking",
+              "v10_score": 97.87234042553192
+            }
+          ],
+          "v10_delta_vs_fallback": 11.914893617021278,
+          "v10_score": 98.93617021276596
+        },
+        {
+          "capacity": 1024,
+          "frozen_fallback_by_task": {
+            "ruler_niah": "chunkkv_snapkv",
+            "ruler_variable_tracking": "chunkkv_snapkv"
+          },
+          "frozen_fallback_score": 99.36170212765958,
+          "full_score": 100.0,
+          "physical_scores": {
+            "chunkkv_snapkv": 99.36170212765958,
+            "pyramidkv": 49.148936170212764,
+            "snapkv": 49.148936170212764,
+            "streamingllm": 15.319148936170212
+          },
+          "task_breakdown": [
+            {
+              "fallback_score": 100.0,
+              "task": "ruler_niah",
+              "v10_score": 100.0
+            },
+            {
+              "fallback_score": 98.72340425531915,
+              "task": "ruler_variable_tracking",
+              "v10_score": 98.72340425531915
+            }
+          ],
+          "v10_delta_vs_fallback": 0.0,
+          "v10_score": 99.36170212765958
+        }
+      ],
+      "full_score": 100.0,
+      "model": "qwen25",
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_qwen25",
+      "samples_per_task": 47,
+      "tasks": [
+        "ruler_niah",
+        "ruler_variable_tracking"
+      ]
+    }
+  ],
+  "score_unit": "official RULER reference-containment percentage points",
+  "seed": 20260726
+}

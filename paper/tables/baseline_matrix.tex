@@ -1,0 +1,18 @@
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Method & F1@128 & F1@256 \\
+\midrule
+StreamingLLM & 32.7 & 37.4 \\
+H$_2$O-style & 29.9 & 37.3 \\
+SnapKV & 30.5 & 31.0 \\
+PyramidKV & 31.3 & 31.0 \\
+ChunkKV & 21.9 & 28.2 \\
+\midrule
+CompressKV (official) & \textbf{61.5} & 64.9 \\
+Entity graph & 47.2 & 57.7 \\
+\proofkv{} paths & 61.3 & 70.5 \\
+\proofkv{} AND/OR+aux & 56.0 & \textbf{74.5} \\
+\addlinespace[1pt]
+\multicolumn{3}{@{}l}{\footnotesize 512 tok.: CompressKV 64.0; Entity 62.5; \proofkv{} \textbf{74.6}; AND/OR+aux 69.1} \\
+\bottomrule
+\end{tabular}

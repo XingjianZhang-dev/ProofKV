@@ -1,0 +1,103 @@
+{
+  "complete": false,
+  "counts": {
+    "full": 108,
+    "learned_and_or_control_anchor75_aux": 324,
+    "learned_root_topk": 324,
+    "llmlingua2_official": 475
+  },
+  "endpoints": [
+    {
+      "ci95": [
+        8.356063079857142,
+        21.274036474994976
+      ],
+      "cluster_sizes": {
+        "2wikimqa:128": 5,
+        "2wikimqa:256": 5,
+        "2wikimqa:512": 5,
+        "hotpotqa:128": 6,
+        "hotpotqa:256": 6,
+        "hotpotqa:512": 6,
+        "multifieldqa_en:128": 46,
+        "multifieldqa_en:256": 46,
+        "multifieldqa_en:512": 46,
+        "musique:128": 5,
+        "musique:256": 5,
+        "musique:512": 5,
+        "qasper:128": 46,
+        "qasper:256": 46,
+        "qasper:512": 46
+      },
+      "clusters": 15,
+      "delta_f1": 14.851734409985095,
+      "holm_p": 0.0010375659922487717,
+      "left": "learned_and_or_control_anchor75_aux",
+      "p_value": 0.0005187829961243859,
+      "pairs": 324,
+      "right": "learned_root_topk"
+    },
+    {
+      "ci95": [
+        18.176133006510486,
+        30.867484252357958
+      ],
+      "cluster_sizes": {
+        "2wikimqa:128": 5,
+        "2wikimqa:256": 5,
+        "2wikimqa:512": 5,
+        "hotpotqa:128": 6,
+        "hotpotqa:256": 6,
+        "hotpotqa:512": 6,
+        "multifieldqa_en:128": 46,
+        "multifieldqa_en:256": 46,
+        "multifieldqa_en:512": 46,
+        "qasper:128": 46,
+        "qasper:256": 46,
+        "qasper:512": 46
+      },
+      "clusters": 12,
+      "delta_f1": 24.36373017236728,
+      "holm_p": 0.0010375659922487717,
+      "left": "learned_and_or_control_anchor75_aux",
+      "p_value": 0.000732243104710764,
+      "pairs": 309,
+      "right": "llmlingua2_official"
+    }
+  ],
+  "exact_token_difference": {
+    "max_abs": 0,
+    "mean": 0,
+    "pairs": 309
+  },
+  "expected_compact_rows_per_method": 690,
+  "expected_full_rows": 230,
+  "f1_by_method_capacity": {
+    "full": {
+      "full": 53.25594784986751
+    },
+    "learned_and_or_control_anchor75_aux": {
+      "128": 27.483392007393004,
+      "256": 31.194967604765573,
+      "512": 37.68780447574476
+    },
+    "learned_root_topk": {
+      "128": 18.315359823419637,
+      "256": 18.849101695656575,
+      "512": 23.05742640663301
+    },
+    "llmlingua2_official": {
+      "128": 9.11975198201502,
+      "256": 10.58351503931321,
+      "512": 13.4400652376941
+    }
+  },
+  "proof_512_vs_full": {
+    "absolute_delta": -15.56814337412275,
+    "full_f1": 53.25594784986751,
+    "pairs": 108,
+    "proof_f1": 37.68780447574476,
+    "retention_percent": 70.76731519639739
+  },
+  "status": "INTERIM_POSITIVE"
+}

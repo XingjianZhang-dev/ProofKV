@@ -1,0 +1,137 @@
+{
+  "capacity_audit": {
+    "compact_rows_checked": 1504,
+    "status": "PASS",
+    "violations": 0
+  },
+  "complete": false,
+  "counts": {
+    "full": 143,
+    "learned_and_or_control_anchor75_aux": 429,
+    "learned_root_topk": 429,
+    "llmlingua2_official": 646
+  },
+  "endpoints": [
+    {
+      "ci95": [
+        7.926343380047529,
+        19.081728321823682
+      ],
+      "cluster_sizes": {
+        "2wikimqa:128": 5,
+        "2wikimqa:256": 5,
+        "2wikimqa:512": 5,
+        "hotpotqa:128": 41,
+        "hotpotqa:256": 41,
+        "hotpotqa:512": 41,
+        "multifieldqa_en:128": 46,
+        "multifieldqa_en:256": 46,
+        "multifieldqa_en:512": 46,
+        "musique:128": 5,
+        "musique:256": 5,
+        "musique:512": 5,
+        "qasper:128": 46,
+        "qasper:256": 46,
+        "qasper:512": 46
+      },
+      "clusters": 15,
+      "delta_f1": 13.528064337965553,
+      "holm_p": 0.0005187829961243859,
+      "left": "learned_and_or_control_anchor75_aux",
+      "p_value": 0.0005187829961243859,
+      "pairs": 429,
+      "right": "learned_root_topk"
+    },
+    {
+      "ci95": [
+        16.11783365193665,
+        25.30083370102867
+      ],
+      "cluster_sizes": {
+        "2wikimqa:128": 5,
+        "2wikimqa:256": 5,
+        "2wikimqa:512": 5,
+        "hotpotqa:128": 41,
+        "hotpotqa:256": 41,
+        "hotpotqa:512": 41,
+        "multifieldqa_en:128": 46,
+        "multifieldqa_en:256": 46,
+        "multifieldqa_en:512": 46,
+        "musique:128": 5,
+        "musique:256": 5,
+        "musique:512": 5,
+        "qasper:128": 46,
+        "qasper:256": 46,
+        "qasper:512": 46
+      },
+      "clusters": 15,
+      "delta_f1": 20.648627117376613,
+      "holm_p": 0.00018309988098507736,
+      "left": "learned_and_or_control_anchor75_aux",
+      "p_value": 9.154994049253868e-05,
+      "pairs": 429,
+      "right": "llmlingua2_official"
+    }
+  ],
+  "exact_token_difference": {
+    "max_abs": 0,
+    "mean": 0,
+    "pairs": 429
+  },
+  "expected_compact_rows_per_method": 690,
+  "expected_full_rows": 230,
+  "f1_by_method_capacity": {
+    "full": {
+      "full": 52.54629349536221
+    },
+    "learned_and_or_control_anchor75_aux": {
+      "128": 26.86690046363841,
+      "256": 30.928061076719683,
+      "512": 37.41127805838932
+    },
+    "learned_root_topk": {
+      "128": 16.212768066691773,
+      "256": 16.63485079535894,
+      "512": 19.777349804252154
+    },
+    "llmlingua2_official": {
+      "128": 7.950313413011285,
+      "256": 9.027035527282948,
+      "512": 11.46190011927139
+    }
+  },
+  "proof_512_vs_full": {
+    "absolute_delta": -15.135015436972887,
+    "full_f1": 52.54629349536221,
+    "pairs": 143,
+    "proof_f1": 37.41127805838932,
+    "retention_percent": 71.19679728065174
+  },
+  "protocol_binding": {
+    "checks": {
+      "ll2_capacities": true,
+      "ll2_compressor_hashes": true,
+      "ll2_implementation_hashes": true,
+      "ll2_model_revision": true,
+      "ll2_selection_sha": true,
+      "proof_capacities": true,
+      "proof_implementation_hashes": true,
+      "proof_methods": true,
+      "proof_model_revision": true,
+      "proof_scorer_hashes": true,
+      "proof_selection_sha": true,
+      "selection_capacities": true,
+      "selection_disjoint_complement": true,
+      "selection_outcome_blind": true,
+      "selection_protocol": true,
+      "selection_tasks": true,
+      "selection_tokenizer_parity": true
+    },
+    "ll2_manifest_sha256": "1f4ecfd35e6265f080ee16c6da70e99fce971354321afe89fa831b0163954e46",
+    "model_revision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+    "proof_manifest_sha256": "df2d174f45e9637d9e6272a51d7e8606067647de0b16a9d600b3bcc97c9dac58",
+    "selection_manifest_sha256": "e7c8f519fbeca42b11b75153b011a4019d08ad8d12db0e508bb5dde918125b01",
+    "status": "PASS"
+  },
+  "status": "INTERIM_POSITIVE"
+}

@@ -1,0 +1,66 @@
+{
+  "capacities": [
+    128,
+    256,
+    512,
+    1024
+  ],
+  "controller": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/controller_v10.json",
+  "controller_sha256": "93eba6de546d4206fe84f342765a6533963625efda5c04df9e9809b4aa88ec6d",
+  "development_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/development_manifest.json",
+  "development_manifest_sha256": "8172e7638cf7174503ad11ea81d72806c663e7509e52c88859b376aa828692e9",
+  "formal_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_manifest.json",
+  "formal_manifest_sha256": "5d71da9bddafbef4e9f90e5b9ef0e28bc8ae027afe0b9ff72a0b7672cfdcd050",
+  "formal_output_directories": [
+    "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_qwen25",
+    "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_mistral02"
+  ],
+  "frozen_before_any_formal_output": true,
+  "implementation_sha256": {
+    "/workspace/baselines/kvpress/kvpress/presses/chunkkv_press.py": "75b7e1b027ce2ef971fef9d20e711525799b873a23e9273f7ca2b6874da33ecd",
+    "/workspace/compresskv_run/compresskv/compresskv/compresskv/physical_kv.py": "8ef0e558b29f5a9dd72a04c16576eb28c54c4c565a14c2814419919d00a00983",
+    "/workspace/compresskv_run/compresskv/compresskv/compresskv/prefill_selectors.py": "f5b0098d5689ab3e8b61512922c9ebefe9cb6df07317f5b662b988371f73628f",
+    "/workspace/compresskv_run/compresskv/compresskv/compresskv/proofcache/model.py": "e7443efaac3e326cad483510b15e4b36a77fe5b5a7e55fa0cdcd5619b882a47f",
+    "/workspace/compresskv_run/compresskv/compresskv/compresskv/proofcache/schema.py": "0190bc84d93d1c23033b967e4e2204d8ba3489bd38e0d9e84cbd352a3fd76a05",
+    "/workspace/compresskv_run/compresskv/compresskv/compresskv/proofcache/selector.py": "38311cba139a7120ffcd734102358090aab9b152755d22fce9efa726b19120bf",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/analyze_longbench_v10_efficiency.py": "6e5f46b7aca0661ad200ac982b09cdc6ea5486c93608f5c76a40df2b06bdf4b2",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/analyze_official_ruler_v10_statistics.py": "274898480e084b28d9a400dda946c4cbdd2c58d99a79478cdfd2c8d0d5d7be35",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/audit_official_ruler_v10.py": "64d916e0618cec8401c60f076340f80aaaffc094e0083a25c6348c40424915a7",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/freeze_official_ruler_v10_controller.py": "2b3cc5920a8164762ba12bcbaeffc1ba0257a05003088c28ae041aa599d54266",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/freeze_official_ruler_v10_protocol.py": "b36673b246bdf5307a6540f3c39f71f1522be93af434e92a9eb8c875cff63be3",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/official_ruler_v10_common.py": "279292dc2dab3ab54381b829d4e4bf38e2cc9adda752afff8c7064c6a1895754",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/prepare_official_ruler_v10_split.py": "ad86fef15c67fc4b0aa378dba61dbe98eafd7c879baa07960bbf0d4b5a4aa9c9",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/run_hotpot_compact_qa_upgraded_v10.py": "b2121215090341af185a26ffaefd27f2a53c5518b2c640129e58952b4c166bdd",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/run_kvpress_natural_qa.py": "b79759843aa184058cf7f01f3bd2776fd76cf0130d2648045296935459551cfb",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/run_longbench_structured_upgraded_v10.py": "af641006f8ac001a8ec0060cf99c7029203aa32dd31ff9a2fae3bd6e3a39c2c6",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/run_official_ruler_upgraded_v10.py": "aaee0de2104f7bd6d5897bb30aeeed5f77405e6a36c4fe5e8feac6ebd14e221c"
+  },
+  "inference": {
+    "bootstrap_replicates": 50000,
+    "capacity_family_correction": "Holm",
+    "permutation_replicates": 50000,
+    "seed": 20260726
+  },
+  "models": [
+    "mistral02",
+    "qwen25"
+  ],
+  "primary_methods": [
+    "full",
+    "streamingllm",
+    "snapkv",
+    "pyramidkv",
+    "chunkkv_snapkv",
+    "confirmation_stable_proofkv_v10"
+  ],
+  "protocol": "proofkv_v10_official_ruler_formal_protocol_v1",
+  "rows_per_model": 1974,
+  "samples_per_task": 47,
+  "source_commit": "38da79d79519ef87aa46ae804f838e1eab7f86d7",
+  "source_repo": "https://github.com/NVIDIA/RULER",
+  "status": "FROZEN",
+  "tasks": [
+    "ruler_niah",
+    "ruler_variable_tracking"
+  ]
+}

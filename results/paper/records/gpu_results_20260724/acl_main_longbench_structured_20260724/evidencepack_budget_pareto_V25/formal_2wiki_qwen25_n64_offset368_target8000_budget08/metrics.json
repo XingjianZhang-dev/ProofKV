@@ -1,0 +1,69 @@
+{
+  "model": "/workspace/models/Qwen2.5-7B-Instruct-a09a354",
+  "dataset": "2wiki",
+  "split": "validation",
+  "data_file": "/workspace/ircot/processed_data/2wikimultihopqa/test_subsampled.jsonl",
+  "max_samples": 64,
+  "sample_offset": 368,
+  "budget": 0.08,
+  "budget_tokens": null,
+  "target_prompt_tokens": 8000,
+  "packing_seed": 1907,
+  "attn_implementation": "sdpa",
+  "full_prefill_chunk_size": 2048,
+  "compact_prefill_chunk_size": 512,
+  "methods": [
+    "entity_graph_adaptive",
+    "learned_root_topk",
+    "learned_and_or"
+  ],
+  "scorer_kind": "cross",
+  "learned_dense_core_count": 4,
+  "learned_edge_batch_size": 256,
+  "repair_halo": 0,
+  "records": [
+    {
+      "method": "entity_graph_adaptive",
+      "n": 64,
+      "answer_em": 0.328125,
+      "answer_f1": 0.41201636904761907,
+      "answer_contains": 0.390625,
+      "gold_token_recall": 0.737476982123986,
+      "retained_ratio": 0.08000023792800365,
+      "seconds": 0.5646572490804829,
+      "selection_seconds": 0.03335469607554842,
+      "generation_seconds": 0.5313025530049345,
+      "proof_core_tokens": 0.0,
+      "auxiliary_tokens": 0.0
+    },
+    {
+      "method": "learned_and_or",
+      "n": 64,
+      "answer_em": 0.3125,
+      "answer_f1": 0.39250801282051284,
+      "answer_contains": 0.390625,
+      "gold_token_recall": 0.39453125,
+      "retained_ratio": 0.054489560491714426,
+      "seconds": 0.2681980801571626,
+      "selection_seconds": 0.026214082150545437,
+      "generation_seconds": 0.24198399800661718,
+      "proof_core_tokens": 395.4375,
+      "auxiliary_tokens": 0.0
+    },
+    {
+      "method": "learned_root_topk",
+      "n": 64,
+      "answer_em": 0.265625,
+      "answer_f1": 0.34170386904761907,
+      "answer_contains": 0.328125,
+      "gold_token_recall": 0.69921875,
+      "retained_ratio": 0.07923246155832758,
+      "seconds": 5.190503760124557,
+      "selection_seconds": 4.565511413697095,
+      "generation_seconds": 0.6249923464274616,
+      "proof_core_tokens": 592.359375,
+      "auxiliary_tokens": 0.0
+    }
+  ],
+  "paired_full_retention": []
+}

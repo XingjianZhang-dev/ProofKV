@@ -1,0 +1,393 @@
+{
+  "acl_root": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724",
+  "artifact_issues": [],
+  "components": {
+    "longbench_full_matrix": {
+      "audit": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/audits/formal_full_v10_both_complete.json",
+        "sha256": "1e6e78c8bf75f5ad5e573ca2db5ab6439e437ff24803ba4d05d62a09e926b0fd",
+        "status": "PASS"
+      },
+      "claim_eligible": true,
+      "complete": true,
+      "positive": null,
+      "runs": {
+        "mistral02": {
+          "directory": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/formal_full_v10_mistral02_complement_n47",
+          "expected_rows": 14335,
+          "metrics_exists": true,
+          "rows": 14335,
+          "rows_complete": true
+        },
+        "qwen25": {
+          "directory": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/formal_full_v10_qwen25_complement_n47",
+          "expected_rows": 14335,
+          "metrics_exists": true,
+          "rows": 14335,
+          "rows_complete": true
+        }
+      },
+      "scope": "Full table/ablation completeness. Physical efficiency is already bound and audited in the LongBench primary component and is not duplicated as a second full-matrix requirement.",
+      "statistics": {
+        "exists": true,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/audits/formal_full_v10_statistics.json",
+        "sha256": "744457af716bcc410119ba907c3b64a60a773476dccfad6fcb8dbaad3a85fdcc"
+      }
+    },
+    "longbench_primary": {
+      "audit": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/audits/formal_primary_v10_both_complete.json",
+        "sha256": "9945dc94c445dbc67926edab1ededa3334247ab4c6e243aaa11786f0b196b31d",
+        "status": "PASS"
+      },
+      "claim_eligible": true,
+      "complete": true,
+      "physical_efficiency": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/audits/formal_primary_v10_physical_efficiency.json",
+        "sha256": "0ff934bb80b86b8d71dc310300d93528196e05ac78979f8ad6d357b1e0e9b192",
+        "status": "PASS"
+      },
+      "positive": true,
+      "statistics": {
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/audits/formal_primary_v10_statistics.json",
+        "primary_inference": {
+          "bootstrap_95_ci_high": 5.861792327224425,
+          "bootstrap_95_ci_low": 3.6611606515071533,
+          "comparison": "utility_router_vs_frozen_domain_physical_fallback",
+          "equal_weighting": "average models and capacities within each frozen task-sample pair, then task macro",
+          "paired_task_macro_delta": 4.743125020094649,
+          "pairs": 235,
+          "samples_per_task": 47,
+          "task_count": 5,
+          "task_groups": 5,
+          "two_sided_sign_flip_p": 1.999960000799984e-05
+        },
+        "sha256": "0b02a14f8bec0cf9bed1aa252209b5a7190e27bc01ea702dbe0c1b98c3901569"
+      }
+    },
+    "natural_risk_controller": {
+      "aggregate_comparisons": {
+        "entity_graph_adaptive": {
+          "inference": {
+            "ci95_points": [
+              0.7989059551559552,
+              3.798501122719873
+            ],
+            "holm_adjusted_p": 0.009719805603887922,
+            "macro_delta_points": 2.272827722046472,
+            "permutation_p_two_sided": 0.003239935201295974
+          },
+          "positive": true
+        },
+        "full": {
+          "inference": {
+            "ci95_points": [
+              0.06852897118110936,
+              6.202140501585403
+            ],
+            "holm_adjusted_p": 0.04889902201955961,
+            "macro_delta_points": 3.1470353895312773,
+            "permutation_p_two_sided": 0.04889902201955961
+          },
+          "positive": true
+        },
+        "learned_and_or": {
+          "inference": {
+            "ci95_points": [
+              0.7195455730611983,
+              6.283667143042144
+            ],
+            "holm_adjusted_p": 0.02863942721145577,
+            "macro_delta_points": 3.498918616106116,
+            "permutation_p_two_sided": 0.014319713605727886
+          },
+          "positive": true
+        },
+        "learned_root_topk": {
+          "inference": {
+            "ci95_points": [
+              1.9404000946969697,
+              8.017496613544408
+            ],
+            "holm_adjusted_p": 0.005839883202335953,
+            "macro_delta_points": 4.972407405196927,
+            "permutation_p_two_sided": 0.0014599708005839883
+          },
+          "positive": true
+        }
+      },
+      "audit": {
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_risk_controller_V22_formal/formal_audit.json",
+        "sha256": "85cf876f9cb30e92f8d0cb21d778a74d27a4cb5da7a10c086909ddb38907d6d2",
+        "status": "REJECT"
+      },
+      "claim_boundary": "Eligible claim: positive aggregate, paired multi-task/multi-length risk-routing result. Ineligible claim: uniform dominance in every individual task-length cell.",
+      "claim_eligible": true,
+      "complete": true,
+      "implementation_integrity": true,
+      "mean_selected_retained_ratio": 0.07234264644137671,
+      "only_failed_uniform_cell_guard": true,
+      "positive": true,
+      "protocol": {
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_risk_controller_V22_formal/frozen_protocol.json",
+        "sha256": "433b47785032ad210c346ad31fa2265c7bef10ef3cc6ab7913aa6ceb8b622b01",
+        "status": "FROZEN"
+      },
+      "row_integrity": true,
+      "target_macro_delta_vs_primary_points": {
+        "16000": 3.828012265512265,
+        "32000": 4.662557494588741,
+        "8000": 2.006186088217338
+      }
+    },
+    "quality_budget_pareto": {
+      "audit": {
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_budget_pareto_V25/formal_audit.json",
+        "sha256": "d01cc92d51d87ddcd6108deb5d247af6be61d40df49f29bf63dc663caf95818e",
+        "status": "PASS"
+      },
+      "budget_macro": {
+        "0.04": {
+          "controller_f1": 0.3315972222222222,
+          "controller_retained_ratio": 0.03548433000471536,
+          "delta_vs_each_compact_points": {
+            "entity_graph_adaptive": 2.2092013888888884,
+            "learned_and_or": 2.9296874999999982,
+            "learned_root_topk": 10.08827407059315
+          }
+        },
+        "0.08": {
+          "controller_f1": 0.3779265873015873,
+          "controller_retained_ratio": 0.07185871924680005,
+          "delta_vs_each_compact_points": {
+            "entity_graph_adaptive": 5.143229166666664,
+            "learned_and_or": 4.026633089133085,
+            "learned_root_topk": 2.4596974206349183
+          }
+        },
+        "0.12": {
+          "controller_f1": 0.40971151244588744,
+          "controller_retained_ratio": 0.10910345320483941,
+          "delta_vs_each_compact_points": {
+            "entity_graph_adaptive": 7.561383928571427,
+            "learned_and_or": 5.653786317848816,
+            "learned_root_topk": 2.5317911255411243
+          }
+        }
+      },
+      "claim_boundary": "A valid curve closes the quality-cost characterization. Universal curve dominance is claimed only when scientific_outcome is PRIMARY_SUPPORTED.",
+      "claim_eligible": true,
+      "complete": true,
+      "paired_curve_inference": {
+        "entity_graph_adaptive": {
+          "ci95_points": [
+            1.7346643518518519,
+            8.65327380952381
+          ],
+          "holm_adjusted_p": 0.017759644807103857,
+          "macro_delta_points": 4.971271494708994,
+          "permutation_p_two_sided": 0.004439911201775964
+        },
+        "full": {
+          "ci95_points": [
+            -2.489553270803272,
+            12.778040824915823
+          ],
+          "holm_adjusted_p": 0.3902921941561169,
+          "macro_delta_points": 5.107323232323232,
+          "permutation_p_two_sided": 0.19263614727705447
+        },
+        "learned_and_or": {
+          "ci95_points": [
+            -2.3913492468179975,
+            10.872252747252746
+          ],
+          "holm_adjusted_p": 0.3902921941561169,
+          "macro_delta_points": 4.203368968993969,
+          "permutation_p_two_sided": 0.21955560888782225
+        },
+        "learned_root_topk": {
+          "ci95_points": [
+            -1.252817373294347,
+            11.437517009063061
+          ],
+          "holm_adjusted_p": 0.3902921941561169,
+          "macro_delta_points": 5.0265875389230645,
+          "permutation_p_two_sided": 0.13009739805203896
+        }
+      },
+      "positive": false,
+      "protocol": {
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_budget_pareto_V25/frozen_protocol.json",
+        "sha256": "5854da875e0ca4c54a97cc5b5de4ca75cae6662b8920502fea39c6f2683b74e3"
+      },
+      "scientific_outcome": "DESCRIPTIVE_CURVE_ONLY"
+    },
+    "ruler_primary": {
+      "audit": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_audit_v10.json",
+        "sha256": "14d53f0bd7f4bf0dc6fe439335d185f7af99e49f7755b03218225d6a7be54b3e",
+        "status": "PASS"
+      },
+      "claim_eligible": true,
+      "complete": true,
+      "physical_efficiency": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_physical_efficiency_v10.json",
+        "sha256": "82b5a3e94ca2c60c10f884aeb7d212df994f1432b96dc7f4a3834e4b2dfb8603",
+        "status": "PASS"
+      },
+      "positive": true,
+      "protocol_binding": {
+        "accepted": true,
+        "exists": true,
+        "issue": null,
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_protocol_binding_audit_v10.json",
+        "sha256": "c029b33f5eea6c8b0935f66566f3f2a902b3c865f94e9eb6177d77acf4a3eb0b",
+        "status": "PASS"
+      },
+      "statistics": {
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_statistics_v10.json",
+        "primary_inference": {
+          "bootstrap_95_ci_high": 41.515957446808514,
+          "bootstrap_95_ci_low": 38.00531914893617,
+          "comparison": "v10_vs_development_frozen_physical_fallback",
+          "equal_weighting": "average models and capacities within each frozen task-sample pair, then task macro",
+          "paired_task_macro_delta": 39.81382978723404,
+          "pairs": 94,
+          "samples_per_task": 47,
+          "task_count": 2,
+          "task_groups": 2,
+          "two_sided_sign_flip_p": 1.999960000799984e-05
+        },
+        "sha256": "dc5c118663524266112cce4f83b738e4f4a0a3fc6c4f8723393d1eea9fb28326"
+      }
+    },
+    "systems": {
+      "claim_eligible": true,
+      "closure": {
+        "path": "/workspace/compresskv_experiments/post_remaining_gpu_closure_V2/closure.json",
+        "sha256": "5d6477758ebae152b0e2034c075cad55236b0ca80952d73eb155bbfe0aad6a6a"
+      },
+      "complete": true,
+      "inplace_frontier_passed": true,
+      "int8_holdout_passed": true,
+      "positive": true,
+      "vllm_integrity_passed": true,
+      "vllm_suite_passed": true
+    }
+  },
+  "gpu_evidence_complete": true,
+  "informative_negative_boundaries": {
+    "generic_selector_competition": {
+      "completed_negative_audit": {
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/formal_audit_statistics_state_reset_r1.json",
+        "primary_inference": {
+          "capacity_blocks": 4,
+          "ci95_high": -6.513735380295731,
+          "ci95_low": -11.288731749817817,
+          "comparison": "proofkv_v10_vs_model_compatible_official_baseline",
+          "delta_score_points": -8.869122579864792,
+          "equal_weighting": "average the two models and four capacities within each frozen task-sample pair, then task macro",
+          "model_blocks": 2,
+          "permutation_p_two_sided": 1.999960000799984e-05,
+          "samples_per_task": 47,
+          "task_groups": 5
+        },
+        "sha256": "87a00c6a90636a2e0aa4689993a3f9a105a42881fe1e99566f755eb6bcb07d68",
+        "status": "PASS"
+      },
+      "paper_claim_eligible": false,
+      "reason": "EvidencePack is an evidence-compilation/risk-routing architecture, not a drop-in universal KV selector. Direct selector dominance is outside the matched claim.",
+      "required_for_closure": false
+    },
+    "uniform_per_cell_risk_router_dominance": {
+      "paper_claim_eligible": false,
+      "reason": "The preregistered aggregate controller endpoint is positive, but one MuSiQue-8k cell missed the separate uniform-cell guard.",
+      "required_for_closure": false
+    },
+    "zero_shot_decoder_universal_controller": {
+      "completed_negative_audit": {
+        "paired_inference": {
+          "entity_graph_adaptive": {
+            "ci95_points": [
+              -1.6947704562594268,
+              0.9301044135602959
+            ],
+            "holm_adjusted_p": 1.0,
+            "macro_delta_points": -0.38296638767686575,
+            "permutation_p_two_sided": 0.5769684606307874
+          },
+          "full": {
+            "ci95_points": [
+              -4.146128945871193,
+              1.9494087812160357
+            ],
+            "holm_adjusted_p": 1.0,
+            "macro_delta_points": -1.0812214930471928,
+            "permutation_p_two_sided": 0.495530089398212
+          },
+          "learned_and_or": {
+            "ci95_points": [
+              -3.029067095588236,
+              2.5192697041091003
+            ],
+            "holm_adjusted_p": 1.0,
+            "macro_delta_points": -0.23976939155078664,
+            "permutation_p_two_sided": 0.8661626767464651
+          },
+          "learned_root_topk": {
+            "ci95_points": [
+              -1.9080477902193262,
+              3.9534869351718855
+            ],
+            "holm_adjusted_p": 1.0,
+            "macro_delta_points": 1.0154824419774804,
+            "permutation_p_two_sided": 0.50544989100218
+          }
+        },
+        "path": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_risk_controller_V23_crossmodel/crossmodel_audit.json",
+        "sha256": "3df6ac15fb41b154ac85ce1e8a25aad7c8dda4dca7a11e04b6f9a03694584c61",
+        "status": "REJECT"
+      },
+      "paper_claim_eligible": false,
+      "reason": "The fixed Qwen-calibrated two-expert threshold did not transfer zero-shot to Mistral. Cross-model support is instead supplied by the complete two-model LongBench matrix; no decoder-universal risk-threshold claim is permitted.",
+      "required_for_closure": false
+    }
+  },
+  "paper_experiment_loop_closed": true,
+  "positive_core_claims_passed": true,
+  "positive_core_components": [
+    "longbench_primary",
+    "ruler_primary",
+    "natural_risk_controller",
+    "systems"
+  ],
+  "protocol": "acl_main_architecture_matched_evidence_closure_V26",
+  "remaining_required_components": [],
+  "required_components": [
+    "longbench_primary",
+    "longbench_full_matrix",
+    "ruler_primary",
+    "natural_risk_controller",
+    "quality_budget_pareto",
+    "systems"
+  ],
+  "status": "PASS",
+  "systems_root": "/workspace/compresskv_experiments",
+  "verifier_sha256": "e8f3afbba9fe7a460444da5ee8224b175b082bcb750c4d9345079394911cf13d"
+}

@@ -1,0 +1,14 @@
+torch>=2.1
+numpy>=1.24
+pyyaml>=6.0
+tqdm>=4.66
+pytest>=7.4
+# Full LLM experiments:
+transformers>=4.45.0
+accelerate>=0.30.0
+datasets>=2.18.0
+sentencepiece>=0.1.99
+protobuf>=4.25.0
+rouge-score>=0.1.2
+matplotlib>=3.7
+pandas>=2.0

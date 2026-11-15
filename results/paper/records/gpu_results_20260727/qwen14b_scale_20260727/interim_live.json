@@ -1,0 +1,97 @@
+{
+  "complete": false,
+  "counts": {
+    "full": 52,
+    "learned_and_or_control_anchor75_aux": 153,
+    "learned_root_topk": 153,
+    "llmlingua2_official": 164
+  },
+  "endpoints": [
+    {
+      "ci95": [
+        7.887176670121643,
+        22.889468141823325
+      ],
+      "cluster_sizes": {
+        "2wikimqa:128": 5,
+        "2wikimqa:256": 5,
+        "2wikimqa:512": 5,
+        "hotpotqa:128": 5,
+        "hotpotqa:256": 5,
+        "hotpotqa:512": 5,
+        "multifieldqa_en:128": 5,
+        "multifieldqa_en:256": 5,
+        "multifieldqa_en:512": 5,
+        "musique:128": 5,
+        "musique:256": 5,
+        "musique:512": 5,
+        "qasper:128": 31,
+        "qasper:256": 31,
+        "qasper:512": 31
+      },
+      "clusters": 15,
+      "delta_f1": 15.384713407194251,
+      "holm_p": 0.0014037657542189264,
+      "left": "learned_and_or_control_anchor75_aux",
+      "p_value": 0.0007018828771094632,
+      "pairs": 153,
+      "right": "learned_root_topk"
+    },
+    {
+      "ci95": [
+        12.021138421111658,
+        26.412342490099455
+      ],
+      "cluster_sizes": {
+        "multifieldqa_en:128": 5,
+        "multifieldqa_en:256": 5,
+        "multifieldqa_en:512": 5,
+        "qasper:128": 31,
+        "qasper:256": 31,
+        "qasper:512": 31
+      },
+      "clusters": 6,
+      "delta_f1": 19.26772348912126,
+      "holm_p": 0.046153846153846156,
+      "left": "learned_and_or_control_anchor75_aux",
+      "p_value": 0.046153846153846156,
+      "pairs": 108,
+      "right": "llmlingua2_official"
+    }
+  ],
+  "exact_token_difference": {
+    "max_abs": 0,
+    "mean": 0,
+    "pairs": 108
+  },
+  "expected_compact_rows_per_method": 690,
+  "expected_full_rows": 230,
+  "f1_by_method_capacity": {
+    "full": {
+      "full": 53.61182801152634
+    },
+    "learned_and_or_control_anchor75_aux": {
+      "128": 23.883606592869995,
+      "256": 26.02915830898851,
+      "512": 37.11620766648912
+    },
+    "learned_root_topk": {
+      "128": 15.228752510532576,
+      "256": 17.7450065750944,
+      "512": 20.387627249877546
+    },
+    "llmlingua2_official": {
+      "128": 11.58205376465329,
+      "256": 12.867328629284854,
+      "512": 17.91539341228393
+    }
+  },
+  "proof_512_vs_full": {
+    "absolute_delta": -17.35075422761618,
+    "full_f1": 54.466961894105296,
+    "pairs": 51,
+    "proof_f1": 37.11620766648912,
+    "retention_percent": 68.14444275164544
+  },
+  "status": "INTERIM_POSITIVE"
+}

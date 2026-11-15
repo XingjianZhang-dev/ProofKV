@@ -1,0 +1,56 @@
+{
+  "audit": "/workspace/compresskv_run/compresskv/compresskv/scripts/audit_official_longbench_v10_baselines.py",
+  "audit_implementation_sha256": "92f65c479a84132f499437c704f9ba68f46fdeb345258e2c01ccc6f04f50de39",
+  "bootstrap_replicates": 50000,
+  "capacities": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "capacity_family_correction": "Holm over eight model-capacity tests",
+  "chain": "/workspace/compresskv_run/compresskv/compresskv/scripts/chain_official_longbench_v10_baselines_state_reset_r1.sh",
+  "chain_implementation_sha256": "a4ff8ff1724eca26e5a955e19b690b6b1c67ab5488e866a36d36db7fd9964cd6",
+  "controller": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/domain_utility_controller_v10_control_only_complement.json",
+  "controller_sha256": "aa16bf3e31b52323a743654bf661352ff23ea70067d08a58f9abbe943c5dd7f1",
+  "formal_output_directories": [
+    "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/formal_qwen25_state_reset_r1",
+    "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/formal_mistral02_state_reset_r1"
+  ],
+  "formal_outputs_unobserved_at_freeze": true,
+  "frozen_at_utc": "2026-07-25T13:19:53.205480+00:00",
+  "models": {
+    "mistral02": {
+      "official_commit": "0862a0955fe82e9ff611d59541918e02c5def625",
+      "official_method": "official_headkv_reasonkv"
+    },
+    "qwen25": {
+      "official_commit": "12f920fbecba67e16806a6d8eac0ad389ddcad6f",
+      "official_method": "official_compresskv"
+    }
+  },
+  "permutation_replicates": 50000,
+  "precommitted_primary_endpoint": "equal-weighted task macro of ProofKV-v10 versus the compatible official implementation for each model",
+  "preflight_audit": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/current_code_state_reset_preflight_audit_r1.json",
+  "preflight_audit_implementation": "/workspace/compresskv_run/compresskv/compresskv/scripts/audit_official_longbench_v10_smoke_preflight.py",
+  "preflight_audit_implementation_sha256": "9f7f6159f986fbdecdd987799763bb271e75d0d8631326d3a5349df8037b5b3b",
+  "preflight_audit_sha256": "6fe6a6178db0cbce971e25d08a13d48eb9e29fef6ec7920aa362bb0f94bbad11",
+  "primary_equal_weighting": "average the two models and four capacities within each frozen task-sample pair, then task macro",
+  "protocol": "official_longbench_v10_model_compatible_formal_v1",
+  "ruler_audit": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_audit_v10.json",
+  "ruler_audit_sha256": "14d53f0bd7f4bf0dc6fe439335d185f7af99e49f7755b03218225d6a7be54b3e",
+  "runner": "/workspace/compresskv_run/compresskv/compresskv/scripts/run_official_longbench_v10_baseline.py",
+  "runner_implementation_sha256": "90f0f08583c72dc0f96fd1ab90d44bb48a4139a122799f26ac72004e4f09d0d8",
+  "samples_per_task": 47,
+  "seed": 20260725,
+  "selection_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/selection_manifest_v10_complement_n47.json",
+  "selection_manifest_sha256": "c7cda95a9b7a42c70428aba9b973e732de56242c1f7b04e6322ff60546fc6b76",
+  "status": "FROZEN",
+  "tasks": [
+    "qasper",
+    "multifieldqa_en",
+    "hotpotqa",
+    "2wikimqa",
+    "musique"
+  ]
+}

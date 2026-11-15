@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "protocol": "longbench_frozen_selection_prefix_equivalence_v1",
+  "left_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/selection_manifest_v3.json",
+  "left_manifest_sha256": "2ba9471ed928dcb5f8841a053cea894c8f054880b30a32b235aa25c5600a517b",
+  "right_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/selection_manifest_v4_pool85.json",
+  "right_manifest_sha256": "3f8f96a8c5eda517d69f31c15e816f23fcfcf3c6e703e33f728ef237301d30c3",
+  "n_per_task": 10,
+  "tasks": [
+    {
+      "task": "narrativeqa",
+      "prefix_records": 10,
+      "first_id": "narrativeqa:178:252451fa4655f524",
+      "last_id": "narrativeqa:175:685e65210d18220a",
+      "exact_record_equality": true
+    },
+    {
+      "task": "qasper",
+      "prefix_records": 10,
+      "first_id": "qasper:123:5d5be2a6f2e8c2ec",
+      "last_id": "qasper:114:608dc8fb379c42ea",
+      "exact_record_equality": true
+    },
+    {
+      "task": "multifieldqa_en",
+      "prefix_records": 10,
+      "first_id": "multifieldqa_en:49:4a9d5aaa879201e0",
+      "last_id": "multifieldqa_en:37:67bc696cd220e3d3",
+      "exact_record_equality": true
+    },
+    {
+      "task": "hotpotqa",
+      "prefix_records": 10,
+      "first_id": "hotpotqa:48:57d21273107db371",
+      "last_id": "hotpotqa:172:563d934a3f952d71",
+      "exact_record_equality": true
+    },
+    {
+      "task": "2wikimqa",
+      "prefix_records": 10,
+      "first_id": "2wikimqa:8:180b514d0848e20f",
+      "last_id": "2wikimqa:105:5e07486ec46b34b0",
+      "exact_record_equality": true
+    },
+    {
+      "task": "musique",
+      "prefix_records": 10,
+      "first_id": "musique:17:882d58bdc241bcd3",
+      "last_id": "musique:174:f3c95e43d3954271",
+      "exact_record_equality": true
+    }
+  ],
+  "checks": [
+    "identical task order",
+    "identical source data hashes and row counts",
+    "exact equality of every selected record in the prefix",
+    "answers and per-model token counts included in record equality"
+  ]
+}

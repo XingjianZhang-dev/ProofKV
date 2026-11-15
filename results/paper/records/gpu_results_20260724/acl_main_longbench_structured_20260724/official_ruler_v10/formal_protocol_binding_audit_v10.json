@@ -1,0 +1,21 @@
+{
+  "audit_implementation_sha256": "bc8412c6af087cc6f232b58bf498ffba47fd15d96153dc7f90ef006b3acec985",
+  "formal_protocol": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_protocol_v10.json",
+  "formal_protocol_sha256": "6de0a28979c15db5faa4c683fb8fb6235d734b48492f8b62226f83a65ef36351",
+  "frozen_implementation_files": 17,
+  "protocol": "proofkv_v10_official_ruler_protocol_binding_audit_v1",
+  "run_manifests": [
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_mistral02",
+      "run_manifest_sha256": "7dd68586021da013ed799388020410c8ba99c3fd0f83ddf96bebc45ddd42fbb2",
+      "runtime_implementation_files": 11
+    },
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_qwen25",
+      "run_manifest_sha256": "ef2a7fe63ac6c6153e495473acec8ab43292d41c630c2997c61747d79ffe017e",
+      "runtime_implementation_files": 11
+    }
+  ],
+  "runtime_implementation_files": 11,
+  "status": "PASS"
+}

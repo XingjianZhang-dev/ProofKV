@@ -1,0 +1,12 @@
+{
+  "official_repo": "https://github.com/TUDa-HWAI/CompressKV",
+  "official_commit": "12f920fbecba67e16806a6d8eac0ad389ddcad6f",
+  "method": "compresskv",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "budget_tokens": 512,
+  "max_samples": 128,
+  "answer_em": 0.4609375,
+  "answer_f1": 0.6397500936563436,
+  "answer_contains": 0.5390625,
+  "seconds_mean": 1.1295421209724736
+}

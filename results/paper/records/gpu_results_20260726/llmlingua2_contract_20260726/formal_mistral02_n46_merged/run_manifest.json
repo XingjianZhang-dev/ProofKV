@@ -1,0 +1,34 @@
+{
+  "protocol": "llmlingua2_formal_task_shard_merge_v1",
+  "selection_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/selection_manifest_v10_complement_n47.json",
+  "selection_manifest_sha256": "c7cda95a9b7a42c70428aba9b973e732de56242c1f7b04e6322ff60546fc6b76",
+  "merge_policy": "Predeclared run-dir priority; first occurrence retained; no score or prediction is inspected for duplicate selection.",
+  "duplicate_rows_ignored": 10,
+  "sources": [
+    {
+      "priority": 0,
+      "run_dir": "/workspace/compresskv_experiments/llmlingua2_contract_20260726/formal_mistral02_n46",
+      "results_sha256": "7f3d425eaeff536a6e39540596303bd31af014d9802e31decd43c4aac1a924ed",
+      "run_manifest_sha256": "39573e2bc6f16f266a1060fc343195309d1f5f423644fb7d38d6528930a37eaa"
+    },
+    {
+      "priority": 1,
+      "run_dir": "/workspace/compresskv_experiments/llmlingua2_contract_20260726/formal_mistral02_tail_musique_n46",
+      "results_sha256": "7a1e29b80ba99c3c2628bb65ad5f7c1fc88def9f0306ce0a2475fcd06ea4be1f",
+      "run_manifest_sha256": "6cb0282745b31d4cf3d6bf17f9c4dea95dd06688502668c3e687174fac417285"
+    },
+    {
+      "priority": 2,
+      "run_dir": "/workspace/compresskv_experiments/llmlingua2_contract_20260726/formal_mistral02_musique_pos12_30",
+      "results_sha256": "05b8b4e7955fb789892f7d5d6352e7870d06482611084749fa9790987d4eaa92",
+      "run_manifest_sha256": "d8abb739fca147353fc0836ec3d3d188cdc508281bb3b35f3051c4ecb16b2128"
+    },
+    {
+      "priority": 3,
+      "run_dir": "/workspace/compresskv_experiments/llmlingua2_contract_20260726/formal_mistral02_musique_pos30_47",
+      "results_sha256": "0d9e6ccdee247e86558550d562f78be89cf7c264c3f89d1a754fd2653db7121e",
+      "run_manifest_sha256": "afe29b945e58e761932fcbe063a4b4d43c3f55ef0d1205fc604c06148d9229bf"
+    }
+  ],
+  "implementation_sha256": "b44ea28424f33e6cdca7912f2789917aaa3f2475fd9faec2aa415f13baf11ea7"
+}

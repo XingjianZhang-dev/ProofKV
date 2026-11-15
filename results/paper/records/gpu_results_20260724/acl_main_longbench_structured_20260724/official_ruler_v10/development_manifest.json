@@ -1,0 +1,348 @@
+{
+  "capacities": [
+    128,
+    256,
+    512,
+    1024
+  ],
+  "generator_seed": 2026072601,
+  "max_input_tokens": 12000,
+  "max_question_tokens": 123,
+  "max_samples_per_task": 10,
+  "methods": [
+    "full",
+    "streamingllm",
+    "snapkv",
+    "pyramidkv",
+    "chunkkv_snapkv",
+    "entity_graph_adaptive",
+    "learned_topk_paths",
+    "learned_and_or_aux"
+  ],
+  "protocol": "proofkv_v10_official_ruler_outcome_blind_split_v1",
+  "selection_fields": [
+    "joint prompt length",
+    "question-tail feasibility at the 64-token capacity",
+    "task",
+    "seeded order"
+  ],
+  "selection_is_outcome_blind": true,
+  "selection_seed": 2026072611,
+  "selections": {
+    "ruler_niah": {
+      "data_file": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/development/converted/ruler_niah.jsonl",
+      "data_sha256": "f69bbce6c7c69a09f4ddf07c4d6b467e6d93ac271b0d599f2ef678bd7a5be150",
+      "eligible_rows": 20,
+      "generator_seed": 2026072601,
+      "generator_task": "niah",
+      "raw_data_file": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/development/official_ruler_generated/niah/validation.jsonl",
+      "raw_data_sha256": "80b7441130a6988e949f947abd59f61dc536a702ed92f98f21cc2c539030650f",
+      "selected": [
+        {
+          "id": "ruler_niah:12:046bede709ff112a",
+          "index": 12,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8294,
+              "question": 38
+            },
+            "qwen25": {
+              "prompt": 7982,
+              "question": 37
+            }
+          }
+        },
+        {
+          "id": "ruler_niah:15:69da9b42ad895af1",
+          "index": 15,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8291,
+              "question": 36
+            },
+            "qwen25": {
+              "prompt": 7979,
+              "question": 35
+            }
+          }
+        },
+        {
+          "id": "ruler_niah:19:035d78d519aa0abd",
+          "index": 19,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8297,
+              "question": 40
+            },
+            "qwen25": {
+              "prompt": 7985,
+              "question": 39
+            }
+          }
+        },
+        {
+          "id": "ruler_niah:18:10fdc500734ce779",
+          "index": 18,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8291,
+              "question": 36
+            },
+            "qwen25": {
+              "prompt": 7979,
+              "question": 35
+            }
+          }
+        },
+        {
+          "id": "ruler_niah:14:e96e8a4115facb3f",
+          "index": 14,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8294,
+              "question": 38
+            },
+            "qwen25": {
+              "prompt": 7982,
+              "question": 37
+            }
+          }
+        },
+        {
+          "id": "ruler_niah:13:bc05f168e51d01cc",
+          "index": 13,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8297,
+              "question": 40
+            },
+            "qwen25": {
+              "prompt": 7985,
+              "question": 39
+            }
+          }
+        },
+        {
+          "id": "ruler_niah:3:c36e0ef2a7181a39",
+          "index": 3,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8288,
+              "question": 34
+            },
+            "qwen25": {
+              "prompt": 7976,
+              "question": 33
+            }
+          }
+        },
+        {
+          "id": "ruler_niah:4:cf715c66621d4be4",
+          "index": 4,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8294,
+              "question": 38
+            },
+            "qwen25": {
+              "prompt": 7982,
+              "question": 37
+            }
+          }
+        },
+        {
+          "id": "ruler_niah:17:5822094522d258f4",
+          "index": 17,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8297,
+              "question": 40
+            },
+            "qwen25": {
+              "prompt": 7985,
+              "question": 39
+            }
+          }
+        },
+        {
+          "id": "ruler_niah:1:06d884d658d23c84",
+          "index": 1,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8297,
+              "question": 40
+            },
+            "qwen25": {
+              "prompt": 7985,
+              "question": 39
+            }
+          }
+        }
+      ],
+      "total_rows": 20
+    },
+    "ruler_variable_tracking": {
+      "data_file": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/development/converted/ruler_variable_tracking.jsonl",
+      "data_sha256": "9b4d016637fe98a05820def2f48306a08c322dcf5e5d3c4751b17e7f69c7fe1a",
+      "eligible_rows": 20,
+      "generator_seed": 2026073610,
+      "generator_task": "variable_tracking",
+      "raw_data_file": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/development/official_ruler_generated/variable_tracking/validation.jsonl",
+      "raw_data_sha256": "8ba0304664e81b614772e28136417918f4bdaabba220bb5430c1a5317f36009e",
+      "selected": [
+        {
+          "id": "ruler_variable_tracking:18:3e3c2ba564c4ad02",
+          "index": 18,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8319,
+              "question": 60
+            },
+            "qwen25": {
+              "prompt": 7995,
+              "question": 60
+            }
+          }
+        },
+        {
+          "id": "ruler_variable_tracking:19:a7847904ce5ad538",
+          "index": 19,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8316,
+              "question": 60
+            },
+            "qwen25": {
+              "prompt": 7989,
+              "question": 60
+            }
+          }
+        },
+        {
+          "id": "ruler_variable_tracking:6:c7a30fcce3ab308a",
+          "index": 6,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8315,
+              "question": 60
+            },
+            "qwen25": {
+              "prompt": 7985,
+              "question": 60
+            }
+          }
+        },
+        {
+          "id": "ruler_variable_tracking:7:70342448329fa5db",
+          "index": 7,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8307,
+              "question": 60
+            },
+            "qwen25": {
+              "prompt": 7985,
+              "question": 60
+            }
+          }
+        },
+        {
+          "id": "ruler_variable_tracking:13:1c4dbd7cd9278fb2",
+          "index": 13,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8313,
+              "question": 60
+            },
+            "qwen25": {
+              "prompt": 7986,
+              "question": 60
+            }
+          }
+        },
+        {
+          "id": "ruler_variable_tracking:17:2872159e4aa03f16",
+          "index": 17,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8308,
+              "question": 60
+            },
+            "qwen25": {
+              "prompt": 7985,
+              "question": 60
+            }
+          }
+        },
+        {
+          "id": "ruler_variable_tracking:10:693728346a3890e5",
+          "index": 10,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8061,
+              "question": 60
+            },
+            "qwen25": {
+              "prompt": 7747,
+              "question": 60
+            }
+          }
+        },
+        {
+          "id": "ruler_variable_tracking:0:5320082b47c4aa4e",
+          "index": 0,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8314,
+              "question": 60
+            },
+            "qwen25": {
+              "prompt": 7985,
+              "question": 60
+            }
+          }
+        },
+        {
+          "id": "ruler_variable_tracking:3:1f4add9d38059ef4",
+          "index": 3,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8309,
+              "question": 60
+            },
+            "qwen25": {
+              "prompt": 7985,
+              "question": 60
+            }
+          }
+        },
+        {
+          "id": "ruler_variable_tracking:5:1c4ce0d5a0fe18b7",
+          "index": 5,
+          "token_counts": {
+            "mistral02": {
+              "prompt": 8313,
+              "question": 60
+            },
+            "qwen25": {
+              "prompt": 7985,
+              "question": 60
+            }
+          }
+        }
+      ],
+      "total_rows": 20
+    }
+  },
+  "source_commit": "38da79d79519ef87aa46ae804f838e1eab7f86d7",
+  "source_repo": "https://github.com/NVIDIA/RULER",
+  "split_label": "development",
+  "tasks": [
+    "ruler_niah",
+    "ruler_variable_tracking"
+  ],
+  "tokenizers": {
+    "mistral02": "/workspace/models/Mistral-7B-Instruct-v0.2-63a8b08",
+    "qwen25": "/workspace/models/Qwen2.5-7B-Instruct-a09a354"
+  }
+}

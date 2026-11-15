@@ -1,0 +1,40 @@
+{
+  "encoder": "microsoft/MiniLM-L12-H384-uncased",
+  "init_checkpoint": "/workspace/compresskv_experiments/relation_scorer_v6_musique_replay/checkpoint",
+  "hotpot_samples": 8000,
+  "two_wiki_samples": 8000,
+  "musique_data_file": "/workspace/ircot/processed_data/musique/train.jsonl",
+  "musique_samples": 8000,
+  "synthetic_samples": 4000,
+  "epochs": 1,
+  "seed": 211,
+  "edge_encoding": "single",
+  "homogeneous_length_batches": true,
+  "loss_weights": {
+    "proof": 0.5,
+    "budget": 0.05,
+    "calibration": 0.2
+  },
+  "negative_counts": {
+    "edge:correct_endpoint_wrong_source": 146560,
+    "edge:cross_proof_shortcut": 18542,
+    "edge:missing_or_wrong_middle": 247300,
+    "edge:positive": 71710,
+    "edge:reversed_gold_edge": 38524,
+    "root:gold_nonroot": 47617,
+    "root:high_lexical_overlap": 111967,
+    "root:positive": 33300,
+    "root:random_distractor": 55954,
+    "terminal:nonterminal_or_distractor": 99905,
+    "terminal:positive": 63108
+  },
+  "training_items": 934487,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.3800682816992634,
+      "steps": 4870
+    }
+  ],
+  "elapsed_seconds": 1168.2269658111036
+}

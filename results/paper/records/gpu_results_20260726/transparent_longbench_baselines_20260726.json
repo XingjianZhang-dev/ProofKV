@@ -1,0 +1,914 @@
+{
+  "status": "PASS",
+  "protocol": "transparent_matched_longbench_baselines_v1",
+  "tasks": [
+    "qasper",
+    "multifieldqa_en",
+    "hotpotqa",
+    "2wikimqa",
+    "musique"
+  ],
+  "capacities": [
+    128,
+    256,
+    512
+  ],
+  "examples_per_model_task": 46,
+  "display_names": {
+    "full": "Full",
+    "streamingllm": "Stream",
+    "snapkv": "Snap",
+    "pyramidkv": "Pyramid",
+    "chunkkv_snapkv": "Chunk",
+    "llmlingua2_official": "LLM2",
+    "learned_root_topk": "Root",
+    "learned_and_or_control_anchor75_aux": "\\proofkv"
+  },
+  "rows": [
+    {
+      "model": "qwen25",
+      "capacity": 128,
+      "tasks": 5,
+      "examples_per_task": 46,
+      "f1": {
+        "full": 41.30052823116539,
+        "streamingllm": 17.04206760040788,
+        "snapkv": 16.359867937123266,
+        "pyramidkv": 15.92249739794774,
+        "chunkkv_snapkv": 16.29455669780806,
+        "llmlingua2_official": 7.3262709251676075,
+        "learned_root_topk": 14.103187503337784,
+        "learned_and_or_control_anchor75_aux": 29.562835100603046
+      }
+    },
+    {
+      "model": "qwen25",
+      "capacity": 256,
+      "tasks": 5,
+      "examples_per_task": 46,
+      "f1": {
+        "full": 41.30052823116539,
+        "streamingllm": 18.301365897644068,
+        "snapkv": 18.885165351408624,
+        "pyramidkv": 19.277025840879993,
+        "chunkkv_snapkv": 18.721873114941427,
+        "llmlingua2_official": 8.032491437702722,
+        "learned_root_topk": 15.660114149885363,
+        "learned_and_or_control_anchor75_aux": 36.906397976976464
+      }
+    },
+    {
+      "model": "qwen25",
+      "capacity": 512,
+      "tasks": 5,
+      "examples_per_task": 46,
+      "f1": {
+        "full": 41.30052823116539,
+        "streamingllm": 18.255114671943662,
+        "snapkv": 21.218258433787604,
+        "pyramidkv": 21.639344806393183,
+        "chunkkv_snapkv": 20.6864771336757,
+        "llmlingua2_official": 10.254482520069953,
+        "learned_root_topk": 16.26016169084201,
+        "learned_and_or_control_anchor75_aux": 39.44683893717922
+      }
+    },
+    {
+      "model": "mistral02",
+      "capacity": 128,
+      "tasks": 5,
+      "examples_per_task": 46,
+      "f1": {
+        "full": 31.89390075304174,
+        "streamingllm": 13.383446069868416,
+        "snapkv": 13.937761808633661,
+        "pyramidkv": 14.001142211752022,
+        "chunkkv_snapkv": 13.496181890552728,
+        "llmlingua2_official": 9.443052849940178,
+        "learned_root_topk": 15.32459649390508,
+        "learned_and_or_control_anchor75_aux": 18.565394767173533
+      }
+    },
+    {
+      "model": "mistral02",
+      "capacity": 256,
+      "tasks": 5,
+      "examples_per_task": 46,
+      "f1": {
+        "full": 31.89390075304174,
+        "streamingllm": 12.941876465292001,
+        "snapkv": 12.605474439680634,
+        "pyramidkv": 12.611771092766778,
+        "chunkkv_snapkv": 12.9981919822639,
+        "llmlingua2_official": 10.786909938057871,
+        "learned_root_topk": 15.898410528711228,
+        "learned_and_or_control_anchor75_aux": 23.05034376587435
+      }
+    },
+    {
+      "model": "mistral02",
+      "capacity": 512,
+      "tasks": 5,
+      "examples_per_task": 46,
+      "f1": {
+        "full": 31.89390075304174,
+        "streamingllm": 13.784641590288777,
+        "snapkv": 15.818636995490223,
+        "pyramidkv": 15.564982775017105,
+        "chunkkv_snapkv": 13.955697028959559,
+        "llmlingua2_official": 11.982799330618281,
+        "learned_root_topk": 16.603762718228246,
+        "learned_and_or_control_anchor75_aux": 26.267469095653887
+      }
+    }
+  ],
+  "task_cells": [
+    {
+      "model": "qwen25",
+      "task": "qasper",
+      "capacity": 128,
+      "n": 46,
+      "f1": {
+        "full": 45.71345099911773,
+        "streamingllm": 13.339582942273477,
+        "snapkv": 10.869565217391305,
+        "pyramidkv": 10.869565217391305,
+        "chunkkv_snapkv": 10.869565217391305,
+        "llmlingua2_official": 9.22457705790948,
+        "learned_root_topk": 16.025744708721497,
+        "learned_and_or_control_anchor75_aux": 28.71307838124603
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 127.43478260869566,
+        "snapkv": 127.43478260869566,
+        "pyramidkv": 128.0,
+        "chunkkv_snapkv": 128.0,
+        "llmlingua2_official": 128.0,
+        "learned_root_topk": 127.45652173913044,
+        "learned_and_or_control_anchor75_aux": 128.0
+      }
+    },
+    {
+      "model": "qwen25",
+      "task": "qasper",
+      "capacity": 256,
+      "n": 46,
+      "f1": {
+        "full": 45.71345099911773,
+        "streamingllm": 14.985158161561447,
+        "snapkv": 10.869565217391305,
+        "pyramidkv": 10.869565217391305,
+        "chunkkv_snapkv": 10.869565217391305,
+        "llmlingua2_official": 11.982469137308986,
+        "learned_root_topk": 18.801461687658684,
+        "learned_and_or_control_anchor75_aux": 34.34328017997514
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 255.5,
+        "snapkv": 255.5,
+        "pyramidkv": 256.0,
+        "chunkkv_snapkv": 256.0,
+        "llmlingua2_official": 256.0,
+        "learned_root_topk": 255.6086956521739,
+        "learned_and_or_control_anchor75_aux": 256.0
+      }
+    },
+    {
+      "model": "qwen25",
+      "task": "qasper",
+      "capacity": 512,
+      "n": 46,
+      "f1": {
+        "full": 45.71345099911773,
+        "streamingllm": 14.292776656230041,
+        "snapkv": 12.368239439177653,
+        "pyramidkv": 12.368239439177653,
+        "chunkkv_snapkv": 13.760351966873706,
+        "llmlingua2_official": 18.791684405774607,
+        "learned_root_topk": 19.029061782935106,
+        "learned_and_or_control_anchor75_aux": 31.499456834423885
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 511.54347826086956,
+        "snapkv": 511.54347826086956,
+        "pyramidkv": 512.0,
+        "chunkkv_snapkv": 512.0,
+        "llmlingua2_official": 512.0,
+        "learned_root_topk": 511.5,
+        "learned_and_or_control_anchor75_aux": 512.0
+      }
+    },
+    {
+      "model": "qwen25",
+      "task": "multifieldqa_en",
+      "capacity": 128,
+      "n": 46,
+      "f1": {
+        "full": 50.86043273553663,
+        "streamingllm": 20.973390233986006,
+        "snapkv": 17.946464557872453,
+        "pyramidkv": 18.284236995315602,
+        "chunkkv_snapkv": 18.694621109350116,
+        "llmlingua2_official": 13.610003614336135,
+        "learned_root_topk": 28.474530283975568,
+        "learned_and_or_control_anchor75_aux": 32.88471333505292
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 127.41304347826087,
+        "snapkv": 127.41304347826087,
+        "pyramidkv": 128.0,
+        "chunkkv_snapkv": 128.0,
+        "llmlingua2_official": 128.0,
+        "learned_root_topk": 127.28260869565217,
+        "learned_and_or_control_anchor75_aux": 128.0
+      }
+    },
+    {
+      "model": "qwen25",
+      "task": "multifieldqa_en",
+      "capacity": 256,
+      "n": 46,
+      "f1": {
+        "full": 50.86043273553663,
+        "streamingllm": 20.157159070127474,
+        "snapkv": 21.595909418881057,
+        "pyramidkv": 21.586483237662723,
+        "chunkkv_snapkv": 22.431436941137815,
+        "llmlingua2_official": 14.95735200979605,
+        "learned_root_topk": 29.162406140512445,
+        "learned_and_or_control_anchor75_aux": 37.566446702209404
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 255.43478260869566,
+        "snapkv": 255.43478260869566,
+        "pyramidkv": 256.0,
+        "chunkkv_snapkv": 256.0,
+        "llmlingua2_official": 256.0,
+        "learned_root_topk": 255.54347826086956,
+        "learned_and_or_control_anchor75_aux": 256.0
+      }
+    },
+    {
+      "model": "qwen25",
+      "task": "multifieldqa_en",
+      "capacity": 512,
+      "n": 46,
+      "f1": {
+        "full": 50.86043273553663,
+        "streamingllm": 23.98202398219462,
+        "snapkv": 28.459011427389555,
+        "pyramidkv": 28.370640978467677,
+        "chunkkv_snapkv": 24.8602682433199,
+        "llmlingua2_official": 18.272087347114073,
+        "learned_root_topk": 31.094780470065906,
+        "learned_and_or_control_anchor75_aux": 43.86753996186364
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 511.67391304347825,
+        "snapkv": 511.67391304347825,
+        "pyramidkv": 512.0,
+        "chunkkv_snapkv": 512.0,
+        "llmlingua2_official": 512.0,
+        "learned_root_topk": 502.6521739130435,
+        "learned_and_or_control_anchor75_aux": 512.0
+      }
+    },
+    {
+      "model": "qwen25",
+      "task": "hotpotqa",
+      "capacity": 128,
+      "n": 46,
+      "f1": {
+        "full": 42.29734558657054,
+        "streamingllm": 19.981204084278403,
+        "snapkv": 17.648056240733585,
+        "pyramidkv": 16.68187266585436,
+        "chunkkv_snapkv": 18.635868326943843,
+        "llmlingua2_official": 4.849619294798879,
+        "learned_root_topk": 8.841680162145789,
+        "learned_and_or_control_anchor75_aux": 29.74907090635991
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 127.52173913043478,
+        "snapkv": 127.52173913043478,
+        "pyramidkv": 128.0,
+        "chunkkv_snapkv": 128.0,
+        "llmlingua2_official": 128.0,
+        "learned_root_topk": 127.73913043478261,
+        "learned_and_or_control_anchor75_aux": 128.0
+      }
+    },
+    {
+      "model": "qwen25",
+      "task": "hotpotqa",
+      "capacity": 256,
+      "n": 46,
+      "f1": {
+        "full": 42.29734558657054,
+        "streamingllm": 17.634604007508884,
+        "snapkv": 21.337354603339257,
+        "pyramidkv": 22.829255711608653,
+        "chunkkv_snapkv": 24.57304362828583,
+        "llmlingua2_official": 3.9583288988323315,
+        "learned_root_topk": 10.608298936423777,
+        "learned_and_or_control_anchor75_aux": 41.703212246690505
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 255.47826086956522,
+        "snapkv": 255.47826086956522,
+        "pyramidkv": 256.0,
+        "chunkkv_snapkv": 256.0,
+        "llmlingua2_official": 256.0,
+        "learned_root_topk": 255.69565217391303,
+        "learned_and_or_control_anchor75_aux": 256.0
+      }
+    },
+    {
+      "model": "qwen25",
+      "task": "hotpotqa",
+      "capacity": 512,
+      "n": 46,
+      "f1": {
+        "full": 42.29734558657054,
+        "streamingllm": 22.53449830108869,
+        "snapkv": 25.851318568709875,
+        "pyramidkv": 25.859195065244215,
+        "chunkkv_snapkv": 21.842490771518904,
+        "llmlingua2_official": 5.0180849746067135,
+        "learned_root_topk": 10.875813824250327,
+        "learned_and_or_control_anchor75_aux": 46.06562519605998
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 511.4347826086956,
+        "snapkv": 511.4347826086956,
+        "pyramidkv": 512.0,
+        "chunkkv_snapkv": 512.0,
+        "llmlingua2_official": 512.0,
+        "learned_root_topk": 511.7826086956522,
+        "learned_and_or_control_anchor75_aux": 512.0
+      }
+    },
+    {
+      "model": "qwen25",
+      "task": "2wikimqa",
+      "capacity": 128,
+      "n": 46,
+      "f1": {
+        "full": 37.17264174930079,
+        "streamingllm": 20.604668521542465,
+        "snapkv": 21.980392156862745,
+        "pyramidkv": 19.806479113384484,
+        "chunkkv_snapkv": 22.342710997442456,
+        "llmlingua2_official": 6.76701226711176,
+        "learned_root_topk": 10.192125802929567,
+        "learned_and_or_control_anchor75_aux": 36.375713658322354
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 127.6304347826087,
+        "snapkv": 127.6304347826087,
+        "pyramidkv": 128.0,
+        "chunkkv_snapkv": 128.0,
+        "llmlingua2_official": 128.0,
+        "learned_root_topk": 127.47826086956522,
+        "learned_and_or_control_anchor75_aux": 128.0
+      }
+    },
+    {
+      "model": "qwen25",
+      "task": "2wikimqa",
+      "capacity": 256,
+      "n": 46,
+      "f1": {
+        "full": 37.17264174930079,
+        "streamingllm": 25.71604297947009,
+        "snapkv": 26.270247229326515,
+        "pyramidkv": 26.270247229326515,
+        "chunkkv_snapkv": 24.945249597423512,
+        "llmlingua2_official": 6.586714120905263,
+        "learned_root_topk": 10.863005845366395,
+        "learned_and_or_control_anchor75_aux": 38.64420603551038
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 255.3913043478261,
+        "snapkv": 255.3913043478261,
+        "pyramidkv": 256.0,
+        "chunkkv_snapkv": 256.0,
+        "llmlingua2_official": 256.0,
+        "learned_root_topk": 255.67391304347825,
+        "learned_and_or_control_anchor75_aux": 256.0
+      }
+    },
+    {
+      "model": "qwen25",
+      "task": "2wikimqa",
+      "capacity": 512,
+      "n": 46,
+      "f1": {
+        "full": 37.17264174930079,
+        "streamingllm": 20.679405135926874,
+        "snapkv": 25.980951415734026,
+        "pyramidkv": 25.96376633238637,
+        "chunkkv_snapkv": 29.496204278812975,
+        "llmlingua2_official": 5.9202438774371915,
+        "learned_root_topk": 11.19995628296852,
+        "learned_and_or_control_anchor75_aux": 38.05160133535419
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 511.60869565217394,
+        "snapkv": 511.60869565217394,
+        "pyramidkv": 512.0,
+        "chunkkv_snapkv": 512.0,
+        "llmlingua2_official": 512.0,
+        "learned_root_topk": 511.39130434782606,
+        "learned_and_or_control_anchor75_aux": 512.0
+      }
+    },
+    {
+      "model": "qwen25",
+      "task": "musique",
+      "capacity": 128,
+      "n": 46,
+      "f1": {
+        "full": 30.45877008530125,
+        "streamingllm": 10.311492219959039,
+        "snapkv": 13.354861512756251,
+        "pyramidkv": 13.970332997792953,
+        "chunkkv_snapkv": 10.930017837912574,
+        "llmlingua2_official": 2.1801423916817835,
+        "learned_root_topk": 6.981856558916494,
+        "learned_and_or_control_anchor75_aux": 20.091599222034002
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 127.5,
+        "snapkv": 127.5,
+        "pyramidkv": 128.0,
+        "chunkkv_snapkv": 128.0,
+        "llmlingua2_official": 128.0,
+        "learned_root_topk": 127.71739130434783,
+        "learned_and_or_control_anchor75_aux": 128.0
+      }
+    },
+    {
+      "model": "qwen25",
+      "task": "musique",
+      "capacity": 256,
+      "n": 46,
+      "f1": {
+        "full": 30.45877008530125,
+        "streamingllm": 13.013865269552442,
+        "snapkv": 14.352750288104978,
+        "pyramidkv": 14.829577808410761,
+        "chunkkv_snapkv": 10.790070190468676,
+        "llmlingua2_official": 2.6775930216709827,
+        "learned_root_topk": 8.865398139465508,
+        "learned_and_or_control_anchor75_aux": 32.274844720496894
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 255.56521739130434,
+        "snapkv": 255.56521739130434,
+        "pyramidkv": 256.0,
+        "chunkkv_snapkv": 256.0,
+        "llmlingua2_official": 256.0,
+        "learned_root_topk": 255.7608695652174,
+        "learned_and_or_control_anchor75_aux": 256.0
+      }
+    },
+    {
+      "model": "qwen25",
+      "task": "musique",
+      "capacity": 512,
+      "n": 46,
+      "f1": {
+        "full": 30.45877008530125,
+        "streamingllm": 9.786869284278088,
+        "snapkv": 13.431771317926923,
+        "pyramidkv": 15.634882216689999,
+        "chunkkv_snapkv": 13.473070407853017,
+        "llmlingua2_official": 3.2703119954171846,
+        "learned_root_topk": 9.101196093990197,
+        "learned_and_or_control_anchor75_aux": 37.74997135819442
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 511.6304347826087,
+        "snapkv": 511.6304347826087,
+        "pyramidkv": 512.0,
+        "chunkkv_snapkv": 512.0,
+        "llmlingua2_official": 512.0,
+        "learned_root_topk": 511.82608695652175,
+        "learned_and_or_control_anchor75_aux": 512.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "qasper",
+      "capacity": 128,
+      "n": 46,
+      "f1": {
+        "full": 35.468399644512026,
+        "streamingllm": 9.719750576855871,
+        "snapkv": 11.033926874757714,
+        "pyramidkv": 11.13799718003061,
+        "chunkkv_snapkv": 9.425252724721517,
+        "llmlingua2_official": 9.240015717073208,
+        "learned_root_topk": 16.401326174442403,
+        "learned_and_or_control_anchor75_aux": 16.12420009376349
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 127.58695652173913,
+        "snapkv": 127.58695652173913,
+        "pyramidkv": 128.0,
+        "chunkkv_snapkv": 128.0,
+        "llmlingua2_official": 128.0,
+        "learned_root_topk": 127.69565217391305,
+        "learned_and_or_control_anchor75_aux": 128.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "qasper",
+      "capacity": 256,
+      "n": 46,
+      "f1": {
+        "full": 35.468399644512026,
+        "streamingllm": 9.476324295431228,
+        "snapkv": 8.896816513500978,
+        "pyramidkv": 9.175576571982573,
+        "chunkkv_snapkv": 9.427024780011864,
+        "llmlingua2_official": 12.307542447758388,
+        "learned_root_topk": 16.148646952651223,
+        "learned_and_or_control_anchor75_aux": 20.86218642348527
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 255.5,
+        "snapkv": 255.5,
+        "pyramidkv": 256.0,
+        "chunkkv_snapkv": 256.0,
+        "llmlingua2_official": 256.0,
+        "learned_root_topk": 255.43478260869566,
+        "learned_and_or_control_anchor75_aux": 256.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "qasper",
+      "capacity": 512,
+      "n": 46,
+      "f1": {
+        "full": 35.468399644512026,
+        "streamingllm": 11.93858783616997,
+        "snapkv": 11.083668143275187,
+        "pyramidkv": 10.694036036251774,
+        "chunkkv_snapkv": 10.454232770776139,
+        "llmlingua2_official": 14.610894435405177,
+        "learned_root_topk": 19.86629731406345,
+        "learned_and_or_control_anchor75_aux": 18.708305009242746
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 511.5869565217391,
+        "snapkv": 511.5869565217391,
+        "pyramidkv": 512.0,
+        "chunkkv_snapkv": 512.0,
+        "llmlingua2_official": 512.0,
+        "learned_root_topk": 511.60869565217394,
+        "learned_and_or_control_anchor75_aux": 512.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "multifieldqa_en",
+      "capacity": 128,
+      "n": 46,
+      "f1": {
+        "full": 47.604433580038425,
+        "streamingllm": 18.29638143250411,
+        "snapkv": 21.39833953812991,
+        "pyramidkv": 20.746283276009354,
+        "chunkkv_snapkv": 18.393844989146633,
+        "llmlingua2_official": 16.77111744305565,
+        "learned_root_topk": 26.81767330457949,
+        "learned_and_or_control_anchor75_aux": 29.94385340892125
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 127.47826086956522,
+        "snapkv": 127.47826086956522,
+        "pyramidkv": 128.0,
+        "chunkkv_snapkv": 128.0,
+        "llmlingua2_official": 128.0,
+        "learned_root_topk": 127.45652173913044,
+        "learned_and_or_control_anchor75_aux": 128.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "multifieldqa_en",
+      "capacity": 256,
+      "n": 46,
+      "f1": {
+        "full": 47.604433580038425,
+        "streamingllm": 19.103064500176675,
+        "snapkv": 21.26385746567101,
+        "pyramidkv": 21.04445135266473,
+        "chunkkv_snapkv": 21.574944738937717,
+        "llmlingua2_official": 20.041773526471,
+        "learned_root_topk": 26.98727609140101,
+        "learned_and_or_control_anchor75_aux": 32.1792941368224
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 255.45652173913044,
+        "snapkv": 255.45652173913044,
+        "pyramidkv": 256.0,
+        "chunkkv_snapkv": 256.0,
+        "llmlingua2_official": 256.0,
+        "learned_root_topk": 255.54347826086956,
+        "learned_and_or_control_anchor75_aux": 256.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "multifieldqa_en",
+      "capacity": 512,
+      "n": 46,
+      "f1": {
+        "full": 47.604433580038425,
+        "streamingllm": 22.250857305538272,
+        "snapkv": 23.62711296876628,
+        "pyramidkv": 23.680150992057644,
+        "chunkkv_snapkv": 22.100575380058412,
+        "llmlingua2_official": 23.47125773344942,
+        "learned_root_topk": 29.164293849201588,
+        "learned_and_or_control_anchor75_aux": 40.815222110831726
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 511.5652173913044,
+        "snapkv": 511.5652173913044,
+        "pyramidkv": 512.0,
+        "chunkkv_snapkv": 512.0,
+        "llmlingua2_official": 512.0,
+        "learned_root_topk": 503.67391304347825,
+        "learned_and_or_control_anchor75_aux": 512.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "hotpotqa",
+      "capacity": 128,
+      "n": 46,
+      "f1": {
+        "full": 35.89772780750705,
+        "streamingllm": 18.663103546667955,
+        "snapkv": 18.822422533419974,
+        "pyramidkv": 18.81573357020927,
+        "chunkkv_snapkv": 20.103334328419155,
+        "llmlingua2_official": 7.158645244622934,
+        "learned_root_topk": 12.227882017679052,
+        "learned_and_or_control_anchor75_aux": 18.570310219341337
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 127.41304347826087,
+        "snapkv": 127.41304347826087,
+        "pyramidkv": 128.0,
+        "chunkkv_snapkv": 128.0,
+        "llmlingua2_official": 128.0,
+        "learned_root_topk": 127.67391304347827,
+        "learned_and_or_control_anchor75_aux": 128.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "hotpotqa",
+      "capacity": 256,
+      "n": 46,
+      "f1": {
+        "full": 35.89772780750705,
+        "streamingllm": 16.57424211570126,
+        "snapkv": 17.334443312031144,
+        "pyramidkv": 17.334443312031144,
+        "chunkkv_snapkv": 17.308678724246096,
+        "llmlingua2_official": 8.294472097807441,
+        "learned_root_topk": 13.496258761008537,
+        "learned_and_or_control_anchor75_aux": 29.221151450079507
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 255.58695652173913,
+        "snapkv": 255.58695652173913,
+        "pyramidkv": 256.0,
+        "chunkkv_snapkv": 256.0,
+        "llmlingua2_official": 256.0,
+        "learned_root_topk": 255.5,
+        "learned_and_or_control_anchor75_aux": 256.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "hotpotqa",
+      "capacity": 512,
+      "n": 46,
+      "f1": {
+        "full": 35.89772780750705,
+        "streamingllm": 15.749510000482978,
+        "snapkv": 20.76915774284195,
+        "pyramidkv": 19.83748072420841,
+        "chunkkv_snapkv": 16.216748333182462,
+        "llmlingua2_official": 7.017933365825293,
+        "learned_root_topk": 11.724456747596088,
+        "learned_and_or_control_anchor75_aux": 33.87367373724452
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 511.54347826086956,
+        "snapkv": 511.54347826086956,
+        "pyramidkv": 512.0,
+        "chunkkv_snapkv": 512.0,
+        "llmlingua2_official": 512.0,
+        "learned_root_topk": 511.60869565217394,
+        "learned_and_or_control_anchor75_aux": 512.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "2wikimqa",
+      "capacity": 128,
+      "n": 46,
+      "f1": {
+        "full": 18.210137402886733,
+        "streamingllm": 11.137111213669298,
+        "snapkv": 11.229121437931507,
+        "pyramidkv": 11.231133156190365,
+        "chunkkv_snapkv": 11.21435466165578,
+        "llmlingua2_official": 10.361254033003114,
+        "learned_root_topk": 12.18760126976898,
+        "learned_and_or_control_anchor75_aux": 14.087271839015886
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 127.52173913043478,
+        "snapkv": 127.52173913043478,
+        "pyramidkv": 128.0,
+        "chunkkv_snapkv": 128.0,
+        "llmlingua2_official": 128.0,
+        "learned_root_topk": 127.56521739130434,
+        "learned_and_or_control_anchor75_aux": 128.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "2wikimqa",
+      "capacity": 256,
+      "n": 46,
+      "f1": {
+        "full": 18.210137402886733,
+        "streamingllm": 11.204449743284043,
+        "snapkv": 9.581889483150407,
+        "pyramidkv": 9.581889483150407,
+        "chunkkv_snapkv": 11.480515913408162,
+        "llmlingua2_official": 9.322054193396454,
+        "learned_root_topk": 13.517668845404089,
+        "learned_and_or_control_anchor75_aux": 18.480049108397473
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 255.67391304347825,
+        "snapkv": 255.67391304347825,
+        "pyramidkv": 256.0,
+        "chunkkv_snapkv": 256.0,
+        "llmlingua2_official": 256.0,
+        "learned_root_topk": 255.52173913043478,
+        "learned_and_or_control_anchor75_aux": 256.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "2wikimqa",
+      "capacity": 512,
+      "n": 46,
+      "f1": {
+        "full": 18.210137402886733,
+        "streamingllm": 11.191851096374789,
+        "snapkv": 16.09517344727333,
+        "pyramidkv": 16.09517344727333,
+        "chunkkv_snapkv": 12.162908395438668,
+        "llmlingua2_official": 10.715535350816008,
+        "learned_root_topk": 12.341606040374675,
+        "learned_and_or_control_anchor75_aux": 21.46776753032642
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 511.5217391304348,
+        "snapkv": 511.5217391304348,
+        "pyramidkv": 512.0,
+        "chunkkv_snapkv": 512.0,
+        "llmlingua2_official": 512.0,
+        "learned_root_topk": 511.2391304347826,
+        "learned_and_or_control_anchor75_aux": 512.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "musique",
+      "capacity": 128,
+      "n": 46,
+      "f1": {
+        "full": 22.288805330264474,
+        "streamingllm": 9.100883579644838,
+        "snapkv": 7.204998658929201,
+        "pyramidkv": 8.074563876320507,
+        "chunkkv_snapkv": 8.344122748820554,
+        "llmlingua2_official": 3.684231811945987,
+        "learned_root_topk": 8.988499703055469,
+        "learned_and_or_control_anchor75_aux": 14.1013382748257
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 127.67391304347827,
+        "snapkv": 127.67391304347827,
+        "pyramidkv": 128.0,
+        "chunkkv_snapkv": 128.0,
+        "llmlingua2_official": 128.0,
+        "learned_root_topk": 127.67391304347827,
+        "learned_and_or_control_anchor75_aux": 128.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "musique",
+      "capacity": 256,
+      "n": 46,
+      "f1": {
+        "full": 22.288805330264474,
+        "streamingllm": 8.35130167186679,
+        "snapkv": 5.950365424049635,
+        "pyramidkv": 5.922494744005042,
+        "chunkkv_snapkv": 5.199795754715663,
+        "llmlingua2_official": 3.968707424856067,
+        "learned_root_topk": 9.342201993091281,
+        "learned_and_or_control_anchor75_aux": 14.50903771058709
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 255.52173913043478,
+        "snapkv": 255.52173913043478,
+        "pyramidkv": 256.0,
+        "chunkkv_snapkv": 256.0,
+        "llmlingua2_official": 256.0,
+        "learned_root_topk": 255.7608695652174,
+        "learned_and_or_control_anchor75_aux": 256.0
+      }
+    },
+    {
+      "model": "mistral02",
+      "task": "musique",
+      "capacity": 512,
+      "n": 46,
+      "f1": {
+        "full": 22.288805330264474,
+        "streamingllm": 7.792401712877872,
+        "snapkv": 7.518072675294374,
+        "pyramidkv": 7.518072675294374,
+        "chunkkv_snapkv": 8.844020265342113,
+        "llmlingua2_official": 4.098375767595505,
+        "learned_root_topk": 9.922159639905425,
+        "learned_and_or_control_anchor75_aux": 16.472377090624033
+      },
+      "mean_retained_tokens": {
+        "streamingllm": 511.5,
+        "snapkv": 511.5,
+        "pyramidkv": 512.0,
+        "chunkkv_snapkv": 512.0,
+        "llmlingua2_official": 512.0,
+        "learned_root_topk": 511.7173913043478,
+        "learned_and_or_control_anchor75_aux": 512.0
+      }
+    }
+  ],
+  "source_hashes": {
+    "qwen25": {
+      "legacy": {
+        "results_sha256": "710a813b87b66d5512622e30ae6c08c01c3f3e282ad035db8b95030bb216e130",
+        "manifest_sha256": "d8c1cee1b7939f3679f03ac70fc405d9234e6adc824ed5cede42f3d4537e5f11",
+        "metrics_sha256": "637f3a7c7fac6771d44acd3b0872ca178ed381bca1d035362ea4f4840b89cb88"
+      },
+      "fair": {
+        "results_sha256": "b724dddfbfe1c034eff94bd6ef427040e1ccabde3eff84ca00cb209ccb421477",
+        "manifest_sha256": "f158a43c561a7a9322930340cb70666c9b6f2727890f019614f1411d04fc8154",
+        "metrics_sha256": "2eeb0c857c4421c8a320ff759fb217845f45cd07f43a25d55623af650f9d777d"
+      },
+      "llmlingua2": {
+        "results_sha256": "e192fbd4ef4775693063497ef7f975a79714ceee2d803da9a53e6acd7960a9ef",
+        "manifest_sha256": "b074b4751bf1f5153e79e56b818ed99a70faa174164136e886988469f2345201",
+        "metrics_sha256": "a2613cb9faa922c4f397fa4b6c192caedf3f81bb6c5bec9f922b7f0a45cd3416"
+      }
+    },
+    "mistral02": {
+      "legacy": {
+        "results_sha256": "dde083103cc565772c2e68a7697ce9599d82294c431388e76a2256eb42226e46",
+        "manifest_sha256": "ade65596d4c7bd17aa52a70241e7c405c6ba50dc99c369d8be2329d965b81066",
+        "metrics_sha256": "dd921aba6d5662ed433ef54c23a945c87c86b79b77a87cb14125ec4b4577b812"
+      },
+      "fair": {
+        "results_sha256": "ddb7b537cd3f73208df68b311381215f7c6e2d5062184c9b13836888f7f9be6d",
+        "manifest_sha256": "2bc1c03768a5f3779aa5c3ec9fad88f966e6652350637df7a87bbf1d8b139529",
+        "metrics_sha256": "594097cbbd65564b1c3027e198fef8bb2e85b25a845c679035853387becaaa44"
+      },
+      "llmlingua2": {
+        "results_sha256": "87d2b62ea8624a0efba42f1e31c90813661b81b0ffe541215783472f81095916",
+        "manifest_sha256": "05a1275cf7a088bd52b0065f44ec42ddf625565e5791b45832198486885ca9ba",
+        "metrics_sha256": "0fb2d34f516f7e4c1cdab1add5e181b4d72b339bd766bffb5e431534b55d6acd"
+      }
+    }
+  },
+  "selection_policy": "No development-selected aggregate column and no per-cell best-of baseline: every named method is displayed separately."
+}

@@ -1,0 +1,36 @@
+{
+  "encoder": "microsoft/MiniLM-L12-H384-uncased",
+  "init_checkpoint": "/workspace/compresskv_experiments/relation_scorer_V2c_pilot/checkpoint",
+  "hotpot_samples": 0,
+  "two_wiki_samples": 0,
+  "synthetic_samples": 8000,
+  "epochs": 1,
+  "seed": 23,
+  "loss_weights": {
+    "proof": 0.5,
+    "budget": 0.05,
+    "calibration": 0.2
+  },
+  "negative_counts": {
+    "edge:correct_endpoint_wrong_source": 111990,
+    "edge:cross_proof_shortcut": 37326,
+    "edge:missing_or_wrong_middle": 223980,
+    "edge:positive": 77311,
+    "edge:reversed_gold_edge": 77311,
+    "root:gold_nonroot": 39237,
+    "root:high_lexical_overlap": 48000,
+    "root:positive": 18665,
+    "root:random_distractor": 16000,
+    "terminal:nonterminal_or_distractor": 54481,
+    "terminal:positive": 71585
+  },
+  "training_items": 775886,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.19251651512670934,
+      "steps": 3031
+    }
+  ],
+  "elapsed_seconds": 538.5933445871342
+}

@@ -1,0 +1,12 @@
+diff --git a/kvpress/pipeline.py b/kvpress/pipeline.py
+index 23fdded..36a63f9 100644
+--- a/kvpress/pipeline.py
++++ b/kvpress/pipeline.py
+@@ -222,6 +222,7 @@ class KVPressTextGenerationPipeline(Pipeline):
+ 
+             logger.debug(f"Context Length: {context_length}")
+             logger.debug(f"Compressed Context Length: {cache.get_seq_length()}")
++            cache._proofcache_compressed_context_length = int(cache.get_seq_length())
+ 
+         # We only perform decoding compression if the press is a decoding or prefill decoding press
+         perform_decoding_compression = press is not None and isinstance(press, (DecodingPress, PrefillDecodingPress))

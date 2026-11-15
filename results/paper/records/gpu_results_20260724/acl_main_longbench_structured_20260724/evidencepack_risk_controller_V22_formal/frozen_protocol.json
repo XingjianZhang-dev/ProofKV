@@ -1,0 +1,118 @@
+{
+  "status": "FROZEN",
+  "protocol": "evidencepack_risk_controller_multilength_formal_V22",
+  "confirmation_protocol": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_risk_controller_V22/frozen_confirmation_protocol.json",
+  "confirmation_protocol_sha256": "7364ff8e4a44cbe9a814d03fdf63627f08656a0ff0bd540b9839fead48ceeed1",
+  "confirmation_audit": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_risk_controller_V22/confirmation_audit.json",
+  "confirmation_audit_sha256": "240f687d1a7b8a9727eb903a5ab3cb2ae45597d744460f404006d87b85b7be19",
+  "development_selection": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_risk_controller_V22/development_selection.json",
+  "development_selection_sha256": "e2a04a9b8ed079366ee0944dd0ce5fba7c718736ff93147c24e74e679f8a0a93",
+  "feature": "overlay_proof_probability_margin",
+  "threshold": 0.17,
+  "strict_greater_than": true,
+  "proof_method": "learned_and_or",
+  "fallback_method": "entity_graph_adaptive",
+  "primary_development_selected_comparator": "learned_and_or",
+  "task_identity_available_to_controller": false,
+  "decoded_output_available_to_controller": false,
+  "tasks": [
+    "musique",
+    "2wiki"
+  ],
+  "data_files": {
+    "musique": "/workspace/ircot/processed_data/musique/test_subsampled.jsonl",
+    "2wiki": "/workspace/ircot/processed_data/2wikimultihopqa/test_subsampled.jsonl"
+  },
+  "target_prompt_tokens": [
+    8000,
+    16000,
+    32000
+  ],
+  "methods_by_target": {
+    "8000": [
+      "full",
+      "bm25_topk",
+      "reranker_topk",
+      "entity_graph_adaptive",
+      "learned_root_topk",
+      "learned_and_or"
+    ],
+    "16000": [
+      "full",
+      "entity_graph_adaptive",
+      "learned_root_topk",
+      "learned_and_or"
+    ],
+    "32000": [
+      "full",
+      "entity_graph_adaptive",
+      "learned_root_topk",
+      "learned_and_or"
+    ]
+  },
+  "sample_seed": 17,
+  "sample_offset": 240,
+  "samples_per_task_target": 128,
+  "formal_interval": [
+    240,
+    368
+  ],
+  "development_and_confirmation_intervals": [
+    [
+      128,
+      144
+    ],
+    [
+      144,
+      176
+    ],
+    [
+      176,
+      208
+    ],
+    [
+      208,
+      240
+    ]
+  ],
+  "packing_seed": 1907,
+  "retained_ratio": 0.08,
+  "max_new_tokens": 24,
+  "attention_implementation": "sdpa",
+  "formal_gate": {
+    "primary_comparator_ci95_low_points_gt": 0.0,
+    "primary_comparator_holm_p_lt": 0.05,
+    "full_context_ci95_low_points_gt": 0.0,
+    "full_context_holm_p_lt": 0.05,
+    "macro_delta_vs_each_common_compact_baseline_points_gt": 0.0,
+    "minimum_target_macro_delta_vs_primary_points_gt": 0.0,
+    "minimum_cell_delta_vs_full_points_gte": -2.0,
+    "mean_selected_retained_ratio_lte": 0.1,
+    "minimum_routes_per_branch_per_cell_gte": 4
+  },
+  "matched_retrieval_baselines_at_8k": [
+    "bm25_topk",
+    "reranker_topk"
+  ],
+  "common_compact_baselines": [
+    "entity_graph_adaptive",
+    "learned_root_topk",
+    "learned_and_or"
+  ],
+  "outputs_unobserved_at_freeze": true,
+  "runner": "/workspace/compresskv_run/compresskv/compresskv/scripts/run_hotpot_compact_qa.py",
+  "runner_sha256": "e518d28c7452a000fc3423197fd5eb4a9a0c81c3b1f98e371cc7a8155b7b563d",
+  "audit_implementation": "/workspace/compresskv_run/compresskv/compresskv/scripts/audit_evidencepack_risk_controller_V22_formal.py",
+  "audit_implementation_sha256": "eb3b4557d5c2048ea49fbfca2d408e59bfbce168002dbe296f7006822bc82da3",
+  "output_directories": {
+    "musique_8000": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_risk_controller_V22_formal/formal_musique_qwen25_n128_offset240_target8000",
+    "musique_16000": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_risk_controller_V22_formal/formal_musique_qwen25_n128_offset240_target16000",
+    "musique_32000": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_risk_controller_V22_formal/formal_musique_qwen25_n128_offset240_target32000",
+    "2wiki_8000": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_risk_controller_V22_formal/formal_2wiki_qwen25_n128_offset240_target8000",
+    "2wiki_16000": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_risk_controller_V22_formal/formal_2wiki_qwen25_n128_offset240_target16000",
+    "2wiki_32000": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_risk_controller_V22_formal/formal_2wiki_qwen25_n128_offset240_target32000"
+  },
+  "bootstrap_replicates": 50000,
+  "permutation_replicates": 50000,
+  "inference_seed": 20260726
+}

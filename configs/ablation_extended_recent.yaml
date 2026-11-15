@@ -1,0 +1,18 @@
+sink_size: 4
+recent_size: 512
+guidepost_count: 256
+block_size: 128
+candidates_per_block: 1
+selector: extended_recent
+route_scope: query_head
+default_route: navigation
+apply_during_prefill: false
+decode_q_len_threshold: 1
+target_budget_ratio: null
+calibration_threshold: 0.985
+navigation_threshold: 0.985
+streaming_threshold: 0.985
+min_full_heads_per_layer: 0
+dtype: bfloat16
+seed: 0
+notes: {ablation: replace guideposts with same-size extra recent window}

@@ -1,0 +1,225 @@
+{
+  "status": "PASS",
+  "protocol": "frozen_model_compatible_official_longbench_v10_audit_and_paired_inference",
+  "tasks": [
+    "qasper",
+    "multifieldqa_en",
+    "hotpotqa",
+    "2wikimqa",
+    "musique"
+  ],
+  "capacities": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "n_per_task": 47,
+  "bootstrap_replicates": 50000,
+  "permutation_replicates": 50000,
+  "seed": 20260725,
+  "audit_implementation_sha256": "92f65c479a84132f499437c704f9ba68f46fdeb345258e2c01ccc6f04f50de39",
+  "formal_protocol": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/formal_protocol_v10_state_reset_r1.json",
+  "formal_protocol_sha256": "7841f31cf326b166346973b81a8bc71aa914b60a7dd68e989af96cd4dd2446e3",
+  "precommitted_primary_endpoint": "equal-weighted task macro of ProofKV-v10 versus the compatible official implementation for each model",
+  "primary_inference": {
+    "delta_score_points": -8.869122579864792,
+    "ci95_low": -11.288731749817817,
+    "ci95_high": -6.513735380295731,
+    "permutation_p_two_sided": 1.999960000799984e-05,
+    "comparison": "proofkv_v10_vs_model_compatible_official_baseline",
+    "equal_weighting": "average the two models and four capacities within each frozen task-sample pair, then task macro",
+    "model_blocks": 2,
+    "capacity_blocks": 4,
+    "task_groups": 5,
+    "samples_per_task": 47
+  },
+  "run_audits": [
+    {
+      "status": "PASS",
+      "model": "qwen25",
+      "method": "official_compresskv",
+      "rows": 940,
+      "expected_rows": 940,
+      "unique_keys": 940,
+      "runtime_capacity_hashes": [
+        "0f759b4987419157ba40b3c576420c86c1cf2de5dbe5d1d981ec252ff50f0e74",
+        "5cb6adc437c0e408c9364f69b2daab52042c92d63cfbdf6e3bcdc097e31f75e1",
+        "acc37f26a7007b18624e869ff040e5806daacfa5f0256f352b88cac5c39c7b3e",
+        "e82f4ff95e5a26c846c2795c4c019d59734939e7c501e9d65971a5d176c03bef"
+      ],
+      "max_capacity_excess_tokens": 0.0,
+      "results_sha256": "9d280e4974555a4285fb00e4d4b55f44245be1cfc3a96521d73733ebec50f81d",
+      "metrics_sha256": "8042fd0001b950951cd36bec578bf656c6a7ddb6f61bebf575a4f0d1a72851dd",
+      "manifest_sha256": "60d5b14caac6031c2a1d4f7a780966d7efccb1c3542239863e597ce406f05421",
+      "environment": {
+        "python": "3.12.13",
+        "executable": "/workspace/venvs/officialkv45/bin/python",
+        "packages": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.45.2",
+          "tokenizers": "0.20.3",
+          "flash-attn": "2.8.3",
+          "huggingface-hub": "0.36.2",
+          "nvtx": null,
+          "protobuf": null,
+          "sentencepiece": "0.2.2"
+        },
+        "cuda": "12.8",
+        "gpu": "NVIDIA A100 80GB PCIe"
+      },
+      "official_commit": "12f920fbecba67e16806a6d8eac0ad389ddcad6f"
+    },
+    {
+      "status": "PASS",
+      "model": "mistral02",
+      "method": "official_headkv_reasonkv",
+      "rows": 940,
+      "expected_rows": 940,
+      "unique_keys": 940,
+      "runtime_capacity_hashes": [],
+      "max_capacity_excess_tokens": -4.03125,
+      "results_sha256": "53e195e8723fd7a7d26d902945eefc745c3615945776c7494a140afc22b1a16a",
+      "metrics_sha256": "8fcbf9444fa06ba07ac1b3571a14e59a9507063dd1c9c2b0a8648b859b01071c",
+      "manifest_sha256": "5c0849ea2ceae5db332c29c04c89031d7735d7eee7fe9464104c538533ae7994",
+      "environment": {
+        "python": "3.12.13",
+        "executable": "/workspace/venvs/headkv437/bin/python",
+        "packages": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.37.2",
+          "tokenizers": "0.15.2",
+          "flash-attn": "2.8.3",
+          "huggingface-hub": "0.36.2",
+          "nvtx": "0.2.15",
+          "protobuf": "5.27.3",
+          "sentencepiece": "0.2.0"
+        },
+        "cuda": "12.8",
+        "gpu": "NVIDIA A100 80GB PCIe"
+      },
+      "official_commit": "0862a0955fe82e9ff611d59541918e02c5def625"
+    }
+  ],
+  "comparisons": [
+    {
+      "model": "qwen25",
+      "capacity": 64,
+      "n": 235,
+      "target_method": "confirmation_stable_proofkv_v10",
+      "official_method": "official_compresskv",
+      "target_score": 14.978931065912708,
+      "official_score": 31.46142078574598,
+      "delta_score_points": -16.482489719833268,
+      "ci95_low": -21.192985606539686,
+      "ci95_high": -11.856169541113177,
+      "permutation_p_two_sided": 1.999960000799984e-05,
+      "holm_p": 0.00015999680006399873
+    },
+    {
+      "model": "qwen25",
+      "capacity": 128,
+      "n": 235,
+      "target_method": "confirmation_stable_proofkv_v10",
+      "official_method": "official_compresskv",
+      "target_score": 23.107857155891235,
+      "official_score": 36.687144184192334,
+      "delta_score_points": -13.579287028301101,
+      "ci95_low": -18.690895525197625,
+      "ci95_high": -8.572499690425053,
+      "permutation_p_two_sided": 1.999960000799984e-05,
+      "holm_p": 0.00015999680006399873
+    },
+    {
+      "model": "qwen25",
+      "capacity": 256,
+      "n": 235,
+      "target_method": "confirmation_stable_proofkv_v10",
+      "official_method": "official_compresskv",
+      "target_score": 22.858880003165606,
+      "official_score": 37.60119321122128,
+      "delta_score_points": -14.74231320805567,
+      "ci95_low": -19.86756677677861,
+      "ci95_high": -9.7364784035758,
+      "permutation_p_two_sided": 1.999960000799984e-05,
+      "holm_p": 0.00015999680006399873
+    },
+    {
+      "model": "qwen25",
+      "capacity": 512,
+      "n": 235,
+      "target_method": "confirmation_stable_proofkv_v10",
+      "official_method": "official_compresskv",
+      "target_score": 26.613399486911806,
+      "official_score": 39.1030763920348,
+      "delta_score_points": -12.489676905122998,
+      "ci95_low": -17.184971111030993,
+      "ci95_high": -7.788710198983257,
+      "permutation_p_two_sided": 3.999920001599968e-05,
+      "holm_p": 0.0001999960000799984
+    },
+    {
+      "model": "mistral02",
+      "capacity": 64,
+      "n": 235,
+      "target_method": "confirmation_stable_proofkv_v10",
+      "official_method": "official_headkv_reasonkv",
+      "target_score": 12.088996662211974,
+      "official_score": 14.578836574627264,
+      "delta_score_points": -2.4898399124152903,
+      "ci95_low": -4.622302257695491,
+      "ci95_high": -0.3596578642115556,
+      "permutation_p_two_sided": 0.025939481210375794,
+      "holm_p": 0.07781844363112739
+    },
+    {
+      "model": "mistral02",
+      "capacity": 128,
+      "n": 235,
+      "target_method": "confirmation_stable_proofkv_v10",
+      "official_method": "official_headkv_reasonkv",
+      "target_score": 16.543051301901297,
+      "official_score": 22.374085546310393,
+      "delta_score_points": -5.8310342444090955,
+      "ci95_low": -9.064506411938899,
+      "ci95_high": -2.638975125171174,
+      "permutation_p_two_sided": 0.00033999320013599726,
+      "holm_p": 0.001359972800543989
+    },
+    {
+      "model": "mistral02",
+      "capacity": 256,
+      "n": 235,
+      "target_method": "confirmation_stable_proofkv_v10",
+      "official_method": "official_headkv_reasonkv",
+      "target_score": 20.499108109867457,
+      "official_score": 24.068768587431702,
+      "delta_score_points": -3.569660477564245,
+      "ci95_low": -6.912472390781034,
+      "ci95_high": -0.18938763858194033,
+      "permutation_p_two_sided": 0.04399912001759965,
+      "holm_p": 0.0879982400351993
+    },
+    {
+      "model": "mistral02",
+      "capacity": 512,
+      "n": 235,
+      "target_method": "confirmation_stable_proofkv_v10",
+      "official_method": "official_headkv_reasonkv",
+      "target_score": 24.23059489089168,
+      "official_score": 25.99927403410834,
+      "delta_score_points": -1.7686791432166578,
+      "ci95_low": -5.081152465018947,
+      "ci95_high": 1.5599108524655398,
+      "permutation_p_two_sided": 0.30471390572188556,
+      "holm_p": 0.30471390572188556
+    }
+  ],
+  "source_sha256": {
+    "selection_manifest": "c7cda95a9b7a42c70428aba9b973e732de56242c1f7b04e6322ff60546fc6b76",
+    "qwen25_target_results": "710a813b87b66d5512622e30ae6c08c01c3f3e282ad035db8b95030bb216e130",
+    "qwen25_official_results": "9d280e4974555a4285fb00e4d4b55f44245be1cfc3a96521d73733ebec50f81d",
+    "mistral02_target_results": "dde083103cc565772c2e68a7697ce9599d82294c431388e76a2256eb42226e46",
+    "mistral02_official_results": "53e195e8723fd7a7d26d902945eefc745c3615945776c7494a140afc22b1a16a"
+  }
+}

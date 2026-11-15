@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "ProofKV"
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Xingjian
+    orcid: "https://orcid.org/0009-0009-9141-8819"
+    affiliation: "Carnegie Mellon University"
+repository-code: "https://github.com/XingjianZhang-dev/ProofKV"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "ProofKV: Compiling Complete Evidence Chains into Reusable KV Memory for Structured-Evidence QA"
+  authors:
+    - family-names: Zhang
+      given-names: Xingjian
+      orcid: "https://orcid.org/0009-0009-9141-8819"
+  collection-title: "Findings of the Association for Computational Linguistics: EACL 2027"
+  year: 2027
+  publisher:
+    name: "Association for Computational Linguistics"
+  conference:
+    name: "20th Conference of the European Chapter of the Association for Computational Linguistics"
+    city: Athens
+    country: GR

@@ -1,0 +1,67 @@
+{
+  "complete": false,
+  "counts": {
+    "full": 17,
+    "learned_and_or_control_anchor75_aux": 48,
+    "learned_root_topk": 49
+  },
+  "endpoints": [
+    {
+      "ci95": [
+        5.620703370606236,
+        19.037955803874798
+      ],
+      "cluster_sizes": {
+        "2wikimqa:128": 1,
+        "2wikimqa:256": 1,
+        "2wikimqa:512": 1,
+        "hotpotqa:128": 5,
+        "hotpotqa:256": 5,
+        "hotpotqa:512": 5,
+        "multifieldqa_en:128": 5,
+        "multifieldqa_en:256": 5,
+        "multifieldqa_en:512": 5,
+        "qasper:128": 5,
+        "qasper:256": 5,
+        "qasper:512": 5
+      },
+      "clusters": 12,
+      "delta_f1": 12.371689129295566,
+      "holm_p": 0.004149377593360996,
+      "left": "learned_and_or_control_anchor75_aux",
+      "p_value": 0.004149377593360996,
+      "pairs": 48,
+      "right": "learned_root_topk"
+    }
+  ],
+  "exact_token_difference": {
+    "max_abs": null,
+    "mean": null,
+    "pairs": 0
+  },
+  "expected_compact_rows_per_method": 75,
+  "expected_full_rows": 25,
+  "f1_by_method_capacity": {
+    "full": {
+      "full": 58.71579400991166
+    },
+    "learned_and_or_control_anchor75_aux": {
+      "128": 36.04771438512304,
+      "256": 34.26026061225302,
+      "512": 35.34585535782557
+    },
+    "learned_root_topk": {
+      "128": 18.46569882797767,
+      "256": 19.9292043816604,
+      "512": 19.710986733956585
+    }
+  },
+  "proof_512_vs_full": {
+    "absolute_delta": -20.78967577770556,
+    "full_f1": 56.13553113553114,
+    "pairs": 16,
+    "proof_f1": 35.34585535782557,
+    "retention_percent": 62.96521052323902
+  },
+  "status": "INTERIM_POSITIVE"
+}

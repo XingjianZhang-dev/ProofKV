@@ -1,0 +1,155 @@
+{
+  "model": "/workspace/models/Qwen2.5-7B-Instruct-a09a354",
+  "dataset": "2wiki",
+  "split": "validation",
+  "data_file": "/workspace/ircot/processed_data/2wikimultihopqa/test_subsampled.jsonl",
+  "max_samples": 128,
+  "sample_offset": 240,
+  "budget": 0.08,
+  "budget_tokens": null,
+  "target_prompt_tokens": 8000,
+  "packing_seed": 1907,
+  "attn_implementation": "sdpa",
+  "full_prefill_chunk_size": 2048,
+  "compact_prefill_chunk_size": 512,
+  "methods": [
+    "full",
+    "bm25_topk",
+    "reranker_topk",
+    "entity_graph_adaptive",
+    "learned_root_topk",
+    "learned_and_or"
+  ],
+  "scorer_kind": "cross",
+  "learned_dense_core_count": 4,
+  "learned_edge_batch_size": 256,
+  "repair_halo": 0,
+  "records": [
+    {
+      "method": "bm25_topk",
+      "n": 128,
+      "answer_em": 0.3828125,
+      "answer_f1": 0.43321665313852814,
+      "answer_contains": 0.40625,
+      "gold_token_recall": 0.6211354704057446,
+      "retained_ratio": 0.07930297415280527,
+      "seconds": 0.6718014506732288,
+      "selection_seconds": 0.07860557866661111,
+      "generation_seconds": 0.5931958720066177,
+      "proof_core_tokens": 0.0,
+      "auxiliary_tokens": 0.0
+    },
+    {
+      "method": "entity_graph_adaptive",
+      "n": 128,
+      "answer_em": 0.3984375,
+      "answer_f1": 0.4799924467893218,
+      "answer_contains": 0.4609375,
+      "gold_token_recall": 0.7242592299997265,
+      "retained_ratio": 0.08000192316714075,
+      "seconds": 0.6237242773349863,
+      "selection_seconds": 0.035730189076275565,
+      "generation_seconds": 0.5879940882587107,
+      "proof_core_tokens": 0.0,
+      "auxiliary_tokens": 0.0
+    },
+    {
+      "method": "full",
+      "n": 128,
+      "answer_em": 0.4140625,
+      "answer_f1": 0.4605987328643579,
+      "answer_contains": 0.4296875,
+      "gold_token_recall": 1.0,
+      "retained_ratio": 1.0,
+      "seconds": 3.579292052287201,
+      "selection_seconds": 0.0,
+      "generation_seconds": 3.579292052287201,
+      "proof_core_tokens": 0.0,
+      "auxiliary_tokens": 0.0
+    },
+    {
+      "method": "learned_and_or",
+      "n": 128,
+      "answer_em": 0.3828125,
+      "answer_f1": 0.45633680555555556,
+      "answer_contains": 0.4609375,
+      "gold_token_recall": 0.5039826547924195,
+      "retained_ratio": 0.058306602465111615,
+      "seconds": 0.5837064646329964,
+      "selection_seconds": 0.02644417226110818,
+      "generation_seconds": 0.5572622923718882,
+      "proof_core_tokens": 425.1953125,
+      "auxiliary_tokens": 0.0
+    },
+    {
+      "method": "learned_root_topk",
+      "n": 128,
+      "answer_em": 0.375,
+      "answer_f1": 0.424741838023088,
+      "answer_contains": 0.40625,
+      "gold_token_recall": 0.7343927556818182,
+      "retained_ratio": 0.07928523667279233,
+      "seconds": 5.228008742062229,
+      "selection_seconds": 4.555175756835524,
+      "generation_seconds": 0.6728329852267052,
+      "proof_core_tokens": 592.1484375,
+      "auxiliary_tokens": 0.0
+    },
+    {
+      "method": "reranker_topk",
+      "n": 128,
+      "answer_em": 0.390625,
+      "answer_f1": 0.44455717893217894,
+      "answer_contains": 0.4140625,
+      "gold_token_recall": 0.6523615056818182,
+      "retained_ratio": 0.07928054358095174,
+      "seconds": 0.6341871074619121,
+      "selection_seconds": 0.07992610887231422,
+      "generation_seconds": 0.5542609985895979,
+      "proof_core_tokens": 0.0,
+      "auxiliary_tokens": 0.0
+    }
+  ],
+  "paired_full_retention": [
+    {
+      "method": "bm25_topk",
+      "n_paired": 128,
+      "relative_f1_to_full": 0.9405511179860464,
+      "n_full_em_correct": 53,
+      "em_retention_on_full_em_correct": 0.8113207547169812,
+      "f1_on_full_em_correct": 0.8192872117400419
+    },
+    {
+      "method": "entity_graph_adaptive",
+      "n_paired": 128,
+      "relative_f1_to_full": 1.042105443504716,
+      "n_full_em_correct": 53,
+      "em_retention_on_full_em_correct": 0.7735849056603774,
+      "f1_on_full_em_correct": 0.7735849056603774
+    },
+    {
+      "method": "learned_and_or",
+      "n_paired": 128,
+      "relative_f1_to_full": 0.9907469842952056,
+      "n_full_em_correct": 53,
+      "em_retention_on_full_em_correct": 0.7358490566037735,
+      "f1_on_full_em_correct": 0.750943396226415
+    },
+    {
+      "method": "learned_root_topk",
+      "n_paired": 128,
+      "relative_f1_to_full": 0.9221515556104898,
+      "n_full_em_correct": 53,
+      "em_retention_on_full_em_correct": 0.7547169811320755,
+      "f1_on_full_em_correct": 0.7584905660377359
+    },
+    {
+      "method": "reranker_topk",
+      "n_paired": 128,
+      "relative_f1_to_full": 0.9651723880514821,
+      "n_full_em_correct": 53,
+      "em_retention_on_full_em_correct": 0.8301886792452831,
+      "f1_on_full_em_correct": 0.8463611859838275
+    }
+  ]
+}

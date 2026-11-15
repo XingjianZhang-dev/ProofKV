@@ -1,0 +1,54 @@
+{
+  "model": "/workspace/models/Qwen2.5-7B-Instruct-a09a354",
+  "dataset": "2wiki",
+  "split": "validation",
+  "data_file": "/workspace/ircot/processed_data/2wikimultihopqa/dev_subsampled.jsonl",
+  "max_samples": 100,
+  "sample_offset": 0,
+  "budget": 0.16,
+  "budget_tokens": null,
+  "target_prompt_tokens": null,
+  "packing_seed": null,
+  "attn_implementation": "sdpa",
+  "full_prefill_chunk_size": 2048,
+  "compact_prefill_chunk_size": 512,
+  "methods": [
+    "compass_fixed",
+    "entity_graph_adaptive"
+  ],
+  "scorer_kind": null,
+  "learned_dense_core_count": 4,
+  "learned_edge_batch_size": 256,
+  "repair_halo": 0,
+  "records": [
+    {
+      "method": "compass_fixed",
+      "n": 100,
+      "answer_em": 0.28,
+      "answer_f1": 0.3107777777777778,
+      "answer_contains": 0.3,
+      "gold_token_recall": 0.1876759606664774,
+      "retained_ratio": 0.16000072440487476,
+      "seconds": 0.156799705051817,
+      "selection_seconds": 0.009611253691837192,
+      "generation_seconds": 0.14718845135997982,
+      "proof_core_tokens": 0.0,
+      "auxiliary_tokens": 0.0
+    },
+    {
+      "method": "entity_graph_adaptive",
+      "n": 100,
+      "answer_em": 0.3,
+      "answer_f1": 0.3408571428571429,
+      "answer_contains": 0.3,
+      "gold_token_recall": 0.3337551789927762,
+      "retained_ratio": 0.16000072440487476,
+      "seconds": 0.15293899990152568,
+      "selection_seconds": 0.0011242081504315138,
+      "generation_seconds": 0.15181479175109416,
+      "proof_core_tokens": 0.0,
+      "auxiliary_tokens": 0.0
+    }
+  ],
+  "paired_full_retention": []
+}

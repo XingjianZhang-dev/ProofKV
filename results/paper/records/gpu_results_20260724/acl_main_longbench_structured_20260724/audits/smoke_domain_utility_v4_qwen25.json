@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "protocol": "domain_utility_end_to_end_smoke_audit_v1",
+  "model": "qwen25",
+  "tasks": [
+    "narrativeqa",
+    "qasper",
+    "multifieldqa_en",
+    "hotpotqa",
+    "2wikimqa",
+    "musique"
+  ],
+  "rows": 216,
+  "proof_routes": 6,
+  "fallback_routes": 18,
+  "blocked_model_task_capacity_groups": 18,
+  "controller_sha256": "784c1cac71d4d3a1ec88c18f8e6acf407e141930e30c5b7430c1857780ffa942",
+  "selection_manifest_sha256": "3f8f96a8c5eda517d69f31c15e816f23fcfcf3c6e703e33f728ef237301d30c3",
+  "implementation_files_hashed": 9,
+  "scorer_checkpoint_files_hashed": 6
+}

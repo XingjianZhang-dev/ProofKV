@@ -1,0 +1,19 @@
+{
+  "results": [
+    "remote_results/accepted_soup_a090_mistral_hotpot_matrix_n128/fixed256/results.jsonl"
+  ],
+  "method_a": "learned_and_or_aux",
+  "method_b": "entity_graph_adaptive",
+  "metric": "answer_f1",
+  "n_paired": 128,
+  "mean_a": 0.5657681511197137,
+  "mean_b": 0.5134826825543737,
+  "mean_difference_a_minus_b": 0.05228546856533989,
+  "bootstrap_samples": 20000,
+  "ci95_percentile": [
+    -0.007250878334288259,
+    0.11214220997165612
+  ],
+  "two_sided_sign_p": 0.08619569021548923,
+  "seed": 12345
+}

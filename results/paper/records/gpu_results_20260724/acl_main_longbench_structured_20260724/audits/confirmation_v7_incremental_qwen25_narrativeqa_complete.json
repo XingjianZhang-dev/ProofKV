@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "protocol": "incremental_confirmation_utility_audit_v1",
+  "evaluation_slice": "confirmation",
+  "selection_manifest_sha256": "3f8f96a8c5eda517d69f31c15e816f23fcfcf3c6e703e33f728ef237301d30c3",
+  "utility_controller_sha256": "784c1cac71d4d3a1ec88c18f8e6acf407e141930e30c5b7430c1857780ffa942",
+  "runs": [
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/confirmation_v7_utility_qwen25_s28_n10",
+      "model": "qwen25",
+      "durable_rows": 386,
+      "complete_samples_by_task": {
+        "narrativeqa": 10,
+        "qasper": 0,
+        "multifieldqa_en": 0,
+        "hotpotqa": 0,
+        "2wikimqa": 0,
+        "musique": 0
+      },
+      "incomplete_sample_count": 1,
+      "incomplete_sample_rows": 16,
+      "trailing_partial_line_ignored": false,
+      "proof_routes": 0,
+      "physical_fallback_routes": 40,
+      "proof_route_coverage": 0.0,
+      "selected_candidate_counts": {},
+      "proof_routes_without_source_replay": 0,
+      "task_capacity_records": [
+        {
+          "task": "narrativeqa",
+          "capacity": 64,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "narrativeqa",
+          "capacity": 128,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "narrativeqa",
+          "capacity": 256,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        },
+        {
+          "task": "narrativeqa",
+          "capacity": 512,
+          "complete_samples": 10,
+          "utility_delta_vs_frozen_fallback": 0.0
+        }
+      ],
+      "completed_task_macro_deltas": {
+        "narrativeqa": 0.0
+      },
+      "completed_task_macro_delta": 0.0,
+      "raw_empty_predictions": 0,
+      "whitespace_only_predictions": 0,
+      "max_capacity_excess_tokens": 0.0,
+      "implementation_files_hashed": 9,
+      "scorer_checkpoint_files_hashed": 6
+    }
+  ],
+  "checks": [
+    "durable JSON rows, unique keys, and prefix-complete samples",
+    "frozen source IDs, answers, token counts, and slice",
+    "independent QA-F1, capacity, and KV-byte recomputation",
+    "serialized utility prediction and decision replay",
+    "physical fallback and available proof-source equality",
+    "implementation, controller, selection, and scorer hashes"
+  ]
+}

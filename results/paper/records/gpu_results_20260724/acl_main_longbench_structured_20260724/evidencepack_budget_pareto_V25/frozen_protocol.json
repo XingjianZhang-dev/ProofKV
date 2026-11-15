@@ -1,0 +1,87 @@
+{
+  "status": "FROZEN",
+  "protocol": "evidencepack_quality_budget_pareto_V25",
+  "source_controller_protocol": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_risk_controller_V22_formal/frozen_protocol.json",
+  "source_controller_protocol_sha256": "433b47785032ad210c346ad31fa2265c7bef10ef3cc6ab7913aa6ceb8b622b01",
+  "source_formal_audit": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_risk_controller_V22_formal/formal_audit.json",
+  "source_formal_audit_sha256": "85cf876f9cb30e92f8d0cb21d778a74d27a4cb5da7a10c086909ddb38907d6d2",
+  "controller": {
+    "feature": "overlay_proof_probability_margin",
+    "threshold": 0.17,
+    "strict_greater_than": true,
+    "proof_method": "learned_and_or",
+    "fallback_method": "entity_graph_adaptive",
+    "task_identity_available": false,
+    "decoded_output_available": false,
+    "gold_answer_or_support_available": false
+  },
+  "tasks": [
+    "musique",
+    "2wiki"
+  ],
+  "data_files": {
+    "musique": "/workspace/ircot/processed_data/musique/test_subsampled.jsonl",
+    "2wiki": "/workspace/ircot/processed_data/2wikimultihopqa/test_subsampled.jsonl"
+  },
+  "target_prompt_tokens": 8000,
+  "budgets": [
+    0.04,
+    0.08,
+    0.12
+  ],
+  "compact_methods": [
+    "entity_graph_adaptive",
+    "learned_root_topk",
+    "learned_and_or"
+  ],
+  "full_reference_method": "full",
+  "sample_seed": 17,
+  "sample_offset": 368,
+  "samples_per_task": 64,
+  "formal_interval": [
+    368,
+    432
+  ],
+  "source_formal_interval": [
+    240,
+    368
+  ],
+  "packing_seed": 1907,
+  "max_new_tokens": 24,
+  "attention_implementation": "sdpa",
+  "early_sanity_gate": {
+    "budget": 0.08,
+    "minimum_macro_delta_vs_each_compact_points_gte": -2.0,
+    "purpose": "catch implementation failure or a severe direction reversal before the second GPU batch"
+  },
+  "final_scientific_endpoints": {
+    "primary": "equal-weight paired controller-minus-comparator delta across tasks and the 4/8/12 percent quality-budget curve",
+    "compact_comparators": [
+      "entity_graph_adaptive",
+      "learned_root_topk",
+      "learned_and_or"
+    ],
+    "reference": "full",
+    "multiplicity": "Holm correction over all compact and full comparisons",
+    "positive_curve_criterion": "positive macro delta against every fixed compact comparator and positive 95% CI against learned_and_or",
+    "integrity_is_separate_from_scientific_outcome": true
+  },
+  "output_directories": {
+    "musique_full": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_budget_pareto_V25/formal_musique_qwen25_n64_offset368_full",
+    "musique_b04": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_budget_pareto_V25/formal_musique_qwen25_n64_offset368_target8000_budget04",
+    "musique_b08": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_budget_pareto_V25/formal_musique_qwen25_n64_offset368_target8000_budget08",
+    "musique_b12": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_budget_pareto_V25/formal_musique_qwen25_n64_offset368_target8000_budget12",
+    "2wiki_full": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_budget_pareto_V25/formal_2wiki_qwen25_n64_offset368_full",
+    "2wiki_b04": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_budget_pareto_V25/formal_2wiki_qwen25_n64_offset368_target8000_budget04",
+    "2wiki_b08": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_budget_pareto_V25/formal_2wiki_qwen25_n64_offset368_target8000_budget08",
+    "2wiki_b12": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_budget_pareto_V25/formal_2wiki_qwen25_n64_offset368_target8000_budget12"
+  },
+  "outputs_unobserved_at_freeze": true,
+  "runner": "/workspace/compresskv_run/compresskv/compresskv/scripts/run_hotpot_compact_qa.py",
+  "runner_sha256": "e518d28c7452a000fc3423197fd5eb4a9a0c81c3b1f98e371cc7a8155b7b563d",
+  "audit_implementation": "/workspace/compresskv_run/compresskv/compresskv/scripts/audit_evidencepack_budget_pareto_V25.py",
+  "audit_implementation_sha256": "0baaf9f621f214390f1c9176386af87681d191569d5d30a3685e070f7b6062d9",
+  "bootstrap_replicates": 50000,
+  "permutation_replicates": 50000,
+  "inference_seed": 20260726
+}

@@ -1,0 +1,16 @@
+{
+  "official_repo": "https://github.com/FYYFU/HeadKV",
+  "official_commit": "0862a0955fe82e9ff611d59541918e02c5def625",
+  "compatibility_patch": "headkv_h100_sm90.patch",
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "nominal_capacity_tokens_per_attention_head": 512,
+  "beta": 1.005,
+  "head_choice": "reason",
+  "max_samples": 128,
+  "answer_em": 0.2265625,
+  "answer_f1": 0.4339220728854049,
+  "answer_contains": 0.59375,
+  "actual_prefill_kv_bytes_mean": 268440064.0,
+  "native_gqa_equivalent_tokens_mean": 2048.03515625,
+  "actual_kv_ratio_mean": 1.1623904418066981
+}

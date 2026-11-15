@@ -1,0 +1,174 @@
+{
+  "protocol": "proofkv_qwen25_14b_scale_transfer_20260727",
+  "selection_manifest": "/workspace/compresskv_experiments/qwen14b_scale_20260727/selection_manifest_qwen14b_n47.json",
+  "selection_manifest_sha256": "e7c8f519fbeca42b11b75153b011a4019d08ad8d12db0e508bb5dde918125b01",
+  "model": "qwen25_14b",
+  "model_path": "/workspace/models/Qwen2.5-14B-Instruct-cf98f3b",
+  "model_revision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+  "tasks": [
+    "hotpotqa"
+  ],
+  "n_per_task": 1,
+  "selection_start_per_task": 0,
+  "frozen_n_per_task": 47,
+  "max_input_tokens": 30000,
+  "truncated_inputs": 0,
+  "tokenization_contract": "kvpress_split_context_question_token_ids_v1",
+  "methods": [
+    "full",
+    "learned_root_topk",
+    "learned_and_or_control_anchor75_aux"
+  ],
+  "capacities": [
+    128,
+    256,
+    512
+  ],
+  "capacity_scope": "total prefill KV including the uncompressed question tail",
+  "kv_bytes_per_token_bf16": 196608,
+  "attn_implementation": "sdpa",
+  "task_records": [
+    {
+      "task": "hotpotqa",
+      "method": "full",
+      "capacity": "full",
+      "n": 1,
+      "score": 0.0,
+      "actual_retained_ratio": 1.0,
+      "actual_kv_bytes": 3111518208.0,
+      "seconds": 3.2787220189347863,
+      "peak_cuda_memory_gb": 32.36972761154175
+    },
+    {
+      "task": "hotpotqa",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "128",
+      "n": 1,
+      "score": 0.0,
+      "actual_retained_ratio": 0.008087956527233667,
+      "actual_kv_bytes": 25165824.0,
+      "seconds": 0.6318338681012392,
+      "peak_cuda_memory_gb": 27.68444013595581
+    },
+    {
+      "task": "hotpotqa",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "256",
+      "n": 1,
+      "score": 100.0,
+      "actual_retained_ratio": 0.016175913054467334,
+      "actual_kv_bytes": 50331648.0,
+      "seconds": 0.7533540106378496,
+      "peak_cuda_memory_gb": 27.721714973449707
+    },
+    {
+      "task": "hotpotqa",
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "512",
+      "n": 1,
+      "score": 0.0,
+      "actual_retained_ratio": 0.03235182610893467,
+      "actual_kv_bytes": 100663296.0,
+      "seconds": 0.6860750489868224,
+      "peak_cuda_memory_gb": 27.799222469329834
+    },
+    {
+      "task": "hotpotqa",
+      "method": "learned_root_topk",
+      "capacity": "128",
+      "n": 1,
+      "score": 27.27272727272727,
+      "actual_retained_ratio": 0.008024769366864653,
+      "actual_kv_bytes": 24969216.0,
+      "seconds": 2.8106916146352887,
+      "peak_cuda_memory_gb": 27.684170246124268
+    },
+    {
+      "task": "hotpotqa",
+      "method": "learned_root_topk",
+      "capacity": "256",
+      "n": 1,
+      "score": 7.142857142857142,
+      "actual_retained_ratio": 0.016175913054467334,
+      "actual_kv_bytes": 50331648.0,
+      "seconds": 1.4032271238975227,
+      "peak_cuda_memory_gb": 27.721714973449707
+    },
+    {
+      "task": "hotpotqa",
+      "method": "learned_root_topk",
+      "capacity": "512",
+      "n": 1,
+      "score": 7.692307692307692,
+      "actual_retained_ratio": 0.03235182610893467,
+      "actual_kv_bytes": 100663296.0,
+      "seconds": 1.3902001744136214,
+      "peak_cuda_memory_gb": 27.799222469329834
+    }
+  ],
+  "macro_records": [
+    {
+      "method": "full",
+      "capacity": "full",
+      "tasks": 1,
+      "n": 1,
+      "macro_score": 0.0,
+      "actual_retained_ratio": 1.0,
+      "seconds": 3.2787220189347863
+    },
+    {
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "128",
+      "tasks": 1,
+      "n": 1,
+      "macro_score": 0.0,
+      "actual_retained_ratio": 0.008087956527233667,
+      "seconds": 0.6318338681012392
+    },
+    {
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "256",
+      "tasks": 1,
+      "n": 1,
+      "macro_score": 100.0,
+      "actual_retained_ratio": 0.016175913054467334,
+      "seconds": 0.7533540106378496
+    },
+    {
+      "method": "learned_and_or_control_anchor75_aux",
+      "capacity": "512",
+      "tasks": 1,
+      "n": 1,
+      "macro_score": 0.0,
+      "actual_retained_ratio": 0.03235182610893467,
+      "seconds": 0.6860750489868224
+    },
+    {
+      "method": "learned_root_topk",
+      "capacity": "128",
+      "tasks": 1,
+      "n": 1,
+      "macro_score": 27.27272727272727,
+      "actual_retained_ratio": 0.008024769366864653,
+      "seconds": 2.8106916146352887
+    },
+    {
+      "method": "learned_root_topk",
+      "capacity": "256",
+      "tasks": 1,
+      "n": 1,
+      "macro_score": 7.142857142857142,
+      "actual_retained_ratio": 0.016175913054467334,
+      "seconds": 1.4032271238975227
+    },
+    {
+      "method": "learned_root_topk",
+      "capacity": "512",
+      "tasks": 1,
+      "n": 1,
+      "macro_score": 7.692307692307692,
+      "actual_retained_ratio": 0.03235182610893467,
+      "seconds": 1.3902001744136214
+    }
+  ]
+}

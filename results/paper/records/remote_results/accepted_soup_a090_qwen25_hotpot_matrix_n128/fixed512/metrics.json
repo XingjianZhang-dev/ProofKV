@@ -1,0 +1,70 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "dataset": "hotpotqa",
+  "split": "validation",
+  "data_file": null,
+  "max_samples": 128,
+  "budget": 0.08,
+  "budget_tokens": 512,
+  "methods": [
+    "learned_topk_paths",
+    "learned_and_or_aux",
+    "oracle_adaptive",
+    "compass_fixed",
+    "entity_graph_adaptive"
+  ],
+  "scorer_kind": "cross",
+  "repair_halo": 0,
+  "records": [
+    {
+      "method": "compass_fixed",
+      "n": 128,
+      "answer_em": 0.4296875,
+      "answer_f1": 0.5289085046897547,
+      "answer_contains": 0.4609375,
+      "gold_token_recall": 0.5042947523668809,
+      "retained_ratio": 0.32596099761527736,
+      "seconds": 0.18382855702475354
+    },
+    {
+      "method": "entity_graph_adaptive",
+      "n": 128,
+      "answer_em": 0.4921875,
+      "answer_f1": 0.6249255952380952,
+      "answer_contains": 0.546875,
+      "gold_token_recall": 0.8037722761430516,
+      "retained_ratio": 0.32596099761527736,
+      "seconds": 0.1561401168073644
+    },
+    {
+      "method": "learned_and_or_aux",
+      "n": 128,
+      "answer_em": 0.5703125,
+      "answer_f1": 0.690954097985348,
+      "answer_contains": 0.609375,
+      "gold_token_recall": 0.9493489583333333,
+      "retained_ratio": 0.3215194904348094,
+      "seconds": 0.5380842806825967
+    },
+    {
+      "method": "learned_topk_paths",
+      "n": 128,
+      "answer_em": 0.59375,
+      "answer_f1": 0.745743059024309,
+      "answer_contains": 0.6640625,
+      "gold_token_recall": 0.8585981889204546,
+      "retained_ratio": 0.18424135197874814,
+      "seconds": 0.5332819844425103
+    },
+    {
+      "method": "oracle_adaptive",
+      "n": 128,
+      "answer_em": 0.671875,
+      "answer_f1": 0.8296039897602397,
+      "answer_contains": 0.75,
+      "gold_token_recall": 1.0,
+      "retained_ratio": 0.10157513155529418,
+      "seconds": 0.14577751220167556
+    }
+  ]
+}

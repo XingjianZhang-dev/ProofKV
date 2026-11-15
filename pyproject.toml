@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proofkv"
+version = "0.1.0"
+description = "ProofKV: compiling complete evidence chains into reusable KV memory for structured-evidence QA."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Xingjian Zhang"}]
+dependencies = [
+    "torch>=2.1",
+    "numpy>=1.24",
+    "pyyaml>=6.0",
+    "tqdm>=4.66",
+    "pytest>=7.4",
+]
+
+[project.urls]
+Repository = "https://github.com/XingjianZhang-dev/ProofKV"
+
+[project.optional-dependencies]
+llm = [
+    "transformers>=4.45.0",
+    "accelerate>=0.30.0",
+    "datasets>=2.18.0",
+    "sentencepiece>=0.1.99",
+    "protobuf>=4.25.0",
+    "rouge-score>=0.1.2",
+]
+viz = ["matplotlib>=3.7", "pandas>=2.0"]
+
+[tool.setuptools.packages.find]
+include = ["proofkv*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

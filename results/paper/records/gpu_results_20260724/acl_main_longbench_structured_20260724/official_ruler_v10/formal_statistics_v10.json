@@ -1,0 +1,392 @@
+{
+  "analysis_implementation_sha256": "274898480e084b28d9a400dda946c4cbdd2c58d99a79478cdfd2c8d0d5d7be35",
+  "bootstrap_replicates": 50000,
+  "capacity_family_correction": "Holm",
+  "capacity_inference": [
+    {
+      "bootstrap_95_ci_high": 82.76595744680851,
+      "bootstrap_95_ci_low": 77.4468085106383,
+      "capacity": 128,
+      "comparison": "v10_vs_development_frozen_physical_fallback",
+      "holm_adjusted_p": 0.00015999680006399873,
+      "model": "qwen25",
+      "paired_task_macro_delta": 80.42553191489361,
+      "pairs": 94,
+      "task_count": 2,
+      "two_sided_sign_flip_p": 1.999960000799984e-05
+    },
+    {
+      "bootstrap_95_ci_high": 42.97872340425532,
+      "bootstrap_95_ci_low": 35.95744680851064,
+      "capacity": 256,
+      "comparison": "v10_vs_development_frozen_physical_fallback",
+      "holm_adjusted_p": 0.00015999680006399873,
+      "model": "qwen25",
+      "paired_task_macro_delta": 39.57446808510638,
+      "pairs": 94,
+      "task_count": 2,
+      "two_sided_sign_flip_p": 1.999960000799984e-05
+    },
+    {
+      "bootstrap_95_ci_high": 15.53191489361702,
+      "bootstrap_95_ci_low": 8.72340425531915,
+      "capacity": 512,
+      "comparison": "v10_vs_development_frozen_physical_fallback",
+      "holm_adjusted_p": 0.00015999680006399873,
+      "model": "qwen25",
+      "paired_task_macro_delta": 11.914893617021276,
+      "pairs": 94,
+      "task_count": 2,
+      "two_sided_sign_flip_p": 1.999960000799984e-05
+    },
+    {
+      "bootstrap_95_ci_high": 0.0,
+      "bootstrap_95_ci_low": 0.0,
+      "capacity": 1024,
+      "comparison": "v10_vs_development_frozen_physical_fallback",
+      "holm_adjusted_p": 1.0,
+      "model": "qwen25",
+      "paired_task_macro_delta": 0.0,
+      "pairs": 94,
+      "task_count": 2,
+      "two_sided_sign_flip_p": 1.0
+    },
+    {
+      "bootstrap_95_ci_high": 72.12765957446808,
+      "bootstrap_95_ci_low": 62.97872340425532,
+      "capacity": 128,
+      "comparison": "v10_vs_development_frozen_physical_fallback",
+      "holm_adjusted_p": 0.00015999680006399873,
+      "model": "mistral02",
+      "paired_task_macro_delta": 67.87234042553192,
+      "pairs": 94,
+      "task_count": 2,
+      "two_sided_sign_flip_p": 1.999960000799984e-05
+    },
+    {
+      "bootstrap_95_ci_high": 77.65957446808511,
+      "bootstrap_95_ci_low": 62.340425531914896,
+      "capacity": 256,
+      "comparison": "v10_vs_development_frozen_physical_fallback",
+      "holm_adjusted_p": 0.00015999680006399873,
+      "model": "mistral02",
+      "paired_task_macro_delta": 70.0,
+      "pairs": 94,
+      "task_count": 2,
+      "two_sided_sign_flip_p": 1.999960000799984e-05
+    },
+    {
+      "bootstrap_95_ci_high": 42.5531914893617,
+      "bootstrap_95_ci_low": 34.46808510638298,
+      "capacity": 512,
+      "comparison": "v10_vs_development_frozen_physical_fallback",
+      "holm_adjusted_p": 0.00015999680006399873,
+      "model": "mistral02",
+      "paired_task_macro_delta": 38.723404255319146,
+      "pairs": 94,
+      "task_count": 2,
+      "two_sided_sign_flip_p": 1.999960000799984e-05
+    },
+    {
+      "bootstrap_95_ci_high": 14.042553191489361,
+      "bootstrap_95_ci_low": 5.957446808510638,
+      "capacity": 1024,
+      "comparison": "v10_vs_development_frozen_physical_fallback",
+      "holm_adjusted_p": 0.00015999680006399873,
+      "model": "mistral02",
+      "paired_task_macro_delta": 10.0,
+      "pairs": 94,
+      "task_count": 2,
+      "two_sided_sign_flip_p": 5.999880002399952e-05
+    }
+  ],
+  "controller": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/controller_v10.json",
+  "controller_sha256": "93eba6de546d4206fe84f342765a6533963625efda5c04df9e9809b4aa88ec6d",
+  "input_artifact_sha256": {
+    "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_mistral02": {
+      "metrics.json": "d932a91df272492abb247289be577cf25b516849106ab517d59b5020516b8f0c",
+      "results.jsonl": "00daef37fb12cde68e514cfd006a1aa5664ebd4c3e18d807e99052349294f590",
+      "run_manifest.json": "7dd68586021da013ed799388020410c8ba99c3fd0f83ddf96bebc45ddd42fbb2"
+    },
+    "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_qwen25": {
+      "metrics.json": "2690270f18b21af8210143bc6433512bca3612fab6bb4adefe066f5ca371eb27",
+      "results.jsonl": "9c0bf6f1ab1b3ca59e740b69e3662f922e3adb2a1ff2e89ce012f4d46822aeb8",
+      "run_manifest.json": "ef2a7fe63ac6c6153e495473acec8ab43292d41c630c2997c61747d79ffe017e"
+    }
+  },
+  "permutation_replicates": 50000,
+  "precommitted_primary_endpoint": "equal-weighted task macro of v10 versus each model-task-capacity development-frozen physical fallback",
+  "primary_inference": {
+    "bootstrap_95_ci_high": 41.515957446808514,
+    "bootstrap_95_ci_low": 38.00531914893617,
+    "comparison": "v10_vs_development_frozen_physical_fallback",
+    "equal_weighting": "average models and capacities within each frozen task-sample pair, then task macro",
+    "paired_task_macro_delta": 39.81382978723404,
+    "pairs": 94,
+    "samples_per_task": 47,
+    "task_count": 2,
+    "task_groups": 2,
+    "two_sided_sign_flip_p": 1.999960000799984e-05
+  },
+  "protocol": "proofkv_v10_official_ruler_paired_inference_v1",
+  "runs": [
+    {
+      "capacities": [
+        {
+          "capacity": 128,
+          "frozen_fallback_by_task": {
+            "ruler_niah": "streamingllm",
+            "ruler_variable_tracking": "streamingllm"
+          },
+          "frozen_fallback_score": 1.9148936170212765,
+          "full_score": 100.0,
+          "physical_scores": {
+            "chunkkv_snapkv": 1.9148936170212765,
+            "pyramidkv": 1.9148936170212765,
+            "snapkv": 1.9148936170212765,
+            "streamingllm": 1.9148936170212765
+          },
+          "task_breakdown": [
+            {
+              "fallback_score": 2.127659574468085,
+              "task": "ruler_niah",
+              "v10_score": 100.0
+            },
+            {
+              "fallback_score": 1.702127659574468,
+              "task": "ruler_variable_tracking",
+              "v10_score": 64.68085106382979
+            }
+          ],
+          "v10_delta_vs_fallback": 80.42553191489361,
+          "v10_score": 82.34042553191489
+        },
+        {
+          "capacity": 256,
+          "frozen_fallback_by_task": {
+            "ruler_niah": "chunkkv_snapkv",
+            "ruler_variable_tracking": "chunkkv_snapkv"
+          },
+          "frozen_fallback_score": 47.87234042553192,
+          "full_score": 100.0,
+          "physical_scores": {
+            "chunkkv_snapkv": 47.87234042553192,
+            "pyramidkv": 8.72340425531915,
+            "snapkv": 8.72340425531915,
+            "streamingllm": 4.8936170212765955
+          },
+          "task_breakdown": [
+            {
+              "fallback_score": 85.1063829787234,
+              "task": "ruler_niah",
+              "v10_score": 85.1063829787234
+            },
+            {
+              "fallback_score": 10.638297872340425,
+              "task": "ruler_variable_tracking",
+              "v10_score": 89.7872340425532
+            }
+          ],
+          "v10_delta_vs_fallback": 39.57446808510639,
+          "v10_score": 87.4468085106383
+        },
+        {
+          "capacity": 512,
+          "frozen_fallback_by_task": {
+            "ruler_niah": "chunkkv_snapkv",
+            "ruler_variable_tracking": "chunkkv_snapkv"
+          },
+          "frozen_fallback_score": 87.02127659574468,
+          "full_score": 100.0,
+          "physical_scores": {
+            "chunkkv_snapkv": 87.02127659574468,
+            "pyramidkv": 18.93617021276596,
+            "snapkv": 18.72340425531915,
+            "streamingllm": 8.72340425531915
+          },
+          "task_breakdown": [
+            {
+              "fallback_score": 100.0,
+              "task": "ruler_niah",
+              "v10_score": 100.0
+            },
+            {
+              "fallback_score": 74.04255319148936,
+              "task": "ruler_variable_tracking",
+              "v10_score": 97.87234042553192
+            }
+          ],
+          "v10_delta_vs_fallback": 11.914893617021278,
+          "v10_score": 98.93617021276596
+        },
+        {
+          "capacity": 1024,
+          "frozen_fallback_by_task": {
+            "ruler_niah": "chunkkv_snapkv",
+            "ruler_variable_tracking": "chunkkv_snapkv"
+          },
+          "frozen_fallback_score": 99.36170212765958,
+          "full_score": 100.0,
+          "physical_scores": {
+            "chunkkv_snapkv": 99.36170212765958,
+            "pyramidkv": 49.148936170212764,
+            "snapkv": 49.148936170212764,
+            "streamingllm": 15.319148936170212
+          },
+          "task_breakdown": [
+            {
+              "fallback_score": 100.0,
+              "task": "ruler_niah",
+              "v10_score": 100.0
+            },
+            {
+              "fallback_score": 98.72340425531915,
+              "task": "ruler_variable_tracking",
+              "v10_score": 98.72340425531915
+            }
+          ],
+          "v10_delta_vs_fallback": 0.0,
+          "v10_score": 99.36170212765958
+        }
+      ],
+      "full_score": 100.0,
+      "model": "qwen25",
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_qwen25",
+      "samples_per_task": 47,
+      "tasks": [
+        "ruler_niah",
+        "ruler_variable_tracking"
+      ]
+    },
+    {
+      "capacities": [
+        {
+          "capacity": 128,
+          "frozen_fallback_by_task": {
+            "ruler_niah": "streamingllm",
+            "ruler_variable_tracking": "streamingllm"
+          },
+          "frozen_fallback_score": 1.2765957446808511,
+          "full_score": 98.72340425531914,
+          "physical_scores": {
+            "chunkkv_snapkv": 1.2765957446808511,
+            "pyramidkv": 1.0638297872340425,
+            "snapkv": 1.0638297872340425,
+            "streamingllm": 1.2765957446808511
+          },
+          "task_breakdown": [
+            {
+              "fallback_score": 2.127659574468085,
+              "task": "ruler_niah",
+              "v10_score": 91.48936170212765
+            },
+            {
+              "fallback_score": 0.425531914893617,
+              "task": "ruler_variable_tracking",
+              "v10_score": 46.808510638297875
+            }
+          ],
+          "v10_delta_vs_fallback": 67.87234042553192,
+          "v10_score": 69.14893617021276
+        },
+        {
+          "capacity": 256,
+          "frozen_fallback_by_task": {
+            "ruler_niah": "chunkkv_snapkv",
+            "ruler_variable_tracking": "chunkkv_snapkv"
+          },
+          "frozen_fallback_score": 26.170212765957448,
+          "full_score": 98.72340425531914,
+          "physical_scores": {
+            "chunkkv_snapkv": 26.170212765957448,
+            "pyramidkv": 3.1914893617021276,
+            "snapkv": 3.1914893617021276,
+            "streamingllm": 3.617021276595745
+          },
+          "task_breakdown": [
+            {
+              "fallback_score": 48.93617021276596,
+              "task": "ruler_niah",
+              "v10_score": 100.0
+            },
+            {
+              "fallback_score": 3.404255319148936,
+              "task": "ruler_variable_tracking",
+              "v10_score": 92.34042553191489
+            }
+          ],
+          "v10_delta_vs_fallback": 70.0,
+          "v10_score": 96.17021276595744
+        },
+        {
+          "capacity": 512,
+          "frozen_fallback_by_task": {
+            "ruler_niah": "chunkkv_snapkv",
+            "ruler_variable_tracking": "chunkkv_snapkv"
+          },
+          "frozen_fallback_score": 58.51063829787234,
+          "full_score": 98.72340425531914,
+          "physical_scores": {
+            "chunkkv_snapkv": 58.51063829787234,
+            "pyramidkv": 16.382978723404257,
+            "snapkv": 16.382978723404257,
+            "streamingllm": 6.382978723404255
+          },
+          "task_breakdown": [
+            {
+              "fallback_score": 100.0,
+              "task": "ruler_niah",
+              "v10_score": 100.0
+            },
+            {
+              "fallback_score": 17.02127659574468,
+              "task": "ruler_variable_tracking",
+              "v10_score": 94.46808510638297
+            }
+          ],
+          "v10_delta_vs_fallback": 38.723404255319146,
+          "v10_score": 97.23404255319149
+        },
+        {
+          "capacity": 1024,
+          "frozen_fallback_by_task": {
+            "ruler_niah": "chunkkv_snapkv",
+            "ruler_variable_tracking": "chunkkv_snapkv"
+          },
+          "frozen_fallback_score": 85.1063829787234,
+          "full_score": 98.72340425531914,
+          "physical_scores": {
+            "chunkkv_snapkv": 85.1063829787234,
+            "pyramidkv": 32.765957446808514,
+            "snapkv": 32.97872340425532,
+            "streamingllm": 9.361702127659575
+          },
+          "task_breakdown": [
+            {
+              "fallback_score": 100.0,
+              "task": "ruler_niah",
+              "v10_score": 100.0
+            },
+            {
+              "fallback_score": 70.2127659574468,
+              "task": "ruler_variable_tracking",
+              "v10_score": 90.2127659574468
+            }
+          ],
+          "v10_delta_vs_fallback": 10.0,
+          "v10_score": 95.1063829787234
+        }
+      ],
+      "full_score": 98.72340425531914,
+      "model": "mistral02",
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/formal_mistral02",
+      "samples_per_task": 47,
+      "tasks": [
+        "ruler_niah",
+        "ruler_variable_tracking"
+      ]
+    }
+  ],
+  "score_unit": "official RULER reference-containment percentage points",
+  "seed": 20260726
+}

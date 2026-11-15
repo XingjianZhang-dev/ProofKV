@@ -1,0 +1,768 @@
+{"id": "2hop__731228_609866", "method": "proof_core", "config": "eager", "prediction": "East Dorset", "short_prediction": "East Dorset", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__731228_609866", "method": "relevance_same_bytes", "config": "eager", "prediction": "Corfe Mullen", "short_prediction": "Corfe Mullen", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__731228_609866", "method": "edge_shuffled", "config": "eager", "prediction": "Corfe Mullen", "short_prediction": "Corfe Mullen", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__731228_609866", "method": "random_edges", "config": "eager", "prediction": "Corfe Mullen, Dorset", "short_prediction": "Corfe Mullen, Dorset", "answer_f1": 0.4, "answer_em": 0.0}
+{"id": "2hop__731228_609866", "method": "broken_middle", "config": "eager", "prediction": "Dorset", "short_prediction": "Dorset", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__731228_609866", "method": "oracle_proof", "config": "eager", "prediction": "East Dorset", "short_prediction": "East Dorset", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__132469_533882", "method": "proof_core", "config": "eager", "prediction": "Lockheed Martin", "short_prediction": "Lockheed Martin", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__132469_533882", "method": "relevance_same_bytes", "config": "eager", "prediction": "Lockheed Martin", "short_prediction": "Lockheed Martin", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__132469_533882", "method": "edge_shuffled", "config": "eager", "prediction": "Glenn L. Martin Company", "short_prediction": "Glenn L. Martin Company", "answer_f1": 0.3333333333333333, "answer_em": 0.0}
+{"id": "2hop__132469_533882", "method": "random_edges", "config": "eager", "prediction": "Glenn L. Martin Company", "short_prediction": "Glenn L. Martin Company", "answer_f1": 0.3333333333333333, "answer_em": 0.0}
+{"id": "2hop__132469_533882", "method": "broken_middle", "config": "eager", "prediction": "Glenn L. Martin Company", "short_prediction": "Glenn L. Martin Company", "answer_f1": 0.3333333333333333, "answer_em": 0.0}
+{"id": "2hop__132469_533882", "method": "oracle_proof", "config": "eager", "prediction": "Lockheed Martin", "short_prediction": "Lockheed Martin", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "3hop2__159979_30587_44003", "method": "proof_core", "config": "eager", "prediction": "Gulf of Mexico", "short_prediction": "Gulf of Mexico", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__159979_30587_44003", "method": "relevance_same_bytes", "config": "eager", "prediction": "Gulf of Mexico", "short_prediction": "Gulf of Mexico", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__159979_30587_44003", "method": "edge_shuffled", "config": "eager", "prediction": "Gulf of Mexico", "short_prediction": "Gulf of Mexico", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__159979_30587_44003", "method": "random_edges", "config": "eager", "prediction": "Gulf of Mexico", "short_prediction": "Gulf of Mexico", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__159979_30587_44003", "method": "broken_middle", "config": "eager", "prediction": "Biscayne Bay", "short_prediction": "Biscayne Bay", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__159979_30587_44003", "method": "oracle_proof", "config": "eager", "prediction": "Gulf of Mexico", "short_prediction": "Gulf of Mexico", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__151903_5274_458768_33633", "method": "proof_core", "config": "eager", "prediction": "August 3, 1769", "short_prediction": "August 3, 1769", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__151903_5274_458768_33633", "method": "relevance_same_bytes", "config": "eager", "prediction": "August 3, 1769", "short_prediction": "August 3, 1769", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__151903_5274_458768_33633", "method": "edge_shuffled", "config": "eager", "prediction": "August 3, 1769", "short_prediction": "August 3, 1769", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__151903_5274_458768_33633", "method": "random_edges", "config": "eager", "prediction": "August 3, 1769", "short_prediction": "August 3, 1769", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__151903_5274_458768_33633", "method": "broken_middle", "config": "eager", "prediction": "August 3, 1769", "short_prediction": "August 3, 1769", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__151903_5274_458768_33633", "method": "oracle_proof", "config": "eager", "prediction": "August 3, 1769", "short_prediction": "August 3, 1769", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__6827_86319", "method": "proof_core", "config": "eager", "prediction": "Ken Hachikian", "short_prediction": "Ken Hachikian", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__6827_86319", "method": "relevance_same_bytes", "config": "eager", "prediction": "Doug Morris", "short_prediction": "Doug Morris", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__6827_86319", "method": "edge_shuffled", "config": "eager", "prediction": "Bank of America", "short_prediction": "Bank of America", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__6827_86319", "method": "random_edges", "config": "eager", "prediction": "Bank of America", "short_prediction": "Bank of America", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__6827_86319", "method": "broken_middle", "config": "eager", "prediction": "Bank of America", "short_prediction": "Bank of America", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__6827_86319", "method": "oracle_proof", "config": "eager", "prediction": "Charlotte-based Bank of America", "short_prediction": "Charlotte-based Bank of America", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106688_160713_77246", "method": "proof_core", "config": "eager", "prediction": "Hindu", "short_prediction": "Hindu", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106688_160713_77246", "method": "relevance_same_bytes", "config": "eager", "prediction": "Hinduism", "short_prediction": "Hinduism", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106688_160713_77246", "method": "edge_shuffled", "config": "eager", "prediction": "Hindu", "short_prediction": "Hindu", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106688_160713_77246", "method": "random_edges", "config": "eager", "prediction": "Hindu", "short_prediction": "Hindu", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106688_160713_77246", "method": "broken_middle", "config": "eager", "prediction": "Hindu", "short_prediction": "Hindu", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106688_160713_77246", "method": "oracle_proof", "config": "eager", "prediction": "Hindus", "short_prediction": "Hindus", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__703767_37168", "method": "proof_core", "config": "eager", "prediction": "joint 2nd", "short_prediction": "joint 2nd", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__703767_37168", "method": "relevance_same_bytes", "config": "eager", "prediction": "joint 2nd", "short_prediction": "joint 2nd", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__703767_37168", "method": "edge_shuffled", "config": "eager", "prediction": "Not mentioned", "short_prediction": "Not mentioned", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__703767_37168", "method": "random_edges", "config": "eager", "prediction": "joint 2nd", "short_prediction": "joint 2nd", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__703767_37168", "method": "broken_middle", "config": "eager", "prediction": "joint 2nd", "short_prediction": "joint 2nd", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__703767_37168", "method": "oracle_proof", "config": "eager", "prediction": "551-600", "short_prediction": "551-600", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop2__127483_76623_10557", "method": "proof_core", "config": "eager", "prediction": "Latin", "short_prediction": "Latin", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "3hop2__127483_76623_10557", "method": "relevance_same_bytes", "config": "eager", "prediction": "Latin", "short_prediction": "Latin", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "3hop2__127483_76623_10557", "method": "edge_shuffled", "config": "eager", "prediction": "Latin", "short_prediction": "Latin", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "3hop2__127483_76623_10557", "method": "random_edges", "config": "eager", "prediction": "Medieval Latin", "short_prediction": "Medieval Latin", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop2__127483_76623_10557", "method": "broken_middle", "config": "eager", "prediction": "Latin", "short_prediction": "Latin", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "3hop2__127483_76623_10557", "method": "oracle_proof", "config": "eager", "prediction": "Latin", "short_prediction": "Latin", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__284789_52835", "method": "proof_core", "config": "eager", "prediction": "John D. Loudermilk", "short_prediction": "John D. Loudermilk", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__284789_52835", "method": "relevance_same_bytes", "config": "eager", "prediction": "Norah Jones", "short_prediction": "Norah Jones", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__284789_52835", "method": "edge_shuffled", "config": "eager", "prediction": "Norah Jones", "short_prediction": "Norah Jones", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__284789_52835", "method": "random_edges", "config": "eager", "prediction": "Norah Jones", "short_prediction": "Norah Jones", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__284789_52835", "method": "broken_middle", "config": "eager", "prediction": "John D. Loudermilk", "short_prediction": "John D. Loudermilk", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__284789_52835", "method": "oracle_proof", "config": "eager", "prediction": "John D. Loudermilk", "short_prediction": "John D. Loudermilk", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop2__567956_14670_8987_8974", "method": "proof_core", "config": "eager", "prediction": "People's Republic of Albania", "short_prediction": "People's Republic of Albania", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__567956_14670_8987_8974", "method": "relevance_same_bytes", "config": "eager", "prediction": "Paraguay", "short_prediction": "Paraguay", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "4hop2__567956_14670_8987_8974", "method": "edge_shuffled", "config": "eager", "prediction": "Paraguay", "short_prediction": "Paraguay", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "4hop2__567956_14670_8987_8974", "method": "random_edges", "config": "eager", "prediction": "Portugal", "short_prediction": "Portugal", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__567956_14670_8987_8974", "method": "broken_middle", "config": "eager", "prediction": "Czechoslovakia", "short_prediction": "Czechoslovakia", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__567956_14670_8987_8974", "method": "oracle_proof", "config": "eager", "prediction": "Paraguay", "short_prediction": "Paraguay", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__92385_2072", "method": "proof_core", "config": "eager", "prediction": "New York Public Library", "short_prediction": "New York Public Library", "answer_f1": 0.5714285714285715, "answer_em": 0.0}
+{"id": "2hop__92385_2072", "method": "relevance_same_bytes", "config": "eager", "prediction": "Brooklyn Public Library", "short_prediction": "Brooklyn Public Library", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__92385_2072", "method": "edge_shuffled", "config": "eager", "prediction": "Tacoma Public Library", "short_prediction": "Tacoma Public Library", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__92385_2072", "method": "random_edges", "config": "eager", "prediction": "New York City Public Schools system", "short_prediction": "New York City Public Schools system", "answer_f1": 0.2222222222222222, "answer_em": 0.0}
+{"id": "2hop__92385_2072", "method": "broken_middle", "config": "eager", "prediction": "Tacoma Public Library", "short_prediction": "Tacoma Public Library", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__92385_2072", "method": "oracle_proof", "config": "eager", "prediction": "New York Public Library", "short_prediction": "New York Public Library", "answer_f1": 0.5714285714285715, "answer_em": 0.0}
+{"id": "2hop__13106_158105", "method": "proof_core", "config": "eager", "prediction": "80 GB hard drive", "short_prediction": "80 GB hard drive", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__13106_158105", "method": "relevance_same_bytes", "config": "eager", "prediction": "IPTV on Xbox 360", "short_prediction": "IPTV on Xbox 360", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__13106_158105", "method": "edge_shuffled", "config": "eager", "prediction": "80 GB hard drive", "short_prediction": "80 GB hard drive", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__13106_158105", "method": "random_edges", "config": "eager", "prediction": "80 GB hard drive", "short_prediction": "80 GB hard drive", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__13106_158105", "method": "broken_middle", "config": "eager", "prediction": "80 GB hard drive", "short_prediction": "80 GB hard drive", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__13106_158105", "method": "oracle_proof", "config": "eager", "prediction": "ease of use and enhanced support for Plug and Play (PnP)", "short_prediction": "ease of use and enhanced support for Plug and Play (PnP)", "answer_f1": 0.9523809523809523, "answer_em": 0.0}
+{"id": "4hop1__21282_692112_214799_259594", "method": "proof_core", "config": "eager", "prediction": "Germany", "short_prediction": "Germany", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__21282_692112_214799_259594", "method": "relevance_same_bytes", "config": "eager", "prediction": "Germany", "short_prediction": "Germany", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__21282_692112_214799_259594", "method": "edge_shuffled", "config": "eager", "prediction": "Germany", "short_prediction": "Germany", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__21282_692112_214799_259594", "method": "random_edges", "config": "eager", "prediction": "Germany", "short_prediction": "Germany", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__21282_692112_214799_259594", "method": "broken_middle", "config": "eager", "prediction": "Germany", "short_prediction": "Germany", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__21282_692112_214799_259594", "method": "oracle_proof", "config": "eager", "prediction": "Germany", "short_prediction": "Germany", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__731584_700117", "method": "proof_core", "config": "eager", "prediction": "Berrien County", "short_prediction": "Berrien County", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__731584_700117", "method": "relevance_same_bytes", "config": "eager", "prediction": "Stevensville", "short_prediction": "Stevensville", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__731584_700117", "method": "edge_shuffled", "config": "eager", "prediction": "Stevensville", "short_prediction": "Stevensville", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__731584_700117", "method": "random_edges", "config": "eager", "prediction": "Stevensville", "short_prediction": "Stevensville", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__731584_700117", "method": "broken_middle", "config": "eager", "prediction": "S Stevensville, Montana", "short_prediction": "S Stevensville, Montana", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__731584_700117", "method": "oracle_proof", "config": "eager", "prediction": "Berrien County", "short_prediction": "Berrien County", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__472486_97805", "method": "proof_core", "config": "eager", "prediction": "Winter War", "short_prediction": "Winter War", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__472486_97805", "method": "relevance_same_bytes", "config": "eager", "prediction": "World War II", "short_prediction": "World War II", "answer_f1": 0.4, "answer_em": 0.0}
+{"id": "2hop__472486_97805", "method": "edge_shuffled", "config": "eager", "prediction": "N", "short_prediction": "N", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__472486_97805", "method": "random_edges", "config": "eager", "prediction": "World War II", "short_prediction": "World War II", "answer_f1": 0.4, "answer_em": 0.0}
+{"id": "2hop__472486_97805", "method": "broken_middle", "config": "eager", "prediction": "World War II", "short_prediction": "World War II", "answer_f1": 0.4, "answer_em": 0.0}
+{"id": "2hop__472486_97805", "method": "oracle_proof", "config": "eager", "prediction": "Winter War", "short_prediction": "Winter War", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__305566_568433_51423", "method": "proof_core", "config": "eager", "prediction": "Casa Loma", "short_prediction": "Casa Loma", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__305566_568433_51423", "method": "relevance_same_bytes", "config": "eager", "prediction": "Marksburg Castle", "short_prediction": "Marksburg Castle", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__305566_568433_51423", "method": "edge_shuffled", "config": "eager", "prediction": "Marksburg Castle", "short_prediction": "Marksburg Castle", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__305566_568433_51423", "method": "random_edges", "config": "eager", "prediction": "Marksburg Castle", "short_prediction": "Marksburg Castle", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__305566_568433_51423", "method": "broken_middle", "config": "eager", "prediction": "Casa Loma", "short_prediction": "Casa Loma", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__305566_568433_51423", "method": "oracle_proof", "config": "eager", "prediction": "Casa Loma", "short_prediction": "Casa Loma", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__998_25839", "method": "proof_core", "config": "eager", "prediction": "five unit loads", "short_prediction": "five unit loads", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__998_25839", "method": "relevance_same_bytes", "config": "eager", "prediction": "550 mA", "short_prediction": "550 mA", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__998_25839", "method": "edge_shuffled", "config": "eager", "prediction": "five unit loads", "short_prediction": "five unit loads", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__998_25839", "method": "random_edges", "config": "eager", "prediction": "five unit loads", "short_prediction": "five unit loads", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__998_25839", "method": "broken_middle", "config": "eager", "prediction": "five unit loads", "short_prediction": "five unit loads", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__998_25839", "method": "oracle_proof", "config": "eager", "prediction": "51 mA", "short_prediction": "51 mA", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__161602_426860_88460_126088", "method": "proof_core", "config": "eager", "prediction": "Thein Sein", "short_prediction": "Thein Sein", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop2__161602_426860_88460_126088", "method": "relevance_same_bytes", "config": "eager", "prediction": "New Caledonia", "short_prediction": "New Caledonia", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__161602_426860_88460_126088", "method": "edge_shuffled", "config": "eager", "prediction": "Myanmar", "short_prediction": "Myanmar", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__161602_426860_88460_126088", "method": "random_edges", "config": "eager", "prediction": "Myanmar", "short_prediction": "Myanmar", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__161602_426860_88460_126088", "method": "broken_middle", "config": "eager", "prediction": "Thein Sein", "short_prediction": "Thein Sein", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop2__161602_426860_88460_126088", "method": "oracle_proof", "config": "eager", "prediction": "Vajiralongkorn Dam is located in Thailand, the country hosting the tournament. Myanmar is the natural boundary between", "short_prediction": "Vajiralongkorn Dam is located in Thailand, the country hosting the tournament. Myanmar is the natural boundary between", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__132957_295815_40768", "method": "proof_core", "config": "eager", "prediction": "early 1980s", "short_prediction": "early 1980s", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__132957_295815_40768", "method": "relevance_same_bytes", "config": "eager", "prediction": "September 1947", "short_prediction": "September 1947", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__132957_295815_40768", "method": "edge_shuffled", "config": "eager", "prediction": "early 1980s", "short_prediction": "early 1980s", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__132957_295815_40768", "method": "random_edges", "config": "eager", "prediction": "early 1980s", "short_prediction": "early 1980s", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__132957_295815_40768", "method": "broken_middle", "config": "eager", "prediction": "early 1980s", "short_prediction": "early 1980s", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__132957_295815_40768", "method": "oracle_proof", "config": "eager", "prediction": "A decade after the 1973 oil crisis", "short_prediction": "A decade after the 1973 oil crisis", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__516535_834494_33939", "method": "proof_core", "config": "eager", "prediction": "7,531", "short_prediction": "7,531", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__516535_834494_33939", "method": "relevance_same_bytes", "config": "eager", "prediction": "7,531", "short_prediction": "7,531", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__516535_834494_33939", "method": "edge_shuffled", "config": "eager", "prediction": "not provided", "short_prediction": "not provided", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__516535_834494_33939", "method": "random_edges", "config": "eager", "prediction": "7,531", "short_prediction": "7,531", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__516535_834494_33939", "method": "broken_middle", "config": "eager", "prediction": "7,531", "short_prediction": "7,531", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__516535_834494_33939", "method": "oracle_proof", "config": "eager", "prediction": "7,531", "short_prediction": "7,531", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__403580_37168", "method": "proof_core", "config": "eager", "prediction": "Imperial College London joint 2nd in the world", "short_prediction": "Imperial College London joint 2nd in the world", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__403580_37168", "method": "relevance_same_bytes", "config": "eager", "prediction": "London", "short_prediction": "London", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__403580_37168", "method": "edge_shuffled", "config": "eager", "prediction": "Not ranked", "short_prediction": "Not ranked", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__403580_37168", "method": "random_edges", "config": "eager", "prediction": "Cairo University", "short_prediction": "Cairo University", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__403580_37168", "method": "broken_middle", "config": "eager", "prediction": "Imperial College London joint 2nd in the world", "short_prediction": "Imperial College London joint 2nd in the world", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__403580_37168", "method": "oracle_proof", "config": "eager", "prediction": "Alexandria University", "short_prediction": "Alexandria University", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__557411_652060", "method": "proof_core", "config": "eager", "prediction": "Ann Hampton Callaway", "short_prediction": "Ann Hampton Callaway", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__557411_652060", "method": "relevance_same_bytes", "config": "eager", "prediction": "Fran Drescher", "short_prediction": "Fran Drescher", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__557411_652060", "method": "edge_shuffled", "config": "eager", "prediction": "Mok Kwai-lan", "short_prediction": "Mok Kwai-lan", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__557411_652060", "method": "random_edges", "config": "eager", "prediction": "Lingnan martial arts grandmaster Wong Fei-hung", "short_prediction": "Lingnan martial arts grandmaster Wong Fei-hung", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__557411_652060", "method": "broken_middle", "config": "eager", "prediction": "Ann Hampton Callaway", "short_prediction": "Ann Hampton Callaway", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__557411_652060", "method": "oracle_proof", "config": "eager", "prediction": "Daniel Davis", "short_prediction": "Daniel Davis", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__367336_97805", "method": "proof_core", "config": "eager", "prediction": "Winter War", "short_prediction": "Winter War", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__367336_97805", "method": "relevance_same_bytes", "config": "eager", "prediction": "World War II", "short_prediction": "World War II", "answer_f1": 0.4, "answer_em": 0.0}
+{"id": "2hop__367336_97805", "method": "edge_shuffled", "config": "eager", "prediction": "Winter War", "short_prediction": "Winter War", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__367336_97805", "method": "random_edges", "config": "eager", "prediction": "World War II", "short_prediction": "World War II", "answer_f1": 0.4, "answer_em": 0.0}
+{"id": "2hop__367336_97805", "method": "broken_middle", "config": "eager", "prediction": "Winter War", "short_prediction": "Winter War", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__367336_97805", "method": "oracle_proof", "config": "eager", "prediction": "Winter War", "short_prediction": "Winter War", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop3__130404_29339_508306_70744", "method": "proof_core", "config": "eager", "prediction": "University of South Carolina", "short_prediction": "University of South Carolina", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop3__130404_29339_508306_70744", "method": "relevance_same_bytes", "config": "eager", "prediction": "Clemson University", "short_prediction": "Clemson University", "answer_f1": 0.3333333333333333, "answer_em": 0.0}
+{"id": "4hop3__130404_29339_508306_70744", "method": "edge_shuffled", "config": "eager", "prediction": "Clemson University", "short_prediction": "Clemson University", "answer_f1": 0.3333333333333333, "answer_em": 0.0}
+{"id": "4hop3__130404_29339_508306_70744", "method": "random_edges", "config": "eager", "prediction": "University of South Carolina", "short_prediction": "University of South Carolina", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop3__130404_29339_508306_70744", "method": "broken_middle", "config": "eager", "prediction": "University of South Carolina", "short_prediction": "University of South Carolina", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop3__130404_29339_508306_70744", "method": "oracle_proof", "config": "eager", "prediction": "University of South Carolina", "short_prediction": "University of South Carolina", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__159816_37168", "method": "proof_core", "config": "eager", "prediction": "joint 2nd in the world", "short_prediction": "joint 2nd in the world", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__159816_37168", "method": "relevance_same_bytes", "config": "eager", "prediction": "joint 2nd", "short_prediction": "joint 2nd", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__159816_37168", "method": "edge_shuffled", "config": "eager", "prediction": "joint 2nd in the world", "short_prediction": "joint 2nd in the world", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__159816_37168", "method": "random_edges", "config": "eager", "prediction": "joint 2nd in the world", "short_prediction": "joint 2nd in the world", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__159816_37168", "method": "broken_middle", "config": "eager", "prediction": "joint 2nd in the world", "short_prediction": "joint 2nd in the world", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__159816_37168", "method": "oracle_proof", "config": "eager", "prediction": "551-666", "short_prediction": "551-666", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106042_64399_53006", "method": "proof_core", "config": "eager", "prediction": "Rome", "short_prediction": "Rome", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106042_64399_53006", "method": "relevance_same_bytes", "config": "eager", "prediction": "Not specified in the given context.", "short_prediction": "Not specified in the given context.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106042_64399_53006", "method": "edge_shuffled", "config": "eager", "prediction": "Pantheon", "short_prediction": "Pantheon", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106042_64399_53006", "method": "random_edges", "config": "eager", "prediction": "Mosque of al-Zahir Baybars", "short_prediction": "Mosque of al-Zahir Baybars", "answer_f1": 0.28571428571428575, "answer_em": 0.0}
+{"id": "3hop1__106042_64399_53006", "method": "broken_middle", "config": "eager", "prediction": "Judea", "short_prediction": "Judea", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106042_64399_53006", "method": "oracle_proof", "config": "eager", "prediction": "Judea", "short_prediction": "Judea", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__637555_339990_15538", "method": "proof_core", "config": "eager", "prediction": "2011", "short_prediction": "2011", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__637555_339990_15538", "method": "relevance_same_bytes", "config": "eager", "prediction": "1984", "short_prediction": "1984", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__637555_339990_15538", "method": "edge_shuffled", "config": "eager", "prediction": "No information provided about the state where Copake Lake is located or the reinstatement of the death penalty.", "short_prediction": "No information provided about the state where Copake Lake is located or the reinstatement of the death penalty.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__637555_339990_15538", "method": "random_edges", "config": "eager", "prediction": "1984", "short_prediction": "1984", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__637555_339990_15538", "method": "broken_middle", "config": "eager", "prediction": "not mentioned", "short_prediction": "not mentioned", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__637555_339990_15538", "method": "oracle_proof", "config": "eager", "prediction": "1984", "short_prediction": "1984", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__82713_84616", "method": "proof_core", "config": "eager", "prediction": "Best Lead Actress in Play", "short_prediction": "Best Lead Actress in Play", "answer_f1": 0.5333333333333333, "answer_em": 0.0}
+{"id": "2hop__82713_84616", "method": "relevance_same_bytes", "config": "eager", "prediction": "Best Actress in a Musical", "short_prediction": "Best Actress in a Musical", "answer_f1": 0.4285714285714285, "answer_em": 0.0}
+{"id": "2hop__82713_84616", "method": "edge_shuffled", "config": "eager", "prediction": "Best Actress in a Musical", "short_prediction": "Best Actress in a Musical", "answer_f1": 0.4285714285714285, "answer_em": 0.0}
+{"id": "2hop__82713_84616", "method": "random_edges", "config": "eager", "prediction": "Best Actress in a Musical", "short_prediction": "Best Actress in a Musical", "answer_f1": 0.4285714285714285, "answer_em": 0.0}
+{"id": "2hop__82713_84616", "method": "broken_middle", "config": "eager", "prediction": "Best Lead Actress in Play", "short_prediction": "Best Lead Actress in Play", "answer_f1": 0.5333333333333333, "answer_em": 0.0}
+{"id": "2hop__82713_84616", "method": "oracle_proof", "config": "eager", "prediction": "Best Performance by a Leading Actress in a Play", "short_prediction": "Best Performance by a Leading Actress in a Play", "answer_f1": 0.8235294117647058, "answer_em": 0.0}
+{"id": "3hop1__617062_127905_48717", "method": "proof_core", "config": "eager", "prediction": "Cleveland Browns", "short_prediction": "Cleveland Browns", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__617062_127905_48717", "method": "relevance_same_bytes", "config": "eager", "prediction": "Josh Beckett", "short_prediction": "Josh Beckett", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__617062_127905_48717", "method": "edge_shuffled", "config": "eager", "prediction": "Cleveland Browns", "short_prediction": "Cleveland Browns", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__617062_127905_48717", "method": "random_edges", "config": "eager", "prediction": "Zach Wheeler", "short_prediction": "Zach Wheeler", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__617062_127905_48717", "method": "broken_middle", "config": "eager", "prediction": "Cleveland Browns", "short_prediction": "Cleveland Browns", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__617062_127905_48717", "method": "oracle_proof", "config": "eager", "prediction": "Josh Beckett", "short_prediction": "Josh Beckett", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__691197_15840_36002", "method": "proof_core", "config": "eager", "prediction": "16-bit architectures", "short_prediction": "16-bit architectures", "answer_f1": 0.33333333333333337, "answer_em": 0.0}
+{"id": "3hop1__691197_15840_36002", "method": "relevance_same_bytes", "config": "eager", "prediction": "larger library of games, and lower price point", "short_prediction": "larger library of games, and lower price point", "answer_f1": 0.11111111111111112, "answer_em": 0.0}
+{"id": "3hop1__691197_15840_36002", "method": "edge_shuffled", "config": "eager", "prediction": "16-bit architectures", "short_prediction": "16-bit architectures", "answer_f1": 0.33333333333333337, "answer_em": 0.0}
+{"id": "3hop1__691197_15840_36002", "method": "random_edges", "config": "eager", "prediction": "historically reliable", "short_prediction": "historically reliable", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__691197_15840_36002", "method": "broken_middle", "config": "eager", "prediction": "more colorful and fluid animations", "short_prediction": "more colorful and fluid animations", "answer_f1": 0.13333333333333333, "answer_em": 0.0}
+{"id": "3hop1__691197_15840_36002", "method": "oracle_proof", "config": "eager", "prediction": "16-bit architectures", "short_prediction": "16-bit architectures", "answer_f1": 0.33333333333333337, "answer_em": 0.0}
+{"id": "4hop2__9988_158279_70784_79935", "method": "proof_core", "config": "eager", "prediction": "The Kingdom of Saudi Arabia was established in 1930.", "short_prediction": "The Kingdom of Saudi Arabia was established in 1930.", "answer_f1": 0.2222222222222222, "answer_em": 0.0}
+{"id": "4hop2__9988_158279_70784_79935", "method": "relevance_same_bytes", "config": "eager", "prediction": "The Kingdom of Saudi Arabia was established in 1930.", "short_prediction": "The Kingdom of Saudi Arabia was established in 1930.", "answer_f1": 0.2222222222222222, "answer_em": 0.0}
+{"id": "4hop2__9988_158279_70784_79935", "method": "edge_shuffled", "config": "eager", "prediction": "The Kingdom of Saudi Arabia was established in 1930.", "short_prediction": "The Kingdom of Saudi Arabia was established in 1930.", "answer_f1": 0.2222222222222222, "answer_em": 0.0}
+{"id": "4hop2__9988_158279_70784_79935", "method": "random_edges", "config": "eager", "prediction": "The Kingdom of Saudi Arabia was established in 1930.", "short_prediction": "The Kingdom of Saudi Arabia was established in 1930.", "answer_f1": 0.2222222222222222, "answer_em": 0.0}
+{"id": "4hop2__9988_158279_70784_79935", "method": "broken_middle", "config": "eager", "prediction": "Context does not provide an answer to this question question.", "short_prediction": "Context does not provide an answer to this question question.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__9988_158279_70784_79935", "method": "oracle_proof", "config": "eager", "prediction": "The Kingdom of Saudi Arabia was established in 1930.", "short_prediction": "The Kingdom of Saudi Arabia was established in 1930.", "answer_f1": 0.2222222222222222, "answer_em": 0.0}
+{"id": "3hop1__662413_42197_18397", "method": "proof_core", "config": "eager", "prediction": "China", "short_prediction": "China", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__662413_42197_18397", "method": "relevance_same_bytes", "config": "eager", "prediction": "People's Republic of China", "short_prediction": "People's Republic of China", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__662413_42197_18397", "method": "edge_shuffled", "config": "eager", "prediction": "UN Security Council", "short_prediction": "UN Security Council", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__662413_42197_18397", "method": "random_edges", "config": "eager", "prediction": "UN Security Council", "short_prediction": "UN Security Council", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__662413_42197_18397", "method": "broken_middle", "config": "eager", "prediction": "China", "short_prediction": "China", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__662413_42197_18397", "method": "oracle_proof", "config": "eager", "prediction": "Taiwan", "short_prediction": "Taiwan", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__35566_17873", "method": "proof_core", "config": "eager", "prediction": "No relevant information found in the provided context to answer the question.", "short_prediction": "No relevant information found in the provided context to answer the question.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__35566_17873", "method": "relevance_same_bytes", "config": "eager", "prediction": "seldom used, even neglected.", "short_prediction": "seldom used, even neglected.", "answer_f1": 0.8, "answer_em": 0.0}
+{"id": "2hop__35566_17873", "method": "edge_shuffled", "config": "eager", "prediction": "Buckingham Chantry Chapel is the oldest building in Buckingham.", "short_prediction": "Buckingham Chantry Chapel is the oldest building in Buckingham.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__35566_17873", "method": "random_edges", "config": "eager", "prediction": "Buckingham fire in 1725", "short_prediction": "Buckingham fire in 1725", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__35566_17873", "method": "broken_middle", "config": "eager", "prediction": "Buckingham fire in 1725", "short_prediction": "Buckingham fire in 1725", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__35566_17873", "method": "oracle_proof", "config": "eager", "prediction": "seldom used, even neglected.", "short_prediction": "seldom used, even neglected.", "answer_f1": 0.8, "answer_em": 0.0}
+{"id": "3hop1__9285_5188_63702", "method": "proof_core", "config": "eager", "prediction": "Text not fully provided, assume answer is: Romania", "short_prediction": "Text not fully provided, assume answer is: Romania", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__9285_5188_63702", "method": "relevance_same_bytes", "config": "eager", "prediction": "1955", "short_prediction": "1955", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__9285_5188_63702", "method": "edge_shuffled", "config": "eager", "prediction": "1939", "short_prediction": "1939", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__9285_5188_63702", "method": "random_edges", "config": "eager", "prediction": "Hungary", "short_prediction": "Hungary", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__9285_5188_63702", "method": "broken_middle", "config": "eager", "prediction": "not answered in the context", "short_prediction": "not answered in the context", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__9285_5188_63702", "method": "oracle_proof", "config": "eager", "prediction": "June 1941", "short_prediction": "June 1941", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__543853_124498", "method": "proof_core", "config": "eager", "prediction": "Louis Chedid", "short_prediction": "Louis Chedid", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__543853_124498", "method": "relevance_same_bytes", "config": "eager", "prediction": "Louis Chedid", "short_prediction": "Louis Chedid", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__543853_124498", "method": "edge_shuffled", "config": "eager", "prediction": "Matthieu Chedid", "short_prediction": "Matthieu Chedid", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__543853_124498", "method": "random_edges", "config": "eager", "prediction": "Matthieu Chedid", "short_prediction": "Matthieu Chedid", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__543853_124498", "method": "broken_middle", "config": "eager", "prediction": "Louis Chedid", "short_prediction": "Louis Chedid", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__543853_124498", "method": "oracle_proof", "config": "eager", "prediction": "Matthieu Chedid", "short_prediction": "Matthieu Chedid", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__804417_126089", "method": "proof_core", "config": "eager", "prediction": "Johan Remkes", "short_prediction": "Johan Remkes", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__804417_126089", "method": "relevance_same_bytes", "config": "eager", "prediction": "Diocese of Bj\u00f8rgvin", "short_prediction": "Diocese of Bj\u00f8rgvin", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__804417_126089", "method": "edge_shuffled", "config": "eager", "prediction": "King's Commissioner", "short_prediction": "King's Commissioner", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__804417_126089", "method": "random_edges", "config": "eager", "prediction": "French Army", "short_prediction": "French Army", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__804417_126089", "method": "broken_middle", "config": "eager", "prediction": "National Register of Historic Places", "short_prediction": "National Register of Historic Places", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__804417_126089", "method": "oracle_proof", "config": "eager", "prediction": "Johan Remkes", "short_prediction": "Johan Remkes", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__860241_766393", "method": "proof_core", "config": "eager", "prediction": "Prix Goncourt", "short_prediction": "Prix Goncourt", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__860241_766393", "method": "relevance_same_bytes", "config": "eager", "prediction": "Prix Goncourt", "short_prediction": "Prix Goncourt", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__860241_766393", "method": "edge_shuffled", "config": "eager", "prediction": "Prix Goncourt", "short_prediction": "Prix Goncourt", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__860241_766393", "method": "random_edges", "config": "eager", "prediction": "Prix Goncourt", "short_prediction": "Prix Goncourt", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__860241_766393", "method": "broken_middle", "config": "eager", "prediction": "Prix Goncourt", "short_prediction": "Prix Goncourt", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__860241_766393", "method": "oracle_proof", "config": "eager", "prediction": "Prix Goncourt", "short_prediction": "Prix Goncourt", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__436202_378185_282674_759393", "method": "proof_core", "config": "eager", "prediction": "Appleton", "short_prediction": "Appleton", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__436202_378185_282674_759393", "method": "relevance_same_bytes", "config": "eager", "prediction": "Appleton", "short_prediction": "Appleton", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__436202_378185_282674_759393", "method": "edge_shuffled", "config": "eager", "prediction": "Lubacz\u00f3w County", "short_prediction": "Lubacz\u00f3w County", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__436202_378185_282674_759393", "method": "random_edges", "config": "eager", "prediction": "Lubacz\u00f3w County", "short_prediction": "Lubacz\u00f3w County", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__436202_378185_282674_759393", "method": "broken_middle", "config": "eager", "prediction": "Lubacz\u00f3w County", "short_prediction": "Lubacz\u00f3w County", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__436202_378185_282674_759393", "method": "oracle_proof", "config": "eager", "prediction": "Appleton", "short_prediction": "Appleton", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__30152_105895_20999", "method": "proof_core", "config": "eager", "prediction": "Myanmar", "short_prediction": "Myanmar", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__30152_105895_20999", "method": "relevance_same_bytes", "config": "eager", "prediction": "Ottoman Empire", "short_prediction": "Ottoman Empire", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__30152_105895_20999", "method": "edge_shuffled", "config": "eager", "prediction": "French", "short_prediction": "French", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__30152_105895_20999", "method": "random_edges", "config": "eager", "prediction": "Myanmar", "short_prediction": "Myanmar", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__30152_105895_20999", "method": "broken_middle", "config": "eager", "prediction": "Myanmar", "short_prediction": "Myanmar", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__30152_105895_20999", "method": "oracle_proof", "config": "eager", "prediction": "Portuguese", "short_prediction": "Portuguese", "answer_f1": 0.33333333333333337, "answer_em": 0.0}
+{"id": "2hop__149710_108549", "method": "proof_core", "config": "eager", "prediction": "Justice League", "short_prediction": "Justice League", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__149710_108549", "method": "relevance_same_bytes", "config": "eager", "prediction": "Smallville", "short_prediction": "Smallville", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__149710_108549", "method": "edge_shuffled", "config": "eager", "prediction": "Smallville", "short_prediction": "Smallville", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__149710_108549", "method": "random_edges", "config": "eager", "prediction": "Justice League", "short_prediction": "Justice League", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__149710_108549", "method": "broken_middle", "config": "eager", "prediction": "Justice League", "short_prediction": "Justice League", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__149710_108549", "method": "oracle_proof", "config": "eager", "prediction": "Smallville", "short_prediction": "Smallville", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__72660_319330", "method": "proof_core", "config": "eager", "prediction": "Elizabeth II", "short_prediction": "Elizabeth II", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__72660_319330", "method": "relevance_same_bytes", "config": "eager", "prediction": "Prince Charles", "short_prediction": "Prince Charles", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__72660_319330", "method": "edge_shuffled", "config": "eager", "prediction": "Elizabeth II", "short_prediction": "Elizabeth II", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__72660_319330", "method": "random_edges", "config": "eager", "prediction": "Elizabeth II", "short_prediction": "Elizabeth II", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__72660_319330", "method": "broken_middle", "config": "eager", "prediction": "Elizabeth II", "short_prediction": "Elizabeth II", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__72660_319330", "method": "oracle_proof", "config": "eager", "prediction": "Jessie Woodrow Wilson Sayre", "short_prediction": "Jessie Woodrow Wilson Sayre", "answer_f1": 0.8571428571428571, "answer_em": 0.0}
+{"id": "2hop__29873_679424", "method": "proof_core", "config": "eager", "prediction": "Serbia", "short_prediction": "Serbia", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__29873_679424", "method": "relevance_same_bytes", "config": "eager", "prediction": "Vojvodina", "short_prediction": "Vojvodina", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__29873_679424", "method": "edge_shuffled", "config": "eager", "prediction": "Serbia", "short_prediction": "Serbia", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__29873_679424", "method": "random_edges", "config": "eager", "prediction": "Serbia", "short_prediction": "Serbia", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__29873_679424", "method": "broken_middle", "config": "eager", "prediction": "Serbia", "short_prediction": "Serbia", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__29873_679424", "method": "oracle_proof", "config": "eager", "prediction": "Serbia", "short_prediction": "Serbia", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__530579_13529", "method": "proof_core", "config": "eager", "prediction": "Not provided in the context", "short_prediction": "Not provided in the context", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__530579_13529", "method": "relevance_same_bytes", "config": "eager", "prediction": "June 1982", "short_prediction": "June 1982", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__530579_13529", "method": "edge_shuffled", "config": "eager", "prediction": "Not provided in the context", "short_prediction": "Not provided in the context", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__530579_13529", "method": "random_edges", "config": "eager", "prediction": "June 1982", "short_prediction": "June 1982", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__530579_13529", "method": "broken_middle", "config": "eager", "prediction": "Not provided in the context", "short_prediction": "Not provided in the context", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__530579_13529", "method": "oracle_proof", "config": "eager", "prediction": "June 1982", "short_prediction": "June 1982", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__34595_160249", "method": "proof_core", "config": "eager", "prediction": "280 BC", "short_prediction": "280 BC", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__34595_160249", "method": "relevance_same_bytes", "config": "eager", "prediction": "280 BC and 279 BC", "short_prediction": "280 BC and 279 BC", "answer_f1": 0.28571428571428575, "answer_em": 0.0}
+{"id": "2hop__34595_160249", "method": "edge_shuffled", "config": "eager", "prediction": "280 BC", "short_prediction": "280 BC", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__34595_160249", "method": "random_edges", "config": "eager", "prediction": "280 BC", "short_prediction": "280 BC", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__34595_160249", "method": "broken_middle", "config": "eager", "prediction": "280 BC", "short_prediction": "280 BC", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__34595_160249", "method": "oracle_proof", "config": "eager", "prediction": "272 BC", "short_prediction": "272 BC", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__274529_5385", "method": "proof_core", "config": "eager", "prediction": "11,950", "short_prediction": "11,950", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__274529_5385", "method": "relevance_same_bytes", "config": "eager", "prediction": "not specified", "short_prediction": "not specified", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__274529_5385", "method": "edge_shuffled", "config": "eager", "prediction": "not specified", "short_prediction": "not specified", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__274529_5385", "method": "random_edges", "config": "eager", "prediction": "not specified", "short_prediction": "not specified", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__274529_5385", "method": "broken_middle", "config": "eager", "prediction": "not specified", "short_prediction": "not specified", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__274529_5385", "method": "oracle_proof", "config": "eager", "prediction": "11,950", "short_prediction": "11,950", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__857_846_7874", "method": "proof_core", "config": "eager", "prediction": "Jiangsu Nangang Basketball Club", "short_prediction": "Jiangsu Nangang Basketball Club", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__857_846_7874", "method": "relevance_same_bytes", "config": "eager", "prediction": "Beijing Ducks", "short_prediction": "Beijing Ducks", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__857_846_7874", "method": "edge_shuffled", "config": "eager", "prediction": "The Tom, The Gola", "short_prediction": "The Tom, The Gola", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__857_846_7874", "method": "random_edges", "config": "eager", "prediction": "Sacramento Kings", "short_prediction": "Sacramento Kings", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__857_846_7874", "method": "broken_middle", "config": "eager", "prediction": "Beijing Ducks", "short_prediction": "Beijing Ducks", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__857_846_7874", "method": "oracle_proof", "config": "eager", "prediction": "Jiangsu Nangang Basketball Club", "short_prediction": "Jiangsu Nangang Basketball Club", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__145494_698949_157828_162309", "method": "proof_core", "config": "eager", "prediction": "1994", "short_prediction": "1994", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__145494_698949_157828_162309", "method": "relevance_same_bytes", "config": "eager", "prediction": "1994", "short_prediction": "1994", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__145494_698949_157828_162309", "method": "edge_shuffled", "config": "eager", "prediction": "1996 Summer Olympics", "short_prediction": "1996 Summer Olympics", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__145494_698949_157828_162309", "method": "random_edges", "config": "eager", "prediction": "1992 Summer Games", "short_prediction": "1992 Summer Games", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__145494_698949_157828_162309", "method": "broken_middle", "config": "eager", "prediction": "1994", "short_prediction": "1994", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__145494_698949_157828_162309", "method": "oracle_proof", "config": "eager", "prediction": "1992", "short_prediction": "1992", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__142621_225454", "method": "proof_core", "config": "eager", "prediction": "Limited Too", "short_prediction": "Limited Too", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__142621_225454", "method": "relevance_same_bytes", "config": "eager", "prediction": "Hollywood Records", "short_prediction": "Hollywood Records", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__142621_225454", "method": "edge_shuffled", "config": "eager", "prediction": "Hollywood Records", "short_prediction": "Hollywood Records", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__142621_225454", "method": "random_edges", "config": "eager", "prediction": "Limited Too", "short_prediction": "Limited Too", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__142621_225454", "method": "broken_middle", "config": "eager", "prediction": "Limited Too", "short_prediction": "Limited Too", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__142621_225454", "method": "oracle_proof", "config": "eager", "prediction": "Limited Too", "short_prediction": "Limited Too", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__499577_617190", "method": "proof_core", "config": "eager", "prediction": "Kent Cooper", "short_prediction": "Kent Cooper", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__499577_617190", "method": "relevance_same_bytes", "config": "eager", "prediction": "Baroness Gyllembourg-Ehrensv\u00e4rd", "short_prediction": "Baroness Gyllembourg-Ehrensv\u00e4rd", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__499577_617190", "method": "edge_shuffled", "config": "eager", "prediction": "Johanne Luise Heiberg", "short_prediction": "Johanne Luise Heiberg", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__499577_617190", "method": "random_edges", "config": "eager", "prediction": "Kent Cooper", "short_prediction": "Kent Cooper", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__499577_617190", "method": "broken_middle", "config": "eager", "prediction": "Kent Cooper", "short_prediction": "Kent Cooper", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__499577_617190", "method": "oracle_proof", "config": "eager", "prediction": "Baroness Gyllembourg-Ehrensv\u00e4rd", "short_prediction": "Baroness Gyllembourg-Ehrensv\u00e4rd", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__765847_831637_91775", "method": "proof_core", "config": "eager", "prediction": "Seal", "short_prediction": "Seal", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__765847_831637_91775", "method": "relevance_same_bytes", "config": "eager", "prediction": "Seal", "short_prediction": "Seal", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__765847_831637_91775", "method": "edge_shuffled", "config": "eager", "prediction": "SEALs", "short_prediction": "SEALs", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__765847_831637_91775", "method": "random_edges", "config": "eager", "prediction": "SEAL Team", "short_prediction": "SEAL Team", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__765847_831637_91775", "method": "broken_middle", "config": "eager", "prediction": "Sea, Air, and Land", "short_prediction": "Sea, Air, and Land", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__765847_831637_91775", "method": "oracle_proof", "config": "eager", "prediction": "Sea, Air, and Land Teams", "short_prediction": "Sea, Air, and Land Teams", "answer_f1": 0.888888888888889, "answer_em": 0.0}
+{"id": "2hop__107185_64006", "method": "proof_core", "config": "eager", "prediction": "33\u20136%", "short_prediction": "33\u20136%", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__107185_64006", "method": "relevance_same_bytes", "config": "eager", "prediction": "33\u201366%", "short_prediction": "33\u201366%", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__107185_64006", "method": "edge_shuffled", "config": "eager", "prediction": "355\u2013375 million", "short_prediction": "355\u2013375 million", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__107185_64006", "method": "random_edges", "config": "eager", "prediction": "not mentioned", "short_prediction": "not mentioned", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__107185_64006", "method": "broken_middle", "config": "eager", "prediction": "355 million", "short_prediction": "355 million", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__107185_64006", "method": "oracle_proof", "config": "eager", "prediction": "30% to 65%", "short_prediction": "30% to 65%", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__814856_110882", "method": "proof_core", "config": "eager", "prediction": "1 January 1986", "short_prediction": "1 January 1986", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__814856_110882", "method": "relevance_same_bytes", "config": "eager", "prediction": "The context does not provide James Cottriall's birthday.", "short_prediction": "The context does not provide James Cottriall's birthday.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__814856_110882", "method": "edge_shuffled", "config": "eager", "prediction": "1 January 1986", "short_prediction": "1 January 1986", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__814856_110882", "method": "random_edges", "config": "eager", "prediction": "1 January 1986", "short_prediction": "1 January 1986", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__814856_110882", "method": "broken_middle", "config": "eager", "prediction": "Sean Penn", "short_prediction": "Sean Penn", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__814856_110882", "method": "oracle_proof", "config": "eager", "prediction": "1 January 1986", "short_prediction": "1 January 1986", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__83938_5666", "method": "proof_core", "config": "eager", "prediction": "Yeltsin", "short_prediction": "Yeltsin", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__83938_5666", "method": "relevance_same_bytes", "config": "eager", "prediction": "Yeltsin", "short_prediction": "Yeltsin", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__83938_5666", "method": "edge_shuffled", "config": "eager", "prediction": "Sylvain Saln\u00e8de was preceding the first president, Jean-Nicolas Nissac Saget, but", "short_prediction": "Sylvain Saln\u00e8de was preceding the first president, Jean-Nicolas Nissac Saget, but", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__83938_5666", "method": "random_edges", "config": "eager", "prediction": "Yeltsin", "short_prediction": "Yeltsin", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__83938_5666", "method": "broken_middle", "config": "eager", "prediction": "Yeltsin", "short_prediction": "Yeltsin", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__83938_5666", "method": "oracle_proof", "config": "eager", "prediction": "Yeltsin", "short_prediction": "Yeltsin", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__88342_75218_128008_87812", "method": "proof_core", "config": "eager", "prediction": "March 31 or April 1", "short_prediction": "March 31 or April 1", "answer_f1": 0.25, "answer_em": 0.0}
+{"id": "4hop1__88342_75218_128008_87812", "method": "relevance_same_bytes", "config": "eager", "prediction": "March 31", "short_prediction": "March 31", "answer_f1": 0.4, "answer_em": 0.0}
+{"id": "4hop1__88342_75218_128008_87812", "method": "edge_shuffled", "config": "eager", "prediction": "March 30", "short_prediction": "March 30", "answer_f1": 0.4, "answer_em": 0.0}
+{"id": "4hop1__88342_75218_128008_87812", "method": "random_edges", "config": "eager", "prediction": "Thursday, March 29", "short_prediction": "Thursday, March 29", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__88342_75218_128008_87812", "method": "broken_middle", "config": "eager", "prediction": "March 31 or April 1", "short_prediction": "March 31 or April 1", "answer_f1": 0.25, "answer_em": 0.0}
+{"id": "4hop1__88342_75218_128008_87812", "method": "oracle_proof", "config": "eager", "prediction": "Thursday, March 29", "short_prediction": "Thursday, March 29", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__259228_793698", "method": "proof_core", "config": "eager", "prediction": "German Aerospace Center", "short_prediction": "German Aerospace Center", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__259228_793698", "method": "relevance_same_bytes", "config": "eager", "prediction": "German Aerospace Center", "short_prediction": "German Aerospace Center", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__259228_793698", "method": "edge_shuffled", "config": "eager", "prediction": "German Aerospace Center", "short_prediction": "German Aerospace Center", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__259228_793698", "method": "random_edges", "config": "eager", "prediction": "German Aerospace Center", "short_prediction": "German Aerospace Center", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__259228_793698", "method": "broken_middle", "config": "eager", "prediction": "German Aerospace Center", "short_prediction": "German Aerospace Center", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__259228_793698", "method": "oracle_proof", "config": "eager", "prediction": "German Aerospace Center", "short_prediction": "German Aerospace Center", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__669456_108549", "method": "proof_core", "config": "eager", "prediction": "Daily Planet", "short_prediction": "Daily Planet", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__669456_108549", "method": "relevance_same_bytes", "config": "eager", "prediction": "Mal Young", "short_prediction": "Mal Young", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__669456_108549", "method": "edge_shuffled", "config": "eager", "prediction": "Daily Planet", "short_prediction": "Daily Planet", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__669456_108549", "method": "random_edges", "config": "eager", "prediction": "Mal Young", "short_prediction": "Mal Young", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__669456_108549", "method": "broken_middle", "config": "eager", "prediction": "Smallville", "short_prediction": "Smallville", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__669456_108549", "method": "oracle_proof", "config": "eager", "prediction": "Alfred Gough and Miles Millar", "short_prediction": "Alfred Gough and Miles Millar", "answer_f1": 0.5714285714285715, "answer_em": 0.0}
+{"id": "2hop__640262_122868", "method": "proof_core", "config": "eager", "prediction": "University of British Columbia", "short_prediction": "University of British Columbia", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__640262_122868", "method": "relevance_same_bytes", "config": "eager", "prediction": "University of British Columbia", "short_prediction": "University of British Columbia", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__640262_122868", "method": "edge_shuffled", "config": "eager", "prediction": "University of British Columbia", "short_prediction": "University of British Columbia", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__640262_122868", "method": "random_edges", "config": "eager", "prediction": "University of British Columbia", "short_prediction": "University of British Columbia", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__640262_122868", "method": "broken_middle", "config": "eager", "prediction": "Radboud University Nijmegen", "short_prediction": "Radboud University Nijmegen", "answer_f1": 0.28571428571428575, "answer_em": 0.0}
+{"id": "2hop__640262_122868", "method": "oracle_proof", "config": "eager", "prediction": "University of British Columbia", "short_prediction": "University of British Columbia", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__462960_160545_62931", "method": "proof_core", "config": "eager", "prediction": "Thai island Koh Phi Phi", "short_prediction": "Thai island Koh Phi Phi", "answer_f1": 0.888888888888889, "answer_em": 0.0}
+{"id": "3hop1__462960_160545_62931", "method": "relevance_same_bytes", "config": "eager", "prediction": "Thai island Koh Phi Phi", "short_prediction": "Thai island Koh Phi Phi", "answer_f1": 0.888888888888889, "answer_em": 0.0}
+{"id": "3hop1__462960_160545_62931", "method": "edge_shuffled", "config": "eager", "prediction": "Malibu's Leo Carrillo State Beach", "short_prediction": "Malibu's Leo Carrillo State Beach", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__462960_160545_62931", "method": "random_edges", "config": "eager", "prediction": "Bangkok", "short_prediction": "Bangkok", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__462960_160545_62931", "method": "broken_middle", "config": "eager", "prediction": "Thai island Koh Phi Phi", "short_prediction": "Thai island Koh Phi Phi", "answer_f1": 0.888888888888889, "answer_em": 0.0}
+{"id": "3hop1__462960_160545_62931", "method": "oracle_proof", "config": "eager", "prediction": "Koh Phi Phi", "short_prediction": "Koh Phi Phi", "answer_f1": 0.8571428571428571, "answer_em": 0.0}
+{"id": "2hop__817096_15463", "method": "proof_core", "config": "eager", "prediction": "Compaq", "short_prediction": "Compaq", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__817096_15463", "method": "relevance_same_bytes", "config": "eager", "prediction": "Compaq", "short_prediction": "Compaq", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__817096_15463", "method": "edge_shuffled", "config": "eager", "prediction": "AT&T Broadband", "short_prediction": "AT&T Broadband", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__817096_15463", "method": "random_edges", "config": "eager", "prediction": "AT&T Broadband", "short_prediction": "AT&T Broadband", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__817096_15463", "method": "broken_middle", "config": "eager", "prediction": "Comcast", "short_prediction": "Comcast", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__817096_15463", "method": "oracle_proof", "config": "eager", "prediction": "Compaq", "short_prediction": "Compaq", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__43283_86694", "method": "proof_core", "config": "eager", "prediction": "Philadelphia 76ers", "short_prediction": "Philadelphia 76ers", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__43283_86694", "method": "relevance_same_bytes", "config": "eager", "prediction": "Context not relevant to the question.", "short_prediction": "Context not relevant to the question.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__43283_86694", "method": "edge_shuffled", "config": "eager", "prediction": "Philadelphia 76ers", "short_prediction": "Philadelphia 76ers", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__43283_86694", "method": "random_edges", "config": "eager", "prediction": "Philadelphia 76ers", "short_prediction": "Philadelphia 76ers", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__43283_86694", "method": "broken_middle", "config": "eager", "prediction": "Philadelphia 76ers", "short_prediction": "Philadelphia 76ers", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__43283_86694", "method": "oracle_proof", "config": "eager", "prediction": "New York Yankees", "short_prediction": "New York Yankees", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__81268_85407", "method": "proof_core", "config": "eager", "prediction": "260,897", "short_prediction": "260,897", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__81268_85407", "method": "relevance_same_bytes", "config": "eager", "prediction": "220,000", "short_prediction": "220,000", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__81268_85407", "method": "edge_shuffled", "config": "eager", "prediction": "260,897", "short_prediction": "260,897", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__81268_85407", "method": "random_edges", "config": "eager", "prediction": "260,897", "short_prediction": "260,897", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__81268_85407", "method": "broken_middle", "config": "eager", "prediction": "260,897", "short_prediction": "260,897", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__81268_85407", "method": "oracle_proof", "config": "eager", "prediction": "260,897", "short_prediction": "260,897", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__442516_595885", "method": "proof_core", "config": "eager", "prediction": "Kenya", "short_prediction": "Kenya", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__442516_595885", "method": "relevance_same_bytes", "config": "eager", "prediction": "Tanzania", "short_prediction": "Tanzania", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__442516_595885", "method": "edge_shuffled", "config": "eager", "prediction": "Kenya", "short_prediction": "Kenya", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__442516_595885", "method": "random_edges", "config": "eager", "prediction": "Kenya", "short_prediction": "Kenya", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__442516_595885", "method": "broken_middle", "config": "eager", "prediction": "Kenya", "short_prediction": "Kenya", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__442516_595885", "method": "oracle_proof", "config": "eager", "prediction": "Tanzania", "short_prediction": "Tanzania", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop2__89854_36497_76291", "method": "proof_core", "config": "eager", "prediction": "1995", "short_prediction": "1995", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__89854_36497_76291", "method": "relevance_same_bytes", "config": "eager", "prediction": "1995", "short_prediction": "1995", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__89854_36497_76291", "method": "edge_shuffled", "config": "eager", "prediction": "1995", "short_prediction": "1995", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__89854_36497_76291", "method": "random_edges", "config": "eager", "prediction": "1995", "short_prediction": "1995", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__89854_36497_76291", "method": "broken_middle", "config": "eager", "prediction": "1995", "short_prediction": "1995", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__89854_36497_76291", "method": "oracle_proof", "config": "eager", "prediction": "United States House of Representatives", "short_prediction": "United States House of Representatives", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__3737_13529", "method": "proof_core", "config": "eager", "prediction": "June 1982", "short_prediction": "June 1982", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__3737_13529", "method": "relevance_same_bytes", "config": "eager", "prediction": "June 1982", "short_prediction": "June 1982", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__3737_13529", "method": "edge_shuffled", "config": "eager", "prediction": "June 1982", "short_prediction": "June 1982", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__3737_13529", "method": "random_edges", "config": "eager", "prediction": "2008", "short_prediction": "2008", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__3737_13529", "method": "broken_middle", "config": "eager", "prediction": "June 1982", "short_prediction": "June 1982", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__3737_13529", "method": "oracle_proof", "config": "eager", "prediction": "June 1982", "short_prediction": "June 1982", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__135029_712629", "method": "proof_core", "config": "eager", "prediction": "Queen Elizabeth II", "short_prediction": "Queen Elizabeth II", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__135029_712629", "method": "relevance_same_bytes", "config": "eager", "prediction": "Queen Elizabeth II", "short_prediction": "Queen Elizabeth II", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__135029_712629", "method": "edge_shuffled", "config": "eager", "prediction": "Queen Elizabeth II", "short_prediction": "Queen Elizabeth II", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__135029_712629", "method": "random_edges", "config": "eager", "prediction": "Queen Elizabeth II", "short_prediction": "Queen Elizabeth II", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__135029_712629", "method": "broken_middle", "config": "eager", "prediction": "Prince Philip, Duke of Edinburgh", "short_prediction": "Prince Philip, Duke of Edinburgh", "answer_f1": 0.28571428571428575, "answer_em": 0.0}
+{"id": "2hop__135029_712629", "method": "oracle_proof", "config": "eager", "prediction": "Queen Elizabeth II", "short_prediction": "Queen Elizabeth II", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__814349_624859_355213_203322", "method": "proof_core", "config": "eager", "prediction": "Rowan County", "short_prediction": "Rowan County", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "4hop1__814349_624859_355213_203322", "method": "relevance_same_bytes", "config": "eager", "prediction": "Rowan County", "short_prediction": "Rowan County", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "4hop1__814349_624859_355213_203322", "method": "edge_shuffled", "config": "eager", "prediction": "Rowan County", "short_prediction": "Rowan County", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "4hop1__814349_624859_355213_203322", "method": "random_edges", "config": "eager", "prediction": "Rowan County", "short_prediction": "Rowan County", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "4hop1__814349_624859_355213_203322", "method": "broken_middle", "config": "eager", "prediction": "Rowan County", "short_prediction": "Rowan County", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "4hop1__814349_624859_355213_203322", "method": "oracle_proof", "config": "eager", "prediction": "Rowan County", "short_prediction": "Rowan County", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "3hop1__516535_834494_34088", "method": "proof_core", "config": "eager", "prediction": "Tucson Raceway Park", "short_prediction": "Tucson Raceway Park", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__516535_834494_34088", "method": "relevance_same_bytes", "config": "eager", "prediction": "Tucson Raceway Park", "short_prediction": "Tucson Raceway Park", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__516535_834494_34088", "method": "edge_shuffled", "config": "eager", "prediction": "Tucson Raceway Park", "short_prediction": "Tucson Raceway Park", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__516535_834494_34088", "method": "random_edges", "config": "eager", "prediction": "Tucson, AZ", "short_prediction": "Tucson, AZ", "answer_f1": 0.4, "answer_em": 0.0}
+{"id": "3hop1__516535_834494_34088", "method": "broken_middle", "config": "eager", "prediction": "Tucson Raceway Park", "short_prediction": "Tucson Raceway Park", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__516535_834494_34088", "method": "oracle_proof", "config": "eager", "prediction": "Tucson Raceway Park", "short_prediction": "Tucson Raceway Park", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop3__322354_466199_695123_72134", "method": "proof_core", "config": "eager", "prediction": "1839", "short_prediction": "1839", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop3__322354_466199_695123_72134", "method": "relevance_same_bytes", "config": "eager", "prediction": "1839", "short_prediction": "1839", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop3__322354_466199_695123_72134", "method": "edge_shuffled", "config": "eager", "prediction": "Springfield", "short_prediction": "Springfield", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop3__322354_466199_695123_72134", "method": "random_edges", "config": "eager", "prediction": "Springfield", "short_prediction": "Springfield", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop3__322354_466199_695123_72134", "method": "broken_middle", "config": "eager", "prediction": "Springfield", "short_prediction": "Springfield", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop3__322354_466199_695123_72134", "method": "oracle_proof", "config": "eager", "prediction": "1839", "short_prediction": "1839", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__693444_220151", "method": "proof_core", "config": "eager", "prediction": "Erik Erikson", "short_prediction": "Erik Erikson", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__693444_220151", "method": "relevance_same_bytes", "config": "eager", "prediction": "Erikson", "short_prediction": "Erikson", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__693444_220151", "method": "edge_shuffled", "config": "eager", "prediction": "Katharina von Bora", "short_prediction": "Katharina von Bora", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__693444_220151", "method": "random_edges", "config": "eager", "prediction": "Katharina von Bora", "short_prediction": "Katharina von Bora", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__693444_220151", "method": "broken_middle", "config": "eager", "prediction": "Erikson", "short_prediction": "Erikson", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__693444_220151", "method": "oracle_proof", "config": "eager", "prediction": "Erik Erikson", "short_prediction": "Erik Erikson", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "4hop1__802394_153080_33897_81096", "method": "proof_core", "config": "eager", "prediction": "Mingus Plays Piano is from New York, and the largest populated city in New York is New York City. The", "short_prediction": "Mingus Plays Piano is from New York, and the largest populated city in New York is New York City. The", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__802394_153080_33897_81096", "method": "relevance_same_bytes", "config": "eager", "prediction": "Jacksonville", "short_prediction": "Jacksonville", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__802394_153080_33897_81096", "method": "edge_shuffled", "config": "eager", "prediction": "Phoenix", "short_prediction": "Phoenix", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__802394_153080_33897_81096", "method": "random_edges", "config": "eager", "prediction": "Phoenix", "short_prediction": "Phoenix", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__802394_153080_33897_81096", "method": "broken_middle", "config": "eager", "prediction": "This question contains no relevant information to answer the given question.", "short_prediction": "This question contains no relevant information to answer the given question.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__802394_153080_33897_81096", "method": "oracle_proof", "config": "eager", "prediction": "Tucson", "short_prediction": "Tucson", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop3__373573_132409_223216_35031", "method": "proof_core", "config": "eager", "prediction": "eighth-largest", "short_prediction": "eighth-largest", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop3__373573_132409_223216_35031", "method": "relevance_same_bytes", "config": "eager", "prediction": "San Diego", "short_prediction": "San Diego", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop3__373573_132409_223216_35031", "method": "edge_shuffled", "config": "eager", "prediction": "42nd", "short_prediction": "42nd", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop3__373573_132409_223216_35031", "method": "random_edges", "config": "eager", "prediction": "eighth-largest", "short_prediction": "eighth-largest", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop3__373573_132409_223216_35031", "method": "broken_middle", "config": "eager", "prediction": "San Diego", "short_prediction": "San Diego", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop3__373573_132409_223216_35031", "method": "oracle_proof", "config": "eager", "prediction": "third-largest", "short_prediction": "third-largest", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__379231_40769_64047", "method": "proof_core", "config": "eager", "prediction": "March 2012 Geneva Motor Show", "short_prediction": "March 2012 Geneva Motor Show", "answer_f1": 0.1818181818181818, "answer_em": 0.0}
+{"id": "3hop1__379231_40769_64047", "method": "relevance_same_bytes", "config": "eager", "prediction": "late 2011", "short_prediction": "late 2011", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__379231_40769_64047", "method": "edge_shuffled", "config": "eager", "prediction": "2012", "short_prediction": "2012", "answer_f1": 0.2857142857142857, "answer_em": 0.0}
+{"id": "3hop1__379231_40769_64047", "method": "random_edges", "config": "eager", "prediction": "2017", "short_prediction": "2017", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__379231_40769_64047", "method": "broken_middle", "config": "eager", "prediction": "2012", "short_prediction": "2012", "answer_f1": 0.2857142857142857, "answer_em": 0.0}
+{"id": "3hop1__379231_40769_64047", "method": "oracle_proof", "config": "eager", "prediction": "2012", "short_prediction": "2012", "answer_f1": 0.2857142857142857, "answer_em": 0.0}
+{"id": "2hop__826864_17335", "method": "proof_core", "config": "eager", "prediction": "326 BC", "short_prediction": "326 BC", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__826864_17335", "method": "relevance_same_bytes", "config": "eager", "prediction": "326 BC", "short_prediction": "326 BC", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__826864_17335", "method": "edge_shuffled", "config": "eager", "prediction": "326 BC", "short_prediction": "326 BC", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__826864_17335", "method": "random_edges", "config": "eager", "prediction": "326 BC", "short_prediction": "326 BC", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__826864_17335", "method": "broken_middle", "config": "eager", "prediction": "326 BC", "short_prediction": "326 BC", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__826864_17335", "method": "oracle_proof", "config": "eager", "prediction": "326 BC", "short_prediction": "326 BC", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__852657_155922", "method": "proof_core", "config": "eager", "prediction": "Parramatta River", "short_prediction": "Parramatta River", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__852657_155922", "method": "relevance_same_bytes", "config": "eager", "prediction": "Parramatta River", "short_prediction": "Parramatta River", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__852657_155922", "method": "edge_shuffled", "config": "eager", "prediction": "Parramatta River", "short_prediction": "Parramatta River", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__852657_155922", "method": "random_edges", "config": "eager", "prediction": "Parramatta River", "short_prediction": "Parramatta River", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__852657_155922", "method": "broken_middle", "config": "eager", "prediction": "Parramatta River", "short_prediction": "Parramatta River", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__852657_155922", "method": "oracle_proof", "config": "eager", "prediction": "Parramatta River", "short_prediction": "Parramatta River", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106094_443779_52195", "method": "proof_core", "config": "eager", "prediction": "Susilo Bambang Yudhoyono", "short_prediction": "Susilo Bambang Yudhoyono", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106094_443779_52195", "method": "relevance_same_bytes", "config": "eager", "prediction": "Susilo Bambang Yudhoyono", "short_prediction": "Susilo Bambang Yudhoyono", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106094_443779_52195", "method": "edge_shuffled", "config": "eager", "prediction": "Boganda", "short_prediction": "Boganda", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106094_443779_52195", "method": "random_edges", "config": "eager", "prediction": "David Dacko", "short_prediction": "David Dacko", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106094_443779_52195", "method": "broken_middle", "config": "eager", "prediction": "David Dacko", "short_prediction": "David Dacko", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__106094_443779_52195", "method": "oracle_proof", "config": "eager", "prediction": "Susilo Bambang Yudhoyono", "short_prediction": "Susilo Bambang Yudhoyono", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__30905_189318", "method": "proof_core", "config": "eager", "prediction": "Yale University", "short_prediction": "Yale University", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__30905_189318", "method": "relevance_same_bytes", "config": "eager", "prediction": "Brown University", "short_prediction": "Brown University", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__30905_189318", "method": "edge_shuffled", "config": "eager", "prediction": "Yale University", "short_prediction": "Yale University", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__30905_189318", "method": "random_edges", "config": "eager", "prediction": "Yale University", "short_prediction": "Yale University", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__30905_189318", "method": "broken_middle", "config": "eager", "prediction": "MIT", "short_prediction": "MIT", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__30905_189318", "method": "oracle_proof", "config": "eager", "prediction": "Yale University", "short_prediction": "Yale University", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__135659_87694_124169", "method": "proof_core", "config": "eager", "prediction": "1952", "short_prediction": "1952", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__135659_87694_124169", "method": "relevance_same_bytes", "config": "eager", "prediction": "1952", "short_prediction": "1952", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__135659_87694_124169", "method": "edge_shuffled", "config": "eager", "prediction": "1952", "short_prediction": "1952", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__135659_87694_124169", "method": "random_edges", "config": "eager", "prediction": "Information not contained in the provided context.", "short_prediction": "Information not contained in the provided context.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__135659_87694_124169", "method": "broken_middle", "config": "eager", "prediction": "1952", "short_prediction": "1952", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__135659_87694_124169", "method": "oracle_proof", "config": "eager", "prediction": "1952", "short_prediction": "1952", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__159741_40169", "method": "proof_core", "config": "eager", "prediction": "[[[The Rovingers [paragraph 1]] ``The Rove ners '' is the second episode of the", "short_prediction": "[[[The Rovingers [paragraph 1]] ``The Rove ners '' is the second episode of the", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__159741_40169", "method": "relevance_same_bytes", "config": "eager", "prediction": "April 1191", "short_prediction": "April 1191", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__159741_40169", "method": "edge_shuffled", "config": "eager", "prediction": "Electrical Storm", "short_prediction": "Electrical Storm", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__159741_40169", "method": "random_edges", "config": "eager", "prediction": "April 1191", "short_prediction": "April 1191", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__159741_40169", "method": "broken_middle", "config": "eager", "prediction": "November 10 - 11, 2017", "short_prediction": "November 10 - 11, 2017", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__159741_40169", "method": "oracle_proof", "config": "eager", "prediction": "April 1191", "short_prediction": "April 1191", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__575797_91104", "method": "proof_core", "config": "eager", "prediction": "ATS-6", "short_prediction": "ATS-6", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__575797_91104", "method": "relevance_same_bytes", "config": "eager", "prediction": "BeiDou-1", "short_prediction": "BeiDou-1", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__575797_91104", "method": "edge_shuffled", "config": "eager", "prediction": "BeiDou-1", "short_prediction": "BeiDou-1", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__575797_91104", "method": "random_edges", "config": "eager", "prediction": "BeiDou-1", "short_prediction": "BeiDou-1", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__575797_91104", "method": "broken_middle", "config": "eager", "prediction": "BeiDou", "short_prediction": "BeiDou", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__575797_91104", "method": "oracle_proof", "config": "eager", "prediction": "ATS-6", "short_prediction": "ATS-6", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__507528_139339", "method": "proof_core", "config": "eager", "prediction": "Academy Award", "short_prediction": "Academy Award", "answer_f1": 0.4, "answer_em": 0.0}
+{"id": "2hop__507528_139339", "method": "relevance_same_bytes", "config": "eager", "prediction": "Academy Award for Best Director", "short_prediction": "Academy Award for Best Director", "answer_f1": 0.6153846153846154, "answer_em": 0.0}
+{"id": "2hop__507528_139339", "method": "edge_shuffled", "config": "eager", "prediction": "Silver Shell for Best Director", "short_prediction": "Silver Shell for Best Director", "answer_f1": 0.3076923076923077, "answer_em": 0.0}
+{"id": "2hop__507528_139339", "method": "random_edges", "config": "eager", "prediction": "Best Director", "short_prediction": "Best Director", "answer_f1": 0.2, "answer_em": 0.0}
+{"id": "2hop__507528_139339", "method": "broken_middle", "config": "eager", "prediction": "Silver Shell for Best Director", "short_prediction": "Silver Shell for Best Director", "answer_f1": 0.3076923076923077, "answer_em": 0.0}
+{"id": "2hop__507528_139339", "method": "oracle_proof", "config": "eager", "prediction": "Academy Award", "short_prediction": "Academy Award", "answer_f1": 0.4, "answer_em": 0.0}
+{"id": "2hop__91713_289940", "method": "proof_core", "config": "eager", "prediction": "New England Patriots", "short_prediction": "New England Patriots", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__91713_289940", "method": "relevance_same_bytes", "config": "eager", "prediction": "Dallas Cowboys", "short_prediction": "Dallas Cowboys", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__91713_289940", "method": "edge_shuffled", "config": "eager", "prediction": "New England Patriots", "short_prediction": "New England Patriots", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__91713_289940", "method": "random_edges", "config": "eager", "prediction": "Arizona Cardinals", "short_prediction": "Arizona Cardinals", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__91713_289940", "method": "broken_middle", "config": "eager", "prediction": "New England Patriots", "short_prediction": "New England Patriots", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__91713_289940", "method": "oracle_proof", "config": "eager", "prediction": "Dallas Cowboys", "short_prediction": "Dallas Cowboys", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__358270_108549", "method": "proof_core", "config": "eager", "prediction": "Al Septiet and Turi Meyer, Kelly Souders and Brian Peterson", "short_prediction": "Al Septiet and Turi Meyer, Kelly Souders and Brian Peterson", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__358270_108549", "method": "relevance_same_bytes", "config": "eager", "prediction": "Al Septiet and Turi Meyer, Kelly Souders and Brian Peterson", "short_prediction": "Al Septiet and Turi Meyer, Kelly Souders and Brian Peterson", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__358270_108549", "method": "edge_shuffled", "config": "eager", "prediction": "Al Septiet and Turi Meyer, Kelly Souders and Brian Peterson", "short_prediction": "Al Septiet and Turi Meyer, Kelly Souders and Brian Peterson", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__358270_108549", "method": "random_edges", "config": "eager", "prediction": "Al Septiet and Turi Meyer, Kelly Souders and Brian Peterson", "short_prediction": "Al Septiet and Turi Meyer, Kelly Souders and Brian Peterson", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__358270_108549", "method": "broken_middle", "config": "eager", "prediction": "Alex Hirsch", "short_prediction": "Alex Hirsch", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__358270_108549", "method": "oracle_proof", "config": "eager", "prediction": "Al Septiet and Turi Meyer, Kelly Souders and Brian Peterson", "short_prediction": "Al Septiet and Turi Meyer, Kelly Souders and Brian Peterson", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__68802_89752_75165", "method": "proof_core", "config": "eager", "prediction": "California", "short_prediction": "California", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__68802_89752_75165", "method": "relevance_same_bytes", "config": "eager", "prediction": "6,073,063", "short_prediction": "6,073,063", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__68802_89752_75165", "method": "edge_shuffled", "config": "eager", "prediction": "California", "short_prediction": "California", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__68802_89752_75165", "method": "random_edges", "config": "eager", "prediction": "California", "short_prediction": "California", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__68802_89752_75165", "method": "broken_middle", "config": "eager", "prediction": "California", "short_prediction": "California", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__68802_89752_75165", "method": "oracle_proof", "config": "eager", "prediction": "1,335,917", "short_prediction": "1,335,917", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__324759_378185_282674_759393", "method": "proof_core", "config": "eager", "prediction": "Green Bay", "short_prediction": "Green Bay", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__324759_378185_282674_759393", "method": "relevance_same_bytes", "config": "eager", "prediction": "P\u00e9cs", "short_prediction": "P\u00e9cs", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__324759_378185_282674_759393", "method": "edge_shuffled", "config": "eager", "prediction": "Green Bay", "short_prediction": "Green Bay", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__324759_378185_282674_759393", "method": "random_edges", "config": "eager", "prediction": "Green Bay", "short_prediction": "Green Bay", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__324759_378185_282674_759393", "method": "broken_middle", "config": "eager", "prediction": "Appleton", "short_prediction": "Appleton", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__324759_378185_282674_759393", "method": "oracle_proof", "config": "eager", "prediction": "Green Bay", "short_prediction": "Green Bay", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__25797_990", "method": "proof_core", "config": "eager", "prediction": "third generation", "short_prediction": "third generation", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__25797_990", "method": "relevance_same_bytes", "config": "eager", "prediction": "5th", "short_prediction": "5th", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__25797_990", "method": "edge_shuffled", "config": "eager", "prediction": "5th", "short_prediction": "5th", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__25797_990", "method": "random_edges", "config": "eager", "prediction": "fifth generation", "short_prediction": "fifth generation", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__25797_990", "method": "broken_middle", "config": "eager", "prediction": "fifth generation", "short_prediction": "fifth generation", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__25797_990", "method": "oracle_proof", "config": "eager", "prediction": "third-generation", "short_prediction": "third-generation", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__36269_73244", "method": "proof_core", "config": "eager", "prediction": "Etjo mountains", "short_prediction": "Etjo mountains", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__36269_73244", "method": "relevance_same_bytes", "config": "eager", "prediction": "Thaba Putsoa", "short_prediction": "Thaba Putsoa", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__36269_73244", "method": "edge_shuffled", "config": "eager", "prediction": "Etjo mountains", "short_prediction": "Etjo mountains", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__36269_73244", "method": "random_edges", "config": "eager", "prediction": "Etjo mountains", "short_prediction": "Etjo mountains", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__36269_73244", "method": "broken_middle", "config": "eager", "prediction": "Etjo mountains", "short_prediction": "Etjo mountains", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__36269_73244", "method": "oracle_proof", "config": "eager", "prediction": "Thaba Putsoa - location Maloti Mountains (Drakensberg), Lesotho", "short_prediction": "Thaba Putsoa - location Maloti Mountains (Drakensberg), Lesotho", "answer_f1": 0.4444444444444445, "answer_em": 0.0}
+{"id": "2hop__864101_135373", "method": "proof_core", "config": "eager", "prediction": "Bering Sea", "short_prediction": "Bering Sea", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__864101_135373", "method": "relevance_same_bytes", "config": "eager", "prediction": "Bering Sea", "short_prediction": "Bering Sea", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__864101_135373", "method": "edge_shuffled", "config": "eager", "prediction": "St. Matthew Island is located in the Bering Sea, which is is named for Vitus Bering.", "short_prediction": "St. Matthew Island is located in the Bering Sea, which is is named for Vitus Bering.", "answer_f1": 0.23529411764705882, "answer_em": 0.0}
+{"id": "2hop__864101_135373", "method": "random_edges", "config": "eager", "prediction": "Bering Sea", "short_prediction": "Bering Sea", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__864101_135373", "method": "broken_middle", "config": "eager", "prediction": "Bering Sea", "short_prediction": "Bering Sea", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__864101_135373", "method": "oracle_proof", "config": "eager", "prediction": "Bering Sea", "short_prediction": "Bering Sea", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "3hop2__132957_132967_40768", "method": "proof_core", "config": "eager", "prediction": "early 1980s", "short_prediction": "early 1980s", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__132957_132967_40768", "method": "relevance_same_bytes", "config": "eager", "prediction": "1981", "short_prediction": "1981", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop2__132957_132967_40768", "method": "edge_shuffled", "config": "eager", "prediction": "early 1980s", "short_prediction": "early 1980s", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__132957_132967_40768", "method": "random_edges", "config": "eager", "prediction": "early 1980s", "short_prediction": "early 1980s", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__132957_132967_40768", "method": "broken_middle", "config": "eager", "prediction": "early 1980s", "short_prediction": "early 1980s", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__132957_132967_40768", "method": "oracle_proof", "config": "eager", "prediction": "A decade after the 1973 oil crisis", "short_prediction": "A decade after the 1973 oil crisis", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__304722_230978_63959", "method": "proof_core", "config": "eager", "prediction": "1995\u201396 season", "short_prediction": "1995\u201396 season", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__304722_230978_63959", "method": "relevance_same_bytes", "config": "eager", "prediction": "1995\u201396 season", "short_prediction": "1995\u201396 season", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__304722_230978_63959", "method": "edge_shuffled", "config": "eager", "prediction": "1995\u201396 season", "short_prediction": "1995\u201396 season", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__304722_230978_63959", "method": "random_edges", "config": "eager", "prediction": "1894\u201395 FA Cup", "short_prediction": "1894\u201395 FA Cup", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__304722_230978_63959", "method": "broken_middle", "config": "eager", "prediction": "1995\u201396 season", "short_prediction": "1995\u201396 season", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__304722_230978_63959", "method": "oracle_proof", "config": "eager", "prediction": "27 May 1963", "short_prediction": "27 May 1963", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__20059_236755", "method": "proof_core", "config": "eager", "prediction": "The GNU Manifesto", "short_prediction": "The GNU Manifesto", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__20059_236755", "method": "relevance_same_bytes", "config": "eager", "prediction": "GNU Manifesto", "short_prediction": "GNU Manifesto", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__20059_236755", "method": "edge_shuffled", "config": "eager", "prediction": "GNU Manifesto", "short_prediction": "GNU Manifesto", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__20059_236755", "method": "random_edges", "config": "eager", "prediction": "GNU Manifesto", "short_prediction": "GNU Manifesto", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__20059_236755", "method": "broken_middle", "config": "eager", "prediction": "Free Software Foundation founder Richard Stallman", "short_prediction": "Free Software Foundation founder Richard Stallman", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__20059_236755", "method": "oracle_proof", "config": "eager", "prediction": "The GNU Manifesto", "short_prediction": "The GNU Manifesto", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__53690_161697_85460", "method": "proof_core", "config": "eager", "prediction": "$59,139", "short_prediction": "$59,139", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__53690_161697_85460", "method": "relevance_same_bytes", "config": "eager", "prediction": "information not provided", "short_prediction": "information not provided", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__53690_161697_85460", "method": "edge_shuffled", "config": "eager", "prediction": "information not provided", "short_prediction": "information not provided", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__53690_161697_85460", "method": "random_edges", "config": "eager", "prediction": "information not provided", "short_prediction": "information not provided", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__53690_161697_85460", "method": "broken_middle", "config": "eager", "prediction": "$59,139", "short_prediction": "$59,139", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__53690_161697_85460", "method": "oracle_proof", "config": "eager", "prediction": "$59,039", "short_prediction": "$59,039", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__567588_67465", "method": "proof_core", "config": "eager", "prediction": "March 11, 2211", "short_prediction": "March 11, 2211", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__567588_67465", "method": "relevance_same_bytes", "config": "eager", "prediction": "March 11, 2211", "short_prediction": "March 11, 2211", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__567588_67465", "method": "edge_shuffled", "config": "eager", "prediction": "March 11, 2211", "short_prediction": "March 11, 2211", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__567588_67465", "method": "random_edges", "config": "eager", "prediction": "March 11, 2211", "short_prediction": "March 11, 2211", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__567588_67465", "method": "broken_middle", "config": "eager", "prediction": "July 1973", "short_prediction": "July 1973", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__567588_67465", "method": "oracle_proof", "config": "eager", "prediction": "March 11, 2211", "short_prediction": "March 11, 2211", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "3hop1__63037_567566_84283", "method": "proof_core", "config": "eager", "prediction": "Warner Bros. Records", "short_prediction": "Warner Bros. Records", "answer_f1": 0.3333333333333333, "answer_em": 0.0}
+{"id": "3hop1__63037_567566_84283", "method": "relevance_same_bytes", "config": "eager", "prediction": "Bob Shad", "short_prediction": "Bob Shad", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__63037_567566_84283", "method": "edge_shuffled", "config": "eager", "prediction": "Christopher Cross", "short_prediction": "Christopher Cross", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__63037_567566_84283", "method": "random_edges", "config": "eager", "prediction": "Warner Music Group", "short_prediction": "Warner Music Group", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__63037_567566_84283", "method": "broken_middle", "config": "eager", "prediction": "Warner Music Group", "short_prediction": "Warner Music Group", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__63037_567566_84283", "method": "oracle_proof", "config": "eager", "prediction": "Warner Music Group", "short_prediction": "Warner Music Group", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__742831_156034", "method": "proof_core", "config": "eager", "prediction": "N\nassistant\nNelson River", "short_prediction": "N", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__742831_156034", "method": "relevance_same_bytes", "config": "eager", "prediction": "N\n\nAssistant\nN", "short_prediction": "N", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__742831_156034", "method": "edge_shuffled", "config": "eager", "prediction": "Kichi Sipi", "short_prediction": "Kichi Sipi", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__742831_156034", "method": "random_edges", "config": "eager", "prediction": "Nichi Sipi Bridge spans a deep channel of the Nelson River", "short_prediction": "Nichi Sipi Bridge spans a deep channel of the Nelson River", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__742831_156034", "method": "broken_middle", "config": "eager", "prediction": "N", "short_prediction": "N", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__742831_156034", "method": "oracle_proof", "config": "eager", "prediction": "N\nassistant\nNelson River", "short_prediction": "N", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__463884_807572", "method": "proof_core", "config": "eager", "prediction": "Fair Haven", "short_prediction": "Fair Haven", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__463884_807572", "method": "relevance_same_bytes", "config": "eager", "prediction": "Fair Haven", "short_prediction": "Fair Haven", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__463884_807572", "method": "edge_shuffled", "config": "eager", "prediction": "Fair Haven", "short_prediction": "Fair Haven", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__463884_807572", "method": "random_edges", "config": "eager", "prediction": "Fair Haven", "short_prediction": "Fair Haven", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__463884_807572", "method": "broken_middle", "config": "eager", "prediction": "Fair Haven", "short_prediction": "Fair Haven", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__463884_807572", "method": "oracle_proof", "config": "eager", "prediction": "Fair Haven", "short_prediction": "Fair Haven", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__466700_214359", "method": "proof_core", "config": "eager", "prediction": "Blue County", "short_prediction": "Blue County", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__466700_214359", "method": "relevance_same_bytes", "config": "eager", "prediction": "Scott Reeves", "short_prediction": "Scott Reeves", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__466700_214359", "method": "edge_shuffled", "config": "eager", "prediction": "Gloria Estefan", "short_prediction": "Gloria Estefan", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__466700_214359", "method": "random_edges", "config": "eager", "prediction": "Blue County", "short_prediction": "Blue County", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__466700_214359", "method": "broken_middle", "config": "eager", "prediction": "Blue County", "short_prediction": "Blue County", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__466700_214359", "method": "oracle_proof", "config": "eager", "prediction": "Aaron Benward", "short_prediction": "Aaron Benward", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__765565_326948_86925", "method": "proof_core", "config": "eager", "prediction": "fleur-de-lis", "short_prediction": "fleur-de-lis", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__765565_326948_86925", "method": "relevance_same_bytes", "config": "eager", "prediction": "information not found", "short_prediction": "information not found", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__765565_326948_86925", "method": "edge_shuffled", "config": "eager", "prediction": "The Saints from Belfast, Northern Ireland", "short_prediction": "The Saints from Belfast, Northern Ireland", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__765565_326948_86925", "method": "random_edges", "config": "eager", "prediction": "S\u00edi n\u00c1edo Sl\u00e1ine", "short_prediction": "S\u00edi n\u00c1edo Sl\u00e1ine", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__765565_326948_86925", "method": "broken_middle", "config": "eager", "prediction": "Grim Reaper", "short_prediction": "Grim Reaper", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__765565_326948_86925", "method": "oracle_proof", "config": "eager", "prediction": "fleur-de-lis", "short_prediction": "fleur-de-lis", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__789398_74735", "method": "proof_core", "config": "eager", "prediction": "Because", "short_prediction": "Because", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__789398_74735", "method": "relevance_same_bytes", "config": "eager", "prediction": "Because", "short_prediction": "Because", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__789398_74735", "method": "edge_shuffled", "config": "eager", "prediction": "\"Mama's Little Girl\"", "short_prediction": "\"Mama's Little Girl\"", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__789398_74735", "method": "random_edges", "config": "eager", "prediction": "\"Mama's Little Girl\"", "short_prediction": "\"Mama's Little Girl\"", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__789398_74735", "method": "broken_middle", "config": "eager", "prediction": "\"Mama's Little Girl\"", "short_prediction": "\"Mama's Little Girl\"", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__789398_74735", "method": "oracle_proof", "config": "eager", "prediction": "\"Too Late for Goodbyes\"", "short_prediction": "\"Too Late for Goodbyes\"", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__152562_5274_458768_33632", "method": "proof_core", "config": "eager", "prediction": "Hyderabad", "short_prediction": "Hyderabad", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__152562_5274_458768_33632", "method": "relevance_same_bytes", "config": "eager", "prediction": "Saint Monica", "short_prediction": "Saint Monica", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__152562_5274_458768_33632", "method": "edge_shuffled", "config": "eager", "prediction": "Saint Monica", "short_prediction": "Saint Monica", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__152562_5274_458768_33632", "method": "random_edges", "config": "eager", "prediction": "Saint Monica", "short_prediction": "Saint Monica", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__152562_5274_458768_33632", "method": "broken_middle", "config": "eager", "prediction": "Sony Music Entertainment", "short_prediction": "Sony Music Entertainment", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__152562_5274_458768_33632", "method": "oracle_proof", "config": "eager", "prediction": "May 4", "short_prediction": "May 4", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__108336_772156", "method": "proof_core", "config": "eager", "prediction": "The context does not provide information about where the creator died.", "short_prediction": "The context does not provide information about where the creator died.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__108336_772156", "method": "relevance_same_bytes", "config": "eager", "prediction": "not specified", "short_prediction": "not specified", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__108336_772156", "method": "edge_shuffled", "config": "eager", "prediction": "The context does not provide information about where the creator of the Allegory of Isabella d'Este's Coronation died", "short_prediction": "The context does not provide information about where the creator of the Allegory of Isabella d'Este's Coronation died", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__108336_772156", "method": "random_edges", "config": "eager", "prediction": "The context does not provide information about where the creator died.", "short_prediction": "The context does not provide information about where the creator died.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__108336_772156", "method": "broken_middle", "config": "eager", "prediction": "The context does not provide information about where the creator died.", "short_prediction": "The context does not provide information about where the creator died.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__108336_772156", "method": "oracle_proof", "config": "eager", "prediction": "The context does not provide information about where the creator died.", "short_prediction": "The context does not provide information about where the creator died.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__311694_129669", "method": "proof_core", "config": "eager", "prediction": "Vila Franca de Xira", "short_prediction": "Vila Franca de Xira", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__311694_129669", "method": "relevance_same_bytes", "config": "eager", "prediction": "Texas", "short_prediction": "Texas", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__311694_129669", "method": "edge_shuffled", "config": "eager", "prediction": "Vila Franca de Xira", "short_prediction": "Vila Franca de Xira", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__311694_129669", "method": "random_edges", "config": "eager", "prediction": "Portugal", "short_prediction": "Portugal", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__311694_129669", "method": "broken_middle", "config": "eager", "prediction": "Vila Franca de Xira", "short_prediction": "Vila Franca de Xira", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__311694_129669", "method": "oracle_proof", "config": "eager", "prediction": "Vila Franca de Xira", "short_prediction": "Vila Franca de Xira", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__763380_74735", "method": "proof_core", "config": "eager", "prediction": "Julian", "short_prediction": "Julian", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__763380_74735", "method": "relevance_same_bytes", "config": "eager", "prediction": "Hey Jude", "short_prediction": "Hey Jude", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__763380_74735", "method": "edge_shuffled", "config": "eager", "prediction": "She's a Woman", "short_prediction": "She's a Woman", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__763380_74735", "method": "random_edges", "config": "eager", "prediction": "Mama's Little Girl", "short_prediction": "Mama's Little Girl", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__763380_74735", "method": "broken_middle", "config": "eager", "prediction": "Julian", "short_prediction": "Julian", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__763380_74735", "method": "oracle_proof", "config": "eager", "prediction": "Julian Lennon", "short_prediction": "Julian Lennon", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__72487_510545", "method": "proof_core", "config": "eager", "prediction": "Jennifer Connelly", "short_prediction": "Jennifer Connelly", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__72487_510545", "method": "relevance_same_bytes", "config": "eager", "prediction": "Romanoff", "short_prediction": "Romanoff", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__72487_510545", "method": "edge_shuffled", "config": "eager", "prediction": "There is no information provided about Paul Bettany's spouse in the context given.", "short_prediction": "There is no information provided about Paul Bettany's spouse in the context given.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__72487_510545", "method": "random_edges", "config": "eager", "prediction": "Stephen Hensley", "short_prediction": "Stephen Hensley", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__72487_510545", "method": "broken_middle", "config": "eager", "prediction": "There is no information provided about Paul Bettany's spouse in the given context.", "short_prediction": "There is no information provided about Paul Bettany's spouse in the given context.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__72487_510545", "method": "oracle_proof", "config": "eager", "prediction": "Jennifer Connelly", "short_prediction": "Jennifer Connelly", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__622497_160088_85460", "method": "proof_core", "config": "eager", "prediction": "$59,139", "short_prediction": "$59,139", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__622497_160088_85460", "method": "relevance_same_bytes", "config": "eager", "prediction": "\u00a326,719", "short_prediction": "\u00a326,719", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__622497_160088_85460", "method": "edge_shuffled", "config": "eager", "prediction": "Information not provided for calculating average salary.", "short_prediction": "Information not provided for calculating average salary.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__622497_160088_85460", "method": "random_edges", "config": "eager", "prediction": "information not provided", "short_prediction": "information not provided", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__622497_160088_85460", "method": "broken_middle", "config": "eager", "prediction": "$59,039", "short_prediction": "$59,039", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__622497_160088_85460", "method": "oracle_proof", "config": "eager", "prediction": "$59,139", "short_prediction": "$59,139", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__455862_508773_85832_745702", "method": "proof_core", "config": "eager", "prediction": "Sebastian Cabot", "short_prediction": "Sebastian Cabot", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__455862_508773_85832_745702", "method": "relevance_same_bytes", "config": "eager", "prediction": "John Cabot", "short_prediction": "John Cabot", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "4hop1__455862_508773_85832_745702", "method": "edge_shuffled", "config": "eager", "prediction": "Sebastian Cabot", "short_prediction": "Sebastian Cabot", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__455862_508773_85832_745702", "method": "random_edges", "config": "eager", "prediction": "John Cabot", "short_prediction": "John Cabot", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "4hop1__455862_508773_85832_745702", "method": "broken_middle", "config": "eager", "prediction": "Sebastian Cabot", "short_prediction": "Sebastian Cabot", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__455862_508773_85832_745702", "method": "oracle_proof", "config": "eager", "prediction": "John Cabot", "short_prediction": "John Cabot", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__61714_53995", "method": "proof_core", "config": "eager", "prediction": "They break up during \"Double Date\".", "short_prediction": "They break up during \"Double Date\".", "answer_f1": 0.15384615384615383, "answer_em": 0.0}
+{"id": "2hop__61714_53995", "method": "relevance_same_bytes", "config": "eager", "prediction": "They end up together after Pam's pregnancy.", "short_prediction": "They end up together after Pam's pregnancy.", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__61714_53995", "method": "edge_shuffled", "config": "eager", "prediction": "They break up during \"Double Date\".", "short_prediction": "They break up during \"Double Date\".", "answer_f1": 0.15384615384615383, "answer_em": 0.0}
+{"id": "2hop__61714_53995", "method": "random_edges", "config": "eager", "prediction": "They break up during \"Double Date\".", "short_prediction": "They break up during \"Double Date\".", "answer_f1": 0.15384615384615383, "answer_em": 0.0}
+{"id": "2hop__61714_53995", "method": "broken_middle", "config": "eager", "prediction": "They break up during \"Double Date\".", "short_prediction": "They break up during \"Double Date\".", "answer_f1": 0.15384615384615383, "answer_em": 0.0}
+{"id": "2hop__61714_53995", "method": "oracle_proof", "config": "eager", "prediction": "early in the season", "short_prediction": "early in the season", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__79978_90098_10557", "method": "proof_core", "config": "eager", "prediction": "Latin", "short_prediction": "Latin", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "3hop2__79978_90098_10557", "method": "relevance_same_bytes", "config": "eager", "prediction": "Latin", "short_prediction": "Latin", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "3hop2__79978_90098_10557", "method": "edge_shuffled", "config": "eager", "prediction": "Latin", "short_prediction": "Latin", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "3hop2__79978_90098_10557", "method": "random_edges", "config": "eager", "prediction": "Latin", "short_prediction": "Latin", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "3hop2__79978_90098_10557", "method": "broken_middle", "config": "eager", "prediction": "Latin", "short_prediction": "Latin", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "3hop2__79978_90098_10557", "method": "oracle_proof", "config": "eager", "prediction": "Latin", "short_prediction": "Latin", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__44652_165532", "method": "proof_core", "config": "eager", "prediction": "Sherry Boucher", "short_prediction": "Sherry Boucher", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__44652_165532", "method": "relevance_same_bytes", "config": "eager", "prediction": "not provided", "short_prediction": "not provided", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__44652_165532", "method": "edge_shuffled", "config": "eager", "prediction": "Mok Kwai-lan", "short_prediction": "Mok Kwai-lan", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__44652_165532", "method": "random_edges", "config": "eager", "prediction": "Sherry Boucher", "short_prediction": "Sherry Boucher", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__44652_165532", "method": "broken_middle", "config": "eager", "prediction": "Miyangul Jahan Zeb", "short_prediction": "Miyangul Jahan Zeb", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__44652_165532", "method": "oracle_proof", "config": "eager", "prediction": "Sherry Boucher", "short_prediction": "Sherry Boucher", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop3__373866_5189_31809_86687", "method": "proof_core", "config": "eager", "prediction": "1990", "short_prediction": "1990", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "4hop3__373866_5189_31809_86687", "method": "relevance_same_bytes", "config": "eager", "prediction": "1990", "short_prediction": "1990", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "4hop3__373866_5189_31809_86687", "method": "edge_shuffled", "config": "eager", "prediction": "1990", "short_prediction": "1990", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "4hop3__373866_5189_31809_86687", "method": "random_edges", "config": "eager", "prediction": "1990", "short_prediction": "1990", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "4hop3__373866_5189_31809_86687", "method": "broken_middle", "config": "eager", "prediction": "USSR", "short_prediction": "USSR", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop3__373866_5189_31809_86687", "method": "oracle_proof", "config": "eager", "prediction": "USSR", "short_prediction": "USSR", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__431934_30351", "method": "proof_core", "config": "eager", "prediction": "Ludwig von Mises", "short_prediction": "Ludwig von Mises", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__431934_30351", "method": "relevance_same_bytes", "config": "eager", "prediction": "London School of Economics", "short_prediction": "London School of Economics", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__431934_30351", "method": "edge_shuffled", "config": "eager", "prediction": "Ludwig von Mises", "short_prediction": "Ludwig von Mises", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__431934_30351", "method": "random_edges", "config": "eager", "prediction": "Ludwig von Mises", "short_prediction": "Ludwig von Mises", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__431934_30351", "method": "broken_middle", "config": "eager", "prediction": "Ludwig von Mises", "short_prediction": "Ludwig von Mises", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__431934_30351", "method": "oracle_proof", "config": "eager", "prediction": "Ludwig von Mises", "short_prediction": "Ludwig von Mises", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__25788_25855", "method": "proof_core", "config": "eager", "prediction": "PowerShare", "short_prediction": "PowerShare", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__25788_25855", "method": "relevance_same_bytes", "config": "eager", "prediction": "PowerShare", "short_prediction": "PowerShare", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__25788_25855", "method": "edge_shuffled", "config": "eager", "prediction": "PowerShare", "short_prediction": "PowerShare", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__25788_25855", "method": "random_edges", "config": "eager", "prediction": "PowerShare", "short_prediction": "PowerShare", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__25788_25855", "method": "broken_middle", "config": "eager", "prediction": "PowerShare", "short_prediction": "PowerShare", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__25788_25855", "method": "oracle_proof", "config": "eager", "prediction": "PowerShare", "short_prediction": "PowerShare", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop2__160585_14670_8987_8974", "method": "proof_core", "config": "eager", "prediction": "Czechoslovakia", "short_prediction": "Czechoslovakia", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__160585_14670_8987_8974", "method": "relevance_same_bytes", "config": "eager", "prediction": "Yugoslavia", "short_prediction": "Yugoslavia", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__160585_14670_8987_8974", "method": "edge_shuffled", "config": "eager", "prediction": "Czechoslovakia", "short_prediction": "Czechoslovakia", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__160585_14670_8987_8974", "method": "random_edges", "config": "eager", "prediction": "Paraguay", "short_prediction": "Paraguay", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "4hop2__160585_14670_8987_8974", "method": "broken_middle", "config": "eager", "prediction": "Czechoslovakia", "short_prediction": "Czechoslovakia", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__160585_14670_8987_8974", "method": "oracle_proof", "config": "eager", "prediction": "Paraguay", "short_prediction": "Paraguay", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "3hop1__337705_132457_51423", "method": "proof_core", "config": "eager", "prediction": "Casa Loma", "short_prediction": "Casa Loma", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__337705_132457_51423", "method": "relevance_same_bytes", "config": "eager", "prediction": "Baynard's Castle", "short_prediction": "Baynard's Castle", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__337705_132457_51423", "method": "edge_shuffled", "config": "eager", "prediction": "Trump's Castle", "short_prediction": "Trump's Castle", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__337705_132457_51423", "method": "random_edges", "config": "eager", "prediction": "Katzenstein Castle", "short_prediction": "Katzenstein Castle", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__337705_132457_51423", "method": "broken_middle", "config": "eager", "prediction": "Katzenstein Castle", "short_prediction": "Katzenstein Castle", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__337705_132457_51423", "method": "oracle_proof", "config": "eager", "prediction": "Katzenstein Castle", "short_prediction": "Katzenstein Castle", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__320697_547811_41132", "method": "proof_core", "config": "eager", "prediction": "unknown", "short_prediction": "unknown", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__320697_547811_41132", "method": "relevance_same_bytes", "config": "eager", "prediction": "not mentioned", "short_prediction": "not mentioned", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__320697_547811_41132", "method": "edge_shuffled", "config": "eager", "prediction": "25", "short_prediction": "25", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__320697_547811_41132", "method": "random_edges", "config": "eager", "prediction": "The context does not provide information about the birth city of the composer of Nulla in mundo pax sincera or the", "short_prediction": "The context does not provide information about the birth city of the composer of Nulla in mundo pax sincera or the", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__320697_547811_41132", "method": "broken_middle", "config": "eager", "prediction": "32", "short_prediction": "32", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__320697_547811_41132", "method": "oracle_proof", "config": "eager", "prediction": "30%", "short_prediction": "30%", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__837871_831637_91775", "method": "proof_core", "config": "eager", "prediction": "HMS", "short_prediction": "HMS", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__837871_831637_91775", "method": "relevance_same_bytes", "config": "eager", "prediction": "Sea, Air, and Land Teams", "short_prediction": "Sea, Air, and Land Teams", "answer_f1": 0.888888888888889, "answer_em": 0.0}
+{"id": "3hop1__837871_831637_91775", "method": "edge_shuffled", "config": "eager", "prediction": "Sea, Air, and Land", "short_prediction": "Sea, Air, and Land", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__837871_831637_91775", "method": "random_edges", "config": "eager", "prediction": "Sea, Air, and Land", "short_prediction": "Sea, Air, and Land", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__837871_831637_91775", "method": "broken_middle", "config": "eager", "prediction": "Submarine Explorer Liaison Alert", "short_prediction": "Submarine Explorer Liaison Alert", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__837871_831637_91775", "method": "oracle_proof", "config": "eager", "prediction": "Sea, Air, and Land", "short_prediction": "Sea, Air, and Land", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__223655_463572", "method": "proof_core", "config": "eager", "prediction": "MGM Records", "short_prediction": "MGM Records", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__223655_463572", "method": "relevance_same_bytes", "config": "eager", "prediction": "Jasmine Records", "short_prediction": "Jasmine Records", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__223655_463572", "method": "edge_shuffled", "config": "eager", "prediction": "MGM Records", "short_prediction": "MGM Records", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__223655_463572", "method": "random_edges", "config": "eager", "prediction": "MGM Records", "short_prediction": "MGM Records", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__223655_463572", "method": "broken_middle", "config": "eager", "prediction": "MGM Records", "short_prediction": "MGM Records", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__223655_463572", "method": "oracle_proof", "config": "eager", "prediction": "MGM Records", "short_prediction": "MGM Records", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__475808_74481", "method": "proof_core", "config": "eager", "prediction": "Marlon Brando", "short_prediction": "Marlon Brando", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__475808_74481", "method": "relevance_same_bytes", "config": "eager", "prediction": "Vito Corleone", "short_prediction": "Vito Corleone", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__475808_74481", "method": "edge_shuffled", "config": "eager", "prediction": "Robert De Niro", "short_prediction": "Robert De Niro", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__475808_74481", "method": "random_edges", "config": "eager", "prediction": "Robert Duvall", "short_prediction": "Robert Duvall", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__475808_74481", "method": "broken_middle", "config": "eager", "prediction": "Alfred \"Al\" Capone", "short_prediction": "Alfred \"Al\" Capone", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__475808_74481", "method": "oracle_proof", "config": "eager", "prediction": "Al Pacino", "short_prediction": "Al Pacino", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__226638_538202_84283", "method": "proof_core", "config": "eager", "prediction": "Warner Music Group", "short_prediction": "Warner Music Group", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "3hop1__226638_538202_84283", "method": "relevance_same_bytes", "config": "eager", "prediction": "Warner Bros. Records", "short_prediction": "Warner Bros. Records", "answer_f1": 0.3333333333333333, "answer_em": 0.0}
+{"id": "3hop1__226638_538202_84283", "method": "edge_shuffled", "config": "eager", "prediction": "Asian Man Records", "short_prediction": "Asian Man Records", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__226638_538202_84283", "method": "random_edges", "config": "eager", "prediction": "James Otto", "short_prediction": "James Otto", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__226638_538202_84283", "method": "broken_middle", "config": "eager", "prediction": "Warner Bros. Records", "short_prediction": "Warner Bros. Records", "answer_f1": 0.3333333333333333, "answer_em": 0.0}
+{"id": "3hop1__226638_538202_84283", "method": "oracle_proof", "config": "eager", "prediction": "Warner Music Group", "short_prediction": "Warner Music Group", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__159903_154896", "method": "proof_core", "config": "eager", "prediction": "2209", "short_prediction": "2209", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__159903_154896", "method": "relevance_same_bytes", "config": "eager", "prediction": "1967", "short_prediction": "1967", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__159903_154896", "method": "edge_shuffled", "config": "eager", "prediction": "2003", "short_prediction": "2003", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__159903_154896", "method": "random_edges", "config": "eager", "prediction": "2209", "short_prediction": "2209", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__159903_154896", "method": "broken_middle", "config": "eager", "prediction": "2011", "short_prediction": "2011", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__159903_154896", "method": "oracle_proof", "config": "eager", "prediction": "2209", "short_prediction": "2209", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__93066_88342_47738", "method": "proof_core", "config": "eager", "prediction": "October 24", "short_prediction": "October 24", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__93066_88342_47738", "method": "relevance_same_bytes", "config": "eager", "prediction": "2012 American League Championship Series", "short_prediction": "2012 American League Championship Series", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__93066_88342_47738", "method": "edge_shuffled", "config": "eager", "prediction": "2018", "short_prediction": "2018", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__93066_88342_47738", "method": "random_edges", "config": "eager", "prediction": "1957", "short_prediction": "1957", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__93066_88342_47738", "method": "broken_middle", "config": "eager", "prediction": "December 31, 1972", "short_prediction": "December 31, 1972", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop2__93066_88342_47738", "method": "oracle_proof", "config": "eager", "prediction": "2012 American League Championship Series", "short_prediction": "2012 American League Championship Series", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__161324_14670_8987_8974", "method": "proof_core", "config": "eager", "prediction": "Czech Republic", "short_prediction": "Czech Republic", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__161324_14670_8987_8974", "method": "relevance_same_bytes", "config": "eager", "prediction": "Yugoslavia", "short_prediction": "Yugoslavia", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__161324_14670_8987_8974", "method": "edge_shuffled", "config": "eager", "prediction": "North Korea", "short_prediction": "North Korea", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__161324_14670_8987_8974", "method": "random_edges", "config": "eager", "prediction": "Czech Republic", "short_prediction": "Czech Republic", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__161324_14670_8987_8974", "method": "broken_middle", "config": "eager", "prediction": "North Korea", "short_prediction": "North Korea", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop2__161324_14670_8987_8974", "method": "oracle_proof", "config": "eager", "prediction": "Yugoslavia", "short_prediction": "Yugoslavia", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__780652_93362", "method": "proof_core", "config": "eager", "prediction": "Dil Kya Kare", "short_prediction": "Dil Kya Kare", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__780652_93362", "method": "relevance_same_bytes", "config": "eager", "prediction": "Raju Chacha", "short_prediction": "Raju Chacha", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__780652_93362", "method": "edge_shuffled", "config": "eager", "prediction": "Dil Kya Kare", "short_prediction": "Dil Kya Kare", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__780652_93362", "method": "random_edges", "config": "eager", "prediction": "Dil Kya Kare", "short_prediction": "Dil Kya Kare", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__780652_93362", "method": "broken_middle", "config": "eager", "prediction": "Panduga Chesko", "short_prediction": "Panduga Chesko", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__780652_93362", "method": "oracle_proof", "config": "eager", "prediction": "Raju Chacha", "short_prediction": "Raju Chacha", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__84887_538202_84283", "method": "proof_core", "config": "eager", "prediction": "Al Bell", "short_prediction": "Al Bell", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__84887_538202_84283", "method": "relevance_same_bytes", "config": "eager", "prediction": "James Otto", "short_prediction": "James Otto", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__84887_538202_84283", "method": "edge_shuffled", "config": "eager", "prediction": "Al Bell", "short_prediction": "Al Bell", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__84887_538202_84283", "method": "random_edges", "config": "eager", "prediction": "Al Bell", "short_prediction": "Al Bell", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__84887_538202_84283", "method": "broken_middle", "config": "eager", "prediction": "Al Bell", "short_prediction": "Al Bell", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__84887_538202_84283", "method": "oracle_proof", "config": "eager", "prediction": "Warner Music Group", "short_prediction": "Warner Music Group", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "4hop1__58323_375563_161848_28750", "method": "proof_core", "config": "eager", "prediction": "Australia", "short_prediction": "Australia", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__58323_375563_161848_28750", "method": "relevance_same_bytes", "config": "eager", "prediction": "Australia", "short_prediction": "Australia", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__58323_375563_161848_28750", "method": "edge_shuffled", "config": "eager", "prediction": "United Kingdom", "short_prediction": "United Kingdom", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__58323_375563_161848_28750", "method": "random_edges", "config": "eager", "prediction": "University of Oxford", "short_prediction": "University of Oxford", "answer_f1": 0.36363636363636365, "answer_em": 0.0}
+{"id": "4hop1__58323_375563_161848_28750", "method": "broken_middle", "config": "eager", "prediction": "Australia", "short_prediction": "Australia", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "4hop1__58323_375563_161848_28750", "method": "oracle_proof", "config": "eager", "prediction": "University of London", "short_prediction": "University of London", "answer_f1": 0.36363636363636365, "answer_em": 0.0}
+{"id": "3hop1__389761_567566_84283", "method": "proof_core", "config": "eager", "prediction": "Warner Bros.", "short_prediction": "Warner Bros.", "answer_f1": 0.4, "answer_em": 0.0}
+{"id": "3hop1__389761_567566_84283", "method": "relevance_same_bytes", "config": "eager", "prediction": "Warner Bros. Records", "short_prediction": "Warner Bros. Records", "answer_f1": 0.3333333333333333, "answer_em": 0.0}
+{"id": "3hop1__389761_567566_84283", "method": "edge_shuffled", "config": "eager", "prediction": "Stax Records", "short_prediction": "Stax Records", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__389761_567566_84283", "method": "random_edges", "config": "eager", "prediction": "Mainstream Records", "short_prediction": "Mainstream Records", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "3hop1__389761_567566_84283", "method": "broken_middle", "config": "eager", "prediction": "Warner Bros.", "short_prediction": "Warner Bros.", "answer_f1": 0.4, "answer_em": 0.0}
+{"id": "3hop1__389761_567566_84283", "method": "oracle_proof", "config": "eager", "prediction": "Warner Bros. Records", "short_prediction": "Warner Bros. Records", "answer_f1": 0.3333333333333333, "answer_em": 0.0}
+{"id": "2hop__57209_67668", "method": "proof_core", "config": "eager", "prediction": "Neil Patrick Harris", "short_prediction": "Neil Patrick Harris", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__57209_67668", "method": "relevance_same_bytes", "config": "eager", "prediction": "Nightwing", "short_prediction": "Nightwing", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__57209_67668", "method": "edge_shuffled", "config": "eager", "prediction": "Jason Todd / Red Hood", "short_prediction": "Jason Todd / Red Hood", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__57209_67668", "method": "random_edges", "config": "eager", "prediction": "Neil Patrick Harris", "short_prediction": "Neil Patrick Harris", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__57209_67668", "method": "broken_middle", "config": "eager", "prediction": "Neil Patrick Harris", "short_prediction": "Neil Patrick Harris", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__57209_67668", "method": "oracle_proof", "config": "eager", "prediction": "Nightwing / Dick Grayson", "short_prediction": "Nightwing / Dick Grayson", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__46065_417697", "method": "proof_core", "config": "eager", "prediction": "Nissan Altima", "short_prediction": "Nissan Altima", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__46065_417697", "method": "relevance_same_bytes", "config": "eager", "prediction": "Nissan Stadium", "short_prediction": "Nissan Stadium", "answer_f1": 0.5, "answer_em": 0.0}
+{"id": "2hop__46065_417697", "method": "edge_shuffled", "config": "eager", "prediction": "Nissan", "short_prediction": "Nissan", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__46065_417697", "method": "random_edges", "config": "eager", "prediction": "Nissan", "short_prediction": "Nissan", "answer_f1": 0.6666666666666666, "answer_em": 0.0}
+{"id": "2hop__46065_417697", "method": "broken_middle", "config": "eager", "prediction": "Nissan Altima", "short_prediction": "Nissan Altima", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__46065_417697", "method": "oracle_proof", "config": "eager", "prediction": "pickup truck", "short_prediction": "pickup truck", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__498251_126089", "method": "proof_core", "config": "eager", "prediction": "Johan Remkes", "short_prediction": "Johan Remkes", "answer_f1": 1.0, "answer_em": 1.0}
+{"id": "2hop__498251_126089", "method": "relevance_same_bytes", "config": "eager", "prediction": "King's Commissioner", "short_prediction": "King's Commissioner", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__498251_126089", "method": "edge_shuffled", "config": "eager", "prediction": "municipality", "short_prediction": "municipality", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__498251_126089", "method": "random_edges", "config": "eager", "prediction": "not specified", "short_prediction": "not specified", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__498251_126089", "method": "broken_middle", "config": "eager", "prediction": "French", "short_prediction": "French", "answer_f1": 0.0, "answer_em": 0.0}
+{"id": "2hop__498251_126089", "method": "oracle_proof", "config": "eager", "prediction": "King's Commissioner", "short_prediction": "King's Commissioner", "answer_f1": 0.0, "answer_em": 0.0}

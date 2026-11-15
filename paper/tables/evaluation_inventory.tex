@@ -1,0 +1,18 @@
+\begin{tabular}{@{}p{0.28\textwidth}p{0.14\textwidth}p{0.12\textwidth}p{0.34\textwidth}@{}}
+\toprule
+Evaluation block & Population & Conditions & Role \\
+\midrule
+Held-out MuSiQue selector & 500 questions & 2 exact budgets & Complete-chain retention \\
+HotpotQA fixed/ratio & 128 questions & 6 budgets, 4 decoders & Downstream and decoder transfer \\
+2Wiki development & 100 questions & 6 budgets & Explicit-path development transfer \\
+MuSiQue generation & 128 questions & 6 budgets & Hard downstream transfer \\
+Packed Hotpot scale & 128 questions & 8k/16k/32k & Context scaling and proof size \\
+Packing replication & 128 clusters & 3 seeds & Question-clustered robustness \\
+Generated chains & 512 examples & 7 depth strata & Depth behavior (development) \\
+Equal-byte interventions & 128--372 questions & 6 equal-byte selections & Mechanism \\
+Selector-inclusive H100 & 4 regimes & 3 modes, 80 batches & Reuse and end-to-end latency \\
+Paged vLLM & 736 requests & 43 batch records & Physical backend and active bytes \\
+Compiler diagnostics & 32--64 examples & halo and precision gates & Fidelity of physical route \\
+Gate and LongBench~v2 diagnostics & 2,048 / 128 & held-out gates & Scope and design choices \\
+\bottomrule
+\end{tabular}

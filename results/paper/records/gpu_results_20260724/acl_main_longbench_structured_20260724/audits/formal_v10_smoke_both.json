@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "protocol": "untouched_formal_upgraded_proofkv_v10_audit",
+  "evaluation_slice": "formal",
+  "selection_manifest_sha256": "c7cda95a9b7a42c70428aba9b973e732de56242c1f7b04e6322ff60546fc6b76",
+  "utility_controller_sha256": "aa16bf3e31b52323a743654bf661352ff23ea70067d08a58f9abbe943c5dd7f1",
+  "runs": [
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/formal_primary_v10_qwen25_complement_n47",
+      "model": "qwen25",
+      "rows": 105,
+      "selection_start_per_task": 0,
+      "samples_per_task": 1,
+      "configurations_per_sample": 21,
+      "proof_routes": 5,
+      "physical_fallback_routes": 15,
+      "proof_route_coverage": 0.25,
+      "selected_candidate_counts": {
+        "learned_and_or_control_anchor25_aux": 3,
+        "learned_and_or_control_anchor50_aux": 1,
+        "learned_and_or_control_anchor75_aux": 1
+      },
+      "proof_routes_without_source_replay": 5,
+      "max_capacity_excess_tokens": 0.0,
+      "raw_empty_predictions": 0,
+      "whitespace_only_predictions": 0,
+      "implementation_files_hashed": 9,
+      "scorer_checkpoint_files_hashed": 6
+    },
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/formal_primary_v10_mistral02_complement_n47",
+      "model": "mistral02",
+      "rows": 105,
+      "selection_start_per_task": 0,
+      "samples_per_task": 1,
+      "configurations_per_sample": 21,
+      "proof_routes": 9,
+      "physical_fallback_routes": 11,
+      "proof_route_coverage": 0.45,
+      "selected_candidate_counts": {
+        "learned_and_or_recent_aux": 1,
+        "learned_and_or_control_anchor25_aux": 4,
+        "learned_and_or_control_anchor50_aux": 1,
+        "learned_and_or_control_anchor75_aux": 3
+      },
+      "proof_routes_without_source_replay": 9,
+      "max_capacity_excess_tokens": 0.0,
+      "raw_empty_predictions": 0,
+      "whitespace_only_predictions": 0,
+      "implementation_files_hashed": 9,
+      "scorer_checkpoint_files_hashed": 6
+    }
+  ],
+  "checks": [
+    "untouched frozen formal slice and exact source answers",
+    "complete model/method/capacity crossing",
+    "independent QA-F1 and aggregate recomputation",
+    "exact capacity, KV-byte, implementation, and checkpoint hashes",
+    "all candidate utilities recomputed from serialized coefficients",
+    "candidate choice, safety margin, route, and reused output equality"
+  ]
+}

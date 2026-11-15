@@ -1,0 +1,37 @@
+{
+  "model": "/workspace/models/Qwen2.5-7B-Instruct-a09a354",
+  "dataset": "hotpotqa",
+  "split": "validation",
+  "data_file": null,
+  "max_samples": 128,
+  "sample_offset": 0,
+  "budget": 0.08,
+  "budget_tokens": 512,
+  "budget_scope": "compressed_context_plus_uncompressed_question_prefill",
+  "attn_implementation": "eager",
+  "kv_bytes_per_token_bf16": 57344,
+  "max_new_tokens": 24,
+  "methods": [
+    "observed_attention_h2o_style"
+  ],
+  "kvpress_commit": "6d965557a5b9f0201a2301b23c454473dd681d0d",
+  "kvpress_compatibility_patch": "kvpress_transformers_5_cache_position.patch",
+  "kvpress_instrumentation_patches": [
+    "kvpress_record_actual_cache_length.patch",
+    "kvpress_record_actual_cache_bytes.patch"
+  ],
+  "records": [
+    {
+      "method": "observed_attention_h2o_style",
+      "n": 128,
+      "answer_em": 0.3515625,
+      "answer_f1": 0.48150027056277056,
+      "answer_contains": 0.3984375,
+      "actual_retained_ratio": 0.321404569580566,
+      "actual_kv_bytes": 29341312.0,
+      "seconds_mean": 0.7325202503234323,
+      "seconds_p95": 1.0921760452911258,
+      "peak_cuda_memory_gb_p95": 15.80211067199707
+    }
+  ]
+}

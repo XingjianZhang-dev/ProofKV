@@ -1,0 +1,38 @@
+{
+  "arguments": {
+    "selection_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_ruler_v10/development_manifest.json",
+    "model": "/workspace/models/Mistral-7B-Instruct-v0.2-63a8b08",
+    "model_label": "mistral02",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "scorer_checkpoint": "/workspace/compresskv_experiments/relation_scorer_soup_v3b_v8_a090/checkpoint",
+    "methods": "full,streamingllm,snapkv,pyramidkv,chunkkv_snapkv,ruler_chain_adapter_v10",
+    "capacities": "128,256,512,1024",
+    "tasks": null,
+    "attn_implementation": "sdpa",
+    "learned_dense_core_count": 4,
+    "learned_edge_batch_size": 256
+  },
+  "selection_manifest_sha256": "8172e7638cf7174503ad11ea81d72806c663e7509e52c88859b376aa828692e9",
+  "selection_protocol": "proofkv_v10_official_ruler_outcome_blind_split_v1",
+  "implementation_sha256": {
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/run_longbench_structured_upgraded_v10.py": "af641006f8ac001a8ec0060cf99c7029203aa32dd31ff9a2fae3bd6e3a39c2c6",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/run_hotpot_compact_qa_upgraded_v10.py": "b2121215090341af185a26ffaefd27f2a53c5518b2c640129e58952b4c166bdd",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/run_kvpress_natural_qa.py": "b79759843aa184058cf7f01f3bd2776fd76cf0130d2648045296935459551cfb",
+    "/workspace/compresskv_run/compresskv/compresskv/compresskv/prefill_selectors.py": "f5b0098d5689ab3e8b61512922c9ebefe9cb6df07317f5b662b988371f73628f",
+    "/workspace/compresskv_run/compresskv/compresskv/compresskv/physical_kv.py": "8ef0e558b29f5a9dd72a04c16576eb28c54c4c565a14c2814419919d00a00983",
+    "/workspace/compresskv_run/compresskv/compresskv/compresskv/proofcache/model.py": "e7443efaac3e326cad483510b15e4b36a77fe5b5a7e55fa0cdcd5619b882a47f",
+    "/workspace/compresskv_run/compresskv/compresskv/compresskv/proofcache/selector.py": "38311cba139a7120ffcd734102358090aab9b152755d22fce9efa726b19120bf",
+    "/workspace/compresskv_run/compresskv/compresskv/compresskv/proofcache/schema.py": "0190bc84d93d1c23033b967e4e2204d8ba3489bd38e0d9e84cbd352a3fd76a05",
+    "/workspace/baselines/kvpress/kvpress/presses/chunkkv_press.py": "75b7e1b027ce2ef971fef9d20e711525799b873a23e9273f7ca2b6874da33ecd",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/run_official_ruler_upgraded_v10.py": "aaee0de2104f7bd6d5897bb30aeeed5f77405e6a36c4fe5e8feac6ebd14e221c",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/official_ruler_v10_common.py": "279292dc2dab3ab54381b829d4e4bf38e2cc9adda752afff8c7064c6a1895754"
+  },
+  "scorer_checkpoint_sha256": {
+    "encoder/config.json": "351963ff45852d8d60ea3d37f3a8a54f87d31ac4030e455cd26659b73c4bcd3b",
+    "encoder/model.safetensors": "774e7f692bcea6ae945fe4d0eeb90045f9e9d2371d28d76a4287b348c082cd64",
+    "heads.pt": "e95a0075813bf2d87d02327960107f7e6f31b6ff8b546d541a859f8a851e7385",
+    "proofcache_scorer.json": "4e7196a2df2d8cf975efbb2286e4a336ca65f8cd93edc9a09191a0bc57ed1d35",
+    "tokenizer/tokenizer.json": "91f1def9b9391fdabe028cd3f3fcc4efd34e5d1f08c3bf2de513ebb5911a1854",
+    "tokenizer/tokenizer_config.json": "74a0cf609c8a333cba965e542045fb194c5f9c6c315bc6a28aa2f8fb0bc06e96"
+  }
+}

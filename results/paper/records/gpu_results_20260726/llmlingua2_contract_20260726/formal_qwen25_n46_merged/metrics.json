@@ -1,0 +1,220 @@
+{
+  "protocol": "llmlingua2_same_compact_prefill_contract_V2_merged",
+  "selection_manifest_sha256": "c7cda95a9b7a42c70428aba9b973e732de56242c1f7b04e6322ff60546fc6b76",
+  "model": "qwen25",
+  "model_path": "/workspace/models/Qwen2.5-7B-Instruct-a09a354",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "compressor": "llmlingua2_official",
+  "tasks": [
+    "qasper",
+    "multifieldqa_en",
+    "hotpotqa",
+    "2wikimqa",
+    "musique"
+  ],
+  "n_per_task": 46,
+  "selection_start_per_task": 1,
+  "capacities": [
+    128,
+    256,
+    512
+  ],
+  "capacity_scope": "total prefill KV including uncompressed question tail",
+  "kv_bytes_per_token_bf16": 57344,
+  "task_records": [
+    {
+      "task": "2wikimqa",
+      "method": "llmlingua2_official",
+      "capacity": "128",
+      "n": 46,
+      "score": 6.76701226711176,
+      "actual_retained_ratio": 0.02371515444989548,
+      "actual_kv_bytes": 7340032.0,
+      "seconds": 4.293099624884275,
+      "peak_cuda_memory_gb": 16.301917552947998
+    },
+    {
+      "task": "2wikimqa",
+      "method": "llmlingua2_official",
+      "capacity": "256",
+      "n": 46,
+      "score": 6.586714120905263,
+      "actual_retained_ratio": 0.04743030889979096,
+      "actual_kv_bytes": 14680064.0,
+      "seconds": 3.9839131270089876,
+      "peak_cuda_memory_gb": 16.327985286712646
+    },
+    {
+      "task": "2wikimqa",
+      "method": "llmlingua2_official",
+      "capacity": "512",
+      "n": 46,
+      "score": 5.9202438774371915,
+      "actual_retained_ratio": 0.09486061779958192,
+      "actual_kv_bytes": 29360128.0,
+      "seconds": 3.474761761147934,
+      "peak_cuda_memory_gb": 16.3741774559021
+    },
+    {
+      "task": "hotpotqa",
+      "method": "llmlingua2_official",
+      "capacity": "128",
+      "n": 46,
+      "score": 4.849619294798879,
+      "actual_retained_ratio": 0.011875378096928903,
+      "actual_kv_bytes": 7340032.0,
+      "seconds": 7.369441086800931,
+      "peak_cuda_memory_gb": 16.301467418670654
+    },
+    {
+      "task": "hotpotqa",
+      "method": "llmlingua2_official",
+      "capacity": "256",
+      "n": 46,
+      "score": 3.9583288988323315,
+      "actual_retained_ratio": 0.023750756193857806,
+      "actual_kv_bytes": 14680064.0,
+      "seconds": 5.531232409644872,
+      "peak_cuda_memory_gb": 16.325299739837646
+    },
+    {
+      "task": "hotpotqa",
+      "method": "llmlingua2_official",
+      "capacity": "512",
+      "n": 46,
+      "score": 5.0180849746067135,
+      "actual_retained_ratio": 0.04750151238771561,
+      "actual_kv_bytes": 29360128.0,
+      "seconds": 5.187801003122054,
+      "peak_cuda_memory_gb": 16.373773097991943
+    },
+    {
+      "task": "multifieldqa_en",
+      "method": "llmlingua2_official",
+      "capacity": "128",
+      "n": 46,
+      "score": 13.610003614336135,
+      "actual_retained_ratio": 0.02682802033172078,
+      "actual_kv_bytes": 7340032.0,
+      "seconds": 5.7439008354735765,
+      "peak_cuda_memory_gb": 16.302199840545654
+    },
+    {
+      "task": "multifieldqa_en",
+      "method": "llmlingua2_official",
+      "capacity": "256",
+      "n": 46,
+      "score": 14.95735200979605,
+      "actual_retained_ratio": 0.05365604066344156,
+      "actual_kv_bytes": 14680064.0,
+      "seconds": 5.518518242691441,
+      "peak_cuda_memory_gb": 16.327497005462646
+    },
+    {
+      "task": "multifieldqa_en",
+      "method": "llmlingua2_official",
+      "capacity": "512",
+      "n": 46,
+      "score": 18.272087347114073,
+      "actual_retained_ratio": 0.10731208132688312,
+      "actual_kv_bytes": 29360128.0,
+      "seconds": 5.3081563245910015,
+      "peak_cuda_memory_gb": 16.373284816741943
+    },
+    {
+      "task": "musique",
+      "method": "llmlingua2_official",
+      "capacity": "128",
+      "n": 46,
+      "score": 2.1801423916817835,
+      "actual_retained_ratio": 0.008138078712482493,
+      "actual_kv_bytes": 7340032.0,
+      "seconds": 6.555233090144137,
+      "peak_cuda_memory_gb": 16.301185131072998
+    },
+    {
+      "task": "musique",
+      "method": "llmlingua2_official",
+      "capacity": "256",
+      "n": 46,
+      "score": 2.6775930216709827,
+      "actual_retained_ratio": 0.016276157424964986,
+      "actual_kv_bytes": 14680064.0,
+      "seconds": 3.9118104806554546,
+      "peak_cuda_memory_gb": 16.327413082122803
+    },
+    {
+      "task": "musique",
+      "method": "llmlingua2_official",
+      "capacity": "512",
+      "n": 46,
+      "score": 3.2703119954171846,
+      "actual_retained_ratio": 0.03255231484992997,
+      "actual_kv_bytes": 29360128.0,
+      "seconds": 4.1398624681827165,
+      "peak_cuda_memory_gb": 16.3741774559021
+    },
+    {
+      "task": "qasper",
+      "method": "llmlingua2_official",
+      "capacity": "128",
+      "n": 46,
+      "score": 9.22457705790948,
+      "actual_retained_ratio": 0.02744607880397988,
+      "actual_kv_bytes": 7340032.0,
+      "seconds": 8.502310261191072,
+      "peak_cuda_memory_gb": 16.301467418670654
+    },
+    {
+      "task": "qasper",
+      "method": "llmlingua2_official",
+      "capacity": "256",
+      "n": 46,
+      "score": 11.982469137308986,
+      "actual_retained_ratio": 0.05489215760795976,
+      "actual_kv_bytes": 14680064.0,
+      "seconds": 7.4593697952248315,
+      "peak_cuda_memory_gb": 16.326032161712646
+    },
+    {
+      "task": "qasper",
+      "method": "llmlingua2_official",
+      "capacity": "512",
+      "n": 46,
+      "score": 18.791684405774607,
+      "actual_retained_ratio": 0.10978431521591953,
+      "actual_kv_bytes": 29360128.0,
+      "seconds": 5.770988802425563,
+      "peak_cuda_memory_gb": 16.373773097991943
+    }
+  ],
+  "macro_records": [
+    {
+      "method": "llmlingua2_official",
+      "capacity": "128",
+      "tasks": 5,
+      "n": 230,
+      "macro_score": 7.3262709251676075,
+      "actual_retained_ratio": 0.019600542079001505,
+      "seconds": 6.492796979698798
+    },
+    {
+      "method": "llmlingua2_official",
+      "capacity": "256",
+      "tasks": 5,
+      "n": 230,
+      "macro_score": 8.032491437702722,
+      "actual_retained_ratio": 0.03920108415800301,
+      "seconds": 5.280968811045118
+    },
+    {
+      "method": "llmlingua2_official",
+      "capacity": "512",
+      "tasks": 5,
+      "n": 230,
+      "macro_score": 10.254482520069953,
+      "actual_retained_ratio": 0.07840216831600602,
+      "seconds": 4.776314071893854
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "stage": "development",
+  "metrics": "/workspace/compresskv_experiments/layer_specific_residual_pilot_n16_V2/metrics.json",
+  "results": null,
+  "protocol": {
+    "development_thresholds": {
+      "layer_specific_minus_shared": 0.01,
+      "layer_specific_minus_no_core": 0.02,
+      "layer_specific_minus_core_only": 0.01
+    },
+    "holdout_thresholds": "positive paired mean versus all three controls and positive 95% CI lower bound versus the matched-byte shared residual"
+  },
+  "integrity": {
+    "all_methods_present": true,
+    "required_structural_checks_present": true,
+    "required_structural_checks_pass": true,
+    "frozen_protocol_matches_stage": true,
+    "selected_indices_are_unique": true
+  },
+  "comparisons": {
+    "layer_specific_f1": 0.4461309523809524,
+    "minus_shared_core_aux": 0.0,
+    "minus_layer_independent_no_core": 0.13988095238095238,
+    "minus_core_only": 0.0
+  },
+  "paired_statistics": {},
+  "gates": {
+    "integrity": true,
+    "layer_specific_at_least_0_01_over_shared": false,
+    "layer_specific_at_least_0_02_over_no_core": true,
+    "layer_specific_at_least_0_01_over_core_only": false
+  },
+  "passed": false
+}

@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "mode": "partial",
+  "protocol": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/evidencepack_budget_pareto_V25/frozen_protocol.json",
+  "protocol_sha256": "5854da875e0ca4c54a97cc5b5de4ca75cae6662b8920502fea39c6f2683b74e3",
+  "macro_delta_at_8pct_vs_compact_points": {
+    "entity_graph_adaptive": 5.143229166666664,
+    "learned_root_topk": 2.4596974206349183,
+    "learned_and_or": 4.026633089133085
+  },
+  "cell_metrics": {
+    "musique_b04": {
+      "task": "musique",
+      "budget": 0.04,
+      "n": 64,
+      "controller_f1": 0.2708333333333333,
+      "controller_retained_ratio": 0.0375354463367289,
+      "method_f1": {
+        "entity_graph_adaptive": 0.19583333333333333,
+        "learned_root_topk": 0.1909970238095238,
+        "learned_and_or": 0.23893229166666666
+      },
+      "delta_vs_each_compact_points": {
+        "entity_graph_adaptive": 7.499999999999998,
+        "learned_root_topk": 7.983630952380952,
+        "learned_and_or": 3.1901041666666656
+      },
+      "route_counts": {
+        "learned_and_or": 14,
+        "entity_graph_adaptive": 50
+      }
+    },
+    "musique_b08": {
+      "task": "musique",
+      "budget": 0.08,
+      "n": 64,
+      "controller_f1": 0.2826388888888889,
+      "controller_retained_ratio": 0.07718423699325296,
+      "method_f1": {
+        "entity_graph_adaptive": 0.24097222222222223,
+        "learned_root_topk": 0.36495535714285715,
+        "learned_and_or": 0.2828125
+      },
+      "delta_vs_each_compact_points": {
+        "entity_graph_adaptive": 4.166666666666666,
+        "learned_root_topk": -8.231646825396826,
+        "learned_and_or": -0.017361111111113825
+      },
+      "route_counts": {
+        "learned_and_or": 14,
+        "entity_graph_adaptive": 50
+      }
+    },
+    "2wiki_b04": {
+      "task": "2wiki",
+      "budget": 0.04,
+      "n": 64,
+      "controller_f1": 0.3923611111111111,
+      "controller_retained_ratio": 0.03343321367270182,
+      "method_f1": {
+        "entity_graph_adaptive": 0.4231770833333333,
+        "learned_root_topk": 0.27043193922305764,
+        "learned_and_or": 0.3656684027777778
+      },
+      "delta_vs_each_compact_points": {
+        "entity_graph_adaptive": -3.081597222222221,
+        "learned_root_topk": 12.192917188805346,
+        "learned_and_or": 2.6692708333333313
+      },
+      "route_counts": {
+        "learned_and_or": 21,
+        "entity_graph_adaptive": 43
+      }
+    },
+    "2wiki_b08": {
+      "task": "2wiki",
+      "budget": 0.08,
+      "n": 64,
+      "controller_f1": 0.4732142857142857,
+      "controller_retained_ratio": 0.06653320150034715,
+      "method_f1": {
+        "entity_graph_adaptive": 0.41201636904761907,
+        "learned_root_topk": 0.34170386904761907,
+        "learned_and_or": 0.39250801282051284
+      },
+      "delta_vs_each_compact_points": {
+        "entity_graph_adaptive": 6.1197916666666625,
+        "learned_root_topk": 13.151041666666663,
+        "learned_and_or": 8.070627289377285
+      },
+      "route_counts": {
+        "learned_and_or": 21,
+        "entity_graph_adaptive": 43
+      }
+    }
+  },
+  "checks": {
+    "all_rows_complete": true,
+    "matching_ids_across_budgets": true,
+    "predecode_feature_present": true,
+    "no_severe_8pct_direction_reversal": true
+  },
+  "integrity": {
+    "musique_b04": {
+      "rows": 192,
+      "paired_ids": 64,
+      "results_sha256": "b5e81f99999b388d6cce708b596537ed2f28ccd39cc059707404ebc7e705a914",
+      "manifest_sha256": "9709842f2346d8dca680a4e0edd0e829a18b6ec628335e2fba6d654c16206da1",
+      "metrics_sha256": "de5f87a6849c8d065b083b01350ecd0fa8ce1717f2e881ef122eca95f73df64e"
+    },
+    "musique_b08": {
+      "rows": 192,
+      "paired_ids": 64,
+      "results_sha256": "afacbf4acbcccda443e97a89d65517056e1be528601c5d7cef4a47ab84337311",
+      "manifest_sha256": "2894334ff4de13b1029fc3d44d5abc2819958fd8f95d5e43c28a892ff397a149",
+      "metrics_sha256": "27ad6d7f65e32aece27816ca3036c64813a78733e281b32ed11cc86be41e50cd"
+    },
+    "2wiki_b04": {
+      "rows": 192,
+      "paired_ids": 64,
+      "results_sha256": "94983a1f1dbbf56ccb2a9d03d67f39f35fc22dd0b039efbc0e24c1e41586e18b",
+      "manifest_sha256": "25c33ff6b06d1390f7904685ed52b4f3345c7ba8a83a267ea5ab7b0f77ba42ad",
+      "metrics_sha256": "3a201390cd9747e2aa418c80e6dc881f46db1517a4daea9cad1df712039ed4fe"
+    },
+    "2wiki_b08": {
+      "rows": 192,
+      "paired_ids": 64,
+      "results_sha256": "988c92563c16167ecc4769ee14f4796dfa9b5478f2241aacfb7e223443abcce7",
+      "manifest_sha256": "e87e15c0d4989de3d8be5f495fd36f49d898c9ffcd151d50757282a623d3e142",
+      "metrics_sha256": "b112e0d9e00e6e1edb037aa09fed0bdb5aa52af7d4568113e0d4c7c6946c9cd4"
+    }
+  },
+  "audit_implementation_sha256": "0baaf9f621f214390f1c9176386af87681d191569d5d30a3685e070f7b6062d9"
+}

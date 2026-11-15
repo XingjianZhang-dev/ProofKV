@@ -1,0 +1,35 @@
+{
+  "dataset": "hotpotqa",
+  "split": "validation",
+  "max_samples": 128,
+  "seed": 17,
+  "methods": [
+    "learned_topk_paths"
+  ],
+  "budgets": [
+    "0.08"
+  ],
+  "kv_bytes_per_token_bf16": 57344,
+  "records": [
+    {
+      "method": "learned_topk_paths",
+      "budget_spec": "0.0800",
+      "n": 128,
+      "pcr": 0.234375,
+      "core_pcr": 0.234375,
+      "complete_proofs": 0.234375,
+      "proof_efficiency_per_mib": 0.03360038731048552,
+      "route_precision": 0.6426624757626855,
+      "gold_token_recall": 0.5450861914763367,
+      "retained_ratio": 0.0722297076036351,
+      "actual_kv_bytes": 6774656.0,
+      "selector_ms": 648.1972427445726,
+      "index_build_ms": 0.0,
+      "selector_p95_ms": 1221.3311379309744
+    }
+  ],
+  "notes": {
+    "proxy_boundary": "dense_hash, reranker, and graph_similarity are development proxies, not formal official baselines",
+    "locked_test": false
+  }
+}

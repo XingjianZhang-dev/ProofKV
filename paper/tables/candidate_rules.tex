@@ -1,0 +1,13 @@
+\begin{tabular}{@{}rp{0.62\columnwidth}ll@{}}
+\toprule
+ & Condition on the ordered pair $(s_i,s_j)$ & Label & Prior \\
+\midrule
+1 & shared variable name and a state-change cue in either span & state transition & $0.62+0.10k$ \\
+2 & shared entity and negation in exactly one span & contradiction & $0.58+0.08k$ \\
+3 & shared entity and a causal cue in $s_j$ & causal support & $0.57+0.07k$ \\
+4 & shared entity & coreference & $0.55+0.08k$ \\
+5 & shared year & temporal & $0.48+0.08k$ \\
+6 & a term defined in $s_i$ occurs in $s_j$ & definition--use & $0.60+0.08k$ \\
+7 & shared content word with document frequency $\le 3$ & lexical bridge & $0.30+0.06k$ \\
+\bottomrule
+\end{tabular}

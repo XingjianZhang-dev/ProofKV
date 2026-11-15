@@ -1,0 +1,43 @@
+{
+  "arguments": {
+    "method": "official_compresskv",
+    "official_repo": "/workspace/baselines/CompressKV_official",
+    "selection_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/selection_manifest_v10_complement_n47.json",
+    "model": "/workspace/models/Qwen2.5-7B-Instruct-a09a354",
+    "model_label": "qwen25",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "capacities": "64,128,256,512",
+    "tasks": null
+  },
+  "selection_manifest_sha256": "c7cda95a9b7a42c70428aba9b973e732de56242c1f7b04e6322ff60546fc6b76",
+  "selection_protocol": "longbench_structured_qa_nontruncated_complement_v10",
+  "official_commit": "12f920fbecba67e16806a6d8eac0ad389ddcad6f",
+  "official_source_sha256": {
+    "llama_hijack.py": "8e627a0a442061b7dede604be8cb2af3a2135eab919c74fb10889f1417d2da39",
+    "mistral_hijack.py": "3994a591c489bb59c555e984ac3f531559512cf92c741f7758c376d5753581e4",
+    "monkeypatch.py": "7a1f7b5d8e671615d7884d4afa84cce9ab4f1fbcbf4e9da936d43559ed95e2a5",
+    "qwen2_hijack.py": "00c18ea8012a5cd0e33c62f3be5c5533771a2247bfd99019a37064acf8bba323",
+    "snapkv_utils.py": "6b5d2cec06a545014c67106c85fc13258f9c42b62b8f80e6412ff9a06e887c5f"
+  },
+  "official_auxiliary_sha256": {},
+  "implementation_sha256": {
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/run_official_longbench_v10_baseline.py": "37df98d1d3495b8ba4ab75e0d80ebf58f07192bd24afabeb85b1c5f34a38bae1",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/freeze_longbench_structured_selection.py": "6cd461b4584cdb39de1afec5117f3fb074dcb6a5b707a90cb78df5e9a50cd7fa"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "executable": "/workspace/venvs/officialkv45/bin/python",
+    "packages": {
+      "torch": "2.8.0+cu128",
+      "transformers": "4.45.2",
+      "tokenizers": "0.20.3",
+      "flash-attn": "2.8.3",
+      "huggingface-hub": "0.36.2",
+      "nvtx": null,
+      "protobuf": null,
+      "sentencepiece": "0.2.2"
+    },
+    "cuda": "12.8",
+    "gpu": "NVIDIA A100 80GB PCIe"
+  }
+}

@@ -1,0 +1,18 @@
+sink_size: 4
+recent_size: 1024
+guidepost_count: 512
+block_size: 128
+candidates_per_block: 1
+selector: blockmax
+route_scope: query_head
+default_route: navigation
+apply_during_prefill: false
+decode_q_len_threshold: 1
+target_budget_ratio: 0.32
+calibration_threshold: 0.99
+navigation_threshold: 0.99
+streaming_threshold: 0.99
+min_full_heads_per_layer: 0
+dtype: bfloat16
+seed: 0
+notes: {budget: 32pct}

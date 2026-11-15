@@ -1,0 +1,12 @@
+diff --git a/kvpress/pipeline.py b/kvpress/pipeline.py
+index 1145d17..69a33dd 100644
+--- a/kvpress/pipeline.py
++++ b/kvpress/pipeline.py
+@@ -217,6 +217,7 @@ class KVPressTextGenerationPipeline(Pipeline):
+             self.model.model(
+                 input_ids=context_ids,
+                 past_key_values=cache,
++                cache_position=torch.arange(context_length, device=self.model.device),
+             )
+ 
+             logger.debug(f"Context Length: {context_length}")

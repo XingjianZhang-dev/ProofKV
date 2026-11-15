@@ -1,0 +1,54 @@
+{
+  "model": "/workspace/models/Qwen3-8B-b968826",
+  "dataset": "hotpotqa",
+  "split": "validation",
+  "data_file": null,
+  "max_samples": 128,
+  "sample_offset": 0,
+  "budget": 0.04,
+  "budget_tokens": null,
+  "target_prompt_tokens": null,
+  "packing_seed": null,
+  "attn_implementation": "sdpa",
+  "full_prefill_chunk_size": 2048,
+  "compact_prefill_chunk_size": 512,
+  "methods": [
+    "compass_fixed",
+    "entity_graph_adaptive"
+  ],
+  "scorer_kind": null,
+  "learned_dense_core_count": 4,
+  "learned_edge_batch_size": 256,
+  "repair_halo": 0,
+  "records": [
+    {
+      "method": "compass_fixed",
+      "n": 128,
+      "answer_em": 0.2421875,
+      "answer_f1": 0.33348118894993894,
+      "answer_contains": 0.2578125,
+      "gold_token_recall": 0.059390718858686076,
+      "retained_ratio": 0.03998234065797274,
+      "seconds": 0.21886303887004033,
+      "selection_seconds": 0.021830772780958796,
+      "generation_seconds": 0.19703226608908153,
+      "proof_core_tokens": 0.0,
+      "auxiliary_tokens": 0.0
+    },
+    {
+      "method": "entity_graph_adaptive",
+      "n": 128,
+      "answer_em": 0.21875,
+      "answer_f1": 0.3414250246281496,
+      "answer_contains": 0.265625,
+      "gold_token_recall": 0.11518659816740004,
+      "retained_ratio": 0.03998234065797274,
+      "seconds": 0.1860393272145302,
+      "selection_seconds": 0.005208478160056984,
+      "generation_seconds": 0.18083084905447322,
+      "proof_core_tokens": 0.0,
+      "auxiliary_tokens": 0.0
+    }
+  ],
+  "paired_full_retention": []
+}

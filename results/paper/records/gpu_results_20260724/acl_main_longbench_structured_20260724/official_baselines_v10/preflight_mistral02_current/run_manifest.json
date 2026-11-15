@@ -1,0 +1,52 @@
+{
+  "arguments": {
+    "method": "official_headkv_reasonkv",
+    "official_repo": "/workspace/baselines/HeadKV",
+    "selection_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/selection_manifest_v10_complement_n47.json",
+    "model": "/workspace/models/Mistral-7B-Instruct-v0.2-63a8b08",
+    "model_label": "mistral02",
+    "model_revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+    "capacities": "64,128,256,512",
+    "tasks": null
+  },
+  "selection_manifest_sha256": "c7cda95a9b7a42c70428aba9b973e732de56242c1f7b04e6322ff60546fc6b76",
+  "selection_protocol": "longbench_structured_qa_nontruncated_complement_v10",
+  "official_commit": "0862a0955fe82e9ff611d59541918e02c5def625",
+  "official_source_sha256": {
+    "adaptive_llama_hijack.py": "cc2712f6ef298a203be4ce5e236c60bf5e980b6e18dd7bc8461cd78c5b607279",
+    "adaptive_mistral_hijack.py": "c20d1c7a100ce1a2fe48b577fcf1db75633dc3aefca04f6f5c8b0108c00520e6",
+    "fixed_llama_hijack.py": "42da4624988c4edd24f39822c8da206ac76dad5c46af155a75d04291cc035802",
+    "fixed_mistral_hijack.py": "dbd512ae7ee79cf5b3704bfe3a625e42456e9a777cdf085b9001077bf71b0df6",
+    "monkeypatch.py": "3ceb6e01b34bc86e315d0604e559b9ecbc2cd57e6141eeae9157fa4b34594175",
+    "snapkv_utils.py": "c8a1e149d56ea5be115379836c97a8933c2070b7795e93e30b17df5046fcc474"
+  },
+  "official_auxiliary_sha256": {
+    "csrc/build.py": "705eed0e28b36a39afb5fbe580b82d241a066df71a2fadce5aeab662adff4b40",
+    "csrc/csrc/cuda_api.cu": "e56f8083566dae190c8acde31b7c7efb6a0f27f5a58a51b216da0dcad9a3e4c5",
+    "csrc/csrc/static_switch.h": "4581e79620cc6b05cb8b6d642fc4cf29294e520526ed1ba0b0f259641b4cbc93",
+    "csrc/include/cuda_api.h": "18a7c7881c29a46d4ade8f6a25098222e15519f69238745e17de3bc537b62a3a",
+    "csrc/build_a100/build_manifest.json": "68417b77e42a5cba496400be963c1656e4c0851cd7153320a3e4fefd71745293",
+    "Important_Head/head.yml": "f92cb5a860d2fe13daf8163e6a2eb7e9a87679abdfcba85571256cb120643e23",
+    "csrc/build_a100/lib/tiny_api_cuda.cpython-312-x86_64-linux-gnu.so": "14ca9ccc7927716b7556fdfa699efe06e4512e4740d52f7ff0b16b1a355f0109"
+  },
+  "implementation_sha256": {
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/run_official_longbench_v10_baseline.py": "37df98d1d3495b8ba4ab75e0d80ebf58f07192bd24afabeb85b1c5f34a38bae1",
+    "/workspace/compresskv_run/compresskv/compresskv/scripts/freeze_longbench_structured_selection.py": "6cd461b4584cdb39de1afec5117f3fb074dcb6a5b707a90cb78df5e9a50cd7fa"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "executable": "/workspace/venvs/headkv437/bin/python",
+    "packages": {
+      "torch": "2.8.0+cu128",
+      "transformers": "4.37.2",
+      "tokenizers": "0.15.2",
+      "flash-attn": "2.8.3",
+      "huggingface-hub": "0.36.2",
+      "nvtx": "0.2.15",
+      "protobuf": "5.27.3",
+      "sentencepiece": "0.2.0"
+    },
+    "cuda": "12.8",
+    "gpu": "NVIDIA A100 80GB PCIe"
+  }
+}

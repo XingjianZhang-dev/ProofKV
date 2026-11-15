@@ -1,0 +1,214 @@
+{
+  "status": "PASS",
+  "ratio_cells": [
+    {
+      "matrix": "hotpot_qwen25",
+      "budget": "ratio004",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.0403957131079967
+    },
+    {
+      "matrix": "hotpot_qwen25",
+      "budget": "ratio008",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.08047210300429185
+    },
+    {
+      "matrix": "hotpot_qwen25",
+      "budget": "ratio016",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.16045548654244307
+    },
+    {
+      "matrix": "hotpot_qwen3",
+      "budget": "ratio004",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.040473840078973346
+    },
+    {
+      "matrix": "hotpot_qwen3",
+      "budget": "ratio008",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.08041237113402062
+    },
+    {
+      "matrix": "hotpot_qwen3",
+      "budget": "ratio016",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.16038492381716118
+    },
+    {
+      "matrix": "hotpot_mistral02",
+      "budget": "ratio004",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.04044117647058824
+    },
+    {
+      "matrix": "hotpot_mistral02",
+      "budget": "ratio008",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.0803347280334728
+    },
+    {
+      "matrix": "hotpot_mistral02",
+      "budget": "ratio016",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.16058394160583941
+    },
+    {
+      "matrix": "hotpot_mistral03",
+      "budget": "ratio004",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.040336134453781515
+    },
+    {
+      "matrix": "hotpot_mistral03",
+      "budget": "ratio008",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.08033240997229917
+    },
+    {
+      "matrix": "hotpot_mistral03",
+      "budget": "ratio016",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.16031073446327684
+    },
+    {
+      "matrix": "musique_qwen25",
+      "budget": "ratio004",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.040293040293040296
+    },
+    {
+      "matrix": "musique_qwen25",
+      "budget": "ratio008",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.0802675585284281
+    },
+    {
+      "matrix": "musique_qwen25",
+      "budget": "ratio016",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 128,
+      "max_retained_ratio": 0.1602155805977462
+    },
+    {
+      "matrix": "twowiki_qwen25",
+      "budget": "ratio004",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 100,
+      "max_retained_ratio": 0.04085603112840467
+    },
+    {
+      "matrix": "twowiki_qwen25",
+      "budget": "ratio008",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 100,
+      "max_retained_ratio": 0.08092485549132948
+    },
+    {
+      "matrix": "twowiki_qwen25",
+      "budget": "ratio016",
+      "methods": [
+        "compass_fixed",
+        "entity_graph_adaptive"
+      ],
+      "n": 100,
+      "max_retained_ratio": 0.16059379217273953
+    }
+  ],
+  "fixed512_panels": [
+    {
+      "panel": "kvpress",
+      "methods": [
+        "chunkkv_snapkv",
+        "pyramidkv",
+        "snapkv",
+        "streamingllm"
+      ],
+      "n": 128,
+      "max_actual_total_prefill_tokens": 512.0
+    },
+    {
+      "panel": "h2o",
+      "methods": [
+        "observed_attention_h2o_style"
+      ],
+      "n": 128,
+      "max_actual_total_prefill_tokens": 512.0
+    }
+  ],
+  "checks": [
+    "unique id/method keys",
+    "independent row-level EM/F1/contains recomputation",
+    "independent aggregate recomputation",
+    "sample-id equality with original frozen panels",
+    "ratio-budget upper bound",
+    "fixed512 actual KV-token and byte accounting"
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "status": "PASS",
+  "protocol": "frozen_longbench_v10_model_compatible_official_baseline",
+  "method": "official_compresskv",
+  "model": "qwen25",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "tasks": [
+    "qasper",
+    "multifieldqa_en",
+    "hotpotqa",
+    "2wikimqa",
+    "musique"
+  ],
+  "capacities": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "n_per_task": 1,
+  "rows": 20,
+  "selection_manifest_sha256": "c7cda95a9b7a42c70428aba9b973e732de56242c1f7b04e6322ff60546fc6b76",
+  "official_commit": "12f920fbecba67e16806a6d8eac0ad389ddcad6f",
+  "official_static_configuration": {
+    "dtype": "bfloat16",
+    "window_size": 8,
+    "kernel_size": 5,
+    "pooling": "avgpool",
+    "first_k": 4,
+    "layer_score_sha256": "d339791077af3469816abbdb3c74a2ecadb104c0dc885c243a4c8fdcef423fcb",
+    "head_index_sha256": "fca21ad0e83488f3ead7b228ed6b173c9424fde7fd25dc496c6323e403098d92"
+  },
+  "capacity_configurations": {
+    "64": {
+      "layer_capacities": [
+        46,
+        58,
+        78,
+        62,
+        79,
+        74,
+        51,
+        61,
+        79,
+        70,
+        55,
+        70,
+        68,
+        57,
+        79,
+        67,
+        75,
+        71,
+        58,
+        62,
+        57,
+        59,
+        77,
+        61,
+        58,
+        59,
+        60,
+        41
+      ],
+      "layer_capacity_mean": 64.0
+    },
+    "128": {
+      "layer_capacities": [
+        73,
+        111,
+        169,
+        122,
+        172,
+        159,
+        89,
+        120,
+        174,
+        146,
+        100,
+        145,
+        141,
+        106,
+        173,
+        136,
+        161,
+        149,
+        110,
+        123,
+        107,
+        112,
+        166,
+        118,
+        110,
+        113,
+        116,
+        63
+      ],
+      "layer_capacity_mean": 128.0
+    },
+    "256": {
+      "layer_capacities": [
+        127,
+        215,
+        352,
+        242,
+        358,
+        329,
+        164,
+        237,
+        365,
+        298,
+        190,
+        297,
+        285,
+        204,
+        362,
+        274,
+        333,
+        304,
+        214,
+        244,
+        207,
+        219,
+        345,
+        233,
+        215,
+        221,
+        229,
+        105
+      ],
+      "layer_capacity_mean": 256.0
+    },
+    "512": {
+      "layer_capacities": [
+        236,
+        425,
+        717,
+        482,
+        730,
+        669,
+        316,
+        470,
+        744,
+        602,
+        370,
+        599,
+        575,
+        401,
+        738,
+        550,
+        678,
+        615,
+        422,
+        486,
+        408,
+        432,
+        704,
+        464,
+        424,
+        436,
+        454,
+        189
+      ],
+      "layer_capacity_mean": 512.0
+    }
+  },
+  "task_capacity_records": [
+    {
+      "task": "2wikimqa",
+      "capacity": 64,
+      "n": 1,
+      "score": 0.0,
+      "actual_retained_tokens_mean": 64.0,
+      "actual_kv_bytes_mean": 3670016.0,
+      "seconds_mean": 1.4417820549570024
+    },
+    {
+      "task": "2wikimqa",
+      "capacity": 128,
+      "n": 1,
+      "score": 0.0,
+      "actual_retained_tokens_mean": 128.0,
+      "actual_kv_bytes_mean": 7340032.0,
+      "seconds_mean": 1.2721735038794577
+    },
+    {
+      "task": "2wikimqa",
+      "capacity": 256,
+      "n": 1,
+      "score": 0.0,
+      "actual_retained_tokens_mean": 256.0,
+      "actual_kv_bytes_mean": 14680064.0,
+      "seconds_mean": 1.668307806365192
+    },
+    {
+      "task": "2wikimqa",
+      "capacity": 512,
+      "n": 1,
+      "score": 0.0,
+      "actual_retained_tokens_mean": 512.0,
+      "actual_kv_bytes_mean": 29360128.0,
+      "seconds_mean": 2.3763977088965476
+    },
+    {
+      "task": "hotpotqa",
+      "capacity": 64,
+      "n": 1,
+      "score": 0.18181818181818182,
+      "actual_retained_tokens_mean": 64.0,
+      "actual_kv_bytes_mean": 3670016.0,
+      "seconds_mean": 5.765866919886321
+    },
+    {
+      "task": "hotpotqa",
+      "capacity": 128,
+      "n": 1,
+      "score": 0.18181818181818182,
+      "actual_retained_tokens_mean": 128.0,
+      "actual_kv_bytes_mean": 7340032.0,
+      "seconds_mean": 4.797226786147803
+    },
+    {
+      "task": "hotpotqa",
+      "capacity": 256,
+      "n": 1,
+      "score": 0.18181818181818182,
+      "actual_retained_tokens_mean": 256.0,
+      "actual_kv_bytes_mean": 14680064.0,
+      "seconds_mean": 5.235109961126
+    },
+    {
+      "task": "hotpotqa",
+      "capacity": 512,
+      "n": 1,
+      "score": 0.18181818181818182,
+      "actual_retained_tokens_mean": 512.0,
+      "actual_kv_bytes_mean": 29360128.0,
+      "seconds_mean": 6.894352252129465
+    },
+    {
+      "task": "multifieldqa_en",
+      "capacity": 64,
+      "n": 1,
+      "score": 0.42553191489361697,
+      "actual_retained_tokens_mean": 64.0,
+      "actual_kv_bytes_mean": 3670016.0,
+      "seconds_mean": 9.9210763592273
+    },
+    {
+      "task": "multifieldqa_en",
+      "capacity": 128,
+      "n": 1,
+      "score": 0.23728813559322035,
+      "actual_retained_tokens_mean": 128.0,
+      "actual_kv_bytes_mean": 7340032.0,
+      "seconds_mean": 10.423585631884634
+    },
+    {
+      "task": "multifieldqa_en",
+      "capacity": 256,
+      "n": 1,
+      "score": 0.5365853658536585,
+      "actual_retained_tokens_mean": 256.0,
+      "actual_kv_bytes_mean": 14680064.0,
+      "seconds_mean": 6.174704486969858
+    },
+    {
+      "task": "multifieldqa_en",
+      "capacity": 512,
+      "n": 1,
+      "score": 0.4324324324324324,
+      "actual_retained_tokens_mean": 512.0,
+      "actual_kv_bytes_mean": 29360128.0,
+      "seconds_mean": 10.011629227083176
+    },
+    {
+      "task": "musique",
+      "capacity": 64,
+      "n": 1,
+      "score": 0.24000000000000002,
+      "actual_retained_tokens_mean": 64.0,
+      "actual_kv_bytes_mean": 3670016.0,
+      "seconds_mean": 10.751348690595478
+    },
+    {
+      "task": "musique",
+      "capacity": 128,
+      "n": 1,
+      "score": 0.2608695652173913,
+      "actual_retained_tokens_mean": 128.0,
+      "actual_kv_bytes_mean": 7340032.0,
+      "seconds_mean": 10.61048504896462
+    },
+    {
+      "task": "musique",
+      "capacity": 256,
+      "n": 1,
+      "score": 0.25,
+      "actual_retained_tokens_mean": 256.0,
+      "actual_kv_bytes_mean": 14680064.0,
+      "seconds_mean": 7.8060879008844495
+    },
+    {
+      "task": "musique",
+      "capacity": 512,
+      "n": 1,
+      "score": 0.25,
+      "actual_retained_tokens_mean": 512.0,
+      "actual_kv_bytes_mean": 29360128.0,
+      "seconds_mean": 5.487227534409612
+    },
+    {
+      "task": "qasper",
+      "capacity": 64,
+      "n": 1,
+      "score": 0.25,
+      "actual_retained_tokens_mean": 64.0,
+      "actual_kv_bytes_mean": 3670016.0,
+      "seconds_mean": 5.883792135864496
+    },
+    {
+      "task": "qasper",
+      "capacity": 128,
+      "n": 1,
+      "score": 0.5,
+      "actual_retained_tokens_mean": 128.0,
+      "actual_kv_bytes_mean": 7340032.0,
+      "seconds_mean": 1.9989937609061599
+    },
+    {
+      "task": "qasper",
+      "capacity": 256,
+      "n": 1,
+      "score": 0.33333333333333337,
+      "actual_retained_tokens_mean": 256.0,
+      "actual_kv_bytes_mean": 14680064.0,
+      "seconds_mean": 2.2461843946948647
+    },
+    {
+      "task": "qasper",
+      "capacity": 512,
+      "n": 1,
+      "score": 0.4,
+      "actual_retained_tokens_mean": 512.0,
+      "actual_kv_bytes_mean": 29360128.0,
+      "seconds_mean": 2.7169378958642483
+    }
+  ],
+  "max_capacity_excess_tokens": 0.0,
+  "results_sha256": "8331d7c4dba7300a573f8fe5159a7fa3ab9515a56c236fc9c8c6c0897999a479"
+}

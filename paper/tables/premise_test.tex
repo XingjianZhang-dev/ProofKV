@@ -1,0 +1,12 @@
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+512 tokens & Spans touched & Gold tokens & PCR & F1 \\
+\midrule
+SnapKV & 100.0 & 90.5 & 18.0 & 14.3 \\
+PyramidKV & 100.0 & 90.5 & 18.0 & 13.9 \\
+H$_2$O-style & 100.0 & 72.5 & 3.1 & 16.0 \\
+StreamingLLM & 6.2 & 18.3 & 2.3 & 15.5 \\
+\midrule
+\proofkv{} chains & -- & 65.1 & \textbf{42.2} & \textbf{34.0} \\
+\bottomrule
+\end{tabular}

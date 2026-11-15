@@ -1,0 +1,30 @@
+{
+  "arguments": {
+    "selection_manifest": "/workspace/compresskv_experiments/qwen14b_scale_20260727/selection_manifest_qwen14b_n47.json",
+    "model": "/workspace/models/Qwen2.5-14B-Instruct-cf98f3b",
+    "model_label": "qwen25_14b",
+    "model_revision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+    "compressor_model": "/workspace/models/llmlingua-2-xlm-roberta-large-meetingbank-ebaba9b",
+    "compressor_revision": "ebaba9b0e874dadd3003ffcff828e4397e568089",
+    "capacities": "128,256,512",
+    "sample_start_per_task": 1,
+    "max_samples_per_task": 46,
+    "attn_implementation": "sdpa"
+  },
+  "selection_manifest_sha256": "e7c8f519fbeca42b11b75153b011a4019d08ad8d12db0e508bb5dde918125b01",
+  "implementation_sha256": {
+    "/workspace/proofkv_snapshot/repo/scripts/run_llmlingua2_longbench_20260726.py": "097ff56283764e93b4f06eb7bf5cda1368e42ec6062c421a0a6abc9249a3be6f",
+    "physical_decode": "aae0d28ba181e68fdb4e62a395bc09ce43435ab3a9b4e507ddf0bd486dab5703",
+    "longbench_contract": "1b074312a562ad9a53fbbeb1f8da9741be729bd6b1fb631161743b5487b7061e"
+  },
+  "llmlingua_package_version": "0.2.2",
+  "compressor_model_sha256": {
+    ".gitattributes": "34448b82c17d60fec9b65b1f093c115ddbaadc04beb1b0140b6bfed2e012a930",
+    "README.md": "7c6765b0f7c43cd79dfdec165666d46b31bf72398e07332fb8aa999fcb06423a",
+    "config.json": "a3fdcf4e63057797101ecc84412bc654f9adb4e8d4ed3c91c5afb28eda327706",
+    "model.safetensors": "a33a153b2493bff6be06af6921e69de9c0d0bb6ff06fe5bbb68670ba8d980ae2",
+    "special_tokens_map.json": "06e405a36dfe4b9604f484f6a1e619af1a7f7d09e34a8555eb0b77b66318067f",
+    "tokenizer.json": "f59925fcb90c92b894cb93e51bb9b4a6105c5c249fe54ce1c704420ac39b81af",
+    "tokenizer_config.json": "f90024142df07163e5e6c5b9a6ad7c8c68b22a9112af11e3db4559a9ff90f737"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "protocol": "proof_coverage_residual_calibration_v1",
+  "selection_manifest": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/selection_manifest_v3.json",
+  "selection_manifest_sha256": "2ba9471ed928dcb5f8841a053cea894c8f054880b30a32b235aa25c5600a517b",
+  "runs": [
+    {
+      "run_dir": "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/coverage_dev_v1_mistral02",
+      "model": "mistral02",
+      "rows": 960,
+      "tasks": 6,
+      "samples_per_task": 10,
+      "configurations_per_sample": 16,
+      "max_capacity_excess_tokens": 0.0,
+      "raw_empty_predictions": 0,
+      "whitespace_only_predictions": 0,
+      "capacity_utilization_min": 1.0,
+      "capacity_utilization_mean": 1.0
+    }
+  ],
+  "checks": [
+    "frozen samples and split-tokenization contract",
+    "complete method/capacity crossing",
+    "independent QA-F1 and aggregate recomputation",
+    "present string predictions and separately reported degenerate outputs",
+    "exact KV-byte accounting and capacity bound",
+    "proof/core/coverage partition accounting"
+  ]
+}

@@ -1,0 +1,1761 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "context_length": 8000,
+  "budget_ratio": 0.08,
+  "retained_total": 640,
+  "recent": 512,
+  "guidepost_budget": 124,
+  "repair_halos": [
+    0,
+    8,
+    16
+  ],
+  "sample_meta": {
+    "filler_tokens": 2117,
+    "max_prompt_tokens": 7469
+  },
+  "sample_records": [
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "n": 32,
+      "retained_ratio": 0.08723649133916879,
+      "first_token_kl": 0.002073082988317765,
+      "top_token_agreement": 1.0,
+      "full_correctness": 1.0,
+      "compact_correctness": 1.0
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "n": 32,
+      "retained_ratio": 0.09038100311180267,
+      "first_token_kl": 0.0015668450241719256,
+      "top_token_agreement": 1.0,
+      "full_correctness": 1.0,
+      "compact_correctness": 1.0
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "n": 32,
+      "retained_ratio": 0.09331249053314587,
+      "first_token_kl": 0.0014460608981607947,
+      "top_token_agreement": 1.0,
+      "full_correctness": 1.0,
+      "compact_correctness": 1.0
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "n": 32,
+      "retained_ratio": 0.08673996102709845,
+      "first_token_kl": 0.009179025058983825,
+      "top_token_agreement": 1.0,
+      "full_correctness": 1.0,
+      "compact_correctness": 0.9375
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "n": 32,
+      "retained_ratio": 0.0946957715620079,
+      "first_token_kl": 0.008116368149785558,
+      "top_token_agreement": 1.0,
+      "full_correctness": 1.0,
+      "compact_correctness": 1.0
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "n": 32,
+      "retained_ratio": 0.10265158209691735,
+      "first_token_kl": 0.005893518229640904,
+      "top_token_agreement": 1.0,
+      "full_correctness": 1.0,
+      "compact_correctness": 1.0
+    }
+  ],
+  "layer_records": [
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 0,
+      "n": 32,
+      "key_cosine": 1.0001066736876965,
+      "value_cosine": 0.9999828245490789,
+      "key_gap": -0.00010667368769645691,
+      "value_gap": 1.7175450921058655e-05
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 1,
+      "n": 32,
+      "key_cosine": 0.9998683575540781,
+      "value_cosine": 0.9872275274246931,
+      "key_gap": 0.0001316424459218979,
+      "value_gap": 0.012772472575306892
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 2,
+      "n": 32,
+      "key_cosine": 0.9978201296180487,
+      "value_cosine": 0.977179104462266,
+      "key_gap": 0.002179870381951332,
+      "value_gap": 0.02282089553773403
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 3,
+      "n": 32,
+      "key_cosine": 0.9989842958748341,
+      "value_cosine": 0.9637515619397163,
+      "key_gap": 0.0010157041251659393,
+      "value_gap": 0.03624843806028366
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 4,
+      "n": 32,
+      "key_cosine": 0.9865190982818604,
+      "value_cosine": 0.9480258822441101,
+      "key_gap": 0.013480901718139648,
+      "value_gap": 0.05197411775588989
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 5,
+      "n": 32,
+      "key_cosine": 0.9817102290689945,
+      "value_cosine": 0.9361721221357584,
+      "key_gap": 0.018289770931005478,
+      "value_gap": 0.0638278778642416
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 6,
+      "n": 32,
+      "key_cosine": 0.9863576702773571,
+      "value_cosine": 0.9126723594963551,
+      "key_gap": 0.013642329722642899,
+      "value_gap": 0.08732764050364494
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 7,
+      "n": 32,
+      "key_cosine": 0.9860130865126848,
+      "value_cosine": 0.9134402945637703,
+      "key_gap": 0.013986913487315178,
+      "value_gap": 0.0865597054362297
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 8,
+      "n": 32,
+      "key_cosine": 0.9817822650074959,
+      "value_cosine": 0.9227826837450266,
+      "key_gap": 0.01821773499250412,
+      "value_gap": 0.07721731625497341
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 9,
+      "n": 32,
+      "key_cosine": 0.9761354178190231,
+      "value_cosine": 0.8605693932622671,
+      "key_gap": 0.023864582180976868,
+      "value_gap": 0.1394306067377329
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 10,
+      "n": 32,
+      "key_cosine": 0.9854806046932936,
+      "value_cosine": 0.9214310869574547,
+      "key_gap": 0.014519395306706429,
+      "value_gap": 0.07856891304254532
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 11,
+      "n": 32,
+      "key_cosine": 0.979904267936945,
+      "value_cosine": 0.9388032723218203,
+      "key_gap": 0.02009573206305504,
+      "value_gap": 0.06119672767817974
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 12,
+      "n": 32,
+      "key_cosine": 0.9783908519893885,
+      "value_cosine": 0.9012217056006193,
+      "key_gap": 0.021609148010611534,
+      "value_gap": 0.09877829439938068
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 13,
+      "n": 32,
+      "key_cosine": 0.9905886296182871,
+      "value_cosine": 0.9011428467929363,
+      "key_gap": 0.009411370381712914,
+      "value_gap": 0.09885715320706367
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 14,
+      "n": 32,
+      "key_cosine": 0.9567603897303343,
+      "value_cosine": 0.8828267604112625,
+      "key_gap": 0.04323961026966572,
+      "value_gap": 0.11717323958873749
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 15,
+      "n": 32,
+      "key_cosine": 0.9711231533437967,
+      "value_cosine": 0.8519456908106804,
+      "key_gap": 0.02887684665620327,
+      "value_gap": 0.1480543091893196
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 16,
+      "n": 32,
+      "key_cosine": 0.9203254580497742,
+      "value_cosine": 0.860445125028491,
+      "key_gap": 0.07967454195022583,
+      "value_gap": 0.13955487497150898
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 17,
+      "n": 32,
+      "key_cosine": 0.9225713107734919,
+      "value_cosine": 0.8404431343078613,
+      "key_gap": 0.07742868922650814,
+      "value_gap": 0.15955686569213867
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 18,
+      "n": 32,
+      "key_cosine": 0.9571487680077553,
+      "value_cosine": 0.7903979104012251,
+      "key_gap": 0.04285123199224472,
+      "value_gap": 0.2096020895987749
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 19,
+      "n": 32,
+      "key_cosine": 0.969867242500186,
+      "value_cosine": 0.8644741326570511,
+      "key_gap": 0.030132757499814034,
+      "value_gap": 0.1355258673429489
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 20,
+      "n": 32,
+      "key_cosine": 0.9478222001343966,
+      "value_cosine": 0.8833448048681021,
+      "key_gap": 0.05217779986560345,
+      "value_gap": 0.11665519513189793
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 21,
+      "n": 32,
+      "key_cosine": 0.9516911823302507,
+      "value_cosine": 0.9136004503816366,
+      "key_gap": 0.04830881766974926,
+      "value_gap": 0.08639954961836338
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 22,
+      "n": 32,
+      "key_cosine": 0.9401920046657324,
+      "value_cosine": 0.9622707962989807,
+      "key_gap": 0.059807995334267616,
+      "value_gap": 0.03772920370101929
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 23,
+      "n": 32,
+      "key_cosine": 0.9545709919184446,
+      "value_cosine": 0.9859194327145815,
+      "key_gap": 0.045429008081555367,
+      "value_gap": 0.01408056728541851
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 24,
+      "n": 32,
+      "key_cosine": 0.9692256711423397,
+      "value_cosine": 0.9819952119141817,
+      "key_gap": 0.030774328857660294,
+      "value_gap": 0.01800478808581829
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 25,
+      "n": 32,
+      "key_cosine": 0.9736950471997261,
+      "value_cosine": 0.9855692908167839,
+      "key_gap": 0.026304952800273895,
+      "value_gap": 0.014430709183216095
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 26,
+      "n": 32,
+      "key_cosine": 0.9640266615897417,
+      "value_cosine": 0.9873788133263588,
+      "key_gap": 0.03597333841025829,
+      "value_gap": 0.012621186673641205
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 0,
+      "layer": 27,
+      "n": 32,
+      "key_cosine": 1.0000656470656395,
+      "value_cosine": 0.9866229128092527,
+      "key_gap": -6.564706563949585e-05,
+      "value_gap": 0.013377087190747261
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 0,
+      "n": 32,
+      "key_cosine": 1.0001107640564442,
+      "value_cosine": 0.9999821539968252,
+      "key_gap": -0.00011076405644416809,
+      "value_gap": 1.78460031747818e-05
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 1,
+      "n": 32,
+      "key_cosine": 0.9998781811445951,
+      "value_cosine": 0.9879874382168055,
+      "key_gap": 0.00012181885540485382,
+      "value_gap": 0.012012561783194542
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 2,
+      "n": 32,
+      "key_cosine": 0.9978738836944103,
+      "value_cosine": 0.9778440594673157,
+      "key_gap": 0.002126116305589676,
+      "value_gap": 0.022155940532684326
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 3,
+      "n": 32,
+      "key_cosine": 0.9990089349448681,
+      "value_cosine": 0.9649842027574778,
+      "key_gap": 0.0009910650551319122,
+      "value_gap": 0.03501579724252224
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 4,
+      "n": 32,
+      "key_cosine": 0.9869460258632898,
+      "value_cosine": 0.9498408865183592,
+      "key_gap": 0.013053974136710167,
+      "value_gap": 0.050159113481640816
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 5,
+      "n": 32,
+      "key_cosine": 0.9823246449232101,
+      "value_cosine": 0.9389422778040171,
+      "key_gap": 0.017675355076789856,
+      "value_gap": 0.06105772219598293
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 6,
+      "n": 32,
+      "key_cosine": 0.9868500679731369,
+      "value_cosine": 0.9170886036008596,
+      "key_gap": 0.013149932026863098,
+      "value_gap": 0.08291139639914036
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 7,
+      "n": 32,
+      "key_cosine": 0.9865873865783215,
+      "value_cosine": 0.9183341264724731,
+      "key_gap": 0.013412613421678543,
+      "value_gap": 0.08166587352752686
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 8,
+      "n": 32,
+      "key_cosine": 0.9829231668263674,
+      "value_cosine": 0.928548589348793,
+      "key_gap": 0.017076833173632622,
+      "value_gap": 0.07145141065120697
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 9,
+      "n": 32,
+      "key_cosine": 0.977728895843029,
+      "value_cosine": 0.870801841840148,
+      "key_gap": 0.022271104156970978,
+      "value_gap": 0.12919815815985203
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 10,
+      "n": 32,
+      "key_cosine": 0.9870376829057932,
+      "value_cosine": 0.9324581902474165,
+      "key_gap": 0.01296231709420681,
+      "value_gap": 0.0675418097525835
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 11,
+      "n": 32,
+      "key_cosine": 0.9816302079707384,
+      "value_cosine": 0.9449213650077581,
+      "key_gap": 0.01836979202926159,
+      "value_gap": 0.05507863499224186
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 12,
+      "n": 32,
+      "key_cosine": 0.9800688587129116,
+      "value_cosine": 0.9113047141581774,
+      "key_gap": 0.019931141287088394,
+      "value_gap": 0.08869528584182262
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 13,
+      "n": 32,
+      "key_cosine": 0.9913763478398323,
+      "value_cosine": 0.9128633607178926,
+      "key_gap": 0.008623652160167694,
+      "value_gap": 0.08713663928210735
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 14,
+      "n": 32,
+      "key_cosine": 0.9594768695533276,
+      "value_cosine": 0.8895565550774336,
+      "key_gap": 0.04052313044667244,
+      "value_gap": 0.11044344492256641
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 15,
+      "n": 32,
+      "key_cosine": 0.9726288821548223,
+      "value_cosine": 0.8579417355358601,
+      "key_gap": 0.02737111784517765,
+      "value_gap": 0.14205826446413994
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 16,
+      "n": 32,
+      "key_cosine": 0.9228836316615343,
+      "value_cosine": 0.867714298889041,
+      "key_gap": 0.07711636833846569,
+      "value_gap": 0.13228570111095905
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 17,
+      "n": 32,
+      "key_cosine": 0.924815570935607,
+      "value_cosine": 0.8493629451841116,
+      "key_gap": 0.07518442906439304,
+      "value_gap": 0.1506370548158884
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 18,
+      "n": 32,
+      "key_cosine": 0.9585915915668011,
+      "value_cosine": 0.8032167293131351,
+      "key_gap": 0.04140840843319893,
+      "value_gap": 0.19678327068686485
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 19,
+      "n": 32,
+      "key_cosine": 0.9710132442414761,
+      "value_cosine": 0.8715284448117018,
+      "key_gap": 0.02898675575852394,
+      "value_gap": 0.12847155518829823
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 20,
+      "n": 32,
+      "key_cosine": 0.9499139413237572,
+      "value_cosine": 0.8911747615784407,
+      "key_gap": 0.05008605867624283,
+      "value_gap": 0.10882523842155933
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 21,
+      "n": 32,
+      "key_cosine": 0.9536050632596016,
+      "value_cosine": 0.9210152849555016,
+      "key_gap": 0.04639493674039841,
+      "value_gap": 0.07898471504449844
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 22,
+      "n": 32,
+      "key_cosine": 0.9420373719185591,
+      "value_cosine": 0.9648240897804499,
+      "key_gap": 0.057962628081440926,
+      "value_gap": 0.03517591021955013
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 23,
+      "n": 32,
+      "key_cosine": 0.9560836311429739,
+      "value_cosine": 0.9870828371495008,
+      "key_gap": 0.0439163688570261,
+      "value_gap": 0.012917162850499153
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 24,
+      "n": 32,
+      "key_cosine": 0.9709855448454618,
+      "value_cosine": 0.9839767832309008,
+      "key_gap": 0.029014455154538155,
+      "value_gap": 0.016023216769099236
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 25,
+      "n": 32,
+      "key_cosine": 0.9749045968055725,
+      "value_cosine": 0.9867692440748215,
+      "key_gap": 0.02509540319442749,
+      "value_gap": 0.013230755925178528
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 26,
+      "n": 32,
+      "key_cosine": 0.9656253792345524,
+      "value_cosine": 0.9883907083421946,
+      "key_gap": 0.03437462076544762,
+      "value_gap": 0.011609291657805443
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 8,
+      "layer": 27,
+      "n": 32,
+      "key_cosine": 1.0000798515975475,
+      "value_cosine": 0.9879106841981411,
+      "key_gap": -7.985159754753113e-05,
+      "value_gap": 0.012089315801858902
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 0,
+      "n": 32,
+      "key_cosine": 1.0001129508018494,
+      "value_cosine": 0.9999811798334122,
+      "key_gap": -0.00011295080184936523,
+      "value_gap": 1.882016658782959e-05
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 1,
+      "n": 32,
+      "key_cosine": 0.9998842291533947,
+      "value_cosine": 0.9883521664887667,
+      "key_gap": 0.0001157708466053009,
+      "value_gap": 0.01164783351123333
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 2,
+      "n": 32,
+      "key_cosine": 0.997909540310502,
+      "value_cosine": 0.9781745038926601,
+      "key_gap": 0.0020904596894979477,
+      "value_gap": 0.02182549610733986
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 3,
+      "n": 32,
+      "key_cosine": 0.9990311190485954,
+      "value_cosine": 0.9657615125179291,
+      "key_gap": 0.0009688809514045715,
+      "value_gap": 0.03423848748207092
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 4,
+      "n": 32,
+      "key_cosine": 0.9872657172381878,
+      "value_cosine": 0.9510540012270212,
+      "key_gap": 0.01273428276181221,
+      "value_gap": 0.04894599877297878
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 5,
+      "n": 32,
+      "key_cosine": 0.9827591348439455,
+      "value_cosine": 0.9403645023703575,
+      "key_gap": 0.017240865156054497,
+      "value_gap": 0.05963549762964249
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 6,
+      "n": 32,
+      "key_cosine": 0.9871649127453566,
+      "value_cosine": 0.919059544801712,
+      "key_gap": 0.01283508725464344,
+      "value_gap": 0.08094045519828796
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 7,
+      "n": 32,
+      "key_cosine": 0.9868919104337692,
+      "value_cosine": 0.9200269505381584,
+      "key_gap": 0.013108089566230774,
+      "value_gap": 0.07997304946184158
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 8,
+      "n": 32,
+      "key_cosine": 0.983256421983242,
+      "value_cosine": 0.9299571122974157,
+      "key_gap": 0.016743578016757965,
+      "value_gap": 0.07004288770258427
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 9,
+      "n": 32,
+      "key_cosine": 0.9782102033495903,
+      "value_cosine": 0.8736721631139517,
+      "key_gap": 0.0217897966504097,
+      "value_gap": 0.12632783688604832
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 10,
+      "n": 32,
+      "key_cosine": 0.9872272722423077,
+      "value_cosine": 0.9336421862244606,
+      "key_gap": 0.012772727757692337,
+      "value_gap": 0.0663578137755394
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 11,
+      "n": 32,
+      "key_cosine": 0.9820009134709835,
+      "value_cosine": 0.9459559079259634,
+      "key_gap": 0.017999086529016495,
+      "value_gap": 0.0540440920740366
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 12,
+      "n": 32,
+      "key_cosine": 0.9805590659379959,
+      "value_cosine": 0.9126929473131895,
+      "key_gap": 0.01944093406200409,
+      "value_gap": 0.0873070526868105
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 13,
+      "n": 32,
+      "key_cosine": 0.9915497209876776,
+      "value_cosine": 0.9143184330314398,
+      "key_gap": 0.008450279012322426,
+      "value_gap": 0.08568156696856022
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 14,
+      "n": 32,
+      "key_cosine": 0.9596772473305464,
+      "value_cosine": 0.8902172427624464,
+      "key_gap": 0.04032275266945362,
+      "value_gap": 0.1097827572375536
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 15,
+      "n": 32,
+      "key_cosine": 0.9729881528764963,
+      "value_cosine": 0.8589360900223255,
+      "key_gap": 0.027011847123503685,
+      "value_gap": 0.14106390997767448
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 16,
+      "n": 32,
+      "key_cosine": 0.9229376148432493,
+      "value_cosine": 0.8687666971236467,
+      "key_gap": 0.07706238515675068,
+      "value_gap": 0.13123330287635326
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 17,
+      "n": 32,
+      "key_cosine": 0.92490447871387,
+      "value_cosine": 0.8510816674679518,
+      "key_gap": 0.07509552128612995,
+      "value_gap": 0.14891833253204823
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 18,
+      "n": 32,
+      "key_cosine": 0.9588494952768087,
+      "value_cosine": 0.8057305123656988,
+      "key_gap": 0.04115050472319126,
+      "value_gap": 0.19426948763430119
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 19,
+      "n": 32,
+      "key_cosine": 0.9711163379251957,
+      "value_cosine": 0.8723599091172218,
+      "key_gap": 0.028883662074804306,
+      "value_gap": 0.12764009088277817
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 20,
+      "n": 32,
+      "key_cosine": 0.949967635795474,
+      "value_cosine": 0.8921670764684677,
+      "key_gap": 0.05003236420452595,
+      "value_gap": 0.10783292353153229
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 21,
+      "n": 32,
+      "key_cosine": 0.9536325521767139,
+      "value_cosine": 0.9214557521045208,
+      "key_gap": 0.046367447823286057,
+      "value_gap": 0.0785442478954792
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 22,
+      "n": 32,
+      "key_cosine": 0.9419514033943415,
+      "value_cosine": 0.9649269804358482,
+      "key_gap": 0.05804859660565853,
+      "value_gap": 0.035073019564151764
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 23,
+      "n": 32,
+      "key_cosine": 0.9560162238776684,
+      "value_cosine": 0.9871985707432032,
+      "key_gap": 0.04398377612233162,
+      "value_gap": 0.012801429256796837
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 24,
+      "n": 32,
+      "key_cosine": 0.9711846075952053,
+      "value_cosine": 0.9842533152550459,
+      "key_gap": 0.028815392404794693,
+      "value_gap": 0.01574668474495411
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 25,
+      "n": 32,
+      "key_cosine": 0.9750039130449295,
+      "value_cosine": 0.9869010243564844,
+      "key_gap": 0.024996086955070496,
+      "value_gap": 0.013098975643515587
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 26,
+      "n": 32,
+      "key_cosine": 0.965780571103096,
+      "value_cosine": 0.9885867647826672,
+      "key_gap": 0.03421942889690399,
+      "value_gap": 0.01141323521733284
+    },
+    {
+      "task_type": "exact_retrieval",
+      "repair_halo": 16,
+      "layer": 27,
+      "n": 32,
+      "key_cosine": 1.0000817328691483,
+      "value_cosine": 0.9881235864013433,
+      "key_gap": -8.17328691482544e-05,
+      "value_gap": 0.011876413598656654
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 0,
+      "n": 32,
+      "key_cosine": 1.0001055262982845,
+      "value_cosine": 0.9999828897416592,
+      "key_gap": -0.00010552629828453064,
+      "value_gap": 1.711025834083557e-05
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 1,
+      "n": 32,
+      "key_cosine": 0.9997698403894901,
+      "value_cosine": 0.9784248117357492,
+      "key_gap": 0.00023015961050987244,
+      "value_gap": 0.021575188264250755
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 2,
+      "n": 32,
+      "key_cosine": 0.9966496676206589,
+      "value_cosine": 0.9631944224238396,
+      "key_gap": 0.0033503323793411255,
+      "value_gap": 0.03680557757616043
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 3,
+      "n": 32,
+      "key_cosine": 0.9987098667770624,
+      "value_cosine": 0.9522264078259468,
+      "key_gap": 0.001290133222937584,
+      "value_gap": 0.04777359217405319
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 4,
+      "n": 32,
+      "key_cosine": 0.9815745633095503,
+      "value_cosine": 0.9301821775734425,
+      "key_gap": 0.018425436690449715,
+      "value_gap": 0.06981782242655754
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 5,
+      "n": 32,
+      "key_cosine": 0.9751593992114067,
+      "value_cosine": 0.9147304445505142,
+      "key_gap": 0.024840600788593292,
+      "value_gap": 0.08526955544948578
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 6,
+      "n": 32,
+      "key_cosine": 0.982514038681984,
+      "value_cosine": 0.8884990531951189,
+      "key_gap": 0.017485961318016052,
+      "value_gap": 0.1115009468048811
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 7,
+      "n": 32,
+      "key_cosine": 0.982207715511322,
+      "value_cosine": 0.8949393164366484,
+      "key_gap": 0.01779228448867798,
+      "value_gap": 0.10506068356335163
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 8,
+      "n": 32,
+      "key_cosine": 0.9781250208616257,
+      "value_cosine": 0.9067539647221565,
+      "key_gap": 0.02187497913837433,
+      "value_gap": 0.09324603527784348
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 9,
+      "n": 32,
+      "key_cosine": 0.9710741490125656,
+      "value_cosine": 0.8336165118962526,
+      "key_gap": 0.028925850987434387,
+      "value_gap": 0.16638348810374737
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 10,
+      "n": 32,
+      "key_cosine": 0.981957009062171,
+      "value_cosine": 0.9028504732996225,
+      "key_gap": 0.018042990937829018,
+      "value_gap": 0.09714952670037746
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 11,
+      "n": 32,
+      "key_cosine": 0.9756042473018169,
+      "value_cosine": 0.9234178848564625,
+      "key_gap": 0.02439575269818306,
+      "value_gap": 0.07658211514353752
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 12,
+      "n": 32,
+      "key_cosine": 0.971960473805666,
+      "value_cosine": 0.8736672438681126,
+      "key_gap": 0.02803952619433403,
+      "value_gap": 0.12633275613188744
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 13,
+      "n": 32,
+      "key_cosine": 0.9883764088153839,
+      "value_cosine": 0.8777020145207644,
+      "key_gap": 0.011623591184616089,
+      "value_gap": 0.12229798547923565
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 14,
+      "n": 32,
+      "key_cosine": 0.9507099613547325,
+      "value_cosine": 0.866164917126298,
+      "key_gap": 0.04929003864526749,
+      "value_gap": 0.13383508287370205
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 15,
+      "n": 32,
+      "key_cosine": 0.9655319377779961,
+      "value_cosine": 0.8290571086108685,
+      "key_gap": 0.03446806222200394,
+      "value_gap": 0.17094289138913155
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 16,
+      "n": 32,
+      "key_cosine": 0.9125607889145613,
+      "value_cosine": 0.8304527588188648,
+      "key_gap": 0.08743921108543873,
+      "value_gap": 0.16954724118113518
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 17,
+      "n": 32,
+      "key_cosine": 0.9128347523510456,
+      "value_cosine": 0.8018610272556543,
+      "key_gap": 0.08716524764895439,
+      "value_gap": 0.19813897274434566
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 18,
+      "n": 32,
+      "key_cosine": 0.9465255700051785,
+      "value_cosine": 0.7372790854424238,
+      "key_gap": 0.05347442999482155,
+      "value_gap": 0.2627209145575762
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 19,
+      "n": 32,
+      "key_cosine": 0.965391144156456,
+      "value_cosine": 0.833862941712141,
+      "key_gap": 0.034608855843544006,
+      "value_gap": 0.16613705828785896
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 20,
+      "n": 32,
+      "key_cosine": 0.9334979001432657,
+      "value_cosine": 0.8513649217784405,
+      "key_gap": 0.06650209985673428,
+      "value_gap": 0.14863507822155952
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 21,
+      "n": 32,
+      "key_cosine": 0.9459115378558636,
+      "value_cosine": 0.8870257083326578,
+      "key_gap": 0.05408846214413643,
+      "value_gap": 0.11297429166734219
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 22,
+      "n": 32,
+      "key_cosine": 0.9342326857149601,
+      "value_cosine": 0.950803279876709,
+      "key_gap": 0.0657673142850399,
+      "value_gap": 0.049196720123291016
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 23,
+      "n": 32,
+      "key_cosine": 0.949934845790267,
+      "value_cosine": 0.9808785039931536,
+      "key_gap": 0.05006515420973301,
+      "value_gap": 0.019121496006846428
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 24,
+      "n": 32,
+      "key_cosine": 0.9639588985592127,
+      "value_cosine": 0.9737170953303576,
+      "key_gap": 0.036041101440787315,
+      "value_gap": 0.02628290466964245
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 25,
+      "n": 32,
+      "key_cosine": 0.9700592923909426,
+      "value_cosine": 0.9792357981204987,
+      "key_gap": 0.029940707609057426,
+      "value_gap": 0.020764201879501343
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 26,
+      "n": 32,
+      "key_cosine": 0.959545636549592,
+      "value_cosine": 0.9818716701120138,
+      "key_gap": 0.04045436345040798,
+      "value_gap": 0.018128329887986183
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 0,
+      "layer": 27,
+      "n": 32,
+      "key_cosine": 1.0000601075589657,
+      "value_cosine": 0.9816307667642832,
+      "key_gap": -6.0107558965682983e-05,
+      "value_gap": 0.01836923323571682
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 0,
+      "n": 32,
+      "key_cosine": 1.0001162514090538,
+      "value_cosine": 0.9999801926314831,
+      "key_gap": -0.00011625140905380249,
+      "value_gap": 1.9807368516921997e-05
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 1,
+      "n": 32,
+      "key_cosine": 0.9997880384325981,
+      "value_cosine": 0.9799760933965445,
+      "key_gap": 0.00021196156740188599,
+      "value_gap": 0.020023906603455544
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 2,
+      "n": 32,
+      "key_cosine": 0.9965353980660439,
+      "value_cosine": 0.9631934817880392,
+      "key_gap": 0.0034646019339561462,
+      "value_gap": 0.03680651821196079
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 3,
+      "n": 32,
+      "key_cosine": 0.9987346790730953,
+      "value_cosine": 0.9534519240260124,
+      "key_gap": 0.0012653209269046783,
+      "value_gap": 0.04654807597398758
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 4,
+      "n": 32,
+      "key_cosine": 0.9824344608932734,
+      "value_cosine": 0.9330253936350346,
+      "key_gap": 0.017565539106726646,
+      "value_gap": 0.06697460636496544
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 5,
+      "n": 32,
+      "key_cosine": 0.9763788543641567,
+      "value_cosine": 0.9183283187448978,
+      "key_gap": 0.023621145635843277,
+      "value_gap": 0.08167168125510216
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 6,
+      "n": 32,
+      "key_cosine": 0.9830479063093662,
+      "value_cosine": 0.89211380854249,
+      "key_gap": 0.016952093690633774,
+      "value_gap": 0.10788619145751
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 7,
+      "n": 32,
+      "key_cosine": 0.9825725499540567,
+      "value_cosine": 0.896229725331068,
+      "key_gap": 0.01742745004594326,
+      "value_gap": 0.10377027466893196
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 8,
+      "n": 32,
+      "key_cosine": 0.9782976061105728,
+      "value_cosine": 0.9077418353408575,
+      "key_gap": 0.021702393889427185,
+      "value_gap": 0.0922581646591425
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 9,
+      "n": 32,
+      "key_cosine": 0.9708937089890242,
+      "value_cosine": 0.8362300451844931,
+      "key_gap": 0.029106291010975838,
+      "value_gap": 0.16376995481550694
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 10,
+      "n": 32,
+      "key_cosine": 0.9821562394499779,
+      "value_cosine": 0.9051431324332952,
+      "key_gap": 0.017843760550022125,
+      "value_gap": 0.09485686756670475
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 11,
+      "n": 32,
+      "key_cosine": 0.9757791664451361,
+      "value_cosine": 0.9247390348464251,
+      "key_gap": 0.02422083355486393,
+      "value_gap": 0.07526096515357494
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 12,
+      "n": 32,
+      "key_cosine": 0.9725064635276794,
+      "value_cosine": 0.876069325953722,
+      "key_gap": 0.027493536472320557,
+      "value_gap": 0.123930674046278
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 13,
+      "n": 32,
+      "key_cosine": 0.9887530319392681,
+      "value_cosine": 0.8793113268911839,
+      "key_gap": 0.011246968060731888,
+      "value_gap": 0.12068867310881615
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 14,
+      "n": 32,
+      "key_cosine": 0.9507210105657578,
+      "value_cosine": 0.8631707187741995,
+      "key_gap": 0.04927898943424225,
+      "value_gap": 0.13682928122580051
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 15,
+      "n": 32,
+      "key_cosine": 0.9656822271645069,
+      "value_cosine": 0.8257708251476288,
+      "key_gap": 0.03431777283549309,
+      "value_gap": 0.17422917485237122
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 16,
+      "n": 32,
+      "key_cosine": 0.9098049569875002,
+      "value_cosine": 0.8267367389053106,
+      "key_gap": 0.09019504301249981,
+      "value_gap": 0.17326326109468937
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 17,
+      "n": 32,
+      "key_cosine": 0.9086290169507265,
+      "value_cosine": 0.7971213329583406,
+      "key_gap": 0.09137098304927349,
+      "value_gap": 0.20287866704165936
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 18,
+      "n": 32,
+      "key_cosine": 0.9459126833826303,
+      "value_cosine": 0.7315636221319437,
+      "key_gap": 0.05408731661736965,
+      "value_gap": 0.2684363778680563
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 19,
+      "n": 32,
+      "key_cosine": 0.9651592560112476,
+      "value_cosine": 0.8291772566735744,
+      "key_gap": 0.034840743988752365,
+      "value_gap": 0.17082274332642555
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 20,
+      "n": 32,
+      "key_cosine": 0.9328850638121367,
+      "value_cosine": 0.8487211167812347,
+      "key_gap": 0.06711493618786335,
+      "value_gap": 0.15127888321876526
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 21,
+      "n": 32,
+      "key_cosine": 0.9453628789633512,
+      "value_cosine": 0.8858189191669226,
+      "key_gap": 0.05463712103664875,
+      "value_gap": 0.11418108083307743
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 22,
+      "n": 32,
+      "key_cosine": 0.9326348602771759,
+      "value_cosine": 0.9505749922245741,
+      "key_gap": 0.0673651397228241,
+      "value_gap": 0.04942500777542591
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 23,
+      "n": 32,
+      "key_cosine": 0.9489966165274382,
+      "value_cosine": 0.9809165578335524,
+      "key_gap": 0.051003383472561836,
+      "value_gap": 0.01908344216644764
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 24,
+      "n": 32,
+      "key_cosine": 0.9645256344228983,
+      "value_cosine": 0.974947277456522,
+      "key_gap": 0.03547436557710171,
+      "value_gap": 0.025052722543478012
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 25,
+      "n": 32,
+      "key_cosine": 0.9698857571929693,
+      "value_cosine": 0.9797489363700151,
+      "key_gap": 0.030114242807030678,
+      "value_gap": 0.020251063629984856
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 26,
+      "n": 32,
+      "key_cosine": 0.959591930732131,
+      "value_cosine": 0.9824254959821701,
+      "key_gap": 0.040408069267868996,
+      "value_gap": 0.017574504017829895
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 8,
+      "layer": 27,
+      "n": 32,
+      "key_cosine": 1.0000744499266148,
+      "value_cosine": 0.9822928290814161,
+      "key_gap": -7.444992661476135e-05,
+      "value_gap": 0.01770717091858387
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 0,
+      "n": 32,
+      "key_cosine": 1.0001315362751484,
+      "value_cosine": 0.9999775234609842,
+      "key_gap": -0.00013153627514839172,
+      "value_gap": 2.247653901576996e-05
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 1,
+      "n": 32,
+      "key_cosine": 0.9998066741973162,
+      "value_cosine": 0.9815165977925062,
+      "key_gap": 0.00019332580268383026,
+      "value_gap": 0.018483402207493782
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 2,
+      "n": 32,
+      "key_cosine": 0.9966632779687643,
+      "value_cosine": 0.9651284515857697,
+      "key_gap": 0.003336722031235695,
+      "value_gap": 0.03487154841423035
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 3,
+      "n": 32,
+      "key_cosine": 0.9987968243658543,
+      "value_cosine": 0.9556566793471575,
+      "key_gap": 0.0012031756341457367,
+      "value_gap": 0.04434332065284252
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 4,
+      "n": 32,
+      "key_cosine": 0.9834251012653112,
+      "value_cosine": 0.9364066701382399,
+      "key_gap": 0.01657489873468876,
+      "value_gap": 0.06359332986176014
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 5,
+      "n": 32,
+      "key_cosine": 0.9776887316256762,
+      "value_cosine": 0.9227014556527138,
+      "key_gap": 0.022311268374323845,
+      "value_gap": 0.07729854434728622
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 6,
+      "n": 32,
+      "key_cosine": 0.983816385269165,
+      "value_cosine": 0.8972821105271578,
+      "key_gap": 0.01618361473083496,
+      "value_gap": 0.10271788947284222
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 7,
+      "n": 32,
+      "key_cosine": 0.9833935126662254,
+      "value_cosine": 0.9004561249166727,
+      "key_gap": 0.016606487333774567,
+      "value_gap": 0.0995438750833273
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 8,
+      "n": 32,
+      "key_cosine": 0.9790785871446133,
+      "value_cosine": 0.9109092839062214,
+      "key_gap": 0.020921412855386734,
+      "value_gap": 0.08909071609377861
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 9,
+      "n": 32,
+      "key_cosine": 0.9716284200549126,
+      "value_cosine": 0.8422804214060307,
+      "key_gap": 0.028371579945087433,
+      "value_gap": 0.15771957859396935
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 10,
+      "n": 32,
+      "key_cosine": 0.9826776348054409,
+      "value_cosine": 0.909176878631115,
+      "key_gap": 0.017322365194559097,
+      "value_gap": 0.09082312136888504
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 11,
+      "n": 32,
+      "key_cosine": 0.9767648372799158,
+      "value_cosine": 0.9284949824213982,
+      "key_gap": 0.02323516272008419,
+      "value_gap": 0.07150501757860184
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 12,
+      "n": 32,
+      "key_cosine": 0.9737451653927565,
+      "value_cosine": 0.8818793371319771,
+      "key_gap": 0.026254834607243538,
+      "value_gap": 0.11812066286802292
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 13,
+      "n": 32,
+      "key_cosine": 0.9892771728336811,
+      "value_cosine": 0.8849706444889307,
+      "key_gap": 0.010722827166318893,
+      "value_gap": 0.1150293555110693
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 14,
+      "n": 32,
+      "key_cosine": 0.9519795700907707,
+      "value_cosine": 0.8641344979405403,
+      "key_gap": 0.04802042990922928,
+      "value_gap": 0.1358655020594597
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 15,
+      "n": 32,
+      "key_cosine": 0.9669245071709156,
+      "value_cosine": 0.8277343884110451,
+      "key_gap": 0.033075492829084396,
+      "value_gap": 0.17226561158895493
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 16,
+      "n": 32,
+      "key_cosine": 0.9101334121078253,
+      "value_cosine": 0.830569801852107,
+      "key_gap": 0.08986658789217472,
+      "value_gap": 0.16943019814789295
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 17,
+      "n": 32,
+      "key_cosine": 0.9088727645576,
+      "value_cosine": 0.8009898867458105,
+      "key_gap": 0.09112723544239998,
+      "value_gap": 0.1990101132541895
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 18,
+      "n": 32,
+      "key_cosine": 0.9480355232954025,
+      "value_cosine": 0.7371995989233255,
+      "key_gap": 0.05196447670459747,
+      "value_gap": 0.26280040107667446
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 19,
+      "n": 32,
+      "key_cosine": 0.9659877382218838,
+      "value_cosine": 0.8329669144004583,
+      "key_gap": 0.034012261778116226,
+      "value_gap": 0.16703308559954166
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 20,
+      "n": 32,
+      "key_cosine": 0.9353764057159424,
+      "value_cosine": 0.8543084245175123,
+      "key_gap": 0.06462359428405762,
+      "value_gap": 0.14569157548248768
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 21,
+      "n": 32,
+      "key_cosine": 0.9465640988200903,
+      "value_cosine": 0.8904816508293152,
+      "key_gap": 0.053435901179909706,
+      "value_gap": 0.10951834917068481
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 22,
+      "n": 32,
+      "key_cosine": 0.9338092021644115,
+      "value_cosine": 0.9527964815497398,
+      "key_gap": 0.06619079783558846,
+      "value_gap": 0.04720351845026016
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 23,
+      "n": 32,
+      "key_cosine": 0.9500377811491489,
+      "value_cosine": 0.9821439925581217,
+      "key_gap": 0.04996221885085106,
+      "value_gap": 0.01785600744187832
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 24,
+      "n": 32,
+      "key_cosine": 0.9657739624381065,
+      "value_cosine": 0.9769852608442307,
+      "key_gap": 0.03422603756189346,
+      "value_gap": 0.023014739155769348
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 25,
+      "n": 32,
+      "key_cosine": 0.970836104825139,
+      "value_cosine": 0.9811530597507954,
+      "key_gap": 0.029163895174860954,
+      "value_gap": 0.018846940249204636
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 26,
+      "n": 32,
+      "key_cosine": 0.9609631113708019,
+      "value_cosine": 0.983737476170063,
+      "key_gap": 0.039036888629198074,
+      "value_gap": 0.01626252382993698
+    },
+    {
+      "task_type": "multi_hop",
+      "repair_halo": 16,
+      "layer": 27,
+      "n": 32,
+      "key_cosine": 1.0000792630016804,
+      "value_cosine": 0.9836347084492445,
+      "key_gap": -7.926300168037415e-05,
+      "value_gap": 0.0163652915507555
+    }
+  ]
+}

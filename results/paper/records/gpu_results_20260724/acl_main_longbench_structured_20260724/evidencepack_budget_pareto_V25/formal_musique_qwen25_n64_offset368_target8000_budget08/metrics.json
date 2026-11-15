@@ -1,0 +1,69 @@
+{
+  "model": "/workspace/models/Qwen2.5-7B-Instruct-a09a354",
+  "dataset": "musique",
+  "split": "validation",
+  "data_file": "/workspace/ircot/processed_data/musique/test_subsampled.jsonl",
+  "max_samples": 64,
+  "sample_offset": 368,
+  "budget": 0.08,
+  "budget_tokens": null,
+  "target_prompt_tokens": 8000,
+  "packing_seed": 1907,
+  "attn_implementation": "sdpa",
+  "full_prefill_chunk_size": 2048,
+  "compact_prefill_chunk_size": 512,
+  "methods": [
+    "entity_graph_adaptive",
+    "learned_root_topk",
+    "learned_and_or"
+  ],
+  "scorer_kind": "cross",
+  "learned_dense_core_count": 4,
+  "learned_edge_batch_size": 256,
+  "repair_halo": 0,
+  "records": [
+    {
+      "method": "entity_graph_adaptive",
+      "n": 64,
+      "answer_em": 0.171875,
+      "answer_f1": 0.24097222222222223,
+      "answer_contains": 0.1875,
+      "gold_token_recall": 0.479782467269801,
+      "retained_ratio": 0.07999977022068287,
+      "seconds": 0.4368180432866211,
+      "selection_seconds": 0.02768289315281436,
+      "generation_seconds": 0.40913515013380675,
+      "proof_core_tokens": 0.0,
+      "auxiliary_tokens": 0.0
+    },
+    {
+      "method": "learned_and_or",
+      "n": 64,
+      "answer_em": 0.1875,
+      "answer_f1": 0.2828125,
+      "answer_contains": 0.21875,
+      "gold_token_recall": 0.5377604166666666,
+      "retained_ratio": 0.06775975760673178,
+      "seconds": 0.29635867425531615,
+      "selection_seconds": 0.021329992210667115,
+      "generation_seconds": 0.27502868204464903,
+      "proof_core_tokens": 496.890625,
+      "auxiliary_tokens": 0.0
+    },
+    {
+      "method": "learned_root_topk",
+      "n": 64,
+      "answer_em": 0.265625,
+      "answer_f1": 0.36495535714285715,
+      "answer_contains": 0.296875,
+      "gold_token_recall": 0.68359375,
+      "retained_ratio": 0.07817045111915955,
+      "seconds": 5.338822402030928,
+      "selection_seconds": 4.742168124183081,
+      "generation_seconds": 0.596654277847847,
+      "proof_core_tokens": 579.78125,
+      "auxiliary_tokens": 0.0
+    }
+  ],
+  "paired_full_retention": []
+}

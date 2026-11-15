@@ -1,0 +1,17 @@
+{
+  "experiment_root": "/workspace/compresskv_experiments",
+  "issues": [],
+  "scientific_outcomes": {
+    "precision_pilot": {
+      "int8": true,
+      "int4": false
+    },
+    "precision_holdout_passed": true,
+    "layer_development_passed": false,
+    "inplace_route_claim_gate_passed": true,
+    "vllm_suite_passed": true,
+    "vllm_independent_quality_audit_passed": true
+  },
+  "gpu_evidence_complete": true,
+  "note": "A false scientific gate is complete negative evidence; only missing or invalid artifacts make closure incomplete."
+}

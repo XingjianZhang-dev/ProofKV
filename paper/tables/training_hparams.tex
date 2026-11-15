@@ -1,0 +1,15 @@
+\begin{tabular}{@{}p{0.33\columnwidth}p{0.60\columnwidth}@{}}
+\toprule
+Setting & Value \\
+\midrule
+Encoder & MiniLM-L12-H384 (uncased), three linear heads \\
+Input length & 320 tokens \\
+Optimizer & AdamW, learning rate $2{\times}10^{-5}$, weight decay 0.01 \\
+Batch & 48 items of one head, length-bucketed \\
+Gradient clipping & 1.0 \\
+Epochs & one pass per replay stage \\
+Final stage & 3,807 steps, seed 307 \\
+$\lambda_p$, $\lambda_b$, $\lambda_c$ & 0.5, 0.05, 0.2 \\
+Interpolation & $\theta = 0.1\,\theta_{\text{v3b}} + 0.9\,\theta_{\text{v8}}$, all parameters \\
+\bottomrule
+\end{tabular}

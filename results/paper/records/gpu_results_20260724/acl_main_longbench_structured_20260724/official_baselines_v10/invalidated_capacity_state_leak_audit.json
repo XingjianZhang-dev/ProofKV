@@ -1,0 +1,43 @@
+{
+  "affected_runner_sha256": "37df98d1d3495b8ba4ab75e0d80ebf58f07192bd24afabeb85b1c5f34a38bae1",
+  "artifacts": {
+    "old_formal_protocol_sha256": "1276846fdc82437147f3c37e82b69da0e497f109868ff87582db25da72684058",
+    "old_mistral_manifest_sha256": "84dc02c4d8cb3b8652f7a8ac46366d77e270798359d9c1308c5c2390256a22c4",
+    "old_mistral_results_sha256": "6cd11ea75643093d4df3d593f5ef9ef428fd3345d08cf96a8b4666ba5a3b6880",
+    "old_qwen_manifest_sha256": "6efd05a2f7198be4e76dc3206179750a3a1556ef3453e3e4433c890383bd2344",
+    "old_qwen_results_sha256": "ef2c45ede8cba7fa1f3091dc57447234e88ee21c3cfe417820feeafff5881ff5"
+  },
+  "audit_implementation_sha256": "544e0825d08d94b2f1f3bd9bb9995251172a61d24cc990176718e0838100b79f",
+  "dynamic_signature": {
+    "identical_predictions_64_vs_128": 47,
+    "identical_scores_64_vs_128": 47,
+    "paired_ids": 47,
+    "reported_retained_tokens": {
+      "64": [
+        64.0
+      ],
+      "128": [
+        128.0
+      ]
+    },
+    "task": "qasper"
+  },
+  "eligible_for_claims": false,
+  "invalidated_scope": [
+    "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/formal_qwen25",
+    "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/formal_mistral02",
+    "/workspace/compresskv_experiments/acl_main_longbench_structured_20260724/official_baselines_v10/formal_protocol_v10.json"
+  ],
+  "patched_runner": "/workspace/compresskv_run/compresskv/compresskv/scripts/run_official_longbench_v10_baseline.py",
+  "patched_runner_sha256": "90f0f08583c72dc0f96fd1ab90d44bb48a4139a122799f26ac72004e4f09d0d8",
+  "protocol": "official_longbench_v10_capacity_state_leak_audit",
+  "reason": "The official CompressKV attention patch lazily cached kv_cluster at the first 64-token capacity. The affected runner updated model.config for later capacities without deleting or resetting the live clusters, while physical accounting used the new configuration. Therefore later Qwen capacities were executed with stale selector state. The paired Mistral run is rerun as well so both models share one corrected runner/protocol binding.",
+  "required_remediation": [
+    "delete or reset every live CompressKV kv_cluster at each capacity",
+    "audit the live cluster capacity vector on every generated row",
+    "rerun a four-capacity preflight under the patched runner",
+    "freeze a new protocol before new formal output",
+    "rerun both model-compatible official matrices from empty directories"
+  ],
+  "status": "INVALIDATED"
+}
