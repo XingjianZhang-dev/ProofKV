@@ -1,16 +1,15 @@
-# ProofKV
+# ProofKV: Compiling Complete Evidence Chains into Reusable KV Memory for Structured-Evidence QA
 
-Code, records, and scorer checkpoints for
+Code, result records, and scorer checkpoints for the Findings of EACL 2027 paper by Xingjian Zhang (Carnegie Mellon University).
 
-> **ProofKV: Compiling Complete Evidence Chains into Reusable KV Memory for Structured-Evidence QA**
-> Xingjian Zhang. *Findings of EACL 2027.*
+[Paper (PDF)](paper/proofkv_eacl2027.pdf) · [Scorer checkpoints](https://github.com/XingjianZhang-dev/ProofKV/releases/tag/v1.0.0) · [Where each table comes from](docs/REPRODUCE.md)
+
+![ProofKV in one pass](docs/overview.png)
 
 KV-cache eviction and prompt compression score tokens, chunks, or heads one at a time. A multi-hop question needs
 every link of an evidence chain, and a link is worth little unless the rest of the chain survives with it. ProofKV
 reads a document once into a reusable evidence index, composes question-specific evidence chains with a small
 learned scorer, and prefills the decoder only over the chains that fit a KV-byte budget.
-
-![ProofKV in one pass](docs/overview.png)
 
 ## Results at a glance
 
