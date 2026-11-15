@@ -128,10 +128,16 @@ def endpoint_table(fair: dict, llmlingua: dict) -> str:
         lines.append(
             f"{label} & {row['delta_f1_points']:.2f} & "
             f"$[{row['ci95_low']:.2f},{row['ci95_high']:.2f}]$ & "
-            f"{row['paired_examples']:,} & ${p_value:.1e}$ \\\\"
+            f"{row['paired_examples']:,} & ${scientific(p_value)}$ \\\\"
         )
     lines.extend((r"\bottomrule", r"\end{tabular}"))
     return "\n".join(lines) + "\n"
+
+
+def scientific(value: float) -> str:
+    """Format a small p value as m x 10^k for math mode (4.0e-05 -> 4.0{\\times}10^{-5})."""
+    mantissa, exponent = f"{value:.1e}".split("e")
+    return f"{mantissa}{{\\times}}10^{{{int(exponent)}}}"
 
 
 def reuse_table(payload: dict) -> str:
