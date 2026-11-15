@@ -1,7 +1,8 @@
 # Scripts
 
 The entry points that produced the results of the paper, grouped by experiment. A filled marker (●) is a script you
-run; the others are imported by it or audit and analyze its output. Every Python script takes `--help`. The exact arguments
+run; the others are imported by it or audit and analyze its output. Every Python script takes `--help`
+(`run_vllm_paged_suite.py` once `vllm` and `pynvml` are installed). The exact arguments
 of each reported run are in the `run_manifest.json` beside its records under `results/paper/records/`.
 
 File names are the ones recorded in those manifests, including the dates and version tags of the runs, so a record

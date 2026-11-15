@@ -53,6 +53,10 @@ pip install -e .
 python -m pytest -q
 ```
 
+Two comparisons need packages beyond this environment: `llmlingua==0.2.2` for LLMLingua-2, and `vllm==0.25.0` with
+`pynvml` for the paged serving backend (`scripts/run_vllm_paged_suite.py`). The official implementations of the
+KV-eviction baselines are restored from the pinned commits in [`docs/THIRD_PARTY.md`](docs/THIRD_PARTY.md).
+
 ## Checkpoints
 
 Download the scorer checkpoints from the [release page](https://github.com/XingjianZhang-dev/ProofKV/releases) and
@@ -96,6 +100,10 @@ python experiments/followup/heldout_selector/oracle_gap.py --split test \
     --model Qwen/Qwen2.5-7B-Instruct --max-samples 1000 --budgets 256,512 \
     --out-dir runs/heldout_selector
 ```
+
+This script also runs without a GPU. With `--max-samples 6` it takes about five minutes on two CPU cores, and its
+`results.jsonl` has the same selected spans and scores as the first six questions of
+`results/followup/heldout_selector/oracle_gap/results.jsonl`.
 
 Fixed-budget generation with the final checkpoint:
 

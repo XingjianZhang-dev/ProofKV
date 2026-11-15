@@ -12,3 +12,4 @@ protobuf>=4.25.0
 rouge-score>=0.1.2
 matplotlib>=3.7
 pandas>=2.0
+scikit-learn>=1.4

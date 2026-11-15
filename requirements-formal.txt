@@ -10,6 +10,7 @@ pytest==9.1.0
 PyYAML==6.0.3
 rouge-score>=0.1.2
 safetensors==0.8.0
+scikit-learn>=1.4
 sentencepiece==0.2.2
 tokenizers==0.22.2
 tqdm==4.68.0
