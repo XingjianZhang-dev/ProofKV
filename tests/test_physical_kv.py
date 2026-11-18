@@ -94,12 +94,15 @@ def test_synthetic_gqa_style_cache_gathers_kv_heads():
     assert value.shape == (1, 2, 3, 8)
 
 
-def test_dynamic_cache_from_legacy_path_if_available():
+def test_gather_returns_dynamic_cache_or_legacy_tuple():
     try:
         from transformers.cache_utils import DynamicCache
     except Exception:
-        pytest.skip("transformers DynamicCache unavailable")
-    if not hasattr(DynamicCache, "from_legacy_cache"):
-        pytest.skip("DynamicCache.from_legacy_cache unavailable in this Transformers build")
+        DynamicCache = None
     compact = gather_legacy_past_key_values(_cache(seq_len=8), [1, 4], return_dynamic_cache=True)
-    assert isinstance(compact, DynamicCache)
+    if DynamicCache is not None and hasattr(DynamicCache, "from_legacy_cache"):
+        assert isinstance(compact, DynamicCache)
+    else:
+        layers = legacy_cache_layers(compact)
+        assert len(layers) == 3
+        assert all(key.shape[2] == 2 and value.shape[2] == 2 for key, value in layers)
