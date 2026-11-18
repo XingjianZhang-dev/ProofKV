@@ -2,7 +2,7 @@
 
 Code, result records, and scorer checkpoints for the Findings of EACL 2027 paper by Xingjian Zhang (Carnegie Mellon University).
 
-[Paper (PDF)](paper/proofkv_eacl2027.pdf) · [Scorer checkpoints](https://github.com/XingjianZhang-dev/ProofKV/releases/tag/v1.0.0) · [Where each table comes from](docs/REPRODUCE.md)
+[Paper (PDF)](paper/proofkv_eacl2027.pdf) · [Scorer checkpoints](https://huggingface.co/XingjianZhangDev/ProofKV-scorer) · [Result records](https://huggingface.co/datasets/XingjianZhangDev/ProofKV) · [Where each table comes from](docs/REPRODUCE.md)
 
 ![ProofKV in one pass](docs/overview.png)
 
@@ -58,13 +58,20 @@ KV-eviction baselines are restored from the pinned commits in [`docs/THIRD_PARTY
 
 ## Checkpoints
 
-Download the scorer checkpoints from the [release page](https://github.com/XingjianZhang-dev/ProofKV/releases) and
-unpack them into `checkpoints/`. [`checkpoints/README.md`](checkpoints/README.md) lists their SHA-256 digests and says
+Download the scorer checkpoints from [Hugging Face](https://huggingface.co/XingjianZhangDev/ProofKV-scorer) into
+`checkpoints/`,
+
+```bash
+python -c "from huggingface_hub import snapshot_download; snapshot_download('XingjianZhangDev/ProofKV-scorer', local_dir='checkpoints', allow_patterns=['proofkv_scorer_*/*'])"
+```
+
+or from the [release page](https://github.com/XingjianZhang-dev/ProofKV/releases) and unpack them there. [`checkpoints/README.md`](checkpoints/README.md) lists their SHA-256 digests and says
 which results each one produced. Both are MiniLM-L12-H384 cross-encoders (about 133 MB) with start, end, and link heads.
 
 ## Reproducing the numbers without a GPU
 
-The records behind every table and figure are in `results/`, so the paper's numbers can be checked on a laptop:
+The records behind every table and figure are in `results/` (also on [Hugging Face](https://huggingface.co/datasets/XingjianZhangDev/ProofKV)), so the
+paper's numbers can be checked on a laptop:
 
 ```bash
 python analysis/verify_release.py

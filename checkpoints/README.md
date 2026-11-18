@@ -1,7 +1,15 @@
 # Scorer checkpoints
 
-Both checkpoints are attached to the [release page](https://github.com/XingjianZhang-dev/ProofKV/releases). Download
-the archives into this directory and unpack them:
+Both checkpoints are on [Hugging Face](https://huggingface.co/XingjianZhangDev/ProofKV-scorer). From the repository
+root,
+
+```bash
+python -c "from huggingface_hub import snapshot_download; snapshot_download('XingjianZhangDev/ProofKV-scorer', local_dir='checkpoints', allow_patterns=['proofkv_scorer_*/*'])"
+python analysis/verify_release.py      # also checks the digests below
+```
+
+They are also attached to the [release page](https://github.com/XingjianZhang-dev/ProofKV/releases). Download the
+archives into this directory and unpack them:
 
 ```bash
 cd checkpoints
